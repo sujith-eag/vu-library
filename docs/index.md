@@ -11,8 +11,8 @@ hero:
       text: Topics Catalog 
       link: https://sujith-eag.github.io/vu-library/cat.html
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Java
+      link: /java/
 
 features:
   - title: Feature A

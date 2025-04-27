@@ -4,11 +4,15 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Sujith's Library",
   description: "Library Catalog of",
+  ignoreDeadLinks: true,
+  
+  base: '/vu-library/',
+    
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Java', link: '/java/' }
     ],
 
     sidebar: [
@@ -26,7 +30,5 @@ export default defineConfig({
     ],
   },
   
-  ignoreDeadLinks: true,
-  
-  base: '/vu-library/'
+
 })
