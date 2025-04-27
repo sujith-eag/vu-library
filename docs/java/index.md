@@ -5,6 +5,9 @@ hero:
   name: Explore Java Topics
   text: Learn about various subjects
   tagline: Curated content for you
+  image:
+    src: /code.png
+    alt: Java
   actions:
     - theme: brand
       text: Java Intro
@@ -13,8 +16,8 @@ hero:
       text: Java Next
       link: /java/java_next
 features:
-  - title: Cats
-    details: Everything about cats
-  - title: Dogs
-    details: Dog breeds, training, and more
+  - title: one
+    details: Everything about
+  - title: two
+    details: training, and more
 ---

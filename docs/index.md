@@ -4,8 +4,11 @@ layout: home
 
 hero:
   name: "Sujith's Library"
-  text: "Library site for sujith"
-  tagline: My great project tagline
+  text: "Library site of sujith"
+  tagline: Consequence of Exploration
+  image:
+    src: /logo.png
+    alt: Eagle's Library
   actions:
     - theme: brand
       text: Topics Catalog 

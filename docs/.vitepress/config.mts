@@ -7,7 +7,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   
   base: '/vu-library/',
-    
+  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -15,20 +15,39 @@ export default defineConfig({
       { text: 'Java', link: '/java/' }
     ],
 
-    sidebar: [
+    sidebar: {
+      // Home page Side bar
+      '/': [
+         {
+          text: 'Home',
+          items: [
+            { text: 'Markdown Examples', link: '/markdown-examples' },
+            { text: 'Runtime API Examples', link: '/api-examples' }
+          ]
+        }
+    ],
+    
+    // Sidebar for Java Section
+    '/java/': [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+        text:'Java',
+        items:[
+          {text: 'Introduction', link:'/java/java_intro'},
+          {text: 'Java Basics', link:'/java/java_next'}
+        ]
+      },
+      {
+        text:'Java Core',
+        items:[
+          {text: 'Introduction', link:'/java/java_core/intro'},
+          {text: 'Java Basics', link:'/java/java_core/next'}
         ]
       }
-    ],
+    ]
+  },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sujith-eag/vu-library' }
-    ],
-  },
-  
-
+    ]
+  }
 })
