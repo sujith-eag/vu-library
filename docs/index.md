@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Topics Catalog 
-      link: /cat
+      link: https://sujith-eag.github.io/vu-library/cat.html
     - theme: alt
       text: API Examples
       link: /api-examples
