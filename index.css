@@ -1,0 +1,223 @@
+/* NavBar - ID for Navigation bar */
+/* MainContainer - ID Body containing All Cards */
+    /* container - class General Subject container */
+        /* ToggleBtn - class General Toggle button */
+        /* topicCard - class General Topic anchor link card */
+
+/* PythonContainer - ID Main Python Container */
+/* PyButton - ID The Main Interaction that will have the image */
+/* PyTopic - For the links of Subjects */
+
+/* JsContainer - ID */
+/* JsButton - ID */
+/* JsTopic */
+
+/* 'active' class injected to show topics */
+
+
+.Header {
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+    /* background: linear-gradient(90deg, rgba(24, 246, 246, 0.8), rgba(49, 70, 252, 0.8));     */
+    text-align: center;
+    
+    background: linear-gradient(135deg, rgb(48, 125, 231), hsl(0, 61%, 60%));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Header title styling */
+.Header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(245, 246, 244);
+}
+
+
+
+#MainContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* To wrap child containers */
+    width: 100%; /* To cover full screen width */
+    height: auto;
+    padding-top: 20px;
+    /* background: linear-gradient(135deg, rgba(133, 180, 180, 0.8), rgba(238, 255, 54, 0.8)); */
+    background: linear-gradient(45deg, rgba(101, 180, 255, 0.6), rgba(249, 220, 103, 0.8));
+
+}
+
+
+
+.container { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 45%;
+    height: 30%;
+    margin-bottom: 15px;   /* space for below stacked cards */
+    padding: 0 2px;
+}
+.container {
+    background: linear-gradient(60deg, rgba(255, 255, 255, 0.95), rgba(150, 200, 195, 0.9));
+
+    /* background: linear-gradient(60deg, rgba(255, 255, 255, 0.9), rgba(204, 229, 228, 0.85)); */
+    /* background: linear-gradient(60deg, rgb(245, 244, 254), rgb(107, 185, 179)); */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+/* Adjusting for smaller screens - Stack containers on top of each other for small screens */
+@media screen and (max-width: 800px) {
+    .container {
+        width: 75%;
+        margin-bottom: 12px
+    }
+}
+
+
+
+
+.ToggleBtn{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    grid-column: span 2; /* In grid, One Button Should span 2 columns*/
+}
+.ToggleBtn{
+    opacity: 0.9;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Raised shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;   
+}
+.ToggleBtn:hover{
+    transform: translateY(-6px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+@media screen and (max-width: 800px) {
+    .ToggleBtn {
+        width: 100%;
+        height: 90px;
+    }
+}
+
+
+
+
+
+.topicCard {
+    width: 100%;
+    height: 80px;
+    margin: 3px 4px;
+    
+    text-align: center;
+    line-height: 75px; /* To center text vertically */
+}
+.topicCard{
+    /* background: linear-gradient(150deg, rgba(255, 255, 255, 0.85), rgba(130, 180, 170, 0.9)); */
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;    
+    opacity: 0.9;
+    /* for handling text overflow */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.topicCard:hover{
+    transform: translateY(-6px); 
+    /* slightly move it up for raised effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Darker shadow on hover */
+    opacity: 1;
+    font-size: 1.1rem;
+    background-color: rgb(241, 166, 95);
+}
+@media screen and (max-width: 800px) {
+    .topicCard {
+        width: 100%;
+        height: 70px;
+    }
+}
+
+
+
+
+/* Image Section */
+#osButton, #PyButton, #JsButton, #JsdomButton, #CdsButton, #htmlButton, #bashButton, #dbmsButton, #dsaButton, #toolButton, #JavaCoreButton 
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+#PyButton
+{
+    background-image: url(img/python1.webp);
+}
+#JsButton
+{
+    background-image: url(img/js1.jpg);
+}
+#JsdomButton
+{
+    background-image: url(img/jsdom1.png);
+}
+#JavaCoreButton
+{
+    background-image: url(img/java1.jpg);
+}
+#CdsButton
+{
+    background-image: url(img/c1.jpeg);
+}
+#htmlButton
+{
+    background-image: url(img/css1.jpg);
+}
+#bashButton
+{
+    background-image: url(img/bash1.jpeg);
+}
+#dbmsButton
+{
+    background-image: url(img/dbms1.png);
+}
+#dsaButton
+{
+    background-image: url(img/leet1.png);
+}
+#toolButton
+{
+    background-image: url(img/tool2.png);
+}
+#osButton
+{
+    background-image: url(img/os1.webp);
+}
+
+
+
+/* The Toggle Space for Topics - Hiding all topic cards initially */
+.osTopic , .PyTopic, .JsTopic, .JsdomTopic, .CdsTopic, .htmlTopic, .bashTopic, .dbmsTopic, .dsaTopic, .toolTopic, .JavaCoreTopic {
+    display: none;
+}
+
+/* Show for respective containers when active */
+.active .JavaCoreTopic, .active .osTopic, .active .PyTopic, .active .JsTopic, .active .JsdomTopic, .active .CdsTopic, .active .htmlTopic, .active .bashTopic, .active .dbmsTopic, .active .dsaTopic, .active .toolTopic {
+    display: block;
+}
+
+
+
+
+
+
+
