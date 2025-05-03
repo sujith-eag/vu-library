@@ -26,7 +26,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo/logo.png',
-//    siteTitle: 'This Site',
+    // siteTitle: 'This Site',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Java', link: '/java/' },
@@ -34,8 +34,8 @@ export default defineConfig({
     ],
 
     sidebar: {
-      // Sidebar for Java Section
       '/java/': javaSidebar(),
+      // need to plan for multiple return functions with collapsed
     },
       
     outline: {
