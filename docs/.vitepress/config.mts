@@ -48,9 +48,8 @@ export default defineConfig({
     },
     
     footer: {
-      message: 'Released Under Student interest',
-      copyright: 'Made with ❤️ by Sujith'
-    },
+      message: 'Created for students, by a fellow learner.',
+      copyright: '© Sujith. Made with ❤️'    },
     
 //    editLink: {
 //      pattern: 'https://github.com/sujith-eag/vu-library/edit/main/docs/:path',    

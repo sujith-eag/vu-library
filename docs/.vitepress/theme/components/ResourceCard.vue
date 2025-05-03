@@ -3,6 +3,7 @@
       <div class="content">
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
+        <a :href="link" target="_blank" rel="noopener" class="resource-link">{{ link }}</a>
       </div>
     </div>
   </template>
@@ -47,6 +48,11 @@
     line-height: 1.5;
     font-size: 14px;
     color: var(--vp-c-text-2); 
+  }
+  
+  .resource-link {
+    display: inline-block;
+    text-decoration: none;
   }
   </style>
   
