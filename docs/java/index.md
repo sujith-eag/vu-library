@@ -3,7 +3,7 @@ layout: home
 title: Topics
 hero:
   name: Explore Java Topics
-  text: Learn about various subjects
+#  text: Learn about various subjects
   tagline: Curated content for you
   image:
     src: /logo/java.svg
@@ -32,6 +32,6 @@ features:
 
 This section explores a curated list of Java resources and guides.
 
-- Beginner-friendly tutorials
+- [Beginner-friendly tutorials](link.org)
 - Intermediate concepts
 - Practice problems
