@@ -1,4 +1,5 @@
-/node_modules
-/docs/.vitepress/dist
-.temp
-/docs/.vitepress/cache
+/node_modules/
+/docs/.vitepress/dist/
+.temp/
+/docs/.vitepress/cache/
+.vitepress/cache/
