@@ -9,7 +9,10 @@
       >
         <ul>
           <li v-for="(item, idx) in section.items" :key="idx">
-            <a class="collapsible-item-link" :href="item.link">{{ item.label }}</a>
+            <a 
+                class="collapsible-item-link" 
+                :href="withBase(item.link)"
+            >{{ item.label }}</a>
           </li>
         </ul>
       </CollapsibleSection>
@@ -18,7 +21,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useData } from 'vitepress'
+import { withBase } from 'vitepress'
 import CollapsibleSection from './CollapsibleSection.vue'
 
 defineProps({
@@ -26,15 +29,11 @@ defineProps({
 })
 
 const activeIndex = ref(null)
-const { site } = useData()
 
 function toggle(index) {
     activeIndex.value = activeIndex.value === index ? null : index
 }
 
-function withBase(path) {
-    return site.value.base.replace(/\/$/, '') + '/' + path.replace(/^\/+/, '')
-}
 </script>
 
 <style scoped>

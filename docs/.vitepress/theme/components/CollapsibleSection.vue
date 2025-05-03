@@ -28,7 +28,8 @@ const emit = defineEmits(['toggle'])
 
 <style scoped>
 .collapsible-section {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
   border: 1px solid var(--vp-c-border);
   border-radius: 6px;
   overflow: hidden;
@@ -44,7 +45,8 @@ const emit = defineEmits(['toggle'])
   width: 100%;
   background: var(--vp-c-bg-alt);
   border: none;
-  padding: 12px 16px;
+  padding: 1rem;
+  /* padding: 12px 16px; */
   font-weight: 600;
   cursor: pointer;
   font-size: 16px;

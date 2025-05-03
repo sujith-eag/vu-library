@@ -21,17 +21,25 @@
   </script>  
   
   <style scoped>
+    
   .resource-card {
-    background-color: var(--vp-c-bg-soft);
-    color: var(--vp-c-text-1);
-    border: 1px solid var(--vp-c-border);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
     border-radius: 8px;
     padding: 16px;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s;
+    border: 1px solid var(--vp-c-border);
+    
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
+    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  }
-  
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+
   .resource-card:hover {
     background-color: var(--vp-c-bg-hover);
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.06);
@@ -46,13 +54,27 @@
   .resource-card p {
     margin: 0;
     line-height: 1.5;
+    max-width: 100%;
     font-size: 14px;
+    margin: 4px 0;
     color: var(--vp-c-text-2); 
   }
   
   .resource-link {
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
   }
-  </style>
   
+  @media (max-width: 450px) {
+    .resource-card {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+  </style>
+      
+

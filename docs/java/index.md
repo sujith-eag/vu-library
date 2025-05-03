@@ -142,7 +142,7 @@ ___
 
 ___
 
-<h3>Pending List</h3>
+<h3>Yet to be Completed</h3>
 
 
 <div class="book-container">
