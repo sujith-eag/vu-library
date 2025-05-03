@@ -9,7 +9,12 @@ hero:
   image:
     src: /logo/logo.png
     alt: Eagle's Library
+  
   actions:
+  - theme: brand
+    text: Personal Profile 
+    link: /sujith
+  
   - theme: alt
     text: Old Catalog Site 
     link: https://sujith-eag.github.io/vu-library/cat.html
@@ -17,9 +22,10 @@ hero:
   - theme: alt
     text: Old Library Site
     link: https://sujith-eag.github.io/personal-site/
-# - theme: alt
-#      text: Java
-#      link: /java/
+
+#  - theme: alt
+#    text: Basic Projects
+#    link: /java/
 
 features:
   - title: <a href="/vu-library/java/"><img src="./logo/java.svg" alt="Java Icon" style="width:40px;" />Java Topics</a>
@@ -30,6 +36,9 @@ features:
 
   - title: <a href="/vu-library/react/"><img src="./logo/react.svg" alt="React Icon" style="width:40px;" />React Topics</a>
     details: <a href="/vu-library/react/">Learn React components, hooks, and state management.</a>
+
+  - title: <a href="/vu-library/vue/"><img src="./logo/vuejs.svg" alt="Vue Icon" style="width:40px;" />Vue Topics</a>
+    details: <a href="/vu-library/vue/">Learn Vue components, directives, reactivity, and lifecycle hooks.</a>
 
   - title: <a href="/vu-library/javascript/"><img src="./logo/javascript.svg" alt="JavaScript Icon" style="width:40px;" />JavaScript Topics</a>
     details: <a href="/vu-library/javascript/">Master JavaScript basics, DOM, and ES6+ features.</a>
