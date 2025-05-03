@@ -11,7 +11,7 @@ export default defineConfig({
   cleanUrls: true,  // removing .html
   
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }]
+    ['link', { rel: 'icon', href: './logo/logo.png' }]
   ],  // should be 16x16 or 32x32 ico or png
   
   markdown: {
@@ -25,9 +25,12 @@ export default defineConfig({
   
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo/logo.png',
+//    siteTitle: 'This Site',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Java', link: '/java/' }
+      { text: 'Java', link: '/java/' },
+      { text: 'Python', link: '/python/' }
     ],
 
     sidebar: {
@@ -62,7 +65,14 @@ export default defineConfig({
     },
     
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sujith-eag/vu-library' }
+      {
+        icon: 'github',
+        link: 'https://github.com/sujith-eag/'
+      },
+      {
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/sujith-eag'
+      } 
     ]
   }
 })

@@ -6,7 +6,7 @@ hero:
   text: Learn about various subjects
   tagline: Curated content for you
   image:
-    src: /java.png
+    src: /logo/java.svg
     alt: Java
   actions:
     - theme: brand # alt,  plain
