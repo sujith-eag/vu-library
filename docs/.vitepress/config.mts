@@ -1,12 +1,27 @@
 import { defineConfig } from 'vitepress'
+import { javaSidebar } from './sidebar/java'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Sujith's Library",
-  description: "Library Catalog of",
+  description: "A curated catalog of Java learning resources and examples.",
   ignoreDeadLinks: true,
-  
   base: '/vu-library/',
+  
+  cleanUrls: true,  // removing .html
+  
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }]
+  ],  // should be 16x16 or 32x32 ico or png
+  
+  markdown: {
+    theme: {
+        light: 'github-light',
+        dark: 'min-dark'  
+    },
+    lineNumbers: true
+  },
+  
   
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -16,36 +31,36 @@ export default defineConfig({
     ],
 
     sidebar: {
-      // Home page Side bar
-      '/': [
-         {
-          text: 'Home',
-          items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
-          ]
-        }
-    ],
+      // Sidebar for Java Section
+      '/java/': javaSidebar(),
+    },
+      
+    outline: {
+      level: [2, 6],
+    },
     
-    // Sidebar for Java Section
-    '/java/': [
-      {
-        text:'Java',
-        items:[
-          {text: 'Introduction', link:'/java/java_intro'},
-          {text: 'Java Basics', link:'/java/java_next'}
-        ]
-      },
-      {
-        text:'Java Core',
-        items:[
-          {text: 'Introduction', link:'/java/java_core/intro'},
-          {text: 'Java Basics', link:'/java/java_core/next'}
-        ]
+    
+    search:{
+      provider: 'local' // 'agolia'
+    },
+    
+    footer: {
+      message: 'Released Under Student interest',
+      copyright: 'Made with ❤️ by Sujith'
+    },
+    
+//    editLink: {
+//      pattern: 'https://github.com/sujith-eag/vu-library/edit/main/docs/:path',    
+//      text: 'Edit this page on Github' 
+//    },
+    
+    lastUpdated: {
+      text: 'Updated on',
+      formatOptions: {
+        dateStyle: 'long'
       }
-    ]
-  },
-
+    },
+    
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sujith-eag/vu-library' }
     ]

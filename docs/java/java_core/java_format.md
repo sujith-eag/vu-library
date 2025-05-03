@@ -18,7 +18,7 @@ ____
 
 Sample Program
 
-```java
+```java{5-9}
 /*
 Call this file Example.java
 */
