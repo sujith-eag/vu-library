@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Topics
+title: Java Topics
 hero:
   name: Explore Java Topics
   # text: Learn about various subjects

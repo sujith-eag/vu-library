@@ -17,6 +17,16 @@ export const htmlSection = [
       title: 'CSS',
       items: [
         {
+          title: 'CSS Basics',
+          items: [
+            { label: 'Selectors', link: '/css/css_basics/1_selectors' },
+            { label: 'Multiple Selectors', link: '/css/css_basics/2_multiple_selecors' },
+            { label: 'Declaration', link: '/css/css_basics/3_declaration' },
+            { label: 'Adding CSS', link: '/css/css_basics/4_adding_css' },
+            { label: 'Utility Class Inheritance', link: '/css/css_basics/9_utilityclass_inheritance' }
+          ]
+        },
+        {
           title: 'CSS Values and Units',
           items: [
             { label: 'CSS Size Units', link: '/css/css_values_units/css_size_units' },
@@ -41,16 +51,6 @@ export const htmlSection = [
           title: 'CSS Grid',
           items: []
         },
-        {
-          title: 'CSS Basics',
-          items: [
-            { label: 'Selectors', link: '/css/css_basics/1_selectors' },
-            { label: 'Multiple Selectors', link: '/css/css_basics/2_multiple_selecors' },
-            { label: 'Declaration', link: '/css/css_basics/3_declaration' },
-            { label: 'Adding CSS', link: '/css/css_basics/4_adding_css' },
-            { label: 'Utility Class Inheritance', link: '/css/css_basics/9_utilityclass_inheritance' }
-          ]
-        }
       ]
     }
   ];
