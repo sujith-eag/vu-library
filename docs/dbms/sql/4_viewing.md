@@ -29,7 +29,11 @@ Views are useful for
 
 ### Simplifying
 
-{{< figure  src="images/sql/4_viewing/20241216205008.jpg"  alt="s"  caption="s" >}}
+<figure>
+  <img src="/sql/4_viewing/20241216205008.jpg" alt="s" />
+  <figcaption>s</figcaption>
+</figure>
+
 
 ```sql
 SELECT "title" FROM "books"
@@ -47,10 +51,15 @@ SELECT "name", "title" FROM "authors"
 JOIN "authored" ON "authors"."id" = "authored"."author_id"
 JOIN "books" ON "books"."id" = "authored"."books_id";
 ```
+<figure>
+  <img src="/sql/4_viewing/20241216205017.jpg" alt="s" />
+  <figcaption>s</figcaption>
+</figure>
 
-{{< figure  src="images/sql/4_viewing/20241216205017.jpg"  alt="s"  caption="s" >}}
-
-{{< figure  src="images/sql/4_viewing/20241216205226.jpg"  alt="s"  caption="s" >}}
+<figure>
+  <img src="/sql/4_viewing/20241216205226.jpg" alt="s" />
+  <figcaption>s</figcaption>
+</figure>
 
 It is important to specify how two tables are joined, or columns they are joined on.
 The primary key on one table is usually joined to the corresponding foreign key of the other table.

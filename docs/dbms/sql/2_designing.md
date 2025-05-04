@@ -36,7 +36,11 @@ While normalizing, each entity is put in its own table and any information about
 
 Deciding how the entities are related. in one to one or one to many relationship using a ER diagram.
 
-{{< figure  src="images/sql/2_designing/20241212102908.jpg"  alt="s"  caption="s" >}}
+
+<figure>
+  <img src="/sql/2_designing/20241212102908.jpg" alt="s" />
+  <figcaption>s</figcaption>
+</figure>
 
 Rider must visit at least one station or many.
 Station can have zero riders or many.
@@ -86,7 +90,12 @@ SQLite has five storage classes:
 	Blob: Binary Large Object, for storing objects in binary like image, audio etc.
 
 A single storage class can hold several data types, like this integer storage class.
-{{< figure  src="images/sql/2_designing/20241212104101.jpg"  alt="s"  caption="s" >}}
+
+<figure>
+  <img src="/sql/2_designing/20241212104101.jpg" alt="s" />
+  <figcaption>s</figcaption>
+</figure>
+
 
 SQLite takes care of storing the input values under the right data type.
 So a programmer only need to choose a storage class.
@@ -135,8 +144,11 @@ CREATE TABLE visits (
 This can be read within the database to create a schema.
 `.read schema.sql`
 
+<figure>
+  <img src="/sql/2_designing/20241212110158.jpg" alt="s" />
+  <figcaption>s</figcaption>
+</figure>
 
-{{< figure  src="images/sql/2_designing/20241212110158.jpg"  alt="s"  caption="s" >}}
 
 ## Table Constraints
 
@@ -221,7 +233,10 @@ No need to add column constraints to `id` which are already under `primary key o
 
 Changing the tables to include charlie cards instead of riders.
 
-{{< figure  src="images/sql/2_designing/20241212112115.jpg"  alt="s"  caption="s" >}}
+<figure>
+  <img src="/sql/2_designing/20241212112115.jpg" alt="s" />
+  <figcaption>s</figcaption>
+</figure>
 
 The `swipe` entity has id, type, date and amount to take entry of the swipe in a station,
 the card can be swiped only once at a given station but can be swiped in many times.
