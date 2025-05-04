@@ -139,13 +139,13 @@ Here’s a list of some common HTML events along with their descriptions:
 |[seeked](https://www.w3schools.com/jsref/event_onseeked.asp)|Skipping to a media position is finished|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
 |[seeking](https://www.w3schools.com/jsref/event_onseeking.asp)|Skipping to a media position is started|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
 |[select](https://www.w3schools.com/jsref/event_onselect.asp)|User selects some text|[UiEvent](https://www.w3schools.com/jsref/obj_uievent.asp), [Event](https://www.w3schools.com/jsref/obj_event.asp)|
-|[show](https://www.w3schools.com/jsref/event_onshow.asp)|A <menu> element is shown as a context menu|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
+|[show](https://www.w3schools.com/jsref/event_onshow.asp)|A `<menu>` element is shown as a context menu|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
 |[stalled](https://www.w3schools.com/jsref/event_onstalled.asp)|The browser is trying to get unavailable media data|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
 |storage|A Web Storage area is updated|[StorageEvent](https://www.w3schools.com/jsref/obj_storageevent.asp)|
 |[submit](https://www.w3schools.com/jsref/event_onsubmit.asp)|A form is submitted|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
 |[suspend](https://www.w3schools.com/jsref/event_onsuspend.asp)|The browser is intentionally not getting media data|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
 |[timeupdate](https://www.w3schools.com/jsref/event_ontimeupdate.asp)|The playing position has changed (the user moves to a different point in the media)|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
-|[toggle](https://www.w3schools.com/jsref/event_ontoggle.asp)|The user opens or closes the <details> element|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
+|[toggle](https://www.w3schools.com/jsref/event_ontoggle.asp)|The user opens or closes the `<details>` element|[Event](https://www.w3schools.com/jsref/obj_event.asp)|
 |[touchcancel](https://www.w3schools.com/jsref/event_touchcancel.asp)|The touch is interrupted|[TouchEvent](https://www.w3schools.com/jsref/obj_touchevent.asp)|
 |[touchend](https://www.w3schools.com/jsref/event_touchend.asp)|A finger is removed from a touch screen|[TouchEvent](https://www.w3schools.com/jsref/obj_touchevent.asp)|
 |[touchmove](https://www.w3schools.com/jsref/event_touchmove.asp)|A finger is dragged across the screen|[TouchEvent](https://www.w3schools.com/jsref/obj_touchevent.asp)|
