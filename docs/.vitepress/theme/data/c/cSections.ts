@@ -1,0 +1,79 @@
+  
+  export const krCBook = [
+    {
+      title: 'K&R C Programming Book',
+      items: [
+        { label: 'Introduction to C - Part 1', link: '/c/k&r_c_book/c0-introduction-p-c-0' },
+        { label: 'Introduction to C - Part 2', link: '/c/k&r_c_book/c0-introduction-p-c-1' },
+        { label: 'Introduction to C - Part 3', link: '/c/k&r_c_book/c0-introduction-p-c-2' },
+        { label: 'Basic Syntax', link: '/c/k&r_c_book/c1-basic-syntax' },
+        { label: 'Types, Operators, Expressions', link: '/c/k&r_c_book/c2-types-operators-expressions' },
+        { label: 'Control Flow', link: '/c/k&r_c_book/c3-control-flow' },
+        { label: 'Functions and Program Structure', link: '/c/k&r_c_book/c4-function-program-structure' },
+        { label: 'Pointers and Arrays', link: '/c/k&r_c_book/c5-pointers-arrays' },
+        { label: 'Structures: Part 1', link: '/c/k&r_c_book/c6-1-structures' },
+        { label: 'Structures: Part 2', link: '/c/k&r_c_book/c6-2-structures' },
+        { label: 'Input/Output', link: '/c/k&r_c_book/c7-input-output' },
+        { label: 'UNIX Interface', link: '/c/k&r_c_book/c8-unix-interface' }
+      ]
+    }
+  ];
+  
+  export const dsUsingC = [
+    {
+      title: 'Data Structures Using C',
+      items: [
+        { label: 'Tower of Hanoi', link: '/c/ds_using_c/0_tower_of_hanoi' },
+        {
+          title: 'Stacks (Using Arrays)',
+          items: [
+            { label: 'Stack Operations', link: '/c/ds_using_c/stack_array/1_stack_operations' },
+            { label: 'Infix to Postfix Conversion', link: '/c/ds_using_c/stack_array/2_infix_postfix' },
+            { label: 'Postfix Evaluation', link: '/c/ds_using_c/stack_array/3_postfix_evaluation' }
+          ]
+        },
+        {
+          title: 'Queues and Stacks',
+          items: [
+            { label: 'Queue Implementation', link: '/c/ds_using_c/quequ_stack/4_queue' },
+            { label: 'Circular Queue', link: '/c/ds_using_c/quequ_stack/5_cir_queue' }
+          ]
+        },
+        {
+          title: 'Linked Lists',
+          items: [
+            { label: 'Singly Linked List', link: '/c/ds_using_c/linked_list/6_singly_link_list' },
+            { label: 'Singly Linked List (Full)', link: '/c/ds_using_c/linked_list/7_singly_link_list_full' },
+            { label: 'Circular Singly Linked List', link: '/c/ds_using_c/linked_list/8_circular_singly_linked_list' },
+            { label: 'Doubly Linked List', link: '/c/ds_using_c/linked_list/9_doubly_linked_list' },
+            { label: 'Circular Doubly Linked List', link: '/c/ds_using_c/linked_list/10_circular_doubly_linked_list copy' },
+            { label: 'Stack using Linked List', link: '/c/ds_using_c/linked_list/11_stack_linked_list' },
+            { label: 'Queue using Linked List', link: '/c/ds_using_c/linked_list/12_queue_linked_list' },
+            { label: 'Binary Tree', link: '/c/ds_using_c/linked_list/13_binary_tree' }
+          ]
+        }
+      ]
+    }
+  ];
+  
+  export const dsQp = [
+    {
+      title: 'DS Question Papers',
+      items: [
+        { label: 'Unit 1 - Questions', link: '/c/ds_qp/unit_1_q' },
+        { label: 'Unit 1 - Answers (A1)', link: '/c/ds_qp/unit_1_q_a1' },
+        { label: 'Unit 1 - Answers (A2)', link: '/c/ds_qp/unit_1_q_a2' },
+        { label: 'Unit 2 - Questions', link: '/c/ds_qp/unit_2_q' },
+        { label: 'Unit 2 - Answers', link: '/c/ds_qp/unit_2_q_answered' },
+        { label: 'Unit 3 - Questions', link: '/c/ds_qp/unit_3_q' },
+        { label: 'Unit 3 - Answers', link: '/c/ds_qp/unit_3_q_answered' },
+        { label: 'Unit 4 - Questions', link: '/c/ds_qp/unit_4_q' },
+        { label: 'Unit 4 - Answers', link: '/c/ds_qp/unit_4_q_answered copy' },
+        { label: 'Unit 5 - Questions', link: '/c/ds_qp/unit_5_q' },
+        { label: 'Unit 5 - Answers', link: '/c/ds_qp/unit_5_q_answered' }
+      ]
+    }
+  ];
+  
+  export const cSections = [...krCBook, ...dsUsingC, ...dsQp];
+  

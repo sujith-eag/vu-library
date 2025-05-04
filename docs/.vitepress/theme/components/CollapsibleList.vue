@@ -1,40 +1,33 @@
 <template>
-    <div class="collapsible-list-grid">
+  <div class="collapsible-list-grid">
+    <template v-for="(section, index) in sections" :key="index">
       <CollapsibleSection
-        v-for="(section, index) in sections"
-        :key="index"
+        v-if="section.title && section.items"
         :title="section.title"
         :is-open="activeIndex === index"
         @toggle="() => toggle(index)"
       >
-        <ul>
-          <li v-for="(item, idx) in section.items" :key="idx">
-            <a 
-                class="collapsible-item-link" 
-                :href="item.link"
-            >{{ item.label }}</a>
-          </li>
-        </ul>
+        <RecursiveList :items="section.items" />
       </CollapsibleSection>
-    </div>
-  </template>
+    </template>
+  </div>
+</template>
 
 <script setup>
 import { ref } from 'vue'
-//import { withBase } from 'vitepress'
 import CollapsibleSection from './CollapsibleSection.vue'
+import RecursiveList from './RecursiveList.vue'
 
 defineProps({
-    sections: Array
+  sections: Array
 })
 
 const activeIndex = ref(null)
-
 function toggle(index) {
-    activeIndex.value = activeIndex.value === index ? null : index
+  activeIndex.value = activeIndex.value === index ? null : index
 }
-
 </script>
+
 
 <style scoped>
 .collapsible-list-grid {

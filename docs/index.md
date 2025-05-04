@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Sujith's Library"
   text: "Consequence of Exploration"
-  tagline: (Pages still under migration from old site)
+  tagline: (Pages still under migration, logic is strong everything else is broke, dark will come later)
   image:
     src: /logo/logo.png
     alt: Eagle's Library
@@ -23,11 +23,10 @@ hero:
     text: Old Catalog Site 
     link: https://www.sujith-eag.in/cat.html
 
-
-
 #  - theme: alt
 #    text: Basic Projects
 #    link: /java/
+
 
 features:
   - title: <a href="/java/"><img src="./logo/java.svg" alt="Java Icon" style="width:60px;" />Java Topics</a>
