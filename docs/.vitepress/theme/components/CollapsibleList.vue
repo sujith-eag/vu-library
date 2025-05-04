@@ -11,7 +11,7 @@
           <li v-for="(item, idx) in section.items" :key="idx">
             <a 
                 class="collapsible-item-link" 
-                :href="withBase(item.link)"
+                :href="item.link"
             >{{ item.label }}</a>
           </li>
         </ul>
@@ -21,7 +21,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { withBase } from 'vitepress'
+//import { withBase } from 'vitepress'
 import CollapsibleSection from './CollapsibleSection.vue'
 
 defineProps({

@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Sujith's Library"
-#  text: "Library site of sujith"
-  tagline: Consequence of Exploration
+  text: "Consequence of Exploration"
+  tagline: (Pages still under migration from old site)
   image:
     src: /logo/logo.png
     alt: Eagle's Library
@@ -16,54 +16,56 @@ hero:
     link: /sujith
   
   - theme: alt
-    text: Old Catalog Site 
-    link: https://sujith-eag.github.io/vu-library/cat.html
-
-  - theme: alt
     text: Old Library Site
     link: https://sujith-eag.github.io/personal-site/
+    
+  - theme: alt
+    text: Old Catalog Site 
+    link: https://www.sujith-eag.in/cat.html
+
+
 
 #  - theme: alt
 #    text: Basic Projects
 #    link: /java/
 
 features:
-  - title: <a href="/vu-library/java/"><img src="./logo/java.svg" alt="Java Icon" style="width:60px;" />Java Topics</a>
-    details: <a href="/vu-library/java/">Explore Java fundamentals, OOP, collections, and more.</a>
+  - title: <a href="/java/"><img src="./logo/java.svg" alt="Java Icon" style="width:60px;" />Java Topics</a>
+    details: <a href="/java/">Explore Java fundamentals, OOP, collections, and more.</a>
     
-  - title: <a href="/vu-library/python/"><img src="./logo/python.svg" alt="Python Icon" style="width:60px;" />Python Topics</a>
-    details: <a href="/vu-library/python/">Dive into Python syntax, data types, and scripting techniques.</a>
+  - title: <a href="/python/"><img src="./logo/python.svg" alt="Python Icon" style="width:60px;" />Python Topics</a>
+    details: <a href="/python/">Dive into Python syntax, data types, and scripting techniques.</a>
 
-  - title: <a href="/vu-library/react/"><img src="./logo/react.svg" alt="React Icon" style="width:60px;" />React Topics</a>
-    details: <a href="/vu-library/react/">Learn React components, hooks, and state management.</a>
+  - title: <a href="/react/"><img src="./logo/react.svg" alt="React Icon" style="width:60px;" />React Topics</a>
+    details: <a href="/react/">Learn React components, hooks, and state management.</a>
 
-  - title: <a href="/vu-library/vue/"><img src="./logo/vuejs.svg" alt="Vue Icon" style="width:60px;" />Vue Topics</a>
-    details: <a href="/vu-library/vue/">Learn Vue components, directives, reactivity, and lifecycle hooks.</a>
+  - title: <a href="/vue/"><img src="./logo/vuejs.svg" alt="Vue Icon" style="width:60px;" />Vue Topics</a>
+    details: <a href="/vue/">Learn Vue components, directives, reactivity, and lifecycle hooks.</a>
 
-  - title: <a href="/vu-library/javascript/"><img src="./logo/javascript.svg" alt="JavaScript Icon" style="width:60px;" />JavaScript Topics</a>
-    details: <a href="/vu-library/javascript/">Master JavaScript basics, DOM, and ES6+ features.</a>
+  - title: <a href="/javascript/"><img src="./logo/javascript.svg" alt="JavaScript Icon" style="width:60px;" />JavaScript Topics</a>
+    details: <a href="/javascript/">Master JavaScript basics, DOM, and ES6+ features.</a>
 
-  - title: <a href="/vu-library/linux/"><img src="./logo/terminal.svg" alt="Terminal Icon" style="width:60px;" />Bash & Linux Topics</a>
-    details: <a href="/vu-library/linux/">Get started with Linux commands, bash scripting, and file systems.</a>
+  - title: <a href="/linux/"><img src="./logo/terminal.svg" alt="Terminal Icon" style="width:60px;" />Bash & Linux Topics</a>
+    details: <a href="/linux/">Get started with Linux commands, bash scripting, and file systems.</a>
 
-  - title: <a href="/vu-library/c/"><img src="./logo/c_logo.svg" alt="C Icon" style="width:60px;" />C Programming</a>
-    details: <a href="/vu-library/c/">Understand pointers, memory management, and low-level programming.</a>
+  - title: <a href="/c/"><img src="./logo/c_logo.svg" alt="C Icon" style="width:60px;" />C Programming</a>
+    details: <a href="/c/">Understand pointers, memory management, and low-level programming.</a>
 
-  - title: <a href="/vu-library/html/"><img src="./logo/html.svg" alt="HTML Icon" style="width:60px;" />HTML Basics</a>
-    details: <a href="/vu-library/html/">Build web pages with semantic HTML and accessible structure.</a>
+  - title: <a href="/html/"><img src="./logo/html.svg" alt="HTML Icon" style="width:60px;" />HTML Basics</a>
+    details: <a href="/html/">Build web pages with semantic HTML and accessible structure.</a>
 
-  - title: <a href="/vu-library/css/"><img src="./logo/css.svg" alt="CSS Icon" style="width:60px;" />CSS Styling</a>
-    details: <a href="/vu-library/css/">Style web content with layouts, colors, and responsive design.</a>
+  - title: <a href="/css/"><img src="./logo/css.svg" alt="CSS Icon" style="width:60px;" />CSS Styling</a>
+    details: <a href="/css/">Style web content with layouts, colors, and responsive design.</a>
 
-  - title: <a href="/vu-library/db/"><img src="./logo/data_p.svg" alt="Database Icon" style="width:60px;" />Databases</a>
-    details: <a href="/vu-library/db/">Learn SQL, relational models, and basic database design.</a>
+  - title: <a href="/db/"><img src="./logo/data_p.svg" alt="Database Icon" style="width:60px;" />Databases</a>
+    details: <a href="/db/">Learn SQL, relational models, and basic database design.</a>
 
-  - title: <a href="/vu-library/leetcode/"><img src="./logo/leetcode_p.svg" alt="LeetCode Icon" style="width:60px;" />LeetCode Practice</a>
-    details: <a href="/vu-library/leetcode/">Practice coding problems for interviews and problem-solving skills.</a>
+  - title: <a href="/leetcode/"><img src="./logo/leetcode_p.svg" alt="LeetCode Icon" style="width:60px;" />LeetCode Practice</a>
+    details: <a href="/leetcode/">Practice coding problems for interviews and problem-solving skills.</a>
 
-  - title: <a href="/vu-library/git/"><img src="./logo/git.svg" alt="Git Icon" style="width:60px;" />Git & GitHub</a>
-    details: <a href="/vu-library/git/">Learn version control, branches, and collaboration with Git.</a>
+  - title: <a href="/git/"><img src="./logo/git.svg" alt="Git Icon" style="width:60px;" />Git & GitHub</a>
+    details: <a href="/git/">Learn version control, branches, and collaboration with Git.</a>
 
-  - title: <a href="/vu-library/os/"><img src="./logo/os_s.svg" alt="OS Icon" style="width:60px;" />Operating Systems</a>
-    details: <a href="/vu-library/os/">Explore OS fundamentals like processes, memory, and scheduling.</a>
+  - title: <a href="/os/"><img src="./logo/os_s.svg" alt="OS Icon" style="width:60px;" />Operating Systems</a>
+    details: <a href="/os/">Explore OS fundamentals like processes, memory, and scheduling.</a>
 ---
