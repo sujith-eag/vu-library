@@ -1,5 +1,4 @@
 
-
 import { javaSections } from "../theme/data/java/javaSections";
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 

@@ -23,10 +23,10 @@
     {
       title: 'Data Structures Using C',
       items: [
-        { label: 'Tower of Hanoi', link: '/c/ds_using_c/0_tower_of_hanoi' },
         {
           title: 'Stacks (Using Arrays)',
           items: [
+            { label: 'Tower of Hanoi', link: '/c/ds_using_c/0_tower_of_hanoi' },
             { label: 'Stack Operations', link: '/c/ds_using_c/stack_array/1_stack_operations' },
             { label: 'Infix to Postfix Conversion', link: '/c/ds_using_c/stack_array/2_infix_postfix' },
             { label: 'Postfix Evaluation', link: '/c/ds_using_c/stack_array/3_postfix_evaluation' }

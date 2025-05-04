@@ -40,7 +40,6 @@ import {
 
 import { cSections } from '@theme/data/c/cSections.ts'
 
-
 </script>
 
 ## Java Topic Index

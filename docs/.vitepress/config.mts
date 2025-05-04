@@ -6,9 +6,8 @@ import { htmlcssSidebar } from './sidebar/htmlcssStructure'
 import { toolsSidebar } from './sidebar/toolsStructure'
 
 import { dbmsSidebar } from './sidebar/dbmsStructure'
-import { javaScriptDomSidebar } from './sidebar/jsdomStructure'
-import { javaScriptSidebar } from './sidebar/jsStructure'
-import { bashSidebar } from './sidebar/linuxStructure'
+import { jsdomSidebar } from './sidebar/jsdomStructure'
+import { javascriptSidebar } from './sidebar/jsStructure'
 import { linuxSidebar } from './sidebar/linuxStructure'
 import { osSidebar } from './sidebar/osStructure'
 import { pythonSidebar } from './sidebar/pythonStructure'
@@ -50,12 +49,12 @@ export default defineConfig({
       '/c/': cSidebar(),
 
       '/css/': htmlcssSidebar(),
-      '/linux/bash/': bashSidebar(),
+      '/linux/bash/': linuxSidebar(),
       '/dbms/': dbmsSidebar(),
       '/html/': htmlcssSidebar(),
       '/java/': javaSidebar(),
-      '/java-script/': javaScriptSidebar(),
-      '/java-script-dom/': javaScriptDomSidebar(),
+      '/java-script/': javascriptSidebar(),
+      '/java-script-dom/': jsdomSidebar(),
       '/linux/': linuxSidebar(),
       '/os/': osSidebar(),
       '/python/': pythonSidebar(),
