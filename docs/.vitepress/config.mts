@@ -6,14 +6,14 @@ export default defineConfig({
   title: "Sujith's Library",
   description: "A curated catalog of Java learning resources and examples.",
   ignoreDeadLinks: true,
-  base: '/vu-library/',
+  base: '/',
   
   cleanUrls: true,  // removing .html
   
   head: [
     ['link', { rel: 'icon', href: './logo/logo.png' }]
-  ],  // should be 16x16 or 32x32 ico or png
-  
+  ],
+
   markdown: {
     theme: {
         light: 'github-light',
@@ -21,8 +21,7 @@ export default defineConfig({
     },
     lineNumbers: true
   },
-  
-  
+    
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo/logo.png',
