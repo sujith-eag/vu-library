@@ -36,9 +36,9 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/htmlcssResources.ts'
 
-import { webSection } from '@theme/data/htmlcss/htmlcssSections.ts'
+import { webSection } from '@theme/data/fileStructures/htmlcssSections.ts'
 
 </script>
 

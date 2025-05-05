@@ -36,15 +36,15 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/jsdomResources.ts'
 
-import { jsdomSection } from '@theme/data/jsdom/jsdom.ts'
+import { jsdomSection } from '@theme/data/fileStructures/jsdomSections.ts'
 
 </script>
 
 ## JavaScript Topics Index
  
-<CollapsibleList :sections="javascriptSection" />
+<CollapsibleList :sections="jsdomSection" />
 
 ___
  

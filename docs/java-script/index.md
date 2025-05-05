@@ -36,18 +36,19 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/jsResources.ts'
 
-import { javascriptSection } from '@theme/data/javascript/javascriptSection.ts'
-import { jsdomSection } from '@theme/data/jsdom/jsdom.ts'
+import { jsSection } from '@theme/data/fileStructures/jsSections.ts'
+import { jsdomSection } from '@theme/data/fileStructures/jsdomSections.ts'
 
 </script>
 
 ## JavaScript Topics Index
  
-<CollapsibleList :sections="javascriptSection" />
+<CollapsibleList :sections="jsSection" />
 
 <CollapsibleList :sections="jsdomSection" />
+
 ___
  
 <h3>Books & Resources Used to Learn Web Progamming</h3>

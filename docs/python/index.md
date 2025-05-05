@@ -36,9 +36,9 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/pythonResources.ts'
 
-import { pythonSection } from '@theme/data/python/pythonSection.ts'
+import { pythonSection } from '@theme/data/fileStructures/pythonSections.ts'
 
 </script>
 

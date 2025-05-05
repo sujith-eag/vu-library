@@ -36,9 +36,9 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/linuxResources.ts'
 
-import { linuxSection } from '@theme/data/linux/linuxSection.ts'
+import { linuxSection } from '@theme/data/fileStructures/linuxSections.ts'
 
 </script>
 

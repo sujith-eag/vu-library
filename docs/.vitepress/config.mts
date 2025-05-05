@@ -1,16 +1,16 @@
 import { defineConfig } from 'vitepress'
 
-import { cSidebar } from './sidebar/cStructure'
-import { javaSidebar } from './sidebar/javaStructure'
-import { htmlcssSidebar } from './sidebar/htmlcssStructure'
-import { toolsSidebar } from './sidebar/toolsStructure'
+import { cSidebar } from './sidebar/cSidebar'
+import { javaSidebar } from './sidebar/javaSidebar'
+import { htmlcssSidebar } from './sidebar/htmlcssSidebar'
+import { toolsSidebar } from './sidebar/toolsSidebar'
 
-import { dbmsSidebar } from './sidebar/dbmsStructure'
-import { jsdomSidebar } from './sidebar/jsdomStructure'
-import { javascriptSidebar } from './sidebar/jsStructure'
-import { linuxSidebar } from './sidebar/linuxStructure'
-import { osSidebar } from './sidebar/osStructure'
-import { pythonSidebar } from './sidebar/pythonStructure'
+import { dbmsSidebar } from './sidebar/dbmsSidebar'
+import { jsdomSidebar } from './sidebar/jsdomSidebar'
+import { javascriptSidebar } from './sidebar/jsSidebar'
+import { linuxSidebar } from './sidebar/linuxSidebar'
+import { osSidebar } from './sidebar/osSidebar'
+import { pythonSidebar } from './sidebar/pythonSidebar'
 
 
 // https://vitepress.dev/reference/site-config
@@ -42,12 +42,14 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Java', link: '/java/' },
-      { text: 'Python', link: '/python/' }
+      { text: 'Python', link: '/python/' },
+      { text: 'C', link: '/c/' },
+      { text: 'JS', link: '/java-script/' },
+      { text: 'Linux', link: '/linux/' },      
     ],
 
     sidebar: {
       '/c/': cSidebar(),
-
       '/css/': htmlcssSidebar(),
       '/linux/bash/': linuxSidebar(),
       '/dbms/': dbmsSidebar(),

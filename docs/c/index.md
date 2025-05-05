@@ -36,15 +36,15 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/cResources.ts'
 
-import { cSections } from '@theme/data/c/cSections.ts'
+import { cSection } from '@theme/data/fileStructures/cSections.ts'
 
 </script>
 
 ## C & Data Structure Index
  
-<CollapsibleList :sections="cSections" />
+<CollapsibleList :sections="cSection" />
 
 ___
  

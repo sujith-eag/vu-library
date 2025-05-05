@@ -36,15 +36,15 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/javaResources.ts'
 
-import { cSections } from '@theme/data/c/cSections.ts'
+import { javaSection } from '@theme/data/fileStructures/javaSections.ts'
 
 </script>
 
 ## Java Topic Index
  
-<CollapsibleList :sections="cSections" />
+<CollapsibleList :sections="javaSection" />
 
 ___
  

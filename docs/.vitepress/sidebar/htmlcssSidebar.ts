@@ -1,4 +1,4 @@
-import { webSection } from "../theme/data/fileStructures/htmlcscSections";
+import { webSection } from "../theme/data/fileStructures/htmlcssSections";
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 
 export function htmlcssSidebar() {

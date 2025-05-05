@@ -36,15 +36,15 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/java/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/dbmsResources.ts'
 
-import { dbmsSections } from '@theme/data/dbms/dbmsSections.ts'
+import { dbmsSection } from '@theme/data/fileStructures/dbmsSections.ts'
 
 </script>
 
 ## DataBase Topic Index
  
-<CollapsibleList :sections="dbmsSections" />
+<CollapsibleList :sections="dbmsSection" />
 
 ___
  
