@@ -7,7 +7,7 @@ hero:
   tagline: Conepts of JavaScript for Web Development
   image:
     src: /logo/javascript.svg
-    alt: HTML logo
+    alt: JS logo
 #   actions:
 #     - theme: brand # alt,  plain
 #       text: Java Core
@@ -47,6 +47,8 @@ import { jsdomSection } from '@theme/data/fileStructures/jsdomSections.ts'
  
 <CollapsibleList :sections="jsSection" />
 
+## JavaScript DOM Manipulation Index
+
 <CollapsibleList :sections="jsdomSection" />
 
 ___
@@ -62,13 +64,13 @@ ___
 
 </div>
 
-<div class="book-container">
+<!-- <div class="book-container">
   <ResourceCard
     v-for="(resource, index) in resourcesUsed"
     :key="index"
     v-bind="resource"
   />
-</div>
+</div> -->
 
 ___
 
@@ -82,10 +84,3 @@ ___
 
 </div>
 
-<div class="book-container">
-  <ResourceCard
-    v-for="(resource, index) in resourcesPending"
-    :key="index"
-    v-bind="resource"
-  />
-</div>

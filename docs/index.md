@@ -59,8 +59,8 @@ features:
       src="./logo/c_logo.svg" 
       alt="C Icon" 
       style="width:60px;" 
-      />C Programming</a>
-    details: <a href="/c/">Understand pointers, memory management, and low-level programming.</a>
+      />Data Structures using C</a>
+    details: <a href="/c/">Understand pointers, memory management, and low-level programming using fundamental data structures</a>
 
 # HTML
   - title: <a 
@@ -68,17 +68,8 @@ features:
       <img src="./logo/html.svg" 
       alt="HTML Icon" 
       style="width:60px;" 
-      />HTML Basics</a>
-    details: <a href="/html/">Build web pages with semantic HTML and accessible structure.</a>
-
-# CSS
-  - title: <a 
-      href="/html/">
-      <img src="./logo/css.svg" 
-      alt="CSS Icon" 
-      style="width:60px;" 
-      />CSS Styling</a>
-    details: <a href="/html/">Style web content with layouts, colors, and responsive design.</a>
+      />HTML & CSS Basics</a>
+    details: <a href="/html/">Build web pages with semantic HTML. Style web content with layouts, colors, and responsive design.</a>
 
 # DATABASE
   - title: <a 
@@ -127,12 +118,12 @@ features:
 
 # GITHUB
   - title: <a 
-      href="/git/">
+      href="/tools/">
       <img src="./logo/git.svg" 
       alt="Git Icon" 
       style="width:60px;" 
-      />Git & GitHub</a>
-    details: <a href="/git/">Learn version control, branches, and collaboration with Git.</a>
+      />Tools, Git & GitHub</a>
+    details: <a href="/tools/">Learn version control, branches, and collaboration with Git.</a>
 
 # OPERATING SYSTEMS
   - title: <a 

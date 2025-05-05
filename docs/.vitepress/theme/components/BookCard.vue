@@ -5,7 +5,7 @@
         <h3>{{ title }}</h3>
         <p><strong>Author:</strong> {{ author }}</p>
         <p><strong>Year:</strong> {{ year }}</p>
-        <p>{{ summary }}</p>
+        <!-- <p>{{ summary }}</p> -->
       </div>
     </div>
   </template>
@@ -18,7 +18,7 @@
     title: String,
     author: String,
     year: String,
-    summary: String
+//    summary: String
   })
   </script>
  

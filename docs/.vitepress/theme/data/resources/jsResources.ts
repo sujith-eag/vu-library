@@ -1,54 +1,69 @@
 export const booksUsed = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
+  {
+    img: '/books/placeholder.png',
+    title: 'Eloquent JavaScript, 4th Edition',
+    author: 'Marijn Haverbeke',
+    year: '2024',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'JavaScript: The Definitive Guide, 7th Edition',
+    author: 'David Flanagan',
+    year: '2020',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'Learning TypeScript',
+    author: 'Josh Goldberg',
+    year: '2022',
+  },
   
-  export const booksPending = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
+]
+
+export const booksPending = [    
   
+  {
+    img: '/books/placeholder.png',
+    title: 'JavaScript from Beginner to Professional',
+    author: 'Laurence Lars Svekis',
+    year: '2021',
+  },  
+  {
+    img: '/books/placeholder.png',
+    title: 'Tackling TypeScript',
+    author: 'Axel Raushmayer',
+    year: '2020',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'Efficient Node.js - A Beyond The Basics Guide',
+    author: 'Samer Buna',
+    year: '2025',
+  },
+  
+  {
+    img: '/books/placeholder.png',
+    title: 'Getting the Most out of Node.js Frameworks',
+    author: 'Sufyan bin Uzayr',
+    year: '2022',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'Node.js for Beginners - A comprehensive guide',
+    author: 'Ulises Gascón',
+    year: '2024',
+  },
+]
+
+
+
   export const resourcesUsed = [
     {
       title: 'Java Documentation',
       description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
       link: 'https://docs.oracle.com/en/java/'
     },
-    {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
-    },
-    {
-      title: 'GeeksforGeeks Java',
-      description: 'Java tutorials and articles on a wide range of topics.',
-      link: 'https://www.geeksforgeeks.org/java/'
-    }
-  ]
+ ]
   
   export const resourcesPending = [
     {
@@ -56,15 +71,5 @@ export const booksUsed = [
       description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
       link: 'https://docs.oracle.com/en/java/'
     },
-    {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
-    },
-    {
-      title: 'GeeksforGeeks Java',
-      description: 'Java tutorials and articles on a wide range of topics.',
-      link: 'https://www.geeksforgeeks.org/java/'
-    }
   ]
   

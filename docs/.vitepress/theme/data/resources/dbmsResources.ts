@@ -1,37 +1,48 @@
+
+
 export const booksUsed = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
   
-  export const booksPending = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
+  {
+    img: '/books/placeholder.svg',
+    title: 'Fundamentals of Database Systems, 7th Edition',
+    author: 'Ramez Elmasri',
+    year: '2017',
+  },
   
+]
+
+export const booksPending = [
+  {
+    img: '/books/placeholder.svg',
+    title: 'Database System Concepts, 7th Edition',
+    author: 'Abraham Silberschatz',
+    year: '2020',
+  },
+  {
+    img: '/books/placeholder.svg',
+    title: 'Database Systems: Design, Implementation, and Management, 13th Edition',
+    author: 'Carlos Coronel',
+    year: '2019',
+  },
+  {
+    img: '/books/placeholder.svg',
+    title: 'Designing Data-Intensive Appllications',
+    author: 'Martin Kleppmann',
+    year: '2017',
+  },
+ {
+    img: '/books/placeholder.svg',
+    title: 'Grokking Relational Database Design',
+    author: 'Qiang Hao',
+    year: '2025',
+  },
+ {
+    img: '/books/placeholder.svg',
+    title: 'Learn SQL in a Month of Lunches',
+    author: 'Jeff Iannucci',
+    year: '2025',
+  },
+]
   export const resourcesUsed = [
     {
       title: 'Java Documentation',

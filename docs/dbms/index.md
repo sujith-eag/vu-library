@@ -59,13 +59,13 @@ ___
 
 </div>
 
-<div class="book-container">
+<!-- <div class="book-container">
   <ResourceCard
     v-for="(resource, index) in resourcesUsed"
     :key="index"
     v-bind="resource"
   />
-</div>
+</div> -->
 
 ___
 
@@ -77,12 +77,4 @@ ___
     <BookCard v-bind="book" />
   </template>
 
-</div>
-
-<div class="book-container">
-  <ResourceCard
-    v-for="(resource, index) in resourcesPending"
-    :key="index"
-    v-bind="resource"
-  />
 </div>

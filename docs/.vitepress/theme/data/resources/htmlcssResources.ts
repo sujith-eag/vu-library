@@ -1,54 +1,69 @@
 export const booksUsed = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
+  {
+    img: '/books/placeholder.png',
+    title: 'XML 1.1 Bible, 3rd Edition',
+    author: 'Elliot Rusty Harold',
+    year: '2012',
+    summary: ' '
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'Programming the World Wide Web, 4th Edition',
+    author: 'Robert W Sebests',
+    year: '20--',
+    summary: ' '
+  },
   
-  export const booksPending = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
+  {
+    img: '/books/placeholder.png',
+    title: 'Responsive Web Design with HTML5 and CSS',
+    author: 'Ben Frain',
+    year: '2022',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'Hugo in Action, Static Sites and Dynamic Jamstack Apps',
+    author: 'Athishay Jain',
+    year: '2022',
+  },
+]  
+
+export const booksPending = [
+  {
+    img: '/books/placeholder.png',
+    title: 'CSS in Depth, 2nd Edition',
+    author: 'Keith J. Grant',
+    year: '2024',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'CSS: The Definitive Guide, Web Layout and Presentation, 5th Edition',
+    author: 'Eric A. Weyl',
+    year: '2023',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'Tiny CSS Projects',
+    author: 'Martine Dowden',
+    year: '2023',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'CSS Flex & Grid',
+    author: 'Shruti Balasa',
+    year: '2021',
+  },    
   
+  
+  
+]
   export const resourcesUsed = [
     {
       title: 'Java Documentation',
       description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
       link: 'https://docs.oracle.com/en/java/'
     },
-    {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
-    },
-    {
-      title: 'GeeksforGeeks Java',
-      description: 'Java tutorials and articles on a wide range of topics.',
-      link: 'https://www.geeksforgeeks.org/java/'
-    }
-  ]
+ ]
   
   export const resourcesPending = [
     {
@@ -56,15 +71,5 @@ export const booksUsed = [
       description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
       link: 'https://docs.oracle.com/en/java/'
     },
-    {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
-    },
-    {
-      title: 'GeeksforGeeks Java',
-      description: 'Java tutorials and articles on a wide range of topics.',
-      link: 'https://www.geeksforgeeks.org/java/'
-    }
-  ]
+]
   

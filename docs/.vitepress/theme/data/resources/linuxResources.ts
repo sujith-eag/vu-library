@@ -1,53 +1,48 @@
 export const booksUsed = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
+  {
+    img: '/books/placeholder.svg',
+    title: 'Operating System Concepts, 10th Edition',
+    author: 'Abraham Silberschatz ',
+    year: '2018',
+  },
+ {
+    img: '/books/placeholder.svg',
+    title: 'UNIX: Concepts and Applications',
+    author: 'Sumithabha Das',
+    year: '2015',
+  },
   
-  export const booksPending = [
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Java: The Complete Reference',
-      author: 'Herbert Schildt',
-      year: '2021',
-      summary: 'Comprehensive guide for learning Java, covering the core language, APIs, and real-world programming examples.'
-    },
-    {
-      img: '/books/java_complete_ref_13.jpg',
-      title: 'Effective Java',
-      author: 'Joshua Bloch',
-      year: '2018',
-      summary: 'Best practices and design patterns every Java developer should know, explained with real-world scenarios.'
-    }
-  ]
-  
+]
+
+export const booksPending = [
+  {
+    img: '/books/placeholder.png',
+    title: 'Linux with Operating System Concepts, 2nd Edition',
+    author: 'Richard Fox',
+    year: '2022',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'Linux Pocket Guide, 4th Edition',
+    author: 'Daniel Barrett',
+    year: '2024',
+  },
+  {
+    img: '/books/placeholder.png',
+    title: 'The Linux Command Line A Complete Introduction, 2nd Edition',
+    author: 'William E. Shotts',
+    year: '2019',
+  },
+]
+
+
   export const resourcesUsed = [
     {
       title: 'Java Documentation',
       description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
       link: 'https://docs.oracle.com/en/java/'
     },
-    {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
-    },
-    {
-      title: 'GeeksforGeeks Java',
-      description: 'Java tutorials and articles on a wide range of topics.',
-      link: 'https://www.geeksforgeeks.org/java/'
-    }
+
   ]
   
   export const resourcesPending = [
@@ -56,15 +51,6 @@ export const booksUsed = [
       description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
       link: 'https://docs.oracle.com/en/java/'
     },
-    {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
-    },
-    {
-      title: 'GeeksforGeeks Java',
-      description: 'Java tutorials and articles on a wide range of topics.',
-      link: 'https://www.geeksforgeeks.org/java/'
-    }
+    
   ]
   

@@ -34,13 +34,13 @@ ___
 
 <h3>Text Books Recommended</h3>
 
-<div class="book-container">
+<!-- <div class="book-container">
 
   <template v-for="(book, index) in booksUsed" :key="index">
     <BookCard v-bind="book" />
   </template>
 
-</div>
+</div> -->
 
 
 ## MCA First Semester
@@ -51,10 +51,10 @@ ___
 
 <h3>Text Books Recommended</h3>
 
-<div class="book-container">
+<!-- <div class="book-container">
 
   <template v-for="(book, index) in booksPending" :key="index">
     <BookCard v-bind="book" />
   </template>
 
-</div>
+</div> -->

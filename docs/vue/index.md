@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Java Topics
+title: Vue.js
 hero:
-  name: Explore Java Topics
+  name: Vue.js
   # text: Learn about various subjects
-  tagline: Curated Contents
+  tagline: Working with Vue framework
   image:
-    src: /logo/java_r.svg
-    alt: Java
+    src: /logo/vuejs.svg
+    alt: React logo
 #   actions:
 #     - theme: brand # alt,  plain
 #       text: Java Core
@@ -36,19 +36,19 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/resources/javaResources.ts'
+  resourcesPending } from '@theme/data/resources/vueResources.ts'
 
-// import { javaSection } from '@theme/data/fileStructures/javaSections.ts'
+// import { vueSection } from '@theme/data/fileStructures/vueSections.ts'
 
 </script>
 
-## Java Topic Index
+## Still under edit
  
-<!-- <CollapsibleList :sections="javaSection" /> -->
-
+<!-- <CollapsibleList :sections="vueSection" /> -->
+Check out the books on react which were really helpful
 ___
  
-<h3>Books & Resources Used to Learn Java</h3>
+<h3>Books Used to Learn Vue.js</h3>
 
 
 <div class="book-container">
@@ -59,25 +59,13 @@ ___
 
 </div>
 
-<!-- <div class="book-container">
-  <ResourceCard
-    v-for="(resource, index) in resourcesUsed"
-    :key="index"
-    v-bind="resource"
-  />
-</div> -->
-
-___
 
 <h3>Yet to be Completed</h3>
 
-
 <div class="book-container">
 
-  <BookCard
-    v-for="(book, index) in booksPending"
-    :key="index"
-    v-bind="book"
-    />
+  <template v-for="(book, index) in booksPending" :key="index">
+    <BookCard v-bind="book" />
+  </template>
 
 </div>
