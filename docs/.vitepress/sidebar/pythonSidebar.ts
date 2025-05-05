@@ -1,4 +1,4 @@
-import { pythonSection } from "../theme/data/python/pythonSection"; 
+import { pythonSection } from "../theme/data/fileStructures/pythonSection";
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 
 export function pythonSidebar() {

@@ -1,3 +1,5 @@
+
+
 export const jsDataTypes = [
     {
       title: 'Data Types',
@@ -173,7 +175,7 @@ export const jsDataTypes = [
   ];
 
   
-  export const javascriptSection = [
+  export const jsSection = [
     ...jsDataTypes,
     ...jsExpressionsOperators,
     ...jsControlFlow,

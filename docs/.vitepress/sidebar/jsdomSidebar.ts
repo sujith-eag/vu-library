@@ -1,4 +1,4 @@
-import { jsdomSection } from "../theme/data/jsdom/jsdom"; 
+import { jsdomSection } from "../theme/data/fileStructures/jsdomSections"; 
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 
 export function jsdomSidebar() {

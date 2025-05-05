@@ -113,29 +113,51 @@ export const dataTypes = [
     ]
   }];
   
-  export const numpy = [{
-    title: "NumPy",
-    items: [
-      { label: "Numpy Intro", link: "/python/10numpy/01_numpy_intro" },
-      { label: "Array Dimensions", link: "/python/10numpy/12_array_dimensions" },
-      { label: "Array Attributes", link: "/python/10numpy/13_array_attributes" },
-      { label: "Creating Arrays", link: "/python/10numpy/21_creating_arrays" },
-      { label: "Modifying Arrays", link: "/python/10numpy/30_modifying_arrays" },
-      { label: "Transposing Arrays", link: "/python/10numpy/31_transposing_arrays" },
-      { label: "Slicing Indexing", link: "/python/10numpy/32_slicing_indexing" },
-      { label: "Math Operators", link: "/python/10numpy/41_math_operators" },
-      { label: "Unique Set Linear", link: "/python/10numpy/43_unique_set_linear" },
-      { label: "Array Comparison", link: "/python/10numpy/50_array_comparison" },
-      { label: "Boolean Indexing", link: "/python/10numpy/51_boolean_indexing" },
-      { label: "Numpy Masking", link: "/python/10numpy/52_numpy_masking" },
-      { label: "Fancy Indexing", link: "/python/10numpy/60_fancy_indexing" },
-      { label: "Matrix Operations", link: "/python/10numpy/71_matrix_operations" },
-      { label: "Universal Functions", link: "/python/10numpy/80_universal_functions" },
-      { label: "Broadcasting", link: "/python/10numpy/90_broadcasting" },
-      { label: "Numpy Summary", link: "/python/10numpy/99_numpy_summary" },
-    ]
-  }];
-  
+  export const numpy = [
+    {
+      title: "NumPy",
+      items: [
+        {
+          title: "Introduction",
+          items: [
+            { label: "Numpy Intro", link: "/python/10numpy/01_numpy_intro" },
+            { label: "Numpy Summary", link: "/python/10numpy/99_numpy_summary" }
+          ]
+        },
+        {
+          title: "Array Basics",
+          items: [
+            { label: "Array Dimensions", link: "/python/10numpy/12_array_dimensions" },
+            { label: "Array Attributes", link: "/python/10numpy/13_array_attributes" },
+            { label: "Creating Arrays", link: "/python/10numpy/21_creating_arrays" },
+            { label: "Modifying Arrays", link: "/python/10numpy/30_modifying_arrays" },
+            { label: "Transposing Arrays", link: "/python/10numpy/31_transposing_arrays" }
+          ]
+        },
+        {
+          title: "Indexing and Slicing",
+          items: [
+            { label: "Slicing Indexing", link: "/python/10numpy/32_slicing_indexing" },
+            { label: "Boolean Indexing", link: "/python/10numpy/51_boolean_indexing" },
+            { label: "Numpy Masking", link: "/python/10numpy/52_numpy_masking" },
+            { label: "Fancy Indexing", link: "/python/10numpy/60_fancy_indexing" }
+          ]
+        },
+        {
+          title: "Mathematical Operations",
+          items: [
+            { label: "Math Operators", link: "/python/10numpy/41_math_operators" },
+            { label: "Unique Set Linear", link: "/python/10numpy/43_unique_set_linear" },
+            { label: "Array Comparison", link: "/python/10numpy/50_array_comparison" },
+            { label: "Matrix Operations", link: "/python/10numpy/71_matrix_operations" },
+            { label: "Universal Functions", link: "/python/10numpy/80_universal_functions" },
+            { label: "Broadcasting", link: "/python/10numpy/90_broadcasting" }
+          ]
+        }
+      ]
+    }
+  ];
+    
 
   export const libraries = [{
     title: "Libraries",
@@ -147,38 +169,6 @@ export const dataTypes = [
   }];
   
 
-  export const colExtra = [{
-    title: "Exam Preperations",
-    items: [
-      // Unit 1
-      { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
-      { label: "Unit 1 Ans1", link: "/python/col_extra/unit_1_ans1" },
-      { label: "Unit 1 Ans2", link: "/python/col_extra/unit_1_ans2" },
-  
-      // Unit 2
-      { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
-      { label: "Unit 2 Ans 1", link: "/python/col_extra/unit_2_ans_1" },
-      { label: "Unit 2 Ans 2", link: "/python/col_extra/unit_2_ans_2" },
-  
-      // Unit 3
-      { label: "Unit 3 Q", link: "/python/col_extra/unit_3_q" },
-      { label: "Unit 3 Ans 1", link: "/python/col_extra/unit_3_ans_1" },
-      { label: "Unit 3 Ans 2", link: "/python/col_extra/unit_3_ans_2" },
-  
-      // Unit 4
-      { label: "Unit 4 Q", link: "/python/col_extra/unit_4_q" },
-      { label: "Unit 4 Ans 1", link: "/python/col_extra/unit_4_ans_1" },
-      { label: "Unit 4 Ans 2", link: "/python/col_extra/unit_4_ans_2" },
-  
-      // Unit 5
-      { label: "Unit 5 Q", link: "/python/col_extra/unit_5_q" },
-      { label: "Unit 5 Ans 1", link: "/python/col_extra/unit_5_ans_1" },
-      { label: "Unit 5 Ans 2", link: "/python/col_extra/unit_5_ans_2" },
-  
-      // Lab
-      { label: "Lab Component", link: "/python/col_extra/lab_component" }
-    ]
-  }];
         
   
   export const pythonSection = [
@@ -191,6 +181,5 @@ export const dataTypes = [
     ...fileHandling,           // File handling basics
     ...numpy,                  // Advanced numerical operations with NumPy
     ...libraries,              // Libraries and system-related functionalities
-    ...colExtra               // Additional content and unit question papers
   ];
   

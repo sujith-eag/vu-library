@@ -57,23 +57,10 @@ export const jsUiEvents = [
   }
 ];
 
-export const jsLabPractice = [
-  {
-    title: 'Lab Practice',
-    items: [
-      { label: 'Basic JavaScript', link: '/java-script-dom/lab_practice/js1_basic' },
-      { label: 'DOM Manipulation', link: '/java-script-dom/lab_practice/js4_dom' },
-      { label: 'DOM I/O', link: '/java-script-dom/lab_practice/js3_dom_io' },
-      { label: 'DOM Events', link: '/java-script-dom/lab_practice/js5_dom_events' },
-      { label: 'Arrays', link: '/java-script-dom/lab_practice/js2_arrays' }
-    ]
-  }
-];
 
 export const jsdomSection = [
   ...jsDomBasics,
   ...jsDomModification,
   ...jsDomEvents,
   ...jsUiEvents,
-  ...jsLabPractice
 ];

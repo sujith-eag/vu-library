@@ -56,24 +56,6 @@
     }
   ];
   
-  export const dsQp = [
-    {
-      title: 'DS Question Papers',
-      items: [
-        { label: 'Unit 1 - Questions', link: '/c/ds_qp/unit_1_q' },
-        { label: 'Unit 1 - Answers (A1)', link: '/c/ds_qp/unit_1_q_a1' },
-        { label: 'Unit 1 - Answers (A2)', link: '/c/ds_qp/unit_1_q_a2' },
-        { label: 'Unit 2 - Questions', link: '/c/ds_qp/unit_2_q' },
-        { label: 'Unit 2 - Answers', link: '/c/ds_qp/unit_2_q_answered' },
-        { label: 'Unit 3 - Questions', link: '/c/ds_qp/unit_3_q' },
-        { label: 'Unit 3 - Answers', link: '/c/ds_qp/unit_3_q_answered' },
-        { label: 'Unit 4 - Questions', link: '/c/ds_qp/unit_4_q' },
-        { label: 'Unit 4 - Answers', link: '/c/ds_qp/unit_4_q_answered copy' },
-        { label: 'Unit 5 - Questions', link: '/c/ds_qp/unit_5_q' },
-        { label: 'Unit 5 - Answers', link: '/c/ds_qp/unit_5_q_answered' }
-      ]
-    }
-  ];
-  
-  export const cSections = [...krCBook, ...dsUsingC, ...dsQp];
+
+  export const cSection = [...krCBook, ...dsUsingC ];
   

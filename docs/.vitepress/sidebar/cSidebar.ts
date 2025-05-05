@@ -1,4 +1,4 @@
-import { cSections } from "../theme/data/c/cSections";
+import { cSection } from "../theme/data/fileStructures/cSections";
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 
 export function cSidebar() {
@@ -6,7 +6,7 @@ export function cSidebar() {
     {
       text : 'C Language',
       collapsed: true,
-      items: transformToSidebar(cSections)
+      items: transformToSidebar(cSection)
     }
   ];
 }

@@ -14,9 +14,6 @@ seo:
   noindex: false # false (default) or true
 ---
 
-
-
-
 In NumPy, you can compare arrays of the same shape using operators such as `<`, `>`, `>=`, `<=`, `==`, and `!=`. These operators compare the corresponding elements of the arrays, returning a new array with boolean values (`True` or `False`).
 
 ```python

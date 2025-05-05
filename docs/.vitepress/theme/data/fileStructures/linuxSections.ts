@@ -1,25 +1,44 @@
-export const linuxCommandDocs = [{
-    title: 'Linux Command Docs',
-    items: [
-      { label: 'Cut with Delimiter', link: '/linux/command-docs/cut-with-delimiter' },
-      { label: 'Word Count', link: '/linux/command-docs/wc-word-count' },
-      { label: 'List Files', link: '/linux/command-docs/ls-list' },
-      { label: 'Change Directory', link: '/linux/command-docs/cd-change-directory' },
-      { label: 'Make Directory', link: '/linux/command-docs/mkdir' },
-      { label: 'Uniq', link: '/linux/command-docs/uniq' },
-      { label: 'Touch', link: '/linux/command-docs/touch' },
-      { label: 'Head and Tail', link: '/linux/command-docs/head-tail' },
-      { label: 'Move', link: '/linux/command-docs/mv-move' },
-      { label: 'Remove', link: '/linux/command-docs/rm-remove' },
-      { label: 'Echo', link: '/linux/command-docs/echo' },
-      { label: 'Bash Commands', link: '/linux/command-docs/bash-commands' },
-      { label: 'Grep', link: '/linux/command-docs/grep' },
-      { label: 'Concatenate', link: '/linux/command-docs/cat-concatenate' },
-      { label: 'Sort', link: '/linux/command-docs/sort' },
-      { label: 'Print Working Directory', link: '/linux/command-docs/pwd' },
-      { label: 'Copy', link: '/linux/command-docs/cp-copy' }
-    ]
-  }];
+
+
+  export const linuxCommandDocs = [
+    {
+      title: "Linux Command Docs",
+      items: [
+        {
+          title: "File and Directory Operations",
+          items: [
+            { label: "List Files (ls)", link: "/linux/command-docs/ls-list" },
+            { label: "Change Directory (cd)", link: "/linux/command-docs/cd-change-directory" },
+            { label: "Make Directory (mkdir)", link: "/linux/command-docs/mkdir" },
+            { label: "Print Working Directory (pwd)", link: "/linux/command-docs/pwd" },
+            { label: "Touch", link: "/linux/command-docs/touch" },
+            { label: "Move (mv)", link: "/linux/command-docs/mv-move" },
+            { label: "Remove (rm)", link: "/linux/command-docs/rm-remove" },
+            { label: "Copy (cp)", link: "/linux/command-docs/cp-copy" }
+          ]
+        },
+        {
+          title: "File Content Operations",
+          items: [
+            { label: "Concatenate (cat)", link: "/linux/command-docs/cat-concatenate" },
+            { label: "Head and Tail", link: "/linux/command-docs/head-tail" },
+            { label: "Word Count (wc)", link: "/linux/command-docs/wc-word-count" },
+            { label: "Cut with Delimiter", link: "/linux/command-docs/cut-with-delimiter" },
+            { label: "Sort", link: "/linux/command-docs/sort" },
+            { label: "Uniq", link: "/linux/command-docs/uniq" },
+            { label: "Grep", link: "/linux/command-docs/grep" }
+          ]
+        },
+        {
+          title: "Shell and Output",
+          items: [
+            { label: "Echo", link: "/linux/command-docs/echo" },
+            { label: "Bash Commands", link: "/linux/command-docs/bash-commands" }
+          ]
+        }
+      ]
+    }
+  ];
   
   export const linuxOs = [{
     title: 'Linux OS',
@@ -96,7 +115,7 @@ export const linuxCommandDocs = [{
     ...bashFileCommands,
     ...fileSearchEdit,
     ...neovim,
-    ...linuxCommandDocs,
     ...linuxOs,
+    ...linuxCommandDocs,
   ];
   

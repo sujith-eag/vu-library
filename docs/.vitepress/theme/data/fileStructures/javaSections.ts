@@ -1,4 +1,4 @@
-export const javaBasics = [
+export const javaBasic = [
     {
       title: 'Java Basics',
       items: [
@@ -23,4 +23,4 @@ export const javaDom = [
     }
   ]
   
-export const javaSections = [...javaBasics, ...javaDom]
+export const javaSection = [...javaBasic, ...javaDom]

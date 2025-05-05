@@ -31,4 +31,4 @@ const sqlSection = [
     }
   ];
   
-export const dbmsSections = [...sqlSection, ...mongoSection, ...otherDbSection];
+export const dbmsSection = [...sqlSection, ...mongoSection, ...otherDbSection];

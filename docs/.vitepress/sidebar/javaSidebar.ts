@@ -1,5 +1,5 @@
 
-import { javaSections } from "../theme/data/java/javaSections";
+import { javaSection } from "../theme/data/fileStructures/javaSections";
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 
    
@@ -8,7 +8,7 @@ export function javaSidebar() {
     {
       text : 'Java',
       collapsed: true,
-      items: transformToSidebar(javaSections)
+      items: transformToSidebar(javaSection)
     }
   ];
 }

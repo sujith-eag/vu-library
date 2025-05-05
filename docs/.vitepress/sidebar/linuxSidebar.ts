@@ -1,4 +1,4 @@
-import { linuxSection } from "../theme/data/linux/linuxSection";
+import { linuxSection } from "../theme/data/fileStructures/linuxSections";
 
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 

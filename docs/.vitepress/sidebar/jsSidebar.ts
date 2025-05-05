@@ -1,4 +1,4 @@
-import { javascriptSection } from "../theme/data/javascript/javascriptSection";
+import { jsSection } from "../theme/data/fileStructures/jsSections";
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 
 export function javascriptSidebar() {
@@ -6,7 +6,7 @@ export function javascriptSidebar() {
     {
       text : 'JavaScript',
       collapsed: true,
-      items: transformToSidebar(javascriptSection)
+      items: transformToSidebar(jsSection)
     }
   ];
 }
