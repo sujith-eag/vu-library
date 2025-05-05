@@ -16,17 +16,12 @@ hero:
     link: /sujith
   
   - theme: alt
-    text: Old Library Site
-    link: https://sujith-eag.github.io/personal-site/
+    text: Previous Projects
+    link: /projects/
     
   - theme: alt
-    text: Old Catalog Site 
-    link: https://www.sujith-eag.in/cat.html
-
-#  - theme: alt
-#    text: Basic Projects
-#    link: /java/
-
+    text: MCA Section 
+    link: /mca/
 
 features:
 

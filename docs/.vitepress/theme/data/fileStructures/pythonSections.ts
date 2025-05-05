@@ -1,3 +1,5 @@
+
+
 export const dataTypes = [
     {
       title: "Data Types",
@@ -65,24 +67,45 @@ export const dataTypes = [
       { label: "For While", link: "/python/4control_statements/4_for_while" },
     ]
   }];
-
-  
-  export const functions = [{
-    title: "Functions",
-    items: [
-        { label: "Function Basics", link: "/python/5functions/00_function_basics" },
-        { label: "Function Scope", link: "/python/5functions/01_function_scope" },
-        { label: "Arguments", link: "/python/5functions/02_function_arguments" },
-        { label: "Parameters", link: "/python/5functions/03_function_parameters" },
-        { label: "Function Modules", link: "/python/5functions/04_function_modules" },
-        { label: "Generator Function", link: "/python/5functions/05_generator_function" },      
-        { label: "Lambda Function", link: "/python/5functions/06_lambda_function" },
-        { label: "Decorator Functions", link: "/python/5functions/07_decorator_functions" },
-        { label: "Built-in Decorators", link: "/python/5functions/08_builtin_decorators" },
-        { label: "Third-party Decorators", link: "/python/5functions/09_thirtparty_decorators" },
-    ]
-  }];
-  
+            
+  export const functions = [
+    {
+      title: "Functions",
+      items: [
+        {
+          title: "Function Basics",
+          items: [
+            { label: "Function Basics", link: "/python/5functions/00_function_basics" },
+            { label: "Function Scope", link: "/python/5functions/01_function_scope" },
+          ]
+        },
+        {
+          title: "Arguments & Parameters",
+          items: [
+            { label: "Arguments", link: "/python/5functions/02_function_arguments" },
+            { label: "Parameters", link: "/python/5functions/03_function_parameters" },
+          ]
+        },
+        {
+          title: "Advanced Functions",
+          items: [
+            { label: "Function Modules", link: "/python/5functions/04_function_modules" },
+            { label: "Generator Function", link: "/python/5functions/05_generator_function" },
+            { label: "Lambda Function", link: "/python/5functions/06_lambda_function" },
+          ]
+        },
+        {
+          title: "Decorators",
+          items: [
+            { label: "Decorator Functions", link: "/python/5functions/07_decorator_functions" },
+            { label: "Built-in Decorators", link: "/python/5functions/08_builtin_decorators" },
+            { label: "Third-party Decorators", link: "/python/5functions/09_thirdparty_decorators" },
+          ]
+        }
+      ]
+    }
+  ];
+    
   export const oop = [{
     title: "Object-Oriented Programming",
     items: [
