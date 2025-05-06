@@ -1,19 +1,3 @@
----
-title: "VS Code"
-description: ""
-summary: ""
-date: 2024-10-22T14:47:25+05:30
-lastmod: 2024-10-22T14:47:25+05:30
-draft: false
-weight: 900
-toc: true
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
----
-
 
 ## Useful Links
 - **[VS Code Documentation](https://code.visualstudio.com/docs)**

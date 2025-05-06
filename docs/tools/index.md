@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Git & Tools
+title: Developer Tools
 hero:
-  name: Git & Tools
+  name: Developer Tools
   # text: Learn about various subjects
   tagline: Knowing about the various developer tools
   image:
@@ -27,6 +27,25 @@ hero:
 
 ---
 
+<script setup>
+import CollapsibleList from '@theme/components/CollapsibleList.vue'
+import ResourceCard from '@theme/components/ResourceCard.vue'
+import BookCard from '@theme/components/BookCard.vue'
 
-## Still under migration
+// import { 
+//   booksUsed, 
+//   booksPending,
+//   resourcesUsed,
+//   resourcesPending } from '@theme/data/resources/reactResources.ts'
+
+import { toolsSection } from '@theme/data/fileStructures/toolsSections.ts'
+
+</script>
+
+## Developer Tools
+ 
+<CollapsibleList :sections="toolsSection" />
+
+___
+ 
  

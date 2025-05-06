@@ -1,19 +1,3 @@
----
-title: "Git & Github"
-description: ""
-summary: ""
-date: 2024-10-22T14:47:02+05:30
-lastmod: 2024-10-22T14:47:02+05:30
-draft: false
-weight: 900
-toc: true
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
----
-
 
 ## Introduction to Git
 - **[Pro Git Book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)**: A comprehensive guide to Git.
@@ -46,19 +30,19 @@ ___
 ## Basic Git Commands
 
 ```bash
-git status       # Show tracked, untracked, staged files
+git status       
+# Show tracked, untracked, staged files
 
+git add [file name]       
+# Add specific file to staging area
+git add .                 
+# Add all files to staging area
 
-git add [file name]       # Add specific file to staging area
-git add .                 # Add all files to staging area
+git commit -m "message"   
+# Commit staged files with a message
 
-
-git commit -m "message"   # Commit staged files with a message
-
-
-git log        # Show commit history
-q              # Exit log view if it's too long
-
+git log   # Show commit history
+q         # Exit log view if it's too long
 
 git push                # Push changes to the remote repository
 git push origin main    # Push the main branch to origin in Github
@@ -88,7 +72,7 @@ cat ~/.ssh/id_ed25519.pub  # Copy the SSH key
 
 #### Adding SSH Key to GitHub
 
-1. Go to **Settings** → **SSH and GPG keys**.
+1. Go to **Settings** → **SSH and GPG keys**. (In the main profile setting)
 2. Click **New SSH key** and paste the SSH key.
 
 ____
@@ -111,6 +95,8 @@ git remote -v                   # Show the linked GitHub repository
 ```
 
 ____
+
+cloning with HTTPS URLs
 
 ### Pushing Local Repository to GitHub
 
@@ -143,6 +129,8 @@ git push -u origin main          # Push changes to GitHub
   7. Explain _what_ and _why_ in the body, not _how_.
 
 - **Tutorial Video**: [Conventional Commits](https://www.youtube.com/watch?v=OJqUWvmf4gg)
+
+____
 
 ## Branches
 
@@ -214,6 +202,15 @@ git revert [commit_id]
 ```
 
 ---
+
+To stop tracking a directory within the repo which is already tracked, add a `.gitignore` file in the main directory and name the file in it `/public/` if it is named public.
+then command 
+```bash
+git rm -r --cached public/
+```
+then changes can be commited to prevent tracking of `public` folder.
+
+____
 
 ### Additional Topics to Explore
 
