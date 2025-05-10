@@ -38,13 +38,13 @@ import {
   resourcesUsed,
   resourcesPending } from '@theme/data/resources/javaResources.ts'
 
-// import { javaSection } from '@theme/data/fileStructures/javaSections.ts'
+import { javaSection } from '@theme/data/fileStructures/javaSections.ts'
 
 </script>
 
 ## Java Topic Index
  
-<!-- <CollapsibleList :sections="javaSection" /> -->
+<CollapsibleList :sections="javaSection" />
 
 ___
  
