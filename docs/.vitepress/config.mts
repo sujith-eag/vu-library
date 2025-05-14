@@ -4,7 +4,6 @@ import { cSidebar } from './sidebar/cSidebar'
 import { javaSidebar } from './sidebar/javaSidebar'
 import { htmlcssSidebar } from './sidebar/htmlcssSidebar'
 import { toolsSidebar } from './sidebar/toolsSidebar'
-
 import { dbmsSidebar } from './sidebar/dbmsSidebar'
 import { jsdomSidebar } from './sidebar/jsdomSidebar'
 import { javascriptSidebar } from './sidebar/jsSidebar'
@@ -30,7 +29,7 @@ export default defineConfig({
   markdown: {
     theme: {
         light: 'github-light',
-        dark: 'dracula'
+        dark: 'github-dark'
     },
     lineNumbers: true
   },

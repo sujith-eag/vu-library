@@ -33,7 +33,8 @@ features:
       style="width:60px;" 
       />Python Topics</a>
     details: <a 
-      href="/python/">Dive into Python syntax, data types, and scripting techniques.</a>
+      href="/python/"
+      >Dive into Python syntax, data types, and scripting techniques.</a>
 
 #JAVA
   - title: <a 

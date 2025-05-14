@@ -87,11 +87,42 @@
   </template>
   
   <style scoped>
+  
+  :root {
+  --bg-light: #f8f9fa;
+  --bg-dark: #1e1e1e;
+
+  --card-light: #ffffff;
+  --card-dark: #2a2a2a;
+
+  --text-light: #212529;
+  --text-dark: #f1f1f1;
+
+  --subtext-light: #6c757d;
+  --subtext-dark: #b0b0b0;
+
+  --link-light: #0077cc;
+  --link-dark: #66aaff;
+
+  --hover-light: #e6f0ff;
+  --hover-dark: #3a3a3a;
+
+  --divider-light: #ddd;
+  --divider-dark: #444;
+  }
+  
   .profile-container {
     display: flex;
     justify-content: center;
     padding: 3rem;
-    background: #3c4148;
+    /* background: var(--bg-light); */
+    /* background: #f2f2f2; */
+    /* background: #3c4148; */
+  }
+  
+  html.dark .profile-container{
+    background: var(--bg-dark);
+    /* background: #2a2d32; */
   }
   
   .profile-card {
@@ -99,16 +130,28 @@
     width: 100%;
     padding: 2rem;
     border-radius: 12px;
-    background: #ffffff;
+    background: var(--card-light);
+    /* background: #ffffff; */
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-light);
   }
+  
+  html.dark .profile-card {
+  /* background: #1f1f1f; */
+  /* color: #e0e0e0; */
+  /* color: #c71515; */
+  background: var(--card-dark);
+  color: var(--text-dark);
+}
   
   .image-name-card {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .avatar {
@@ -125,34 +168,64 @@
   
   .tagline {
     font-style: italic;
-    color: #666;
+    color: var(--subtext-light);
+    /* color: #666; */
     margin-top: 0.3rem;
+  }
+  
+  html.dark .tagline {
+    color: var(--subtext-dark);
+    /* color: #aaa; */
   }
   
   .bio {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color: #333;
     text-align: center;
+    color: var(--text-light);
+    /* color: #333; */
+  }
+  
+  html.dark .bio {
+    color: var(--text-dark);
+    /* color: #ccc; */
   }
   
   .section-card {
     margin-bottom: 1rem;
     padding: 1.5rem;
-    background: #b5b5b5;
+    background: #f1f1f1;
+    /* background: #e6e6e6; */
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(118, 111, 111, 0.749);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 1px 4px rgba(118, 111, 111, 0.5); */
   }
-  
+
+  html.dark .section-card {
+    background: #2e2e2e;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  /* background: #2f2f2f;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); */
+  }
+
   .section-card h2 {
     all: unset;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: var(--text-light);
+    /* color: #2c3e50; */
     font-size: 1.2rem;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
+    border-bottom: 1px solid var(--divider-light);
     padding-bottom: 0.5rem;
   }
   
+  html.dark .section-card h2 {
+  /* color: #ddd; */
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--divider-dark);
+  /* border-bottom: 1px solid #444; */
+  }
+
   .info-list {
   display: flex;
   flex-wrap: wrap;
@@ -165,19 +238,34 @@
 .info-list a {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.4rem;
   text-decoration: none;
-  color: #007acc;
+  color: var(--link-light);
+  /* color: #007acc; */
   font-weight: 500;
   font-size: 1rem;
   padding: 0.5rem 0.75rem;
-  background: #f0f4f8;
+  /* background: #f0f4f8; */
+  background: #eef5fa;
   border-radius: 8px;
   transition: background 0.2s ease;
 }
 
+html.dark .info-list a {
+  /* background: #444; */
+  background: #3a3a3a;
+  color: var(--link-dark);
+  /* color: #66aaff; */
+}
+
 .info-list a:hover {
-  background: #e1effc;
+  /* background: #e1effc; */
+  background: var(--hover-light);
+}
+
+html.dark .info-list a:hover {
+  /* background: #555; */
+  background: var(--hover-dark);
 }
 
 .info-list img {
@@ -187,13 +275,41 @@
 }
 
     
-.skills-list, .project-list, .edu-list, .pubs {
+.skills-list, 
+.project-list, 
+.edu-list, 
+.pubs {
     list-style: none;
     padding-left: 0;
 }
 
-.skills-list li, .project-list li, .edu-list li, .pubs li {
+.skills-list li, 
+.project-list li, 
+.edu-list li, 
+.pubs li {
     margin-bottom: 0.75rem;
     line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .image-name-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info-list {
+    justify-content: center;
+  }
+}
+
 </style>
