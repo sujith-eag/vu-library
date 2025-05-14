@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Sujith's Library"
   text: "Consequence of Exploration"
-  tagline: (Pages still under migration, logic is strong everything else is broke, dark will come later)
+  tagline: (dark themse will come later)
   image:
     src: /logo/logo.png
     alt: Eagle's Library
@@ -34,6 +34,15 @@ features:
       />Python Topics</a>
     details: <a 
       href="/python/">Dive into Python syntax, data types, and scripting techniques.</a>
+
+#JAVA
+  - title: <a 
+      href="/java/">
+      <img src="./logo/java.svg" 
+      alt="Java Icon" 
+      style="width:60px;" 
+      />Java Topics</a>
+    details: <a href="/java/">Explore Java fundamentals, OOP, collections, and more.</a>
 
 # JAVASCRIPT
   - title: <a 
@@ -97,15 +106,6 @@ features:
       style="width:60px;" 
       />Vue Topics</a>
     details: <a href="/vue/">Learn Vue components, directives, reactivity, and lifecycle hooks.</a>
-
-#JAVA
-  - title: <a 
-      href="/java/">
-      <img src="./logo/java.svg" 
-      alt="Java Icon" 
-      style="width:60px;" 
-      />Java Topics</a>
-    details: <a href="/java/">Explore Java fundamentals, OOP, collections, and more.</a>
 
 # LEETCODE
   - title: <a 

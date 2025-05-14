@@ -21,7 +21,7 @@ export default defineConfig({
   base: '/',
   
   cleanUrls: true,  // removing .html
-  appearance: false, // defaults to light, user can still toggle
+  // appearance: false, // defaults to light, user can still toggle
 
   head: [
     ['link', { rel: 'icon', href: './logo/logo.png' }]
