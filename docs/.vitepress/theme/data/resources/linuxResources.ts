@@ -1,12 +1,12 @@
 export const booksUsed = [
   {
-    img: '/books/placeholder.svg',
+    img: '/books/placeholder.png',
     title: 'Operating System Concepts, 10th Edition',
     author: 'Abraham Silberschatz ',
     year: '2018',
   },
  {
-    img: '/books/placeholder.svg',
+    img: '/books/placeholder.png',
     title: 'UNIX: Concepts and Applications',
     author: 'Sumithabha Das',
     year: '2015',

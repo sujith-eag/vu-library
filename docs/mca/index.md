@@ -4,7 +4,7 @@ title: MCA Section
 hero:
   name: MCA Section
   # text: Learn about various subjects
-  tagline: Materials and Practices on MCA Syllabus and Examination
+  tagline: Materials, Previous Questions and Practices for MCA Examination
   image:
     src: /logo/terminal.svg
     alt: Code logo
@@ -26,13 +26,12 @@ import { mca1Section, mca2Section } from '@theme/data/fileStructures/mcaSections
 
 </script>
 
-## MCA Second Semester
+## Second Semester
  
 <CollapsibleList :sections="mca2Section" />
 
-___
 
-<h3>Text Books Recommended</h3>
+<!-- <h3>Text Books Recommended</h3> -->
 
 <!-- <div class="book-container">
 
@@ -43,13 +42,13 @@ ___
 </div> -->
 
 
-## MCA First Semester
+## First Semester
  
 <CollapsibleList :sections="mca1Section" />
 
 ___
 
-<h3>Text Books Recommended</h3>
+<!-- <h3>Text Books Recommended</h3> -->
 
 <!-- <div class="book-container">
 

@@ -8,46 +8,46 @@ export const mcaDbmsSection = [
       {
         title: "Unit 1",
         items: [
-          { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
-          { label: "Unit 1 Ans1", link: "/python/col_extra/unit_1_ans1" },
+          // { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
+          // { label: "Unit 1 Ans1", link: "/python/col_extra/unit_1_ans1" },
         ]
       },
       {
         title: "Unit 2",
         items: [
-          { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
-          { label: "Unit 2 Ans 1", link: "/python/col_extra/unit_2_ans_1" },
-          { label: "Unit 2 Ans 2", link: "/python/col_extra/unit_2_ans_2" }
+          // { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
+          // { label: "Unit 2 Ans 1", link: "/python/col_extra/unit_2_ans_1" },
+          // { label: "Unit 2 Ans 2", link: "/python/col_extra/unit_2_ans_2" }
         ]
       },
       {
         title: "Unit 3",
         items: [
-          { label: "Unit 3 Q", link: "/python/col_extra/unit_3_q" },
-          { label: "Unit 3 Ans 1", link: "/python/col_extra/unit_3_ans_1" },
-          { label: "Unit 3 Ans 2", link: "/python/col_extra/unit_3_ans_2" }
+          // { label: "Unit 3 Q", link: "/python/col_extra/unit_3_q" },
+          // { label: "Unit 3 Ans 1", link: "/python/col_extra/unit_3_ans_1" },
+          // { label: "Unit 3 Ans 2", link: "/python/col_extra/unit_3_ans_2" }
         ]
       },
       {
         title: "Unit 4",
         items: [
-          { label: "Unit 4 Q", link: "/python/col_extra/unit_4_q" },
-          { label: "Unit 4 Ans 1", link: "/python/col_extra/unit_4_ans_1" },
-          { label: "Unit 4 Ans 2", link: "/python/col_extra/unit_4_ans_2" }
+          // { label: "Unit 4 Q", link: "/python/col_extra/unit_4_q" },
+          // { label: "Unit 4 Ans 1", link: "/python/col_extra/unit_4_ans_1" },
+          // { label: "Unit 4 Ans 2", link: "/python/col_extra/unit_4_ans_2" }
         ]
       },
       {
         title: "Unit 5",
         items: [
-          { label: "Unit 5 Q", link: "/python/col_extra/unit_5_q" },
-          { label: "Unit 5 Ans 1", link: "/python/col_extra/unit_5_ans_1" },
-          { label: "Unit 5 Ans 2", link: "/python/col_extra/unit_5_ans_2" }
+          // { label: "Unit 5 Q", link: "/python/col_extra/unit_5_q" },
+          // { label: "Unit 5 Ans 1", link: "/python/col_extra/unit_5_ans_1" },
+          // { label: "Unit 5 Ans 2", link: "/python/col_extra/unit_5_ans_2" }
         ]
       },
       {
         title: "Lab Component",
         items: [
-          { label: "Lab Component", link: "/python/col_extra/lab_component" }
+          // { label: "Lab Component", link: "/python/col_extra/lab_component" }
         ]
       }
     ]
@@ -61,37 +61,37 @@ export const mcaNetworkSection = [
       {
         title: "Unit 1",
         items: [
-          { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
-          { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
-          { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
+          // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
+          // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
+          // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
         ]
       },
       {
         title: "Unit 2",
         items: [
-          { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
-          { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
+          // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
+          // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
         ]
       },
       {
         title: "Unit 3",
         items: [
-          { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
-          { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
+          // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
+          // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
         ]
       },
       {
         title: "Unit 4",
         items: [
-          { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
-          { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
+          // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
+          // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
         ]
       },
       {
         title: "Unit 5",
         items: [
-          { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
-          { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
+          // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
+          // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
         ]
       }
     ]
@@ -105,37 +105,37 @@ export const mcaJavaSection = [
       {
         title: "Unit 1",
         items: [
-          { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
-          { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
-          { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
+          // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
+          // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
+          // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
         ]
       },
       {
         title: "Unit 2",
         items: [
-          { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
-          { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
+          // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
+          // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
         ]
       },
       {
         title: "Unit 3",
         items: [
-          { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
-          { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
+          // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
+          // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
         ]
       },
       {
         title: "Unit 4",
         items: [
-          { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
-          { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
+          // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
+          // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
         ]
       },
       {
         title: "Unit 5",
         items: [
-          { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
-          { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
+          // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
+          // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
         ]
       }
     ]
@@ -155,47 +155,47 @@ export const mca2Section = [
         {
           title: "Unit 1",
           items: [
-            { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
-            { label: "Unit 1 Ans1", link: "/python/col_extra/unit_1_ans1" },
-            { label: "Unit 1 Ans2", link: "/python/col_extra/unit_1_ans2" }
+            { label: "Previous Questions", link: "/python/col_extra/unit_1_q" },
+            { label: "Answered-1", link: "/python/col_extra/unit_1_ans1" },
+            { label: "Answered-2", link: "/python/col_extra/unit_1_ans2" }
           ]
         },
         {
           title: "Unit 2",
           items: [
-            { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
-            { label: "Unit 2 Ans 1", link: "/python/col_extra/unit_2_ans_1" },
-            { label: "Unit 2 Ans 2", link: "/python/col_extra/unit_2_ans_2" }
+            { label: "Previous Questions", link: "/python/col_extra/unit_2_q" },
+            { label: "Answered-1", link: "/python/col_extra/unit_2_ans_1" },
+            { label: "Answered-2", link: "/python/col_extra/unit_2_ans_2" }
           ]
         },
         {
           title: "Unit 3",
           items: [
-            { label: "Unit 3 Q", link: "/python/col_extra/unit_3_q" },
-            { label: "Unit 3 Ans 1", link: "/python/col_extra/unit_3_ans_1" },
-            { label: "Unit 3 Ans 2", link: "/python/col_extra/unit_3_ans_2" }
+            { label: "Previous Questions", link: "/python/col_extra/unit_3_q" },
+            { label: "Answered-1", link: "/python/col_extra/unit_3_ans_1" },
+            { label: "Answered-2", link: "/python/col_extra/unit_3_ans_2" }
           ]
         },
         {
           title: "Unit 4",
           items: [
-            { label: "Unit 4 Q", link: "/python/col_extra/unit_4_q" },
-            { label: "Unit 4 Ans 1", link: "/python/col_extra/unit_4_ans_1" },
-            { label: "Unit 4 Ans 2", link: "/python/col_extra/unit_4_ans_2" }
+            { label: "Previous Questions", link: "/python/col_extra/unit_4_q" },
+            { label: "Answered-1", link: "/python/col_extra/unit_4_ans_1" },
+            { label: "Answered-2", link: "/python/col_extra/unit_4_ans_2" }
           ]
         },
         {
           title: "Unit 5",
           items: [
-            { label: "Unit 5 Q", link: "/python/col_extra/unit_5_q" },
-            { label: "Unit 5 Ans 1", link: "/python/col_extra/unit_5_ans_1" },
-            { label: "Unit 5 Ans 2", link: "/python/col_extra/unit_5_ans_2" }
+            { label: "Previous Questions", link: "/python/col_extra/unit_5_q" },
+            { label: "Answered-1", link: "/python/col_extra/unit_5_ans_1" },
+            { label: "Answered-2", link: "/python/col_extra/unit_5_ans_2" }
           ]
         },
         {
           title: "Lab Component",
           items: [
-            { label: "Lab Component", link: "/python/col_extra/lab_component" }
+            { label: "Answered", link: "/python/col_extra/lab_component" }
           ]
         }
       ]
@@ -209,37 +209,37 @@ export const mca2Section = [
         {
           title: "Unit 1",
           items: [
-            { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
-            { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
-            { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
+            { label: "Questions", link: "/c/ds_qp/unit_1_q" },
+            { label: "Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
+            { label: "Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
           ]
         },
         {
           title: "Unit 2",
           items: [
-            { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
-            { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
+            { label: "Questions", link: "/c/ds_qp/unit_2_q" },
+            { label: "Answers", link: "/c/ds_qp/unit_2_q_answered" }
           ]
         },
         {
           title: "Unit 3",
           items: [
-            { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
-            { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
+            { label: "Questions", link: "/c/ds_qp/unit_3_q" },
+            { label: "Answers", link: "/c/ds_qp/unit_3_q_answered" }
           ]
         },
         {
           title: "Unit 4",
           items: [
-            { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
-            { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
+            { label: "Questions", link: "/c/ds_qp/unit_4_q" },
+            { label: "Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
           ]
         },
         {
           title: "Unit 5",
           items: [
-            { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
-            { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
+            { label: "Questions", link: "/c/ds_qp/unit_5_q" },
+            { label: "Answers", link: "/c/ds_qp/unit_5_q_answered" }
           ]
         }
       ]
