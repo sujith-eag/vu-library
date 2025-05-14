@@ -177,31 +177,3 @@
     text-decoration: none;
   }
   
-  
-  
-  
-  
-  
-  /* Styling for the Project Catalog page */
-  .VPContent .projects-block {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 10px;
-  }
-  .VPContent .projects-block h3 a{
-    text-decoration: none;
-  }
-  .VPContent .project-description {
-    margin-top: 5px;
-    color: #666;
-    font-size: 0.95em;
-  }
-  .VPContent .project-description a {
-    text-decoration: none;
-    color: #2980b9;
-    font-weight: bold;
-  }
-  .VPContent .project-description a:hover {
-    text-decoration: underline;
-  }
-  

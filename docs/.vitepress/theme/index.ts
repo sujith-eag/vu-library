@@ -3,6 +3,8 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import BookCard from './components/BookCard.vue'
+import ProfilePage from './components/ProfilePage.vue'
+import ProjectsShowcase from './components/ProjectsShowcase.vue'
 
 import './style.css'
 import './custom.css'
@@ -16,5 +18,7 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.component('BookCard', BookCard)  // component registration
+    app.component('ProfilePage', ProfilePage)
+    app.component('ProjectsShowcase', ProjectsShowcase)
   }
 } satisfies Theme

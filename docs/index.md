@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Sujith's Library"
   text: "Consequence of Exploration"
-  tagline: (dark themse will come later)
+  tagline: Structured Knowledge from a Developer’s Learning Trail.
   image:
     src: /logo/logo.png
     alt: Eagle's Library
@@ -136,3 +136,4 @@ features:
 
 
 ---
+

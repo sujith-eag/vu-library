@@ -1,5 +1,7 @@
 ---
-title: Personal Profile
+title: Sujith's Profile
 ---
-# Under Construction (Let me finish the Site first)
 
+<ClientOnly>
+  <ProfilePage />
+</ClientOnly>
