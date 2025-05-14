@@ -1,27 +1,28 @@
 <template>
-    <div class="project-page">
-      <div class="p-heading">
-        <h1>My Practice Projects</h1>
-      </div>
-  
-      <div class="site-description">
-        <p class="entry">Welcome to my project showcase!</p>
-        <p>
-          This is a collection of projects I've implemented as part of my learning journey.
-          Each project reflects a growing skillset in HTML, CSS, JavaScript, and modern frameworks.
-        </p>
-      </div>
-  
-      <div class="projects-block">
-        <div class="individual-project" v-for="project in projects" :key="project.title">
-          <a :href="project.link" target="_blank" rel="noopener noreferrer">
-            <h2>{{ project.title }}</h2>
-            <p class="project-description" v-html="project.description"></p>
-          </a>
-        </div>
+  <div class="project-page">
+    <div class="p-heading">
+      <h1>My Practice Projects</h1>
+    </div>
+
+    <div class="site-description">
+      <p class="entry">Welcome to my project showcase!</p>
+      <p>
+        This is a collection of projects I've implemented as part of my learning journey.
+        Each project reflects a growing skillset in HTML, CSS, JavaScript, and modern frameworks.
+      </p>
+    </div>
+
+    <div class="projects-block">
+      <div class="individual-project" v-for="project in projects" :key="project.title">
+        <a :href="project.link" target="_blank" rel="noopener noreferrer">
+          <h2>{{ project.title }}</h2>
+          <p class="project-description" v-html="project.description"></p>
+        </a>
       </div>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script setup>
   const projects = [
@@ -75,7 +76,158 @@
   ];
   </script>
   
-  <style>
+
+  <style scoped>
+.project-page {
+  --bg-light: #f9fafc;
+  --bg-dark: #1b1e23;
+ 
+  --card-light: #ffffff;
+  --card-dark: #262a31;
+ 
+  --text-light: #2c3e50;
+  --text-dark: #e5e7eb;
+ 
+  --subtext-light: #5f6b7a;
+  --subtext-dark: #9faab5;
+ 
+  --accent-light: #0d6efd;
+  --accent-dark: #4aa8ff;
+ 
+  --hover-light: #eef5ff;
+  --hover-dark: #2d323b;
+}
+  
+  .project-page {
+    all: initial;
+    padding: 2rem;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  html.dark .project-page {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  .p-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--accent-light);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  html.dark .p-heading {
+    background-color: var(--accent-dark);
+  }
+  
+  .site-description {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    background: var(--card-light);
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    color: var(--subtext-light);
+  }
+  
+  html.dark .site-description {
+    background: var(--card-dark);
+    color: var(--subtext-dark);
+  }
+  
+  .entry {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+  }
+  
+  html.dark .entry {
+    color: var(--text-dark);
+  }
+  
+  .projects-block {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .individual-project {
+    background-color: var(--card-light);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  html.dark .individual-project {
+    background-color: var(--card-dark);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.04);
+  }
+  
+  .individual-project:hover {
+    transform: translateY(-4px);
+    background-color: var(--hover-light);
+  }
+  
+  html.dark .individual-project:hover {
+    background-color: var(--hover-dark);
+  }
+  
+  .individual-project h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
+    color: var(--accent-light);
+  }
+  
+  html.dark .individual-project h2 {
+    color: var(--accent-dark);
+  }
+  
+  .individual-project a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .project-description {
+    font-size: 0.95rem;
+    color: var(--subtext-light);
+  }
+  
+  html.dark .project-description {
+    color: var(--subtext-dark);
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 600px) {
+    .project-page {
+      padding: 1rem;
+    }
+  
+    .site-description {
+      padding: 1rem;
+    }
+  
+    .individual-project h2 {
+      font-size: 1.05rem;
+    }
+  
+    .project-description {
+      font-size: 0.9rem;
+    }
+  }
+  </style>
+    
+  <!-- <style>
 /* VitePress Reset Box */
 .project-page {
   all: initial;
@@ -164,4 +316,4 @@
     font-size: 1rem;
   }
 }
-</style>
+</style> -->

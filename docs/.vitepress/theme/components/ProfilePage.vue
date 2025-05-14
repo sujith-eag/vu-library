@@ -88,7 +88,7 @@
   
   <style scoped>
   
-  :root {
+  .profile-container {
   --bg-light: #f8f9fa;
   --bg-dark: #1e1e1e;
 
@@ -115,7 +115,9 @@
     display: flex;
     justify-content: center;
     padding: 3rem;
-    /* background: var(--bg-light); */
+    border-radius: 12px;
+    background: var(--bg-light);
+    max-width:fit-content
     /* background: #f2f2f2; */
     /* background: #3c4148; */
   }
@@ -126,7 +128,7 @@
   }
   
   .profile-card {
-    max-width: 960px;
+    max-width: 1200px;
     width: 100%;
     padding: 2rem;
     border-radius: 12px;
@@ -231,14 +233,15 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
+  /* justify-content: center; */
   align-items: center;
-  margin-top: 1.3rem;
+  margin-top: 1.4rem;
 }
 
 .info-list a {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.3rem;
   text-decoration: none;
   color: var(--link-light);
   /* color: #007acc; */
@@ -273,8 +276,7 @@ html.dark .info-list a:hover {
   height: 24px;
   margin: 0;
 }
-
-    
+   
 .skills-list, 
 .project-list, 
 .edu-list, 
