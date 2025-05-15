@@ -10,7 +10,7 @@ import { javascriptSidebar } from './sidebar/jsSidebar'
 import { linuxSidebar } from './sidebar/linuxSidebar'
 import { osSidebar } from './sidebar/osSidebar'
 import { pythonSidebar } from './sidebar/pythonSidebar'
-
+import { mcaSidebar } from './sidebar/mcaSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -44,7 +44,8 @@ export default defineConfig({
       { text: 'Python', link: '/python/' },
       { text: 'C', link: '/c/' },
       { text: 'JS', link: '/java-script/' },
-      { text: 'Linux', link: '/linux/' },      
+      { text: 'Linux', link: '/linux/' },
+      { text: 'OS', link: '/os/' }
     ],
 
     sidebar: {
@@ -59,7 +60,8 @@ export default defineConfig({
       '/linux/': linuxSidebar(),
       '/os/': osSidebar(),
       '/python/': pythonSidebar(),
-      '/tools/': toolsSidebar()
+      '/tools/': toolsSidebar(),
+      '/mca/': mcaSidebar()
       // need to plan for multiple return functions with collapsed
     },
       

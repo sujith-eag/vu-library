@@ -4,7 +4,7 @@
   
         <!-- Avatar + Name -->
         <div class="image-name-card">
-          <img src="/sujith_1.webp" alt="Sujith's Avatar" class="avatar" />
+          <img src="/sujith_1.jpg" alt="Sujith's Avatar" class="avatar" />
           <div>
             <h1>Sujith Kumar</h1>
             <p class="tagline">Full-stack Developer | Cyber Security Enthusiast</p>

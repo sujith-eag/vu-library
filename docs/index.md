@@ -54,6 +54,15 @@ features:
       />JavaScript Topics</a>
     details: <a href="/java-script/">Master JavaScript basics, DOM, and ES6+ features.</a>
 
+# OPERATING SYSTEMS
+  - title: <a 
+      href="/os/">
+      <img src="./logo/os_s.svg" 
+      alt="OS Icon" 
+      style="width:60px;" 
+      />Operating Systems</a>
+    details: <a href="/os/">Explore OS fundamentals like processes, memory, and scheduling.</a>
+
 # BASH LINUX
   - title: <a 
       href="/linux/">
@@ -71,6 +80,15 @@ features:
       style="width:60px;" 
       />Data Structures using C</a>
     details: <a href="/c/">Understand pointers, memory management, and low-level programming using fundamental data structures</a>
+
+# GITHUB
+  - title: <a 
+      href="/tools/">
+      <img src="./logo/git.svg" 
+      alt="Git Icon" 
+      style="width:60px;" 
+      />Tools, Git & GitHub</a>
+    details: <a href="/tools/">Learn version control, branches, and collaboration with Git.</a>
 
 # HTML
   - title: <a 
@@ -117,23 +135,7 @@ features:
       />LeetCode Practice</a>
     details: <a href="/leetcode/">Practice coding problems for interviews and problem-solving skills.</a>
 
-# GITHUB
-  - title: <a 
-      href="/tools/">
-      <img src="./logo/git.svg" 
-      alt="Git Icon" 
-      style="width:60px;" 
-      />Tools, Git & GitHub</a>
-    details: <a href="/tools/">Learn version control, branches, and collaboration with Git.</a>
 
-# OPERATING SYSTEMS
-  - title: <a 
-      href="/os/">
-      <img src="./logo/os_s.svg" 
-      alt="OS Icon" 
-      style="width:60px;" 
-      />Operating Systems</a>
-    details: <a href="/os/">Explore OS fundamentals like processes, memory, and scheduling.</a>
 
 
 ---

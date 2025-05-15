@@ -25,37 +25,32 @@ export const jsDomModification = [
   }
 ];
 
+
 export const jsDomEvents = [
   {
-    title: 'DOM Events',
+    title: 'Event Fundamentals',
     items: [
       { label: 'Events Basics', link: '/java-script-dom/3-dom_events/3.1_events' },
       { label: 'Event Handlers', link: '/java-script-dom/3-dom_events/3.2_events_handler' },
       { label: 'Event Practices', link: '/java-script-dom/3-dom_events/3.3_events_practice' },
-      { label: 'Related Events', link: '/java-script-dom/3-dom_events/3.4_events_related' },
-      { label: 'Additional Events', link: '/java-script-dom/3-dom_events/3.5_' },
-      { label: 'Other Events', link: '/java-script-dom/3-dom_events/3.6_' },
-      { label: 'More Events', link: '/java-script-dom/3-dom_events/3.7_' }
+      { label: 'Related Events', link: '/java-script-dom/3-dom_events/3.4_events_related' }
     ]
-  }
+  },
 ];
 
 export const jsUiEvents = [
   {
-    title: 'UI Events',
+    title: 'Mouse & Keyboard Events',
     items: [
       { label: 'Mouse Events', link: '/java-script-dom/4-ui_events/4.1_mouse_events' },
       { label: 'Moving Mouse', link: '/java-script-dom/4-ui_events/4.2_moving_mouse' },
-      { label: 'Keyboard Events', link: '/java-script-dom/4-ui_events/4.5_keyboard' },
-      { label: 'Drag and Drop', link: '/java-script-dom/4-ui_events/4.3_drag_drop' },
       { label: 'Pointer Events', link: '/java-script-dom/4-ui_events/4.4_pointer_events' },
-      { label: 'Additional UI Events', link: '/java-script-dom/4-ui_events/4.6_' },
-      { label: 'Further UI Events', link: '/java-script-dom/4-ui_events/4.7_' },
-      { label: 'UI Events Extra', link: '/java-script-dom/4-ui_events/4.8_' },
-      { label: 'UI Events Additional', link: '/java-script-dom/4-ui_events/4.9_' }
+      { label: 'Drag and Drop', link: '/java-script-dom/4-ui_events/4.3_drag_drop' },
+      { label: 'Keyboard Events', link: '/java-script-dom/4-ui_events/4.5_keyboard' }
     ]
-  }
+  },
 ];
+
 
 
 export const jsdomSection = [

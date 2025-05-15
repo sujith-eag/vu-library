@@ -9,9 +9,6 @@ export const gitSection = [
         { label: 'Chrome', link: '/tools/chrome' },
         { label: 'Obsedian', link: '/tools/obsidian' },
         { label: 'VS-Code ', link: '/tools/vscode' },
-        // { label: 'Hugo', link: '/tools/hugo/doks1' },
-        // { label: 'Hugo-Doks', link: '/tools/hugo/doks2' },
-        // { label: 'VitePress', link: '/tools/vitepress/vite1' },        
     ]
 }
 ];

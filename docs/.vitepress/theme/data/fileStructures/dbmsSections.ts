@@ -2,13 +2,13 @@ const sqlSection = [
     {
       title: 'SQL',
       items: [
-        { label: '0 Querying', link: '/dbms/sql/0_query' },
-        { label: '1 Relating Data', link: '/dbms/sql/1_relating' },
-        { label: '2 Designing Tables', link: '/dbms/sql/2_designing' },
-        { label: '3 Writing Queries', link: '/dbms/sql/3_writing' },
-        { label: '4 Viewing & Selecting', link: '/dbms/sql/4_viewing' },
-        { label: '5 Optimizing Queries', link: '/dbms/sql/5_optimising' },
-        { label: '6 Scaling & Performance', link: '/dbms/sql/6_scaling' }
+        { label: 'Querying', link: '/dbms/sql/0_query' },
+        { label: 'Relating Data', link: '/dbms/sql/1_relating' },
+        { label: 'Designing Tables', link: '/dbms/sql/2_designing' },
+        { label: 'Writing Queries', link: '/dbms/sql/3_writing' },
+        { label: 'Viewing & Selecting', link: '/dbms/sql/4_viewing' },
+        { label: 'Optimizing Queries', link: '/dbms/sql/5_optimising' },
+        { label: 'Scaling & Performance', link: '/dbms/sql/6_scaling' }
       ]
     }
   ];

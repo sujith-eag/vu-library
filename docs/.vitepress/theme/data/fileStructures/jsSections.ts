@@ -161,19 +161,34 @@ export const jsDataTypes = [
     {
       title: 'Functions',
       items: [
-        { label: 'Function', link: '/java-script/6-functions/3-function' },
-        { label: 'Defining Function', link: '/java-script/6-functions/3.1-defining-function' },
-        { label: 'Arrow Function', link: '/java-script/6-functions/3.2-arrow-function' },
-        { label: 'Scope of Variable', link: '/java-script/6-functions/3.3-scope-of-variable' },
-        { label: 'Parameters & Arguments', link: '/java-script/6-functions/3.4-parameters-arguments' },
-        { label: 'Return, Recursion, Call Stack', link: '/java-script/6-functions/3.5-return-recursion-call-stack' },
-        { label: 'Scheduling', link: '/java-script/6-functions/3.6-scheduling' },
-        { label: 'Decorators', link: '/java-script/6-functions/3.7-decorators' },
-        { label: 'Function Object', link: '/java-script/6-functions/3.8-function-object' }
+        {
+          title: 'Function Basics',
+          items: [
+          { label: 'Function', link: '/java-script/6-functions/3-function' },
+          { label: 'Defining Function', link: '/java-script/6-functions/3.1-defining-function' },
+          { label: 'Arrow Function', link: '/java-script/6-functions/3.2-arrow-function' }
+          ]
+        },
+        {
+          title: 'Scope & Behavior',
+          items: [
+          { label: 'Scope of Variable', link: '/java-script/6-functions/3.3-scope-of-variable' },
+          { label: 'Parameters & Arguments', link: '/java-script/6-functions/3.4-parameters-arguments' },
+          { label: 'Return, Recursion, Call Stack', link: '/java-script/6-functions/3.5-return-recursion-call-stack' },
+          { label: 'Scheduling', link: '/java-script/6-functions/3.6-scheduling' }
+          ]
+        },
+        {
+          title: 'Advanced Functions',
+          items: [
+          { label: 'Decorators', link: '/java-script/6-functions/3.7-decorators' },
+          { label: 'Function Object', link: '/java-script/6-functions/3.8-function-object' }
+          ]
+        }
       ]
     }
   ];
-
+  
   
   export const jsSection = [
     ...jsDataTypes,

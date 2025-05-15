@@ -110,11 +110,11 @@
   
   export const linuxSection = [
     ...bashBasics,
-    ...bashRegex,
-    ...shellScripting,
     ...bashFileCommands,
     ...fileSearchEdit,
     ...neovim,
+    ...bashRegex,
+    ...shellScripting,
     ...linuxOs,
     ...linuxCommandDocs,
   ];

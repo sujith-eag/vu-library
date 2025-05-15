@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Linux & Bash
+title: Operating System
 hero:
-  name: Linux & Bash
+  name: Operating System
   # text: Learn about various subjects
-  tagline: Linux Operating System and Bash Commands
+  tagline: Low level management using OS
   image:
-    src: /logo/linux_p.svg
-    alt: Linux logo
+    src: /logo/os_s.svg
+    alt: os logo
 ---
 
 <script setup>
@@ -19,20 +19,18 @@ import {
   booksUsed, 
   booksPending,
   resourcesUsed,
-  resourcesPending } from '@theme/data/resources/linuxResources.ts'
+  resourcesPending } from '@theme/data/resources/osResources.ts'
 
-import { linuxSection } from '@theme/data/fileStructures/linuxSections.ts'
+import { osSection } from '@theme/data/fileStructures/osSections.ts'
 
 </script>
 
-## Bash & Linux Topics Index
+## Operating System
  
-<CollapsibleList :sections="linuxSection" />
+<CollapsibleList :sections="osSection" />
 
-___
- 
-<h3>Books Used to Learn Bash</h3>
 
+<h3>Books Used to Learn OS & Linux</h3>
 
 <div class="book-container">
 
@@ -41,16 +39,6 @@ ___
   </template>
 
 </div>
-
-<!-- <div class="book-container">
-  <ResourceCard
-    v-for="(resource, index) in resourcesUsed"
-    :key="index"
-    v-bind="resource"
-  />
-</div> -->
-
-___
 
 <h3>Yet to be Completed</h3>
 
@@ -61,3 +49,8 @@ ___
   </template>
 
 </div>
+
+__
+
+ 
+ 

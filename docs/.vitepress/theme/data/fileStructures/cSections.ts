@@ -1,22 +1,43 @@
   
+  
   export const krCBook = [
     {
-      title: 'K&R C Programming Book',
+  title: 'C Programming Book',
+  items: [  
+    {
+      title: 'Introduction to C',
       items: [
         { label: 'Introduction to C - Part 1', link: '/c/k&r_c_book/c0-introduction-p-c-0' },
         { label: 'Introduction to C - Part 2', link: '/c/k&r_c_book/c0-introduction-p-c-1' },
         { label: 'Introduction to C - Part 3', link: '/c/k&r_c_book/c0-introduction-p-c-2' },
         { label: 'Basic Syntax', link: '/c/k&r_c_book/c1-basic-syntax' },
-        { label: 'Types, Operators, Expressions', link: '/c/k&r_c_book/c2-types-operators-expressions' },
+        { label: 'Types, Operators, Expressions', link: '/c/k&r_c_book/c2-types-operators-expressions' }
+      ]
+    },
+    {
+      title: 'Program Control & Structure',
+      items: [
         { label: 'Control Flow', link: '/c/k&r_c_book/c3-control-flow' },
-        { label: 'Functions and Program Structure', link: '/c/k&r_c_book/c4-function-program-structure' },
+        { label: 'Functions and Program Structure', link: '/c/k&r_c_book/c4-function-program-structure' }
+      ]
+    },
+    {
+      title: 'Pointers, Arrays & Structures',
+      items: [
         { label: 'Pointers and Arrays', link: '/c/k&r_c_book/c5-pointers-arrays' },
         { label: 'Structures: Part 1', link: '/c/k&r_c_book/c6-1-structures' },
-        { label: 'Structures: Part 2', link: '/c/k&r_c_book/c6-2-structures' },
+        { label: 'Structures: Part 2', link: '/c/k&r_c_book/c6-2-structures' }
+      ]
+    },
+    {
+      title: 'I/O & System Interface',
+      items: [
         { label: 'Input/Output', link: '/c/k&r_c_book/c7-input-output' },
         { label: 'UNIX Interface', link: '/c/k&r_c_book/c8-unix-interface' }
-      ]
-    }
+        ]
+      }
+    ]
+  }
   ];
   
   export const dsUsingC = [

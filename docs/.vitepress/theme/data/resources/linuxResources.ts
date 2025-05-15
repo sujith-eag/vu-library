@@ -11,16 +11,15 @@ export const booksUsed = [
     author: 'Sumithabha Das',
     year: '2015',
   },
-  
-]
-
-export const booksPending = [
   {
     img: '/books/placeholder.png',
     title: 'Linux with Operating System Concepts, 2nd Edition',
     author: 'Richard Fox',
     year: '2022',
-  },
+  },  
+]
+
+export const booksPending = [
   {
     img: '/books/placeholder.png',
     title: 'Linux Pocket Guide, 4th Edition',
