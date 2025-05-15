@@ -84,7 +84,7 @@ name = "john"
 print(f"Hello, {name.title()}!")  # Output: Hello, John!
 ```
 
----
+
 
 
 ## Basic String manipulation

@@ -25,7 +25,7 @@ A **ruleset** (or **rule**) consists of One or more **selectors** and an associa
 - HTML comments: `<!-- -->`  
 - CSS comments: `/* */`
 
----
+
 
 ## **Selectors**  
 Selectors refer to the HTML elements to which a particular CSS rules / ***declarations***  applies to;
@@ -41,7 +41,7 @@ Each valid declaration block is preceded by one or more **comma-separated select
 A `<div>` is one of the basic HTML elements. It is an empty container.
 In general, it is best to use other tags such as `<h1>` or `<p>` for content but there are many cases where the thing needed is just a container for other elements.
 
----
+
 
 ## **Selector Types**  
 
@@ -117,7 +117,7 @@ A hashtag `#` immediately followed by the case-sensitive value of the ID attribu
 
 - **Important**: An element can have only **one ID**, and an ID must be unique within a page. IDs should **not** contain any white space.
 
----
+
 
 ## **Key Differences Between Classes and IDs**  
 - **Classes**:  

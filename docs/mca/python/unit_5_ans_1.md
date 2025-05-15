@@ -15,10 +15,10 @@ seo:
 ---
 
 
-## Exception Handling
+# Exception Handling
 
 
-##### Explain exception handling in python in detail with the help of an example.
+#### Explain exception handling in python in detail with the help of an example.
 
 * Illustrate “catching an exception is programmatically good and necessary mechanism” with exception handling mechanism in python. Demonstrate the working of any six exceptions in python.
 * How do you handle an exception? Demonstrate try-finally clause.

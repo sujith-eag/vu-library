@@ -80,8 +80,6 @@ It is not a compiler, it is a C source code to C source code translator. It expa
 ```
 
 
-_____
-
 ## Chapter 4 - Function and Program Structure
 
 Functions break large computing tasks into smaller ones and enables others to build upon what others have done instead of starting over from scratch.

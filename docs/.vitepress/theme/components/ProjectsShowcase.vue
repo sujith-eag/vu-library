@@ -15,7 +15,7 @@
     <div class="projects-block">
       <div class="individual-project" v-for="project in projects" :key="project.title">
         <a :href="project.link" target="_blank" rel="noopener noreferrer">
-          <h2>{{ project.title }}</h2>
+          <h3>{{ project.title }}</h3>
           <p class="project-description" v-html="project.description"></p>
         </a>
       </div>
@@ -188,12 +188,12 @@
   html.dark .individual-project:hover {
     background-color: var(--hover-dark);
   }
-  .individual-project h2 {
+  .individual-project h3 {
     font-size: 1.2rem;
     margin: 0 0 0.5rem;
     color: var(--accent-light);
   }
-  html.dark .individual-project h2 {
+  html.dark .individual-project h3 {
     color: var(--accent-dark);
   }
   .individual-project a {
@@ -222,7 +222,7 @@
       padding: 1rem;
     }
   
-    .individual-project h2 {
+    .individual-project h3 {
       font-size: 1.05rem;
     }
   

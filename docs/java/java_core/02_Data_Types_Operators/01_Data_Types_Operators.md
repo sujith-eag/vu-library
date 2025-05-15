@@ -1,5 +1,5 @@
 
-## Data Types and Operators
+# Data Types and Operators
 
 Java is a **strongly typed language**, meaning all variables, expressions, and values must have a defined type. This enforces **strict type checking** at compile time, helping to prevent errors and improve reliability. Operations are allowed only between compatible types.
 
@@ -100,7 +100,7 @@ System.out.println("A\tB\tC");
 
 > A **character** (`'A'`) is a `char`, while a **string** (`"A"`) is an object of class `String`.
 
----
+
 
 ## Operators in Java
 

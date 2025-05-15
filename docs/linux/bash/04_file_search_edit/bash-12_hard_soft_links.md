@@ -70,7 +70,7 @@ A **symbolic link** (also known as a **soft link**) is a special type of file th
 - Symbolic links themselves have their own set of permissions, but they are typically not used to control access to the target file. Instead, permissions are controlled on the target file or directory.
 - If a user does not have permission to access the **original file**, they won’t be able to follow the symbolic link to access it either.
 
----
+
 
 ## Creating Hard and Symbolic Links
 
@@ -99,7 +99,7 @@ ln -s /path/to/original/file /path/to/link
 This creates a symbolic link pointing to `/path/to/original/file`.
 
 
----
+
 
 ## Key Differences Between Hard and Symbolic Links
 

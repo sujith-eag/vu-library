@@ -196,7 +196,7 @@ addEntry(["weekend", "cycling", "peanuts"], true);
 
 This is a shorthand for creating an object with properties named `events` and `squirrel`. Since the property names match the argument names, JavaScript will automatically assign them.
 
----
+
 
 ## Deleting Array Elements
 

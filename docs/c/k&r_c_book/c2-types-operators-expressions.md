@@ -19,7 +19,7 @@ Section 2.2 - Data types and storage allocation - Character, integer, short, lon
 Section 2.7 - Type conversion
 Section 2.9 - Bit-wise Logical operations
 
------
+
 ## Chapter 2 - Types, Operators and Expressions
 
 Declaration lists the variables being used, along with their type and perhaps their initial value.      

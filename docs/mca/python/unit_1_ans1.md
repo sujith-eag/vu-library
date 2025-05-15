@@ -56,7 +56,7 @@ print(a == b)
 # True, because a and b have the same content
 ```
 
-____
+
 
 ## Data Types and Operators
 
@@ -273,7 +273,7 @@ v. 3 ** 10 / 3.
 # 59049 / 3 returns float
 ```
 
-___
+
 
 ## Control Flow and Conditionals
 
@@ -306,7 +306,7 @@ else:
     print("Who?")
 ```
 
-___
+
 
 ## Loops , break, continue, pass
 

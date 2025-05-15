@@ -47,7 +47,7 @@ CSS supports [**140 predefined color names**](https://www.w3schools.com/colors/c
 ```
 
 
----
+
 
 ## 2. The `currentcolor` Keyword
 
@@ -62,8 +62,6 @@ The `currentcolor` keyword refers to the value of the color property of an eleme
 ```
 The border of Div border is blue because the div color is blue. 
 
-
----
 
 ## 3. Hexadecimal Colors
 
@@ -81,7 +79,6 @@ Hexadecimal colors are defined using the format `#RRGGBB`, where RR, GG, and BB 
 ```
 
 
----
 
 ## 4. Hexadecimal Colors With Transparency
 
@@ -95,7 +92,6 @@ To add transparency to a hexadecimal color, you can use the format `#RRGGBBAA`, 
 ```
 
 
----
 
 ## 5. RGB Colors
 
@@ -115,7 +111,6 @@ An RGB color is specified with the `rgb()` function, using integers (0-255) or p
   }
 ```
 
----
 
 ## 6. RGBA Colors
 
@@ -134,7 +129,6 @@ The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully o
 ```
 
 
----
 
 ## 7. HSL Colors
 
@@ -173,9 +167,6 @@ HSLA extends HSL with an alpha channel for opacity.
 ```
 
 
----
-
-
 ## 9. CSS Custom Properties (Variables)
 - **Usage**: Define reusable color values throughout your CSS.
 - **Example**:
@@ -190,6 +181,7 @@ HSLA extends HSL with an alpha channel for opacity.
   ```
 - **When to Use**: For maintaining consistent colors across a site and easy updates.
 - **When to Avoid**: If you do not need to reuse colors or your project is very small.
+
 
 ## 10. Gradients
 - **Format**: `linear-gradient()` or `radial-gradient()`

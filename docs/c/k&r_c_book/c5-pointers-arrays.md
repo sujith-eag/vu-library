@@ -76,8 +76,6 @@ The most major security threat, A string has no length, but no run time length s
 __Section 5.7, 5.10 to 5.12 skim__
 
 
-____
-
 ## Chapter 5 - Pointers and Arrays
 
 A pointer is a variable that contains the address of a variable.      

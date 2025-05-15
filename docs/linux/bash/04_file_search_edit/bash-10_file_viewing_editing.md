@@ -19,7 +19,7 @@ seo:
 Filters are Commands which accepts data from standard input, manipulates it and write the result to standard output.      
 Each performs a simple function, these can be combined with other tools using redirection and piping.    
 
-____
+
 
 ## 1. File Creation and Editing
 
@@ -51,7 +51,7 @@ touch my_file.txt
 - `-m`: Modifies only the modification time.
 - `-t`: Allows you to specify a custom timestamp in the format `[[CC]YY]MMDDhhmm[.ss]`.
 
----
+
 
 
 ## 2. Text File Viewing and Analysis
@@ -97,7 +97,6 @@ Bm&EmvX{2;
 !1 0AQ@Paq
 ```
 
----
 
 
 ## 3. Text File Navigation Commands
@@ -130,7 +129,7 @@ Precede the integer with plus to indicate the starting point within the file.
 - `tail -n 5 file.txt`: Displays the last 5 lines.
 - `tail -n +12 file.txt`: Displays the file starting from line 12.
 
----
+
 
 
 ## 4. Sorting and Manipulating Files
@@ -154,7 +153,7 @@ To sort a file and redirect the output to a new file:
 sort -n lengths.txt > sorted-lengths.txt
 ```
 
----
+
 
 
 ## 5. File Comparison and Difference Commands
@@ -216,7 +215,6 @@ uniq file.txt > file_without_duplicates.txt
 `-d` for displaying only duplicate lines.
 
 
----
 
 
 ## 6. File Manipulation Commands

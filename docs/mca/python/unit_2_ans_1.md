@@ -15,9 +15,9 @@ seo:
 ---
 
 
-## String
+# String
 
-##### What is a string? Discuss the different ways of representing a string in Python.
+#### What is a string? Discuss the different ways of representing a string in Python.
 
 **Answer :**
 
@@ -419,7 +419,7 @@ for i in wordList:
 print(multipleMaxWordList)
 ```
 
-____
+
 
 ## Tuples
 

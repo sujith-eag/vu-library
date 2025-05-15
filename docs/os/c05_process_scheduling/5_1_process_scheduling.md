@@ -57,7 +57,7 @@ The **dispatcher** is responsible for transferring control of the CPU to the pro
 
 The dispatcher should be as fast as possible, as it is invoked during every process switch.
 
----
+
 
 ## 5.2 Scheduling Criteria
 

@@ -4,7 +4,7 @@ In VitePress, each Markdown file is compiled into HTML and then processed as a [
 All Vue usage needs to be SSR-compatible. See [SSR Compatibility](https://vitepress.dev/guide/ssr-compat) for details and common workarounds.
 
 
-___
+
 
 ## `<script>` and `<style>`
 

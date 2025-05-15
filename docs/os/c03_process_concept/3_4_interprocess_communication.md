@@ -86,7 +86,6 @@ The shared buffer is often implemented as a **circular array** with two logical 
 
 To ensure the producer and consumer operate efficiently, synchronization mechanisms such as **mutexes** or **semaphores** are often used to avoid race conditions and ensure mutual exclusion.
 
-___
 
 ## **3.4.2 Message Passing Systems**
 

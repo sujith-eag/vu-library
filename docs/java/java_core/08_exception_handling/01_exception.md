@@ -1,5 +1,5 @@
 
-## Exception Handling
+# Exception Handling
 
 
 #### Exception Hierarchy

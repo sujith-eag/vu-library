@@ -26,7 +26,7 @@ The variables `n` and `top` are declared globally so they can be accessed by all
 3. `stack[n]`: An array declared locally inside the `main()` function to hold the stack elements.
 4. `e`: A temporary variable used to capture the element that is being pushed onto the stack.
 5. `int ch`: A variable to capture the user's choice for selecting the stack operation (Push, Pop, Peep, Display, Exit).
-___
+
 
 ## Logic of Implementation
 
@@ -85,7 +85,7 @@ Choice to exit the program, using `exit(0)` for some case or condition.
 To reduce three checks and print for if the stack is empty, `isempty()` is called to check if `top == -1` and print `it is empty` and return `1` if not empty return `0`.
 `if (! isempty)` return true when not empty, then code inside will run.
 
-___
+
 
 ## Implementation 1 (Using Switch Case)
 

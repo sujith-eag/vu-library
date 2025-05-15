@@ -25,7 +25,7 @@ git config --global pull.rebase false         # Disable rebase on pull
 
 Rebasing: This is an alternative to merging where Git re-applies your local changes on top of the changes fetched from the remote.
 
-___
+
 
 ## Basic Git Commands
 
@@ -56,7 +56,7 @@ git push origin main    # Push the main branch to origin in Github
 git config --global core.editor "code --wait"
 ```
 
-___
+
 
 ## Connecting Git to GitHub with SSH
 
@@ -75,7 +75,7 @@ cat ~/.ssh/id_ed25519.pub  # Copy the SSH key
 1. Go to **Settings** → **SSH and GPG keys**. (In the main profile setting)
 2. Click **New SSH key** and paste the SSH key.
 
-____
+
 
 ## Connecting from GitHub to Git
 
@@ -130,7 +130,7 @@ git push -u origin main          # Push changes to GitHub
 
 - **Tutorial Video**: [Conventional Commits](https://www.youtube.com/watch?v=OJqUWvmf4gg)
 
-____
+
 
 ## Branches
 

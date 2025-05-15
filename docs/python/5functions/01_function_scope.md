@@ -75,7 +75,7 @@ What's x? 4
 Value of x squared is: 16
 ```
 
----
+
 
 ## Scope in Functions
 
@@ -150,7 +150,7 @@ To modify global immutable variables, `global` must be declared.
 22
 ```
 
----
+
 
 ## Nested Functions
 

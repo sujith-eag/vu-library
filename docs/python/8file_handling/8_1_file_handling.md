@@ -21,7 +21,7 @@ Disk buffers are temporary memory locations used by the operating system to mana
 
 Breakdown of how file handling works in Python, from opening files to reading, writing, and closing them, as well as dealing with file paths.
 
----
+
 
 ## **1. File Opening and File Handles**
 
@@ -41,7 +41,7 @@ hf = open("gcd.py", "r")  # Open the file 'gcd.py' for reading
     - `"w"`: Write mode. Creates a new file or overwrites an existing file.
     - `"a"`: Append mode. Opens a file for appending (writes at the end of the file without deleting its contents).
 
----
+
 
 ## **2. Reading Files**
 
@@ -81,7 +81,7 @@ block = hf.read(12)  # Reads the next 12 characters from the current pointer pos
 
 - The pointer starts at the beginning of the file, and each read operation advances it until the end of the file.
 
----
+
 
 ## **3. Writing to Files**
 
@@ -118,7 +118,7 @@ hf.close()  # Closes the file and flushes the buffer to disk
 hf.flush()  # Ensures any buffered data is written to disk without closing the file
 ```
 
----
+
 
 ## **4. File Processing Techniques**
 
@@ -161,7 +161,7 @@ infile.close()
 outfile.close()
 ```
 
----
+
 
 ## **5. Stripping Newline Characters**
 
@@ -186,7 +186,7 @@ for line in contents:
 - **`strip()`** removes whitespace from both ends of a string.
 - **`lstrip()`** removes whitespace from the left side of the string.
 
----
+
 
 ## **6. File Path Management**
 

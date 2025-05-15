@@ -32,7 +32,7 @@ div.bold-text {
 - The **property** is `font-weight` and `text-align`.
 - The **value** for `font-weight` is `700` and for `text-align` is `center`.
 
----
+
 
 ## **CSS Properties**
 
@@ -156,7 +156,6 @@ This ensures the image keeps its aspect ratio while adjusting the width to `500p
 
 When you explicitly set the `height` and `width` for images, you help the browser allocate space on the page before the image loads. This prevents layout shifts as images load.
 
----
 
 ## **Inline vs. Block Elements**
 
@@ -174,7 +173,7 @@ Do not want to try to put extra padding or margin on inline elements.
 
 **Block elements** behave like containers that stretch across the page.
 
----
+
 
 ## **display Property**
 
@@ -208,7 +207,7 @@ div {
 ```
 - **`inline-block`** elements behave like inline elements, but you can still control their dimensions and margins like block elements.
 
----
+
 
 ## **Divs and Spans**
 

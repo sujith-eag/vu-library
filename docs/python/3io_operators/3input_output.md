@@ -66,7 +66,7 @@ pi = 3.14159265358979
 print(f"Pi to 2 decimal places: {pi:.2f}")  # Output: Pi to 2 decimal places: 3.14
 ```
 
----
+
 
 ## **Input()**
 
@@ -116,7 +116,7 @@ print(f"The result is: {result}")
 
 If the user enters `5 + 3`, the output would be `The result is: 8`.
 
----
+
 
 ## **Command-Line Arguments**
 

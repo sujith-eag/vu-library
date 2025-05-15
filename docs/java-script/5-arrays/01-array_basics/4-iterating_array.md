@@ -18,7 +18,7 @@ seo:
 
 As of ES6, the easiest way to loop through each element of an array (or any iterable object) is with the `for/of` loop.
 
----
+
 
 ## for Loop
 
@@ -109,7 +109,7 @@ for (let i = 0; i < a.length; i++) {
 }
 ```
 
----
+
 
 ## for/of Loop
 

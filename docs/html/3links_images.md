@@ -14,7 +14,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## Anchor Elements
+# Anchor Elements
 An anchor element is defined by wrapping the text or another HTML element we want to link with an `<a>` tag.
 
 ```html

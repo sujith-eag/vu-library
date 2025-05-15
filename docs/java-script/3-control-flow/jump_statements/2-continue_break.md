@@ -62,7 +62,6 @@ for (let i = 0; i < 3; i++) {
 
 - This example uses `continue outer` to skip the remaining part of the outer loop when `i === 1 && j === 1`, causing the program to jump directly to the next iteration of the outer loop.
 
----
 
 
 

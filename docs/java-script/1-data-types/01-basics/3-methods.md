@@ -14,7 +14,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## Methods of Primitives
+# Methods of Primitives
 
 JavaScript supports an object-oriented programming style. This means that rather than having globally defined functions to operate on values of various types, the types themselves define methods for working with values.
 

@@ -92,7 +92,7 @@ person.name.first ;  // "Bob"
 person["name"]["first"] ;
 ```
 
----
+
 
 ## Creating or Modifying Properties
 

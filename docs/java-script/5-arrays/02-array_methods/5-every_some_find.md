@@ -77,7 +77,7 @@ console.log(a.some(isNaN)); // false: a has no non-numbers
 [arr.some(fn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) / [arr.every(fn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) .
 
 
-____
+
 ## Methods for searching and finding Elements
 
 

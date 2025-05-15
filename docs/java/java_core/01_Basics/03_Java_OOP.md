@@ -1,5 +1,5 @@
 
-## Object-Oriented Programming (OOP) in Java
+# Object-Oriented Programming (OOP) in Java
 
 At the core of Java lies **object-oriented programming (OOP)**. Java is fundamentally built on the principles of OOP, and every Java program, to some extent, follows this paradigm.
 
@@ -7,7 +7,6 @@ OOP combines the best ideas of **structured programming** with powerful new conc
 
 In contrast, **object-oriented programming organizes a program around its data**, encapsulating both the data and the methods that operate on it. The core principle becomes “**data controlling access to code**.” In Java, you define data and associate with it the code that is allowed to manipulate it. This structure provides clarity, modularity, and reusability.
 
----
 
 ## Core Principles of OOP
 

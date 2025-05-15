@@ -74,7 +74,6 @@ Nesting is used to show parent, child, and sibling tag relationships. Indentatio
 
 To comment out lines in VSCode, use the shortcut `Ctrl + /` to convert any line into a comment or revert it.
 
----
 
 ## Lists
 

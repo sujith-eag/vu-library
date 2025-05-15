@@ -63,9 +63,9 @@ Since both the OS and users share the hardware and software resources, any error
 A properly designed OS ensures that a faulty or malicious program does not negatively affect other running programs or the OS itself.
 
 
----
 
-## **1.5.1 Dual-Mode and Multi-Mode Operation**
+
+## 1.5.1 Dual-Mode and Multi-Mode Operation
 
 ### **User Mode vs Kernel Mode**
 
@@ -109,7 +109,7 @@ CPU's like the Intel 64 family support **privilege levels** for virtualization, 
 3. **System Call/Interrupt/Trap**: When a user application requests OS services or an error occurs, the system switches to **Kernel Mode** to process the request or handle the issue.
 4. **Return to User Mode**: Once the OS has completed the task, it returns to **User Mode** to resume the user application.
 
----
+
 
 ## **System Calls**
 

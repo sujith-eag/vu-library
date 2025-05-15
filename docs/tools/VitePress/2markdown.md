@@ -172,8 +172,6 @@ VitePress also supports [GitHub-flavored alerts](https://docs.github.com/en/get-
 ```
 
 
-___
-
 
 ## Syntax Highlighting in Code Blocks
 
@@ -287,7 +285,7 @@ export default {
 ```
 
 
-___
+
 
 ## Image Lazy Loading
 
@@ -305,7 +303,7 @@ export default {
 ```
 
 
-___
+
 
 
 

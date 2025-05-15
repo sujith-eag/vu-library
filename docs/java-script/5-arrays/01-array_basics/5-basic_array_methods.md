@@ -76,7 +76,7 @@ alert(arr);
 // [5, 4, 3, 2, 1]
 ```
 
----
+
 
 ## Array to String Conversion
 

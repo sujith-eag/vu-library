@@ -65,7 +65,7 @@ BigInt(string)        // => 10n**100n: one googol
 
 Arithmetic with BigInt values works like arithmetic with regular JavaScript numbers, except that division drops any remainder and rounds down (toward zero). You may not mix operands of type BigInt with regular number operands. JavaScript does not allow mixed operands in arithmetic operations, but comparison operators work with mixed numeric types.
 
----
+
 
 ## Special Numeric Values
 
@@ -91,7 +91,7 @@ alert("hello" * 2);  // NaN
 `NaN` is **not equal** to itself (`NaN !== NaN`), which is a unique property in JavaScript. If `NaN` appears in an expression, the entire result will likely be `NaN`.
 
 
----
+
 
 ## Arithmetic Operators
 
@@ -106,7 +106,7 @@ JavaScript provides several operators for performing arithmetic operations on nu
 **  // Exponentiation (Power)
 ```
 
----
+
 
 ## Ways to Write Numbers in JavaScript
 

@@ -69,7 +69,6 @@ The margin can be set using shorthand notation:
 If only two values are given:
 - `margin: 20px auto;` — `20px` for top and bottom, and `auto` for left and right (centers horizontally).
 
----
 
 ## **2. Padding**
 
@@ -87,7 +86,6 @@ Padding can be applied to all four sides at once using shorthand:
 If two values are provided:
 - `padding: 20px 10px;` — `20px` for top and bottom, `10px` for left and right.
 
----
 
 ## **3. Border and Border Radius**
 
@@ -112,7 +110,6 @@ element {
 }
 ```
 
----
 
 ## **4. Content**
 
@@ -122,7 +119,6 @@ The **content** of a box refers to the actual text, images, or other elements in
   - `height: 24px;` — this sets the height of the content area (excluding padding and borders).
   - `line-height: 24px;` — this sets the height of a line of text, which can affect vertical alignment.
 
----
 
 ## **Box Sizing**
 
@@ -148,6 +144,8 @@ box-sizing: border-box;
 
 - if `width: 300px;`, the padding and border will be included inside this `300px` width.
 
+___
+
 ### **Best Practice**
 To apply `border-box` globally (for all elements), you can use the following rule:
 
@@ -161,7 +159,6 @@ To apply `border-box` globally (for all elements), you can use the following rul
 ```
 This resets the box model for all elements, making layout calculations easier.
 
----
 
 ## **Summary of the Box Model Properties**
 

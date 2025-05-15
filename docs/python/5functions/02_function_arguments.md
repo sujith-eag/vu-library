@@ -95,7 +95,7 @@ Objects created inside a function will not be available outside the function unl
 ```
 
 
----
+
 
 ## Arguments
 
@@ -228,7 +228,7 @@ int("76")  # Output: 76
 int("A5", 16)  # Output: 165 (base 16)
 ```
 
----
+
 
 ## Optional Arguments
 

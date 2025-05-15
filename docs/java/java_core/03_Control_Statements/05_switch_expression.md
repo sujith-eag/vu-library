@@ -1,5 +1,5 @@
 
-## Switch Expressions
+# Switch Expressions
 
 Java has significantly enhanced the `switch` construct, turning it into a more powerful and expressive feature. A **switch expression** is one of the most important additions—it enables `switch` to produce a **value**.
 
@@ -103,7 +103,7 @@ int result = switch (value) {
 
 yield is a context-sensitive keyword. This means that outside its use in a switch expression, yield is simply an identifier with no special meaning.
 
----
+
 
 ## Arrow Syntax in `case`
 
@@ -130,7 +130,7 @@ case 'B' -> {
 case 'C' -> throw new IllegalArgumentException("Invalid input");
 ```
 
----
+
 
 ## List of `case` Constants
 
@@ -171,7 +171,7 @@ class SwitchExprDemo
 }
 ```
 
----
+
 
 ## Switch Expression Must Return a Value
 

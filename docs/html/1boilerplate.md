@@ -141,7 +141,6 @@ The `<body>` element contains all the content that will be displayed to users, i
     </body>
 </html>
 ```
-________
 
 ## VSCode Boilerplate Shortcut
 

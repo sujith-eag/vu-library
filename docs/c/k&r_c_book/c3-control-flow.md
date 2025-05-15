@@ -41,7 +41,6 @@ also compared to see if it is `\n or \t`.
 All the work has been done in the loop termination test. There is nothing to do in the body of the loop so just a `;`
 
 
-____
 
 ## Chapter 3 - Control Flow
 

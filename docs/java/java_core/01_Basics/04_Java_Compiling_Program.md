@@ -1,5 +1,5 @@
 
-## Java Development Kit (JDK)
+# Java Development Kit (JDK)
 
 Modern versions of Java are available in two primary forms:
 
@@ -18,7 +18,7 @@ The **Java Development Kit (JDK)** includes two essential command-line tools:
 > [!note] 
 > The JDK operates through the command line. It is **not** a graphical IDE (like Eclipse or IntelliJ IDEA), nor is it a windowed application.
 
----
+
 
 ## Sample Java Program
 
@@ -35,7 +35,7 @@ class Example {
 }
 ```
 
----
+
 
 ## Three Basic Steps to Execute a Java Program
 
@@ -88,7 +88,7 @@ The interpreter will look for a file named `Example.class`, then execute the byt
 >[!note] 
 >Every class is compiled into its **own `.class` file**, so naming consistency is important.
 
----
+
 
 ## Key Features Common to All Java Programs
 
@@ -146,7 +146,7 @@ System.out.println("Java drives the Web.");
 - `print()` is similar but **does not add** a newline.
     
 
----
+
 
 ## Example with Variables
 
@@ -177,7 +177,7 @@ myVar1 Contains 1024
 myVar2 contains myVar1 / 2: 512
 ```
 
----
+
 
 ## Working with Floating-Point Numbers
 

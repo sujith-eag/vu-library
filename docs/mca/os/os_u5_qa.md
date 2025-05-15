@@ -1375,7 +1375,7 @@ vi) Quit.
 Develop a script that computes the gross salary of an employee according to the following rules: i) If basic salary is `< 1500` then HRA =10% of the basic and DA =90% of the basic. ii)If basic salary is `>=1500` then HRA =Rs500 and DA=98% of the basic The basic salary is entered interactively through the key board. 
 
 
-____
+
 
 ## Unix OS Theory
 

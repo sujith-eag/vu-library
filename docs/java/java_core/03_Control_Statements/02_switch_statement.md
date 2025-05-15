@@ -1,5 +1,5 @@
 
-## Switch Statement
+# Switch Statement
 
 The second of Java’s selection statements is the `switch`. The switch provides for a multiway branch. Thus, it enables a program to select among several alternatives. 
 
@@ -74,7 +74,7 @@ class SwitchDemo
 
 ___
 
-## Switch Expressions
+# Switch Expressions
 
 
 #### Introducing the Arrow in a case Statement

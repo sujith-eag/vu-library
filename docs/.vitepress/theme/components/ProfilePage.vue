@@ -18,7 +18,7 @@
   
         <!-- Section Cards -->
         <div class="section-card">
-          <h2>💼 Links</h2>
+          <h3>💼 Links</h3>
           <div class="info-list">
             <a href="https://github.com/sujith-eag" target="_blank"><img src="/logo/github-w.svg" alt="GitHub" /> GitHub</a>
             <a href="mailto:sujith.eag@gmail.com"><img src="/logo/gmail.svg" alt="Email" /> Email</a>
@@ -28,7 +28,7 @@
         </div>
     
         <div class="section-card">
-          <h2>🧩 Technical Skills</h2>
+          <h3>🧩 Technical Skills</h3>
           <ul class="skills-list">
             <li><b>Languages:</b> C, Bash, Java, Python, SQL, MongoDB</li>
             <li><b>Web Development:</b> React.js, Vue.js, Flask, TypeScript, JavaScript, HTML/CSS</li>
@@ -37,7 +37,7 @@
         </div>
   
         <div class="section-card">
-          <h2>📂 Projects</h2>
+          <h3>📂 Projects</h3>
           <ul class="project-list">
             <li>
               <b>Sujith’s Library</b> – Vue.js, TypeScript, Vite, VitePress, GitHub Actions<br />
@@ -51,7 +51,7 @@
         </div>
   
         <div class="section-card">
-          <h2>🎓 Education</h2>
+          <h3>🎓 Education</h3>
           <ul class="edu-list">
             <li><b>MCA</b>, MSRIT – CGPA: 9.66 (2024–2026)</li>
             <li><b>B.Ed</b>, SKC (BNU) – CGPA: 8.86 (2018–2020)</li>
@@ -62,7 +62,7 @@
         </div>
   
         <div class="section-card">
-          <h2>📚 Publications</h2>
+          <h3>📚 Publications</h3>
           <ul class="pubs">
             <li><b>Adaptive Chaos-Based Encryption</b>, SRC-2025, Dayananda Sagar</li>
             <li><b>Cryptography via Graph Structures</b>, Case Study, MSRIT</li>
@@ -70,14 +70,14 @@
         </div>
   
         <div class="section-card">
-          <h2>🛠 Workshops & Trainings</h2>
+          <h3>🛠 Workshops & Trainings</h3>
           <p>
             <b>IoT 4.0:</b> Industry-focused IoT workshop on NodeMCU, Arduino, and sensor automation using Python.
           </p>
         </div>
   
         <div class="section-card">
-          <h2>🎯 Goals</h2>
+          <h3>🎯 Goals</h3>
           <p>
             Continue building real-world apps, contribute to open-source projects, and dive deeper into system design and backend engineering.
           </p>
@@ -210,18 +210,20 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); */
   }
 
-  .section-card h2 {
-    all: unset;
+  .section-card h3 {
+    /* all: unset; */
     margin-bottom: 1rem;
+    margin-top: 0.2rem;
     color: var(--text-light);
     /* color: #2c3e50; */
     font-size: 1.2rem;
     /* border-bottom: 1px solid #ddd; */
     border-bottom: 1px solid var(--divider-light);
     padding-bottom: 0.5rem;
+  
   }
   
-  html.dark .section-card h2 {
+  html.dark .section-card h3 {
   /* color: #ddd; */
   color: var(--text-dark);
   border-bottom: 1px solid var(--divider-dark);

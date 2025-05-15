@@ -193,11 +193,6 @@ The file `/proc/stat` also contains interrupt information.
 
 
 
-
-
-
-___
-
 ## Process Monitering
 
 

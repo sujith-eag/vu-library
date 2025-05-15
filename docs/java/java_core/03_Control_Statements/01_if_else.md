@@ -1,5 +1,5 @@
 
-## Input Characters from the Keyboard
+# Input Characters from the Keyboard
 
 To read a character from the keyboard in Java, you can use the `System.in.read()` method. This method waits for the user to press a key, and then returns the input as an integer. To store the result in a `char` variable, you need to cast the returned integer to `char`.
 

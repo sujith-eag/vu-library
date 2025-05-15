@@ -15,9 +15,9 @@ seo:
 ---
 
 
-## Variables
+# Variables
 
-##### What are DOC strings? Illustrate with an example.
+#### What are DOC strings? Illustrate with an example.
 
 * Discuss the importance of using docstrings in Python functions. Explain how docstrings enhance code readability and maintainability. 
 * Provide an example demonstrating the use of docstrings in a Python function.
@@ -155,7 +155,7 @@ The resolution of these variables happens in the following way.
 * `b = 5` in also in enclosing space as it was declared when `fun()` was called with value 5.
 * `a = 7` is declared in the global scope.
 
-___
+
 
 ## Functions, Arguments
 

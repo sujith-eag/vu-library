@@ -144,7 +144,7 @@ So, `750` represents the permissions `rwx r-x ---`.
 | **Others** | 7     | 6     | 5     | 0     |
 
 
----
+
 
 
 ## Changing Ownership and Group
@@ -172,13 +172,13 @@ chown www:www /usr/local/apache/htdocs/*
 chgrp citg /home/fox/citg/project-data.txt
 ```
 
----
+
 
 ## Changing Permissions from the GUI
 
 Many **File Browsers** allow you to view and change file permissions graphically. You can typically right-click on a file or directory, select **Properties**, and then navigate to the **Permissions** tab to make changes.
 
----
+
 
 ## Advanced Permissions
 

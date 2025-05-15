@@ -273,7 +273,6 @@ UPDATE "votes" SET "title" = 'FARMERS'
 Like is case insensitive.
 
 
-___
 
 ## Triggers
 

@@ -18,7 +18,7 @@ When a program needs to retain a value for future use, it assigns the value to (
 
 In JavaScript, _bindings_ (also known as _variables_) are used to maintain the internal state and store values. The term “variable” implies that new values can be assigned: that the value associated with the variable may vary as our program runs. If we permanently assign a value to a name, then we call that name a constant instead of a variable.
 
----
+
 
 ## Rules for Naming Variables:
 
@@ -27,7 +27,7 @@ In JavaScript, _bindings_ (also known as _variables_) are used to maintain the i
 - **No spaces or hyphens (`-`)**.
 - **No special characters**, except for `$` and `_`.
 
----
+
 
 ## Naming Variables Properly
 
@@ -45,13 +45,13 @@ let userName = 'Jane Doe';
 let totalPrice = 100.50;
 ```
 
----
+
 
 ## 'var' (Old Way of Declaring Variables)
 
 The `var` keyword was previously used to declare variables in JavaScript, but it is now considered outdated due to some issues with variable scoping. As such, its usage is discouraged in favor of `let` and `const`.
 
----
+
 
 ## 'let' for Declaring Variables
 
@@ -87,7 +87,7 @@ let mood = 'light';  // Initial assignment
 mood = 'dark';       // Reassigning the value
 ```
 
----
+
 
 ## 'const' for Constants
 

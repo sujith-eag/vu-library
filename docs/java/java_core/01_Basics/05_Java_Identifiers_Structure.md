@@ -79,7 +79,7 @@ These are **not keywords**, but they are **reserved** and cannot be used as iden
 
 Starting with **JDK 9**, a standalone underscore (`_`) is considered a **keyword** and cannot be used as an identifier. This prevents potential confusion and ambiguity in code.
 
----
+
 
 ## Identifiers in Java
 
@@ -102,7 +102,7 @@ An **identifier** is the name given to a method, variable, class, or any other u
 
 Use meaningful and descriptive names that convey the purpose or usage of the item being named (e.g., `studentName`, `calculateTotal`, `isValid`).
 
----
+
 
 ## Java Class Libraries
 

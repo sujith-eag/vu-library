@@ -188,7 +188,7 @@ findRangeInPlace(arr, 1, 4);
 console.log(arr); // Output: [3, 1]
 ```
 
----
+
 
 ## toSpliced() Method
 

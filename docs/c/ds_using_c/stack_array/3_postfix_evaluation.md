@@ -68,7 +68,6 @@ Once the iteration of the `exp[]` is done, the `stack` will have the last value 
 * The result is put in `n3`,  `n3 = n2 + n1` etc 
 * `n3` is pushed into the stack
 
-___
 
 ## Implementation 
 

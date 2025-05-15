@@ -33,7 +33,7 @@ The built-in data types in Python can be broadly categorized into:
 - **Sets**
 - **Mappings**
 
----
+
 
 ## None Type
 
@@ -47,7 +47,7 @@ The **None** type is used to represent the absence of a value or a null value.
 x = None
 ```
 
----
+
 
 ## Numeric Types
 
@@ -142,7 +142,7 @@ is_empty = False
 ```
 
 
----
+
 
 ## Sequences in Python
 
@@ -222,7 +222,7 @@ r = range(30, 40, 2)  # 30 to 39, step size 2
 lst = list( range(10))  # to make a list using range
 ```
 
----
+
 
 ## Sets in Python
 
@@ -253,7 +253,7 @@ print(a | b)  # Union: {1, 2, 3, 4, 5}
 print(a - b)  # Difference: {1, 2}
 ```
 
----
+
 
 ## Mappings in Python
 

@@ -55,7 +55,7 @@ If the `.read` and `.unread` selectors share common style declarations, we can g
 
 By grouping them, you can apply common properties (like `color` and `background-color`) to both classes at once. This reduces repetition and makes your code easier to maintain.
 
----
+
 
 ## **2. Chaining Selectors**
 
@@ -103,7 +103,6 @@ In this case:
 
 **Important**: You cannot chain multiple type selectors (e.g., `div` and `p`) since an element can only be one type. For example, `divp` is not valid because it tries to target a non-existent `<divp>` element.
 
----
 
 ## **3. Combinators**
 
@@ -220,7 +219,7 @@ td || Column 2 {
 
 - The column combinator selects elements in a specified table column, including those that span multiple columns.
 
----
+___
 
 # **CSS Cascade and Specificity**
 

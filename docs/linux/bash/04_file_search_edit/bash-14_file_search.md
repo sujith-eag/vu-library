@@ -267,7 +267,7 @@ $ find . -maxdepth 2  # Search only two levels deep
 $ find . -mount -name "*.txt"  # Only search the current filesystem
 ```
 
----
+
 
 ## 3. Actions with `find`
 
@@ -309,7 +309,7 @@ $ find . -name "*.txt" -prune  # Skip directories
 $ find . -name "*.txt" -quit  # Stop after finding the first .txt file
 ```
 
----
+
 
 ## 4. Other Methods of Locating Files
 

@@ -109,7 +109,7 @@ Number.EPSILON
 // => 2**-52: smallest difference between numbers
 ```
 
----
+
 
 ## Testing for NaN and Finite Numbers
 
@@ -188,7 +188,7 @@ alert(isFinite(num));
 // true unless the value is NaN or Infinity
 ```
 
----
+
 
 ## Converting Strings to Numbers: 'parseInt()' and 'parseFloat()'
 

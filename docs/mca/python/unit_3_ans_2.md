@@ -15,10 +15,10 @@ seo:
 ---
 
 
-## Recursion
+# Recursion
 
 
-##### Explain recursion in Python functions. Provide an example illustrating the use of recursion to solve a specific problem.
+#### Explain recursion in Python functions. Provide an example illustrating the use of recursion to solve a specific problem.
 
 * Discuss recursion? Explain the working of recursion using factorial program.
 * What is recursion? Find the factorial of a number using recursive function.
@@ -274,7 +274,7 @@ print("Estimate e for 10 terms:", estimate_e(10))
 # Estimation e for 10 terms: 2.7182815255731922
 ```
 
-___
+
 
 
 ## Lambda, Map, Filter, List Comprehension

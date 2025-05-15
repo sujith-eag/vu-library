@@ -20,7 +20,7 @@ seo:
 
 Python offers powerful tools for working with files, for reading from them, writing to them, processing their contents, handling exceptions, analyzing text, and working with multiple files.
 
----
+
 
 ## **1. Working with a File's Contents**
 
@@ -61,7 +61,7 @@ print(pi_value)
 
 If the file contains numbers and you need them in a numeric context, convert them with `int()` or `float()`.
 
----
+
 
 ## **2. String Manipulation with `replace()`**
 
@@ -77,7 +77,7 @@ print(new_message)  # Output: 'I really like cats.'
 
 This method is useful when you want to change specific parts of the text, such as replacing certain words or phrases.
 
----
+
 
 ## **3. Writing to a File**
 
@@ -107,7 +107,7 @@ path.write_text(contents)
 
 Be cautious when using `write_text()` on existing files as it will erase all previous data in the file. Always ensure that overwriting the file is intended.
 
----
+
 
 ## **4. Handling Exceptions**
 
@@ -152,7 +152,7 @@ while True:
 - Only include code in the `try` block that might raise an exception.
 - Use the `else` block for code that should run if no exceptions occur.
 
----
+
 
 ## **5. Analyzing Text Files**
 
@@ -213,7 +213,7 @@ path = Path('alice.txt')
 count_words(path)
 ```
 
----
+
 
 ## **6. Working with Multiple Files**
 
@@ -244,7 +244,7 @@ for filename in filenames:
         pass  # If the file is not found, do nothing
 ```
 
----
+
 
 ## **7. Storing and Retrieving Data (JSON)**
 

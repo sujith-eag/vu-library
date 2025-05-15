@@ -20,7 +20,7 @@ Unit testing is a software testing technique where individual units or component
 
 Python provides several ways to perform unit testing. Here, we will focus on the `assert` keyword, manual error handling, and the powerful testing framework `pytest`.
 
----
+
 
 ## **1. Basic Unit Test Using `assert`**
 
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 - If both assertions are true, the program will exit quietly, meaning no errors were encountered.
 - If any assertion fails, an `AssertionError` will occur, and the test will be marked as failed.
 
----
+
 
 ## **2. Handling Errors Using `try-except`**
 
@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
 - This method gives you more control over the output, but it’s more verbose and less automated than using `assert` alone.
 
----
+
 
 ## **3. Using `pytest` for Automated Testing**
 
@@ -148,7 +148,7 @@ pytest test_calculator.py
 - `pytest` gives a clear, easy-to-read output and can handle large suites of tests efficiently.
 - It automatically discovers and runs the test functions.
 
----
+
 
 ## **4. Reducing Side Effects for Better Testing**
 
@@ -200,7 +200,7 @@ def test_hello():
 - The modified version of `hello()` returns the string rather than printing it.
 - Now, the test checks the returned values, which is easier to validate and automate.
 
----
+
 
 ## **Best Practices for Unit Testing**
 

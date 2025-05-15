@@ -56,7 +56,6 @@ button {
 - `justify-content: center` is used to center the buttons horizontally.
 - You can use **`margin`** on the buttons to add space between them, or use `justify-content: space-around` or `justify-content: space-between` to control spacing automatically.
 
----
 
 ## **Common Flexbox Properties**
 
@@ -153,7 +152,6 @@ These properties control the layout and behavior of individual flex items inside
 }
 ```
 
----
 
 ## **Columns in Flexbox**
 
@@ -177,8 +175,6 @@ When you use `display: flex`, it places all **direct children** of the container
 - Flexbox uses the **container's direct children** for the layout. 
 - If a container has nested elements, those elements will not be arranged in a column unless you apply `display: flex` to the nested container as well.
 - To make the layout responsive, the `flex` container width should be set appropriately, especially in responsive designs.
-
----
 
 ## **Summary of Key Flexbox Properties**
 

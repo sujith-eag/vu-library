@@ -28,7 +28,7 @@ File space is the physical collection of storage devices (like hard drives or SS
 
 OS have commands to show both views but we prefer to see logical view.
 
-___
+
 
 ## Files and Directories
 

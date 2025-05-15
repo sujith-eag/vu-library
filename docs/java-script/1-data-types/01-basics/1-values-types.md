@@ -32,7 +32,6 @@ object
 symbol
 ```
 
----
 
 ## Types of Values
 

@@ -39,7 +39,7 @@ let x = 3;
 // ERROR! Syntax error trying to re-declare x
 ```
 
----
+
 
 ## Declarations and Types
 

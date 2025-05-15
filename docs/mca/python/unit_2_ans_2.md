@@ -15,10 +15,10 @@ seo:
 ---
 
 
-## Lists
+# Lists
 
 
-##### How do you demonstrate that lists are equal and identical?
+#### How do you demonstrate that lists are equal and identical?
 
 **Answer :**
 
@@ -473,7 +473,7 @@ iv) dir(“python”) v) ['H', 'He', 'Li'] + 'Be'
 
 `> ['H', 'He', 'Li'] + 'Be'` , Output: This will raise a `TypeError`, Cannot concatenate a list with a string directly. 
 
-___
+
 
 ## Dictionaries
 
@@ -860,7 +860,7 @@ person_list = list(sorted_people.keys())
 print(f"The oldest person is: {person_list[0]}")
 ```
 
-___
+
 ## Numpy
 
 ##### Discuss the following with an example: 

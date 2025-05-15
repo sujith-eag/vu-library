@@ -23,7 +23,7 @@ Arrays in JavaScript can be sparse, meaning that the elements need not have cont
 
 ES6 introduces a set of new array classes known collectively as "typed arrays." Unlike regular JavaScript arrays, typed arrays have a fixed length and a fixed numeric element type.
 
----
+
 
 ## Creating Arrays
 
@@ -34,7 +34,7 @@ There are several ways to create arrays in JavaScript:
 3. **The `Array()` Constructor**
 4. **The `Array.of()` and `Array.from()` Factory Methods**
 
----
+
 
 ## 1. Array Literals
 
@@ -123,7 +123,7 @@ let arrayOfArrays = [
 ]; // Array of arrays (2D array)
 ```
 
----
+
 
 ## 2. Spread Operator
 
@@ -165,7 +165,7 @@ console.log(uniqueLetters);
 // => ["h", "e", "l", "o", " ", "w", "r", "d"]
 ```
 
----
+
 
 ## 3. 'Array()' Constructor
 

@@ -17,7 +17,6 @@ seo:
 
 There are three primary methods to add CSS to an HTML document: **External CSS**, **Internal CSS**, and **Inline CSS**. Let’s break down each method:
 
----
 
 ## **1. External CSS**
 
@@ -49,7 +48,7 @@ p {
 1. **Separation of concerns**: Keeps HTML and CSS files separate, making the HTML cleaner and smaller.
 2. **Reusability**: You only need to edit the CSS in one place, and those styles will apply to every HTML page linked to that CSS file. This is especially useful for websites with multiple pages that share similar styles.
 
----
+
 
 ## **2. Internal CSS**
 
@@ -88,7 +87,7 @@ Internal CSS, or embedded CSS, involves placing the CSS rules directly inside th
 - Does not keep styles separate from content, which can make the HTML file larger and less maintainable, especially for larger projects.
 - Not reusable across multiple pages (unlike External CSS).
 
----
+
 
 ## **3. Inline CSS**
 
@@ -116,7 +115,7 @@ Inline CSS applies styles directly to individual HTML elements using the `style`
 - **Redundancy**: You’ll need to repeat the same styles across different elements if they share the same styling, which can lead to repetitive code.
 - **Overrides other styles**: Inline styles have the highest specificity, meaning they can override other CSS rules (including external and internal styles).
 
----
+
 
 ## **Summary of Methods**
 

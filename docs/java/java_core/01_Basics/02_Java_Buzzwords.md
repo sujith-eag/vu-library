@@ -1,5 +1,5 @@
 
-## Java Buzzwords
+# Java Buzzwords
 
 While **portability** and **security** were the primary motivations behind Java's development, several other key principles influenced its design. The Java design team summarized these foundational ideas as a set of **buzzwords** that define the language:
 
@@ -26,7 +26,7 @@ While **portability** and **security** were the primary motivations behind Java'
 - **Dynamic**: Java carries extensive run-time type information to facilitate dynamic linking and execution.
 
 
----
+
 
 ## Security in Java
 
@@ -39,7 +39,7 @@ When a program is downloaded and executed on a client computer, it must not pose
 - Java’s language structure itself enforces safety, for example by eliminating pointers and requiring strong type checking.
 
 
----
+
 
 ## Portability
 
@@ -52,7 +52,6 @@ In order to create a truly platform-independent programming language, Java had t
 - This approach ensures that **"write once, run anywhere"** is not just a slogan, but a functional capability.
 
 
----
 
 ## The Bytecode: Java’s Magic
 
@@ -74,7 +73,6 @@ At the heart of Java's portability and security lies its use of **bytecode**:
 - **Consistency**: All JVMs understand the same bytecode format, ensuring consistent behavior across different systems.
 
 
----
 
 ## Just-In-Time (JIT) Compilation
 

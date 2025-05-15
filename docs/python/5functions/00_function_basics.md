@@ -40,7 +40,7 @@ In Python, **functions are first-class objects**, meaning they can be treated ju
 This characteristic of functions allows for great flexibility and the ability to create more abstract, reusable code.
 
 
----
+
 
 ## Defining a Function
 
@@ -76,7 +76,7 @@ Hello, Jess!
 4. **Return Statement**: Optionally returns a value.
 5. **Function Call**: Executes the function with given arguments.
 
----
+
 
 ## Function Parameters and Arguments
 
@@ -93,7 +93,7 @@ Functions can accept multiple arguments.
 10
 ```
 
----
+
 
 ## Default Parameter Values
 
@@ -295,7 +295,7 @@ Functions can also be returned from other functions. This is useful for scenario
 - The `multiplier()` function returns a new function `multiply()` that multiplies its argument by a specific factor.
 - We create a function `times_three` by calling `multiplier(3)`, and then use it to multiply `5` by `3`, resulting in `15`.
 
-___
+
 
 ## Customizing Function Behavior
 

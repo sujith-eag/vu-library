@@ -112,7 +112,6 @@ When all three properties are set on a flex item, the item will:
 - If `flex-grow` and `flex-shrink` are both set to `0`, the item will **not grow or shrink**, and will remain at its **initial size** based on `flex-basis`.
 - By default, `flex-grow` is `0`, `flex-shrink` is `1`, and `flex-basis` is `auto`.
 
----
 
 ## **flex Shorthand**
 
@@ -181,7 +180,6 @@ flex-basis: auto;
 
 The item is completely **inflexible**. It will maintain its natural size and will not grow or shrink, even if there is available space or overflow.
 
----
 
 ## **Practical Use Cases for Flexbox Flexibility**
 
@@ -190,7 +188,6 @@ The item is completely **inflexible**. It will maintain its natural size and wil
 - **Prevent Shrinking**: To ensure an item does not shrink below its base size, use `flex-shrink: 0`.
 - **Adaptive Layouts**: Combine `flex-grow`, `flex-shrink`, and `flex-basis` to create responsive layouts that adjust based on the container's size.
 
----
 
 ## **Summary**
 

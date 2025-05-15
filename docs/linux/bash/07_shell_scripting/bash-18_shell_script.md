@@ -19,7 +19,7 @@ seo:
 A shell program runs in interpretive mode. It is not compiled into a separate executable file as a C Program is.  Each statement is loaded into memory when it is executed.
 
 
----
+
 
 ## Shell Script
 
@@ -152,7 +152,7 @@ Comments are ignored by the shell but provide clarity for users.
 head -n "$2" "$1" | tail -n "$3"
 ```
 
-___
+
 
 ## Using `$@` to Process Multiple Files
 

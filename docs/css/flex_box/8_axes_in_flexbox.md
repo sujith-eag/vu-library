@@ -55,7 +55,6 @@ The `flex-direction` property defines the direction of the main axis and affects
 
 > **Note**: By default, block-level elements (like divs) in `flex-direction: column` will collapse to **height: auto**, meaning they'll shrink to fit their content unless specified otherwise.
 
----
 
 ## **Gap Between Items**
 
@@ -66,7 +65,6 @@ The `gap` property adds **spacing** between flex items, similar to adding margin
 
 This is a relatively **new feature** but provides a cleaner and more consistent way to manage space between items than using margins.
 
----
 
 ## **Using `margin: auto` for Alignment**
 

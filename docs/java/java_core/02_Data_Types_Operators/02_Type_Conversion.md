@@ -1,6 +1,6 @@
 
 
-## Type Conversion in Assignments
+# Type Conversion in Assignments
 
 When **compatible types** are mixed in an assignment, **automatic type conversion** (also called _type coercion_) occurs if:
 
@@ -21,7 +21,7 @@ f = i; // int is automatically converted to float
 
 > Note: `boolean` and `int` are **not compatible types** and cannot be converted automatically.
 
----
+
 
 ## Casting Incompatible Types
 
@@ -76,7 +76,7 @@ Value of b: 1
 ch: X
 ```
 
----
+
 
 ## Expressions and Type Conversion in Expressions
 
@@ -157,7 +157,7 @@ class UseCast {
 4 / 3 with fractions: 1.3333333333333333
 ```
 
----
+
 
 ## Operator Precedence and Expression Formatting
 

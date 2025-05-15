@@ -88,7 +88,7 @@ function isArrayLike(o) {
 }
 ```
 
----
+
 
 ## Strings as Arrays
 
@@ -112,7 +112,7 @@ for (let char of "test") {
 }
 ```
 
----
+
 
 ## Unicode and Surrogate Pairs
 

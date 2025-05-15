@@ -140,7 +140,6 @@ The author writes at least one book and a book is at least written by one author
 For a translator, books do not need to have a translator so they could have zero or many translators so can be represented by the zero.
 
 
-_______
 
 ## Keys
 To relate tables to one another.
@@ -166,7 +165,6 @@ Representing the many to many relationship using foreign keys in `authored` tabl
 The tables like `authored` are called joint or junction tables.
 
 
-___
 
 ## Subqueries
 
@@ -248,7 +246,6 @@ Innermost query uses `=` because we want to find the author by his name.
 So searching `In` that to find all the id if they are present in `books`.
 
 
-____
 
 ## JOIN
 This allows to combine two or more tables together.
@@ -298,7 +295,6 @@ NATURAL JOIN "migrations";
 
 
 
-____
 
 ## Sets
 

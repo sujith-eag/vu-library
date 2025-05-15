@@ -163,7 +163,7 @@ $ cp minotaur.dat unicorn.dat basilisk.dat
 # Error occurs with multiple files; use wildcards instead
 ```
 
-___
+
 
 ## Wildcards
 
@@ -265,7 +265,7 @@ _Note:_ The shell does not have a trash bin, so deleted files are permanently re
 `rmdir` is the only way to delete an empty directory. Use `rmdir -p` to recursively delete parent and current directories.
 
 
-___
+
 
 ## [*mkdir*](/personal-site/docs/bash-linux/command-docs/mkdir) Creating Directories
 
