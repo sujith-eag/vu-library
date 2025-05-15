@@ -1,71 +1,59 @@
 
-#### For-Each Style for Loop
+# 'for-each' loop & Strings
 
-The second form of the for implements a “for-each” style loop. A for-each loop cycles
-through a collection of objects, such as an array, in strictly sequential fashion, from start to
-finish.
 
-The general form of the for-each style for :
+The second form of the `for` loop implements a “for-each” style loop which cycles
+through a collection of objects, such as an array, in strictly sequential fashion, from start to finish.
 
-`for(type itr-var : collection) statement-or-block`
+```java
+for(type itr-var : collection) 
+	statement-or-block
+```
+`itr-var` specifies the name of an iteration variable that will receive the elements from a collection, one at a time, from beginning to end. The collection being cycled through is specified by collection.
 
-type specifies the type, and itr-var specifies the name of an iteration variable that will
-receive the elements from a collection, one at a time, from beginning to end. The collection
-being cycled through is specified by collection.
+With each iteration of the loop, the next element in the collection is retrieved and stored in `itr-var`. The loop repeats until all elements in the collection have been obtained. Syntax is streamlined and also prevents boundary errors.
 
-With each iteration of the
-loop, the next element in the collection is retrieved and stored in itr-var. The loop repeats until
-all elements in the collection have been obtained.
-
-Traditional method
 ```java
 int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int sum = 0;
 
+// Traditional loop
 for(int i=0; i < 10; i++) 
 	sum += nums[i];
 
-// for each loop
+// for each type loop
 for(int x: nums) 
 	sum += x;
 ```
 
-With each pass through the loop, x is automatically given a value equal to the next element in nums. Thus, on the first iteration, x contains 1, on the second iteration, x contains 2, and so on. Not only is the syntax streamlined, it also prevents boundary errors.
 
-Although the for-each for loop iterates until all elements in an array have been examined,
-it is possible to terminate the loop early by using a break statement. For example, this loop
-sums only the first five elements of nums:
+It is possible to terminate the loop early by using a break statement. 
 ```java
 // Sum only the first 5 elements.
+
 for(int x : nums) 
 {
 	System.out.println("Value is: " + x);
 	sum += x;
-	if(x == 5) break; // stop the loop when 5 is obtained
+	if(x == 5) break; 
+	// stop the loop when 5 is obtained
 }
 ```
 
 
-
 ## Strings
 
-String defines and supports character strings. In some other programming languages,
-a string is an array of characters. This is not the case with Java. In Java, strings are objects.
-When you create a string literal, you are actually creating a String object.
-
-You can construct a String just like you construct any other type of object: by using new and calling the String constructor. 
-
-`String str = new String("Hello");`
-
-You can also
-construct a String from another String. For example:
-```
+In other programming languages, a string is an array of characters. In Java, strings are objects. Creating a string literal, creates a String object. Also String from another String.
+```java
 String str = new String("Hello");
+
 String str2 = new String(str);
 ```
 
 Another easy way to create a String is :
-`String str = "Java strings are powerful.";`
+```java
+String str = "Java strings are powerful.";
+```
 
 ```java
 // Introduce String.
@@ -94,7 +82,7 @@ They are constructed various ways.
 
 ___
 
-#### Operating on Strings
+### Operating on Strings
 
 The String class contains several methods that operate on strings.
 
@@ -176,22 +164,21 @@ Index of last occurrence of One: 14
 
 ____
 
-You can concatenate (join together) two strings using the + operator. 
+Two strings can be be concatenated using the + operator. 
 ```java
 String str1 = "One";
 String str2 = "Two";
 String str3 = "Three";
 String str4 = str1 + str2 + str3;
 ```
-initializes str4 with the string "OneTwoThree".
+initializes `str4` with the string `OneTwoThree`.
 
 
-The equals( ) method compares the character sequences of two String objects for equality.
-Applying the == to two String references simply determines whether the two references refer to the same object.
+>[!important]
+>The `equals( )` method compares the character sequences of two String objects for equality. Applying the == to two String references simply determines whether the two references refer to the same object.
 
-___
 
-#### Arrays of strings
+## Arrays of strings
 
 ```java
 // Demonstrate String arrays.
@@ -227,18 +214,17 @@ This was a test, too!
 
 ___
 
-#### Strings are Immutable
+### Strings are Immutable
 
-The contents of a String object are immutable. That is, once created, the character sequence that makes up the string cannot be altered. 
+The contents of a String object are immutable. That is, once created, the character sequence that makes up the string cannot be altered. String reference variables may, of course, change the object to which they refer. It is just that the contents of a specific String object cannot be changed after it is created.
 
 This restriction allows Java to implement strings more efficiently.
 
-When you need a string that is a variation on one that already exists, simply create a new string that contains the desired changes. Unused String objects are automatically garbage collected.
+>[!note]
+>When you need a string that is a variation on one that already exists, simply create a new string that contains the desired changes. Unused String objects are automatically garbage collected.
 
-String reference variables may, of course, change the object to which they refer. It is just that the contents of a specific String object cannot be changed after it is created.
 
-
-The substring( ) method returns a new string that contains a specified portion of the invoking string. Because a new String object is manufactured that contains the substring, the original string is unaltered, and the rule of immutability remains intact. 
+The `substring( )` method returns a new string that contains a specified portion of the invoking string. Because a new String object is manufactured that contains the substring, the original string is unaltered, and the rule of immutability remains intact. 
 
 `String substring(int startIndex, int endIndex)`
 
@@ -259,7 +245,7 @@ class SubStr
 ```
 
 
-#### String to Control switch
+## String to Control switch
 
 With a modern version of Java, you can use a String to control a switch. This results in more readable, streamlined code in many situations.
 
@@ -288,8 +274,6 @@ class StringSwitch
 }
 ```
 
-Being able to use strings in a switch statement can be very convenient and can improve
-the readability of some code. For example, using a string-based switch is an improvement
-over using the equivalent sequence of if/else statements. However, switching on strings can be less efficient than switching on integers.
+Being able to use strings in a switch statement can be very convenient and can improve the readability of some code. 
 
 ___

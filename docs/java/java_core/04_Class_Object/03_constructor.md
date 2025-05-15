@@ -1,16 +1,13 @@
 
-#### constructors
 
-The instance variables of each Vehicle object had to be set manually using a sequence of statements, such as:  `minivan.passengers = 7;`
+# constructors
 
-A constructor initializes an object when it is created. It has the same name as its class
-and is syntactically similar to a method. However, constructors have no explicit return
-type. Typically, you will use a constructor to give initial values to the instance variables
-defined by the class, or to perform any other startup procedures required to create a fully
+A constructor initializes an object when it is created. It has the same name as its class and is syntactically similar to a method. However, constructors have no explicit return type. 
+
+Constructor is used to give initial values to the instance variables defined by the class, or to perform any other startup procedures required to create a fully
 formed object.
 
-All classes have constructors, whether you define one or not, because Java automatically
-provides a default constructor. In this case, non-initialized member variables have their default values, which are zero, null, and false, for numeric types, reference types, and booleans, respectively. Once you define your own constructor, the default constructor is no longer used.
+The instance variables of each Vehicle object had to be set manually using a sequence of statements, such as:  `minivan.passengers = 7;`
 
 ```java
 class Myclass
@@ -37,18 +34,20 @@ class ConsDemo
 
 This constructor is called by new when an object is created using new.
 
+>[!note]
+>All classes have constructors, whether you define one or not, because Java automatically provides a default constructor. Non-initialized member variables have their default values, which are zero, null, and false, for numeric types, reference types, and booleans, respectively. Once you define your own constructor, the default constructor is no longer used.
 
-#### Parameterized constructors
 
-Parameters are added to a constructor in the same way that they are added to a method: just
-declare them inside the parentheses after the constructor’s name.
+## Parameterized constructors
+
+Parameters are added to a constructor in the same way that they are added to a method. Just declare them inside the parentheses after the constructor’s name.
 
 ```java
-class Myclass
+class MyClass
 {
 	int x;
 	
-	MyClass(int i)  // cnstructor for my class
+	MyClass(int i)  // constructor for MyClass
 	{
 		x = i;
 	}
@@ -58,8 +57,8 @@ class ConsDemo
 {
 	public static void main(String[] args)
 	{
-		Myclass t1 = new Myclass(10);
-		Myclass t2 = new Myclass(88);
+		MyClass t1 = new MyClass(10);
+		MyClass t2 = new MyClass(88);
 		
 		System.out.println(t1.x + " " + t2.x );
 	}
@@ -106,30 +105,28 @@ class VehConsDemo
 		
 		liters = minivan.fuelNeeded(dist);
 		
-		System.out.println("To go " + dist + " miles minivan needs " + liters + " liters of fuel.");
+		System.out.println("To go " + dist 
+			+ " miles minivan needs " + liters 
+				+ " liters of fuel.");
 	}
 }
 ```
 
 
-___
 
-#### Garbage collection
+## Garbage collection
 
-Java’s garbage collection system reclaims objects automatically—occurring transparently,
-behind the scenes, without any programmer intervention. It works like this: When no references to an object exist, that object is assumed to be no longer needed, and the memory occupied by the object is released. This recycled memory can then be used for a subsequent allocation.
+Java’s garbage collection system reclaims objects automatically behind the scenes, without any programmer intervention. 
 
-Garbage collection occurs only sporadically during the execution of your program. It will
-not occur simply because one or more objects exist that are no longer used.
+When no references to an object exist, that object is assumed to be no longer needed, and the memory occupied by the object is released. This recycled memory can then be used for a subsequent allocation.
 
-For efficiency, the garbage collector will usually run only when two conditions are met: 
-* There are objects to recycle, and there is a reason to recycle them. 
+Garbage collection occurs only sporadically during the execution of your program. It will not occur simply because one or more objects exist that are no longer used.
 
-Remember, garbage collection takes time, so the Java run-time system does it only when it is appropriate. Thus, you can’t know precisely when garbage collection will take place.
+>[!note]
+>The garbage collector will run only when two conditions are met: There are objects to recycle, and there is a reason to recycle them. 
 
-___
 
-#### 'this' keyword
+## 'this' keyword
 
 When a method is called, it is automatically passed an implicit argument that is a reference to the invoking object (that is, the object on which the method is called). This reference is called `this`.
 

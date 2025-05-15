@@ -1,4 +1,7 @@
-#### 'break' to Exit a loop
+# 'break' & 'continue'
+
+
+### 'break' to exit loop
 
 ```java
 // Using break to exit a loop.
@@ -13,7 +16,8 @@ class BreakDemo
 		for(int i=0; i < num; i++) 
 		{
 			if(i*i >= num) 
-				break; // terminate loop if i*i >= 100
+				break; 
+				// terminate loop if i*i >= 100
 			
 			System.out.print(i + " ");
 		}
@@ -28,7 +32,8 @@ class BreakDemo
 
 ____
 
-Breaking on input
+### 'break' on input
+
 ```java
 class Break1
 {
@@ -47,8 +52,10 @@ class Break1
 }
 ```
 
+___
 
-Using break in Nested loops
+### 'break' in nested loops
+
 ```java
 class Break2
 {
@@ -86,20 +93,25 @@ Loops complete.
 
 ____
 
-#### use 'break' as a form of 'goto'
+#### using 'break' as a form of 'goto'
 
-Java does not have a goto statement, because it provides an unstructured way to alter the flow of program execution. In addition to its uses with the switch statement and loops, the break statement can be employed by itself to provide a “civilized” form of the goto statement.
+Java does not have a `goto` statement, because it provides an unstructured way to alter the flow of program execution. The break statement can be employed by itself to provide a “civilized” form of the goto statement.
 
 ____
 
-The general form of the labeled break statement is shown here: `break label;`
+### 'break' with labeled block
 
-Typically, label is the name of a label that identifies a block of code. When this form of break
-executes, control is transferred out of the named block of code. The labeled block of code must enclose the break statement, but it does not need to be the immediately enclosing block. This means that you can use a labeled break statement to exit from a set of nested blocks.
+`break label;`
+
+Typically, label is the name of a label that identifies a block of code. When this form of break executes, control is transferred out of the named block of code. 
+
+The labeled block of code must enclose the break statement, but it does not need to be the immediately enclosing block. This means that you can use a labeled break statement to exit from a set of nested blocks.
 
 These blocks need not be part of a loop or a switch. They can be any block. Further, you can specify precisely where execution will resume, because this form of break works with a label.
 
-To name a block, put a label at the start of it. The block being labeled can be a stand-alone block, or a statement that has a block as its target. A label is any valid Java identifier followed by a colon. Once you have labeled a block, you can then use this label as the target of a break statement. Doing so causes execution to resume at the end of the labeled block. 
+A label is any valid Java identifier followed by a colon. To name a block, put a label at the start of it. The block being labeled can be a stand-alone block, or a statement that has a block as its target. 
+
+ Once you have labeled a block, you can then use this label as the target of a break statement. Doing so causes execution to resume at the end of the labeled block. 
 
 ```java
 // Using break with a label
@@ -193,7 +205,8 @@ stop1: for(x=0; x < 5; x++) {
 	}
 }
 ```
-when the break executes, it transfers control to the end of the entire for block, skipping the rest of the outer loop’s iterations.
+
+When the break executes, it transfers control to the end of the entire for block, skipping the rest of the outer loop’s iterations.
 
 ```java
 // now, put label immediately before {
@@ -253,7 +266,8 @@ class ContToLabel {
 	}
 }
 ```
-when the continue executes, control passes to the outer loop, skipping the remainder of the inner loop.
+
+When the continue executes, control passes to the outer loop, skipping the remainder of the inner loop.
 ```
 Outer loop pass 1, Inner loop: 1234
 Outer loop pass 2, Inner loop: 1234
@@ -268,7 +282,7 @@ Outer loop pass 9, Inner loop: 1234
 
 ___
 
-#### Nested Loops
+### Nested Loops
 
 Find the factors of the numbers from 2 to 100:
 

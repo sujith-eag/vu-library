@@ -1,5 +1,5 @@
 
-# Object-Oriented Programming (OOP) in Java
+### Object-Oriented Programming (OOP) in Java
 
 At the core of Java lies **object-oriented programming (OOP)**. Java is fundamentally built on the principles of OOP, and every Java program, to some extent, follows this paradigm.
 
@@ -7,8 +7,9 @@ OOP combines the best ideas of **structured programming** with powerful new conc
 
 In contrast, **object-oriented programming organizes a program around its data**, encapsulating both the data and the methods that operate on it. The core principle becomes “**data controlling access to code**.” In Java, you define data and associate with it the code that is allowed to manipulate it. This structure provides clarity, modularity, and reusability.
 
+---
 
-## Core Principles of OOP
+### Core Principles of OOP
 
 To support object-oriented design, all OOP languages share three foundational principles:
 
@@ -18,7 +19,7 @@ To support object-oriented design, all OOP languages share three foundational pr
 
 ---
 
-### 1. Encapsulation
+#### Encapsulation
 
 **Encapsulation** is the mechanism that binds together the code and the data it manipulates, while protecting both from outside interference and misuse. It allows an object to **hide its internal state** and require all interaction to occur through **well-defined interfaces**.
 
@@ -36,7 +37,7 @@ This separation of internal representation from external interface enhances **mo
 
 ---
 
-### 2. Polymorphism
+#### Polymorphism
 
 **Polymorphism**, derived from Greek meaning “many forms,” allows one interface to be used for a general class of actions. The exact behavior is determined by the specific context.
 
@@ -61,7 +62,7 @@ This allows developers to:
 
 ---
 
-### 3. Inheritance
+#### Inheritance
 
 **Inheritance** is the process by which one class (the **subclass**) can acquire the properties and behaviors of another class (the **superclass**). It provides a natural mechanism for expressing **hierarchical relationships** and supports **code reuse**.
 
@@ -73,7 +74,6 @@ Key benefits:
 
 - Promotes the **"is-a" relationship**: if `Dog` inherits from `Animal`, then a `Dog` _is an_ `Animal`.
 
-
 Inheritance helps to:
 
 - Eliminate redundant code
@@ -81,6 +81,5 @@ Inheritance helps to:
 - Encourage code organization
 
 - Model real-world relationships effectively
-
 
 ---

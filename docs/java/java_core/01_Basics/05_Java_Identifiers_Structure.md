@@ -1,13 +1,13 @@
 
+# Java Identifiers & Structures
 
-## Java Keywords
+
+### Java Keywords
 
 Java defines **67 keywords** that form the foundation of the language. These keywords, along with Java’s syntax, operators, and separators, define the structure of Java programs.
 
 >[!note] 
 Keywords **cannot be used** as identifiers (e.g., variable names, class names, method names).
-
-### List of Java Keywords
 
 ```java
 abstract    assert      boolean     break       byte        case
@@ -25,18 +25,18 @@ var         void        volatile    while       with        yield
 
 ---
 
-### Context-Sensitive Keywords
+#### Context-Sensitive Keywords
 
 **16 keywords** are _context-sensitive_, meaning they are treated as keywords **only when used in certain contexts** related to specific features introduced in later Java versions:
 
-#### Related to Modules (Java 9+)
+##### Related to Modules (Java 9+)
 
 - `exports`, `module`, `open`, `opens`
     
 - `provides`, `requires`, `to`, `transitive`, `uses`, `with`
     
 
-#### Related to Other Features
+##### Related to Other Features
 
 - `record` – Declares a record class (Java 14+)
     
@@ -47,39 +47,33 @@ var         void        volatile    while       with        yield
 - `var` – Local variable type inference (Java 10+)
     
 
-> Because they are context-sensitive, these additions **do not affect** older Java programs.
+>[!note] 
+>Because they are context-sensitive, these additions **do not affect** older Java programs.
 
 ---
 
-### Reserved but Unused Keywords
+##### Reserved but Unused Keywords
 
 - `const`
-    
 - `goto`
-    
 
-> These are reserved but **not currently used** in Java.
+These are reserved but **not currently used** in Java.
 
 ---
 
-### Reserved Literals
+##### Reserved Literals
 
 These are **not keywords**, but they are **reserved** and cannot be used as identifiers:
 
 - `true`
-    
 - `false`
-    
 - `null`
-    
 
 ---
 
-### Underscore `_` as a Keyword
+#### Underscore `_` as a Keyword
 
 Starting with **JDK 9**, a standalone underscore (`_`) is considered a **keyword** and cannot be used as an identifier. This prevents potential confusion and ambiguity in code.
-
-
 
 ## Identifiers in Java
 
@@ -98,10 +92,8 @@ An **identifier** is the name given to a method, variable, class, or any other u
 - Subsequent characters may include digits (`0-9`)
     
 
-### Best Practice:
-
-Use meaningful and descriptive names that convey the purpose or usage of the item being named (e.g., `studentName`, `calculateTotal`, `isValid`).
-
+>[!Best Practice]
+>Use meaningful and descriptive names that convey the purpose or usage of the item being named (e.g., `studentName`, `calculateTotal`, `isValid`).
 
 
 ## Java Class Libraries
@@ -116,12 +108,11 @@ Java programs rely on a comprehensive set of **built-in class libraries**. These
     
 - **Graphics**
     
-- **Graphical User Interface (GUI)** support
-    
+- **Graphical User Interface (GUI)** support    
 
 Together, these classes form the **Java API**, a crucial part of the Java platform.
 
-### Example:
+##### Example:
 
 - `System` is a **predefined class** included in all Java programs.
     
@@ -130,10 +121,7 @@ Together, these classes form the **Java API**, a crucial part of the Java platfo
 - `println()` and `print()` are **built-in methods** used to display text on the console.
     
 
----
-
-
-### Two Control Statements
+## Two Control Statements
 
 The Java if statement works much like the IF statement in any other language. It determines the flow of program execution based on whether some condition is true or false. 
 

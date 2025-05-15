@@ -1,9 +1,10 @@
 
-# Switch Expressions
+# 'switch' Expressions
 
-Java has significantly enhanced the `switch` construct, turning it into a more powerful and expressive feature. A **switch expression** is one of the most important additions—it enables `switch` to produce a **value**.
+Java has significantly enhanced the `switch` construct, turning it into a more powerful and expressive feature. A **switch expression** is one of the most important additions which enables `switch` to produce a **value**.
 
-### Key Enhancements to `switch`
+
+## Key Enhancements to `switch`
 
 The modern Java `switch` supports:
 
@@ -15,7 +16,7 @@ The modern Java `switch` supports:
     
 - Lists of `case` constants
     
-
+___
 
 A Traditional use of switch case
 ```java
@@ -51,13 +52,13 @@ class TraditionalSwitch
 			default:
 				shipBy = ShipMethod.STANDARD;
 		}
-		System.out.println("Shipping method for product number " +
-		productID + " is " + shipBy);
+		System.out.println("Shipping method for product number " 
+			+ productID + " is " + shipBy);
 	}
 }
 ```
 
-`Shipping method for product number 5099 is OVERNIGHT`
+Shipping method for product number 5099 is `OVERNIGHT`
 
 ---
 
@@ -79,9 +80,8 @@ int result = switch (value) {
 
 This is in contrast to traditional `switch` statements, which do **not** produce values directly.
 
----
 
-### The `yield` Statement
+## The `yield` Statement
 
 `yield` is used to specify the result of a `case` in a switch expression when more than a single expression is involved:
 
@@ -99,6 +99,7 @@ int result = switch (value) {
 };
 ```
 
+> [!note]
 > `yield` immediately exits the switch expression with the given value, much like `break`, but with the ability to return data.
 
 yield is a context-sensitive keyword. This means that outside its use in a switch expression, yield is simply an identifier with no special meaning.
@@ -131,14 +132,9 @@ case 'C' -> throw new IllegalArgumentException("Invalid input");
 ```
 
 
+## List of 'case' Constants
 
-## List of `case` Constants
-
-You can now list multiple constants in a single `case` using commas:
-
-```java
-case 1774, 8708, 6709 -> ShipMethod.TRUCK;
-```
+You can now list multiple constants in a single `case` using commas. This eliminates the need for "case stacking" and improves code readability.
 
 ```java
 case 1774, 8708, 6709:
@@ -146,7 +142,9 @@ case 1774, 8708, 6709:
 	break;
 ```
 
-This eliminates the need for "case stacking" and improves code readability.
+```java
+case 1774, 8708, 6709 -> ShipMethod.TRUCK;
+```
 
 ```java
 class SwitchExprDemo
@@ -171,14 +169,13 @@ class SwitchExprDemo
 }
 ```
 
+___
 
-
-## Switch Expression Must Return a Value
+### Switch Expression Must Return a Value
 
 Each path in a switch expression (including `default`) **must** produce a result unless it throws an exception.
 
 Incorrect:
-
 ```java
 int result = switch (value) {
 	case 1 -> 100;
@@ -188,7 +185,6 @@ int result = switch (value) {
 ```
 
 Correct:
-
 ```java
 int result = switch (value) {
 	case 1 -> 100;
@@ -200,6 +196,10 @@ int result = switch (value) {
 ```
 
 ---
+
+> [!important]
+>  When switch is used in an assignment, it must be terminated by a semicolon.
+
 
 ```java
 class SwitchExprDemo
@@ -226,23 +226,23 @@ class SwitchExprDemo
 	}
 }
 ```
-Using a switch expression also ensures that each case yields a value, yield produces a value and causes immediate termination of the switch, so no fall through from case to case will occur.
 
-> [!note]
->  Because this switch is used in an assignment, it must be terminated by a semicolon.
+>[!note]
+>switch expression ensures each case yields a value. This yield causes immediate termination of the switch, so no fall through from case to case will occur.
 
-There is an important restriction that applies to a switch expression: the case statements must handle all of the values that might occur.
+There is an important restriction that applies to a switch expression: the case statements must handle all of the values that might occur. For this reason, most switch expressions will have a default statement. 
 
-For this reason, most switch expressions will have a default statement. The exception to this rule is when an enumeration is used, and each value of the enumeration is matched by a case.
+The exception to this rule is when an enumeration is used, and each value of the enumeration is matched by a case.
 
 ____
 
-#### A Closer Look at the Arrow case
+### A Closer Look at the Arrow case
 
 
-the target of the -> can also be a block of code when more than one expression is needed.
+The target of the -> can also be a block of code when more than one expression is needed. 
 
-Because the target of the arrow is a block, yield must be used to supply the value.
+>[!important]
+>Since the target of the arrow case is a block, `yield` must be used to return a value.
 
 ```java
 class SwitchExprDemo
@@ -283,12 +283,11 @@ class SwitchExprDemo
 }
 ```
 
-
-when using a block, you must use yield to supply a value to a switch expression. Even though block targets are used, each path through the switch expression must still provide a value.
+Even though block targets are used, each path through the switch expression must still provide a value.
 
 ___
 
-Using in traditional switch where no value is produced but no fall through can occur also.
+Using `->` in traditional switch statement where no value is produced but no fall through can occur also.
 
 ```java
 class StatementSwitchWithArrows 
@@ -334,7 +333,7 @@ class StatementSwitchWithArrows
 
 If this switch were an expression, then default would be needed because a switch expression is required to be exhaustive.
 
-because each case increases the value of a different variable, it would not be possible to transform this switch into an expression.
+Because each case increases the value of a different variable, it would not be possible to transform this switch into an expression.
 
 > [!Note]
 you cannot mix arrow cases with traditional, colon cases in the same switch. You must choose one or the other.
@@ -342,7 +341,8 @@ you cannot mix arrow cases with traditional, colon cases in the same switch. You
 
 ___
 
-Getting time zone using switch
+#### Getting time zone using `switch`
+
 ```java
 class CityTZDemo 
 {

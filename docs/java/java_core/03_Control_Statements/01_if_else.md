@@ -1,9 +1,12 @@
+# if else Conditionals
 
-# Input Characters from the Keyboard
+
+### Input Characters from the Keyboard
 
 To read a character from the keyboard in Java, you can use the `System.in.read()` method. This method waits for the user to press a key, and then returns the input as an integer. To store the result in a `char` variable, you need to cast the returned integer to `char`.
 
-By default, **console input is line-buffered**. A **buffer** is a temporary memory area that stores input characters until they are read by your program.
+>[!important]
+>By default, **console input is line-buffered**. A **buffer** is a temporary memory area that stores input characters until they are read by your program.
 
 ```java
 class KbIn {
@@ -19,7 +22,6 @@ class KbIn {
 }
 ```
 
-**Sample Output:**
 
 ```
 Press a key followed by Enter: t
@@ -39,7 +41,7 @@ This is necessary because `System.in.read()` can throw an **IOException** if an 
 
 ---
 
-### Note on Line Buffering
+#### Note on Line Buffering
 
 `System.in` is **line-buffered**, which means:
 
@@ -50,11 +52,11 @@ This is necessary because `System.in.read()` can throw an **IOException** if an 
 - These extra characters remain in the buffer unless explicitly read.
     
 
+>[!note]
 > In some applications, you may need to **read and discard** these characters to prevent unexpected behavior in subsequent input operations.
 
----
 
-#### The if Statement
+## 'if' Statement
 
 ```java
 if(condition)
@@ -88,7 +90,7 @@ class Guess
 }
 ```
 
-#### If else if ladder
+## If else if ladder
 
 ```java
 if(condition)

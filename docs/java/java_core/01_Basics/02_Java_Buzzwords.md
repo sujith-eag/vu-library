@@ -1,5 +1,5 @@
 
-# Java Buzzwords
+### Java Buzzwords
 
 While **portability** and **security** were the primary motivations behind Java's development, several other key principles influenced its design. The Java design team summarized these foundational ideas as a set of **buzzwords** that define the language:
 
@@ -25,10 +25,9 @@ While **portability** and **security** were the primary motivations behind Java'
 
 - **Dynamic**: Java carries extensive run-time type information to facilitate dynamic linking and execution.
 
+---
 
-
-
-## Security in Java
+### Security in Java
 
 When a program is downloaded and executed on a client computer, it must not pose any harm to the system. Java was specifically designed to address this concern:
 
@@ -38,10 +37,9 @@ When a program is downloaded and executed on a client computer, it must not pose
 
 - Java’s language structure itself enforces safety, for example by eliminating pointers and requiring strong type checking.
 
+---
 
-
-
-## Portability
+### Portability
 
 In order to create a truly platform-independent programming language, Java had to overcome the limitations of machine-specific code. Java achieves portability through:
 
@@ -52,8 +50,9 @@ In order to create a truly platform-independent programming language, Java had t
 - This approach ensures that **"write once, run anywhere"** is not just a slogan, but a functional capability.
 
 
+---
 
-## The Bytecode: Java’s Magic
+### The Bytecode: Java’s Magic
 
 At the heart of Java's portability and security lies its use of **bytecode**:
 
@@ -63,6 +62,7 @@ At the heart of Java's portability and security lies its use of **bytecode**:
 
 - The JVM interprets or compiles bytecode into native machine code at runtime, depending on the implementation.
 
+___
 
 ### Benefits of Bytecode Execution:
 
@@ -72,9 +72,9 @@ At the heart of Java's portability and security lies its use of **bytecode**:
 
 - **Consistency**: All JVMs understand the same bytecode format, ensuring consistent behavior across different systems.
 
+___
 
-
-## Just-In-Time (JIT) Compilation
+### Just-In-Time (JIT) Compilation
 
 - A **Just-In-Time (JIT) compiler** is an advanced feature of the JVM that improves performance.
 

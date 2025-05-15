@@ -1,5 +1,8 @@
 
-#### for loop
+# 'for' & 'while' loops
+
+
+## 'for' loop
 
 ```java
 for(initialization; condition; iteration)
@@ -19,19 +22,24 @@ class SqrRoot
 		for(num = 1.0; num < 100.0; num++) 
 		{
 			sroot = Math.sqrt(num);
-			System.out.println("Square root of " + num + " is " + sroot);
+			System.out.println("Square root of " 
+				+ num + " is " + sroot);
 			
 			// compute rounding error
 			rerr = num - (sroot * sroot);
 			
-			System.out.println("Rounding error is " + rerr);
+			System.out.println("Rounding error is " 
+				+ rerr);
 			System.out.println();
 		}
 	}
 }
 ```
 
-Rounding error is computed by squaring the square root of each number. This result is then subtracted from the original number, thus yielding the rounding error.
+>[!note]
+>Rounding error is computed by squaring the square root of each number. This result is then subtracted from the original number, thus yielding the rounding error.
+
+___
 
 ```java
 // A negatively running for loop.
@@ -47,6 +55,8 @@ class DecrFor
 }
 ```
 
+___
+
 Multiple loop control variables can be used and initialized with comma separation.
 ```java
 // Use commas in a for statement.
@@ -57,7 +67,8 @@ class Comma
 	{
 		int i, j;
 		for(i=0, j=10; i < j; i++, j--)
-			System.out.println("i and j: " + i + " " + j);
+			System.out.println("i and j: " 
+				+ i + " " + j);
 	}
 }
 ```
@@ -73,14 +84,12 @@ i and j: 4 6
 
 ____
 
-#### for loop variations
+### 'for' loop variations
 
-The condition controlling the loop can be any valid Boolean expression. It does not need
-to involve the loop control variable. In this example, the loop continues to execute until
-the user types the letter S at the keyboard:
+The condition controlling the loop can be any valid Boolean expression. It does not need to involve the loop control variable. 
 
 ```java
-// Loop until an S is typed.
+// Loops until an S is typed.
 
 class ForTest 
 {
@@ -98,10 +107,9 @@ class ForTest
 
 ___
 
-#### Missing Pieces
+### Missing Pieces
 
-In Java, it is possible for any or all of the initialization, condition, or iteration portions of the
-for loop to be blank.
+In Java, it is possible for any or all of the initialization, condition, or iteration portions of the `for` loop to be blank.
 
 ```java
 // Parts of the for can be empty.
@@ -130,6 +138,8 @@ Pass #5
 .....
 ```
 
+___
+
 Moving initialization out of `for` loop
 ```java
 class Empty2
@@ -152,7 +162,7 @@ class Empty2
 
 ___
 
-#### The Infinite Loop
+### The Infinite Loop
 
 ```java
 // intentionally made infinite loop
@@ -167,7 +177,7 @@ Most “infinite loops” are really just loops with special termination require
 
 ___
 
-#### Loop with No body
+### Loop with No body
 
 In Java, the body associated with a for loop (or any other loop) can be empty. This is because a null statement is syntactically valid.
 
@@ -188,18 +198,16 @@ class Empty3
 // Sum is 15
 ```
 
-`sum += i++` Add to sum the value of sum plus `i`, then increment `i`. Same as `sum = sum + i;  i++;`
+`sum += i++` Same as `sum = sum + i;  i++;`
+Add to sum the value of 'sum plus `i`', then increment `i`. 
 
 >[!tip]
 >If the loop control variable is temporary and not needed outside the loop then it can be declared in the for only
 
-___
-
 Enhanced for loops provide a way to cycle through the contents of a collection of objects like arrays.
 
-___
 
-### while Loop
+## 'while' Loop
 
 `while(condition) statement;`
 
@@ -210,13 +218,14 @@ Where statement may be a single statement or a block of statements, and conditio
 
 
 ```java
-// Demonstrate the while loop.
+// Demonstrate while loop.
+
 class WhileDemo 
 {
 	public static void main(String[] args) 
 	{
 		char ch;
-			// print the alphabet using a while loop
+			// print the alphabet using while loop
 		ch = 'a';
 		while(ch <= 'z') 
 		{
@@ -247,16 +256,16 @@ class Power
 				result *= 2;
 				e--;
 			}
-			System.out.println("2 to the " + i + " power is " + result);
+			System.out.println("2 to the " 
+				+ i + " power is " + result);
 		}
 	}
 }
 ```
 
 
-___
 
-#### do-while loop
+## 'do-while' loop
 
 The last of Java’s loops is the do-while. The do-while loop checks its condition at the bottom of the loop. This means that a do-while loop will always execute at least once.
 ```java
@@ -266,7 +275,6 @@ do
 } while(condition);
 ```
 
-___
 
 ```java
 // Demonstrate the do-while loop.
@@ -280,7 +288,8 @@ class DWDemo
 			do 
 			{
 				System.out.print("Press a key followed by ENTER: ");
-				ch = (char) System.in.read(); // get a char
+				ch = (char) System.in.read(); 
+				// get a char
 			} while(ch != 'q');
 		}
 }
@@ -288,7 +297,8 @@ class DWDemo
 
 ___
 
-Guessing Game
+#### Guessing Game
+
 ```java
 class Guess 
 {
@@ -351,7 +361,11 @@ do
 	ignore = (char) System.in.read();
 } while(ignore != '\n');
 ```
-console input is line buffered—you have to press ENTER before characters are
-sent. Pressing ENTER causes a carriage return and a line feed (newline) sequence to be generated. These characters are left pending in the input buffer. Also, if you typed more than one key before pressing ENTER, they too would still be in the input buffer. This loop discards those characters by continuing to read input until the end of the line is reached. If they were not discarded, then those characters would also be sent to the program as guesses, which is not what is wanted.
+
+Console input is line buffered, carriage return and newline sequence to be generated, also, typing more than one key before pressing ENTER, they too would still be in the input buffer. This loop discards those characters by continuing to read input until the end of the line is reached. 
+
+If they were not discarded, then those characters would also be sent to the program as guesses, which is not what is wanted.
 
 After you have learned more about Java, some other, higher-level ways of handling console input are described.
+
+____

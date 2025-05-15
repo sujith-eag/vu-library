@@ -1,32 +1,23 @@
 
-#### Arrays
+# Arrays
 
 
-An array is a collection of variables of the same type, referred to by a common name.
+An array is a collection of variables of the same type, referred to by a common name. In java they are implemented as objects so they are dynamically allocated using the new operator.
 
-arrays in Java can be used just like arrays in other programming languages,
-they have one special attribute: they are implemented as objects.
-
-To declare a one-dimensional array, you can use this general form:
-`type[ ] array-name = new type[size];`
-
-type declares the element type of the array. (The element type is also commonly referred
-to as the base type.) The element type determines the data type of each element contained in the
-array. The number of elements that the array will hold is determined by size. Since arrays are
-implemented as objects, the creation of an array is a two-step process. First, you declare an array
-reference variable. Second, you allocate memory for the array, assigning a reference to that memory
-to the array variable. Thus, arrays in Java are dynamically allocated using the new operator.
+To declare a one-dimensional array : `type[] array-name = new type[size];`
+* `type` declares the element type (base type) that can be contained in the array.
+* `size` defines the number of elements that the array will holds.
 
 ```java
 int[] sample = new int[10];
+
+// or
 
 int[] sample;
 sample = new int[10];
 ```
 
-An individual element within an array is accessed by use of an index. An index describes
-the position of an element within an array. In Java, all arrays have zero as the index of their
-first element.
+An individual element within an array is accessed by use of an index. Zero as the index of their first element.
 
 ```java
 class ArrayDemo
@@ -40,12 +31,16 @@ class ArrayDemo
 			sample[i] = i;
 		
 		for(i=0; i<10; i++)
-			System.out.println("This is [" + i + "] :" + sample[i] );
+			System.out.println("This is [" 
+				+ i + "] :" + sample[i] );
 	}
 }
 ```
 
-To find Min and max in an array
+___
+
+#### To find Min and max in an array
+
 ```java
 class MinMax 
 {
@@ -84,18 +79,17 @@ min and max: -978 100123
 ```
 
 
-Arrays can be initialized when they are created. The general form for initializing a one-
-dimensional array is shown here:
+## Initializing Arrays
+
+Arrays can be initialized when they are created.
 `type[ ] array-name = { val1, val2, ... , valN };`
+
 Java automatically allocates an array large enough to hold the initializers that you specify. There is no need to explicitly use the new operator.
 ```java
 int[] nums = { 99, -10, 100123, 18, -978, 5623, 463, -9, 287, 49 };
 ```
 
-
-Array boundaries are strictly enforced in Java; it is a run-time error to overrun or underrun the end of an array.
-
-causing `ArrayIndexOutOfBoundsException`
+Array boundaries are strictly enforced in Java; it is a run-time error to overrun or under-run the end of an array. causing `ArrayIndexOutOfBoundsException`
 
 #### Bubble sort
 
@@ -175,15 +169,12 @@ Sort Iteration 9 is :  -978  -10  -9  18  49  99  287  463  5623  100123
 Sorted Array is :  -978  -10  -9  18  49  99  287  463  5623  100123 
 ```
 
-___
 
-#### Multidimensional Arrays
+## Multidimensional Arrays
 
-In Java, a multidimensional array is an array of arrays.
+In Java, a multidimensional array is an array of arrays. A two-dimensional array is, in essence, a list of one-dimensional arrays. 
 
-A two-dimensional array is, in essence, a list of one-dimensional arrays. To declare a two-dimensional integer array
-table of size 10, 20 you would write
-`int[][] table = new int[10][20];`
+Two-dimensional integer array table of size 10, 20 :  `int[][] table = new int[10][20];`
 
 ```java
 // Demonstrate a two-dimensional array.
@@ -212,12 +203,11 @@ Assigns values from 1 to 12 to all indexes.
 
 ___
 
-#### Irregular Arrays
+### Irregular Arrays
 
 Since multidimensional arrays are implemented as arrays of arrays, the length of each array is under your control.
 
-When you allocate memory for a multidimensional array, you need to specify only the memory
-for the first (leftmost) dimension. You can allocate the remaining dimensions separately.
+When you allocate memory for a multidimensional array, you need to specify only the memory for the first (leftmost) dimension. You can allocate the remaining dimensions separately.
 
 ```java
 int[][] table = new int[3][];
@@ -227,21 +217,15 @@ table[1] = new int[2];
 table[2] = new int[6];
 ```
 
-if you
-need a very large two-dimensional array that is sparsely populated (that is, one in which not all
-of the elements will be used), an irregular array might be a perfect solution.
-
+if you need a very large two-dimensional array that is sparsely populated (that is, one in which not all of the elements will be used), an irregular array might be a perfect solution.
 
 ___
 
-#### Initializing multi dimensional arrays
+### Initializing multi dimensional arrays
 
-general form of a multidimensional array declaration:
 `type[ ] [ ]...[ ] name = new type[size1][size2]...[sizeN];`
 
-For example, the following declaration creates a 4 × 10 × 3 three-dimensional integer array.
-`int[][][] multidim = new int[4][10][3];`
-
+`int[][][] multidim = new int[4][10][3];` Creates a 4 × 10 × 3 three-dimensional integer array.
 
 A multidimensional array can be initialized by enclosing each dimension’s initializer list within its own set of curly braces.
 
@@ -256,8 +240,7 @@ type-specifier[ ] [ ] array_name = {
 };
 ```
 
-Each inner block designates a row. commas separate the initializer blocks and that a semicolon
-follows the closing }.
+Each inner block designates a row. commas separate the initializer blocks and that a semicolon follows the closing }.
 
 ___
 
@@ -291,46 +274,42 @@ class Squares
 }
 ```
 
-#### Alternate Array Declaration
+____
 
-the square brackets follow the name of the array variable, not the type specifier.
+### Alternate Array Declaration
 
-The following two declarations are equivalent:
+The square brackets follow the name of the array variable, not the type specifier.
+
+Two declarations are equivalent:
 ```java
 int counter[] = new int[3];
+
 int[] counter = new int[3];
+```
 
-
+```java
 char table[][] = new char[3][4];
+
 char[][] table = new char[3][4];
 ```
 
 
-This alternative declaration form offers convenience when converting code from C/C++
-to Java. In C/C++, arrays are declared in a fashion similar to Java’s alternative form.
+This alternative declaration form offers convenience when converting code from C/C++ to Java. In C/C++, arrays are declared in a fashion similar to Java’s alternative form.
 
-____
 
-#### Assigning Array Reference
+## Assigning Array Reference
 
-when you assign one array reference variable to another, you are simply
-changing what object that variable refers to. You are not causing a copy of the array to be
-made, nor are you causing the contents of one array to be copied to the other.
+When assigning one array reference variable to another, it changes what object that variable refers to. Copy of the array is not made, nor the contents of one array copies to the other.
 
-___
 
-#### Using length Member
+## Using length Member
 
 Java, arrays are implemented as objects. One benefit of this approach is that each
-array has associated with it a length instance variable that contains the number of elements
-that the array can hold. (In other words, length contains the size of the array.)
+array has associated with it a length instance variable that contains the number of elements that the array can hold. (In other words, length contains the size of the array.)
 
-
-
-a two-dimensional array is an array of arrays. Thus, when the expression `table.length` is used, it obtains the number of arrays stored in table, which is 3 in this case. 
+A two-dimensional array is an array of arrays. Thus, when the expression `table.length` is used, it obtains the number of arrays stored in table, which is 3 in this case. 
 
 To obtain the length of any individual array in table, you will use an expression such as this, `table[0].length`
-
 
 ```java
 class LengthDemo
@@ -347,11 +326,11 @@ class LengthDemo
 		
 		System.out.println("length of list is " + list.length);
 		System.out.println("length of nums is " + nums.length);
-	System.out.println("length of table is " + table.length);
-	System.out.println("length of table[0] is " + table[0].length);
-	System.out.println("length of table[1] is " + table[1].length);
-	System.out.println("length of table[2] is " + table[2].length);
-	System.out.println();
+		System.out.println("length of table is " + table.length);
+		System.out.println("length of table[0] is " + table[0].length);
+		System.out.println("length of table[1] is " + table[1].length);
+		System.out.println("length of table[2] is " + table[2].length);
+		System.out.println();
 	
 	// Using length to initialize for loop
 	for(int i=0; i<list.length; i++)
@@ -378,7 +357,7 @@ Here is list: 0 1 4 9 16 25 36 49 64 81
 
 ___
 
-Copying array using length
+#### Copying array using length
 
 ```java
 class ACopy 
@@ -444,7 +423,11 @@ class Queue
 	}
 }
 ```
-Demonstrating operations using the Queue class
+
+___
+
+#### Operations using the Queue class
+
 ```java
 class QDemo 
 {

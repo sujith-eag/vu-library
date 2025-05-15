@@ -1,13 +1,14 @@
 
+# Type Conversion
 
-# Type Conversion in Assignments
+
+## Type Conversion in Assignments
 
 When **compatible types** are mixed in an assignment, **automatic type conversion** (also called _type coercion_) occurs if:
 
 1. The two types are compatible.
     
-2. The destination type is **larger** than the source type.
-    
+2. The destination type is **larger** than the source type.    
 
 This is called a **widening conversion**.
 
@@ -19,11 +20,12 @@ i = 10;
 f = i; // int is automatically converted to float
 ```
 
-> Note: `boolean` and `int` are **not compatible types** and cannot be converted automatically.
+> [!note] 
+> `boolean` and `int` are not compatible types and cannot be converted automatically.
 
+---
 
-
-## Casting Incompatible Types
+### Casting Incompatible Types
 
 For incompatible or narrowing conversions, you must use explicit type casting.
 
@@ -38,8 +40,8 @@ int result = (int) (x / y); // Converts result of x/y to int
 ```
 cast is necessary here because there is no automatic conversion from double to int.
 
-> Parentheses around the entire expression are important; without them, only `x` would be cast to int. Not the result of the expression
-
+> [!note]
+> Parentheses around the entire expression are important; without them, only `x` would be cast to `int`. Not the result of the expression
 
 ```java
 class CastDemo {
@@ -67,7 +69,6 @@ class CastDemo {
 }
 ```
 
-**Output:**
 
 ```
 Integer outcome of x / y: 3
@@ -95,7 +96,7 @@ In mixed-type expressions, Java follows **type promotion rules**:
 
 ---
 
-### Type Promotion Example:
+#### Type Promotion Example:
 
 ```java
 class PromDemo {
@@ -116,7 +117,7 @@ b is promoted to int when the expression is evaluated. However, when you try to 
 
 ---
 
-### Promotion with `char`:
+#### Promotion with `char`:
 
 ```java
 char ch1 = 'a', ch2 = 'b';
@@ -127,7 +128,7 @@ Without the cast, `ch1 + ch2` would result in an `int`, which can't be assigned 
 
 ---
 
-### Using Cast to Get Floating-Point Division
+#### Using Cast to Get Floating-Point Division
 
 ```java
 class UseCast {
@@ -142,7 +143,6 @@ class UseCast {
 }
 ```
 
-**Output:**
 
 ```
 0 / 3: 0
@@ -156,7 +156,6 @@ class UseCast {
 4 / 3: 1
 4 / 3 with fractions: 1.3333333333333333
 ```
-
 
 
 ## Operator Precedence and Expression Formatting
@@ -181,6 +180,7 @@ x = y / 3 - 34 * temp + 127;
 x = (y / 3) - (34 * temp) + 127;
 ```
 
+>[!note]
 > Use of extra parentheses is encouraged for clarity. It does not slow down execution or cause errors.
 
 ---

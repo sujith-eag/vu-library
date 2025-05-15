@@ -3,9 +3,7 @@
 
 Java is a **strongly typed language**, meaning all variables, expressions, and values must have a defined type. This enforces **strict type checking** at compile time, helping to prevent errors and improve reliability. Operations are allowed only between compatible types.
 
----
-
-### Primitive Data Types
+## Primitive Data Types
 
 Java defines two categories of built-in data types:
 
@@ -14,7 +12,7 @@ Java defines two categories of built-in data types:
 - **Reference types** – Defined by classes (object-oriented)
     
 
-#### The 8 Primitive Types:
+### The 8 Primitive Types:
 
 |Type|Width|Range|
 |---|---|---|
@@ -99,7 +97,6 @@ System.out.println("A\tB\tC");
 ```
 
 > A **character** (`'A'`) is a `char`, while a **string** (`"A"`) is an object of class `String`.
-
 
 
 ## Operators in Java

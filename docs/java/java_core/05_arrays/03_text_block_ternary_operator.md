@@ -1,11 +1,13 @@
 
-#### text block 
+# Text block, var, Ternary operator
 
-A text block is a new kind of string literal
-that is comprised of a sequence of characters that can occupy more than one line.
-newline characters can be used in a text block without the need for the \n escape
-sequence. Furthermore, tab and double quote characters can also be entered directly, without
-using an escape sequence, and the indentation of a multiline string can be preserved.
+
+## Text block 
+
+A text block is a new kind of string literal that is comprised of a sequence of characters that can occupy more than one line.
+
+newline characters can be used in a text block without the need for the `\n` escape
+sequence. Furthermore, tab and double quote characters can also be entered directly, without using an escape sequence, and the indentation of a multiline string can be preserved.
 
 ```java
 
@@ -24,19 +26,17 @@ Text blocks make multiple lines easy because they eliminate
 As a result, text blocks make the programmer's life better!
 ```
 
-____
+## Using Command-Line Arguments
 
-#### Using Command-Line Arguments
-
-A command-line argument is the information that directly follows the program’s name on the command line when it is executed. they are stored as strings in the String array
-passed to main( )
+A command-line argument is the information that directly follows the program’s name on the command line when it is executed. they are stored as strings in the String array passed to main( )
 
 ```java
 class CLDemo
 {
 	public static void main(String[] args)
 	{
-		System.out.println("There are " + args.length + " Command line arguments.");
+		System.out.println("There are " 
+			+ args.length + " Command line arguments.");
 		
 		System.out.println("They are: ");
 		for(int i =0; i<args.length; i++)
@@ -57,39 +57,25 @@ args : three
 `str.length()` is used for String
 `str.length` for array of string type
 
-____
 
+## Type Inference with local variables
 
-#### Type Inference wit local variables
+When a variable is initialized, the type of the initializer must be the same as (or convertible to) the declared type of the variable. Thus, in principle, it would not
+be necessary to specify an explicit type for an initialized variable because it could be inferred from the type of its initializer.
 
-when a variable is initialized, the type of the initializer must be the
-same as (or convertible to) the declared type of the variable. Thus, in principle, it would not
-be necessary to specify an explicit type for an initialized variable because it could be inferred
-from the type of its initializer.
+To support local variable type inference, the context-sensitive keyword `var` was added to Java.
 
-To support local variable
-type inference, the context-sensitive keyword var was added to Java.
-
-To use local variable type inference, the variable must be declared with var as the type
-name and it must include an initializer.
+To use local variable type inference, the variable must be declared with `var` as the type name and it must include an initializer.
 
 ```java
 double avg = 10.0
 
 var avg = 10.0
 ```
-Both will be of type double
-
-
-var is context-sensitive. When it is used as the type name in the context
-of a local variable declaration, it tells the compiler to use type inference to determine the type
-of the variable being declared based on the type of the initializer. Thus, in a local variable
-declaration, var is a placeholder for the actual inferred type.
-
+Both will be of type double. `var` is context-sensitive. `var` is a placeholder for the actual inferred type.
 
 ```java
 var myArray = new int[10];
-
 
 var[] myArray = new int[10]; // Wrong
 var myArray[] = new int[10]; // Wrong
@@ -97,21 +83,25 @@ var myArray[] = new int[10]; // Wrong
 var counter; // Wrong! Initializer required.
 ```
 
-var can be used only to declare local variables. It cannot be used when
-declaring instance variables, parameters, or return types,
+>[!important]
+>var can be used only to declare local variables. It cannot be used when declaring instance variables, parameters, or return types,
 
 ```java
 var myStr = "This is a string";
+
 var mySubStr = myStr.substring(5, 10);
 ```
 
-```
+```java
 FileInputStream fin = new FileInputStream("test.txt");
 
 var fin = new FileInputStream("test.txt");
 ```
 
-Usage in Initializing object of class
+___
+
+#### Initializing object of class
+
 ```java
 class MyClass
 {
@@ -138,9 +128,13 @@ class VarDemo
 	{
 		var mc = new MyClass(10);
 		// Type is inferred from initializer
-		System.out.println("Value of i in mc is " + mc.geti());
+		
+		System.out.println("Value of i in mc is " 
+			+ mc.geti());
+		
 		mc.seti(19);
-		System.out.println("Value of i in mc now is " + mc.geti());
+		System.out.println("Value of i in mc now is " 
+			+ mc.geti());
 	}
 }
 ```
@@ -150,11 +144,13 @@ Value of i in mc is 10
 Value of i in mc now is 19
 ```
 
-even if only one parameter in method it needs `{ }`
+>[!note]
+>Even if a method has only one parameter it needs `{ }`
 
 ___
 
-var can be used in for and for each loop also
+#### In `for` and `for-each` loop
+
 ```java
 // Use type inference in a for loop.
 
@@ -184,40 +180,37 @@ Values of x: 2.5 5.0 10.0 20.0 40.0 80.0
 Values in nums array: 1 2 3 4 5 6
 ```
 
-
 ___
 
-#### Some restrictions of var
+### Some restrictions of var
 
-Only one variable can be declared at a time; 
-a variable cannot use null as an initializer; 
-and the variable being declared cannot be used by the initializer expression.
+* Only one variable can be declared at a time. 
+* A variable cannot use null as an initializer. 
+* The variable being declared cannot be used by the initializer expression.
 
-ou can declare an array type using var, you cannot use var with an array initializer.
+Can declare an array type using var. Cannot use var with an array initializer.
 ```java
 var myArray = new int[10]; // This is valid.
 
 var myArray = { 1, 2, 3 }; // Wrong
 ```
 
-Local variable type
-inference cannot be used to declare the exception type caught by a catch statement. Also,
-neither lambda expressions nor method references can be used as initializers.
+Local variable type inference cannot be used to declare the exception type caught by a catch statement. Also, neither lambda expressions nor method references can be used as initializers.
 
-___
 
-### Bitwise Operators
+## Bitwise Operators
 
-The bitwise operators can be
-used on values of type long, int, short, char, or byte. Bitwise operations cannot be used on
-boolean, float, or double, or class types. They are called the bitwise operators because they
-are used to test, set, or shift the individual bits that make up a value.
+The bitwise operators can be used on values of type long, int, short, char, or byte. Bitwise operations cannot be used on boolean, float, or double, or class types. 
 
-`&  |  ^  ~` are AND, OR, XOR and Negation(Complement)
+They are called the bitwise operators because they are used to test, set, or shift the individual bits that make up a value.
 
-`<<` shift left 
-`>>` shift right
-`>>>` Unsigned shift right
+* `&  |  ^  ~` are AND, OR, XOR and Negation (Complement)
+
+* `<<` shift left 
+
+* `>>` shift right
+
+* `>>>` Unsigned shift right
 
 ```
 value << num-bits
@@ -227,23 +220,18 @@ value >>> num-bits
 
 Here, value is the value being shifted by the number of bit positions specified by num-bits.
 
-The bitwise shift operators can be used to perform very fast multiplication or division
-by two. A shift left doubles a value. A shift right halves it.
+The bitwise shift operators can be used to perform very fast multiplication or division by two. A shift left doubles a value. A shift right halves it.
 
-___
 
-#### The ? Operator
-
-The ? operator is often used to replace if-else statements:
+## The ? Operator
 
 The ? is called a ternary operator because it requires three operands. It takes the general form `Exp1 ? Exp2 : Exp3;`
 
-where Exp1 is a boolean expression, and Exp2 and Exp3 are expressions of any type other than
-void. The type of Exp2 and Exp3 must be the same (or compatible),
+The ? operator is often used to replace if-else statements:
 
-Exp1 is evaluated. If it is true, then
-Exp2 is evaluated and becomes the value of the entire ? expression. If Exp1 is false, then
-Exp3 is evaluated and its value becomes the value of the expression
+`Exp1` is a boolean expression, and `Exp2` and `Exp3` are expressions of any type other than void. The type of `Exp2` and `Exp3` must be the same (or compatible),
+
+`Exp1` is evaluated. If it is true, then `Exp2` is evaluated and becomes the value of the entire ? expression. If `Exp1` is false, then `Exp3` is evaluated and its value becomes the value of the expression
 
 ```java
 absval = val < 0 ? -val : val; 
@@ -258,9 +246,11 @@ else
 
 ____
 
-`result = i != 0 ? 100 / i : 0;` 
-result is assigned the outcome of the division of 100 by i. However, this division takes
-place only if i is not zero. When i is zero, a placeholder value of zero is assigned to result.
+```java
+result = i != 0 ? 100 / i : 0;
+```
+
+result is assigned the outcome of the division of 100 by i. However, this division takes place only if i is not zero. When i is zero, a placeholder value of zero is assigned to result.
 
 ```java
 // Prevent a division by zero using the ?.
