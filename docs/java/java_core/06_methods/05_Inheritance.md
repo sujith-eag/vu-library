@@ -1,21 +1,34 @@
-Using inheritance, you can create a general
-class that defines traits common to a set of related items. This class can then be inherited by
-other, more specific classes, each adding those things that are unique to it. it
-allows the creation of hierarchical classifications.
 
-In the language of Java, a class that is inherited is called a superclass. The class that
-does the inheriting is called a subclass. Therefore, a subclass is a specialized version of a
-superclass. It inherits all of the variables and methods defined by the superclass and adds its
-own, unique elements.
+# Inheritance
 
+Inheritance, allows the creation of hierarchical classifications.
 
-Java supports inheritance by allowing one class to incorporate another class into its declaration.
-This is done by using the extends keyword
+A general class can be created that defines traits common to a set of related items. This class can then be inherited by other, more specific classes, each adding those things that are unique to it. 
+
+* A class that is inherited is called a `superclass`. 
+
+* class that does the inheriting is called a `subclass`.
+
+* `extends` keyword is used to allow one class to incorporate another class.
+
+```java
+class subclass-name extends superclass-name {
+	// body of class
+}
+```
+
+A subclass is a specialized version of a superclass and inherits all of the variables and methods defined by the superclass and adds its own, unique elements.
+ 
+Only one superclass can be specified for any subclass created. Java does not support the inheritance of multiple superclass into a single subclass. (This differs from C++, in
+which you can inherit multiple base classes)
+
+You can create a hierarchy of inheritance in which a subclass becomes a superclass of another subclass.
 
 ___
 
-The following program creates a superclass called TwoDShape, which stores the width and
-height of a two-dimensional object, and a subclass called Triangle.
+### Creating a subclass
+
+The following program creates a superclass called `TwoDShape`, which stores the width and height of a two-dimensional object, and a subclass called `Triangle`.
 
 ```java
 class TwoDShape
@@ -25,7 +38,8 @@ class TwoDShape
 	
 	void showDim()
 	{
-		System.out.println("width and height are " + width + " and " + height);
+		System.out.println("width and height are " 
+			+ width + " and " + height);
 	}
 }
 
@@ -38,9 +52,10 @@ class Triangle extends TwoDShape // inherits TwoDShape
 		return width* height/2;
 	}  // can refer to TwoDShape members directly
 	
-	void shoStyle()
+	void showStyle()
 	{
-		System.out.println("Triangle is " + style);
+		System.out.println("Triangle is " 
+			+ style);
 	}
 }
 
@@ -88,32 +103,16 @@ Area is 48.0
 ```
 
 
-Here, TwoDShape defines the attributes of a “generic” two-dimensional shape, such as a
-square, rectangle, triangle, and so on. The Triangle class creates a specific type of TwoDShape,
-in this case, a triangle. The Triangle class includes all of TwoDShape and adds the field style,
-the method area( ), and the method showStyle( ). The triangle’s style is stored in style.
+`TwoDShape` defines the attributes of a “generic” two-dimensional shape, such as a square, rectangle, triangle, and so on. 
 
-Because Triangle includes all of the members of its superclass, TwoDShape, it can access
-width and height inside area( ). Also, inside main( ), objects t1 and t2 can refer to width and
-height directly, as if they were declared by Triangle.
+`Triangle` class creates a specific type of `TwoDShape`, a triangle. Triangle class includes all of `TwoDShape` and adds the field `style`, method `area( )`, and `showStyle( )`. The triangle’s style is stored in style.
 
-Even though TwoDShape is a superclass for Triangle, it is also a completely independent,
-stand-alone class. Being a superclass for a subclass does not mean that the superclass cannot
-be used by itself.
+Because Triangle includes all of the members of its superclass, it can access width and height inside `area()`.
 
-General form of class declaration that inherits a superclass is is
-```java
-class subclass-name extends superclass-name {
-	// body of class
-}
-```
+Inside main( ), objects t1 and t2 can refer to width and height directly, as if they were declared by Triangle.
 
-You can specify only one superclass for any subclass that you create. Java does not support
-the inheritance of multiple superclasses into a single subclass. (This differs from C++, in
-which you can inherit multiple base classes)
-
-You can, however, create a hierarchy of inheritance in which a subclass becomes
-a superclass of another subclass.
+>[!note]
+>Even though TwoDShape is a superclass for Triangle, it is also a completely independent, stand-alone class. Being a superclass for a subclass does not mean that the superclass cannot be used by itself.
 
 ```java
 // A subclass of TwoDShape for rectangles.
@@ -132,18 +131,17 @@ class Rectangle extends TwoDShape
 }
 ```
 
-___
 
-#### Member Access and Inheritance
+## Member Access in Inheritance
 
-Inheriting a class does not overrule the private
-access restriction. Thus, even though a subclass includes all of the members of its superclass,
-it cannot access those members of the superclass that have been declared private.
+A class member that has been declared private will remain private to its class. It is not accessible by any code outside its class, including subclass. Inheriting a class does not overrule the private access restriction.
 
-if width and height are made private in TwoDShape, then Triangle will not be able to access them:
+>[!note]
+>Accessor methods can be used to provide access to the private members of a class.
 
-a class member that has been declared private will remain private to its
-class. It is not accessible by any code outside its class, including subclasses. accessor methods to provide access to the private members of a class.
+Subclass includes all of the members of its superclass, it cannot access those members of the superclass that have been declared private.
+
+if width and height are made private in TwoDShape, then Triangle will not be able to access them.
 
 ```java
 class TwoDShape
@@ -159,11 +157,12 @@ class TwoDShape
 
 	void showDim()
 	{
-		System.out.println("width and height are " + width + " and " + height);
+		System.out.println("width and height are " 
+			+ width + " and " + height);
 	}
 }
 
-class Triangle extends TwoDShape // inherits TwoDShape
+class Triangle extends TwoDShape
 {
 	String style;
 	
@@ -209,21 +208,20 @@ class Shapes
 }
 ```
 
-There are no hard and fast rules, but here are two general principles. If an instance variable
-is to be used only by methods defined within its class, then it should be made private. 
+Two general principles:
 
-If an instance variable must be within certain bounds, then it should be private and made available only through accessor methods. This way, you can prevent invalid values from being assigned.
+* If an instance variable is to be used only by methods defined within its class, then it should be made private. 
 
-___
+* If an instance variable must be within certain bounds, then it should be private and made available only through accessor methods. This way, you can prevent invalid values from being assigned.
 
-#### Constructors and Inheritance
+
+## Constructors and Inheritance
 
 The constructor for the superclass constructs the superclass portion of the object, and the constructor for the subclass constructs the subclass part.
 
-in practice, most classes will have explicit constructors.
+In practice, most classes will have explicit constructors.
 
-When only the subclass defines a constructor, the process is straightforward: simply
-construct the subclass object. The superclass portion of the object is constructed automatically using its default constructor.
+When only the subclass defines a constructor, the process is straightforward: simply construct the subclass object. The superclass portion of the object is constructed automatically using its default constructor.
 
 ```java
 // Constructor for Triangle
@@ -235,9 +233,10 @@ class Triangle extends TwoDShape
 	// Constructor
 	Triangle(String s, double w, double h) 
 	{
+		// Initialize TwoDShape portion of object.
 		setWidth(w);
 		setHeight(h);
-		// Initialize TwoDShape portion of object.
+		
 		style = s;
 	}
 ```

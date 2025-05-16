@@ -1,18 +1,20 @@
-#### Method Overloading
 
-In Java, two or more methods within the same class can share the same name, as long as
-their parameter declarations are different. When this is the case, the methods are said to be
-overloaded, and the process is referred to as method overloading. Method overloading is one
-of the ways that Java implements polymorphism.
+# Method Overloading
 
-to overload a method, simply declare different versions of it.
+In Java, two or more methods within the same class can share the same name, as long as their parameter declarations are different. When this is the case, the methods are said to be overloaded, and the process is referred to as method overloading. 
 
-one important restriction: the type and/or number of
-the parameters of each overloaded method must differ. It is not sufficient for two methods
-to differ only in their return types. (Return types do not provide sufficient information in all
-cases for Java to decide which method to use.) Of course, overloaded methods may differ in
-their return types, too. When an overloaded method is called, the version of the method whose
-parameters match the arguments is executed.
+When an overloaded method is called, the version of the method whose parameters match the arguments is executed.
+
+>[!important]
+>To overload a method, simply declare different versions of it.
+>
+>Method overloading is one of the ways that Java implements polymorphism. it is one way that Java implements “one interface, multiple methods” paradigm.
+
+
+>[!warning]
+>The type and/or number of the parameters of each overloaded method must differ. It is not sufficient for two methods to differ only in their return types. 
+
+Overloaded methods may differ in their return types but  do not provide sufficient information in all cases for Java to decide which method to use. 
 
 ```java
 class Overload
@@ -29,13 +31,15 @@ class Overload
 	
 	int ovlDemo(int a, int b)
 	{
-		System.out.println("Two parameters: " + a + " " + b);
+		System.out.println("Two parameters: " 
+			+ a + " " + b);
 		return a+b;
 	}
 
 	double ovlDemo(double a, double b)
 	{
-		System.out.println("Two parameters: " + a + " " + b);
+		System.out.println("Two parameters: " 
+			+ a + " " + b);
 		return a+b;
 	}
 }
@@ -73,21 +77,16 @@ Two double parameters: 1.1 2.32
 Result : 3.42
 ```
 
-ovlDemo( ) is overloaded four times. The first version takes no parameters, the second takes one integer parameter, the third takes two integer parameters, and the fourth takes
-two double parameters.
+`ovlDemo( )` is overloaded four times. 
+* First version takes no parameters
+* Second takes one integer parameter
+* Third takes two integer parameters
+* Fourth takes two double parameters.
+
+Same name can be used to overload unrelated methods, you should not. From a stylistic point of view, method overloading implies a relationship.
 
 
-Return types cannot be used to differentiate overloaded methods.
-
-Method overloading supports polymorphism because it is one way that Java implements
-the “one interface, multiple methods” paradigm.
-
-There is no rule stating that overloaded methods must relate to one another. However,
-from a stylistic point of view, method overloading implies a relationship. While you can use the same name to overload unrelated methods, you should not.
-
-___
-
-#### Overloading Constructors
+## Overloading Constructors
 
 Like methods, constructors can also be overloaded. Doing so allows you to construct objects in a variety of ways.
 
@@ -153,18 +152,18 @@ t3.x: 17
 t4.x: 8
 ```
 
-MyClass( ) is overloaded four ways, each constructing an object differently. The proper
-constructor is called based upon the parameters specified when new is executed. By overloading
-a class’ constructor, you give the user of your class flexibility in the way objects are constructed.
+`MyClass( )` is overloaded four ways, each constructing an object differently. The proper constructor is called based upon the parameters specified when new is executed. 
+
+By overloading a class constructor, you give the user flexibility in the way objects are constructed.
 
 ___
+#### Object Initializing another object
 
-One of the most common reasons that constructors are overloaded is to allow one object to initialize another.
-
+One of the most common reasons that constructors are overloaded is to allow one object to initialize another. An advantage of providing a constructor that uses one object to initialize another is efficiency. 
 
 ```java
 // Initialize one object with another.
-class Summation 
+class Summation
 {
 	int sum;
 	// Construct from an int.
@@ -199,7 +198,6 @@ s1.sum: 15
 s2.sum: 15
 ```
 
-an advantage of providing a constructor that uses one object
-to initialize another is efficiency. In this case, when s2 is constructed, it is not necessary to recompute the summation. Of course, even in cases when efficiency is not an issue, it is often useful to provide a constructor that makes a copy of an object.
+In this case, when `s2` is constructed, it is not necessary to recompute the summation. 
 
 ___

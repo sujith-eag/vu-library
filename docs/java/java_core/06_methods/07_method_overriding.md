@@ -1,9 +1,9 @@
 
-#### Method Overriding
+# Method Overriding
 
-In a class hierarchy, when a method in a subclass has the same return type and signature as a method in its superclass, then the method in the subclass is said to override the method in the superclass. When an overridden method is called from within a subclass, it will always refer
-to the version of that method defined by the subclass. The version of the method defined by
-the superclass will be hidden.
+In a class hierarchy, when a method in a subclass has the same return type and **signature** as a method in its superclass, then the method in the subclass is said to override the method in the superclass. 
+
+When an overridden method is called from within a subclass, it will always refer to the version of that method defined by the subclass. The version of the method defined by the superclass will be hidden.
 
 ```java
 // Method overriding.
@@ -53,7 +53,11 @@ class Override
 k: 3
 ```
 
-If you want to access the superclass version of an overridden method, you can do so by using super.
+___
+
+### Overridden member access through super
+
+To access the superclass version of an overridden method using super.
 
 ```java
 class B extends A 
@@ -79,22 +83,22 @@ i and j: 1 2
 k: 3
 ```
 
-Method overriding occurs only when the signatures of the two methods are identical. If they are not, then the two methods are simply overloaded.
+>[!note]
+>Method overriding occurs only when the signatures of the two methods are identical. If they are not, then the two methods are simply overloaded.
 
-___
 
-#### Overridden methods support Polymorphism
+## Polymorphism in Overridden methods
 
-Method overriding forms the basis for one of Java’s most powerful concepts: dynamic method dispatch. Dynamic method dispatch is the mechanism by which a call to an overridden method is resolved at run time rather than compile time. Dynamic method dispatch is important because this is how Java implements run-time polymorphism.
+Method overriding forms the basis for one of Java’s most powerful concepts: dynamic method dispatch. 
 
-When an overridden method is called through a superclass reference, Java determines which
-version of that method to execute based upon the type of the object being referred to at the time
-the call occurs. Thus, this determination is made at run time. When different types of objects are
-referred to, different versions of an overridden method will be called. In other words, it is the
-type of the object being referred to (not the type of the reference variable) that determines which
-version of an overridden method will be executed. Therefore, if a superclass contains a method
-that is overridden by a subclass, then when different types of objects are referred to through a
-superclass reference variable, different versions of the method are executed.
+**Dynamic method dispatch** is the mechanism by which a call to an overridden method is resolved at run time rather than compile time. Dynamic method dispatch is important because this is how Java implements run-time polymorphism.
+
+When an overridden method is called through a superclass reference, Java determines which version of that method to execute based upon the type of the object being referred to at the time the call occurs. Thus, this determination is made at run time. 
+
+When different types of objects are referred to, different versions of an overridden method will be called. In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which
+version of an overridden method will be executed. 
+
+If a superclass contains a method that is overridden by a subclass, then when different types of objects are referred to through a superclass reference variable, different versions of the method are executed.
 
 ```java
 // Demonstrate dynamic method dispatch.
@@ -149,26 +153,21 @@ who() in Sub1
 who() in Sub2
 ```
 
-In each case, the version of who( ) to call is determined at run time by the type of object being referred to.
-
-
-As the output shows, the version of who( ) executed is determined by the type of object being referred to at the time of the call, not by the class type of supRef.
+Version of `who()` executed is determined by the type of object being referred to at the time of the call, not by the class type of `supRef`.
 
 ___
 
+Readers familiar with C++ will recognize that overridden methods in Java are equivalent in purpose and similar in operation to virtual functions in C++.
 
-Readers familiar with C++ will recognize that overridden methods in Java are
-equivalent in purpose and similar in operation to virtual functions in C++.
 
-___
+## Using 'final'
 
-#### Using final
+`final` keyword can be used to prevent a method from being overridden or a class from being inherited.
 
-Whatever the reason, in Java it is easy to prevent a method
-from being overridden or a class from being inherited by using the keyword final.
+### Preventing method override
 
-To prevent a method from being overridden, specify final as a modifier at the start of its declaration. Methods declared as final cannot be overridden.
-Because meth( ) is declared as final, it cannot be overridden in B. If you attempt to do so, a compile-time error will result.
+Methods declared as final cannot be overridden. If you attempt to do so, a compile-time error will result.
+
 ```java
 class A 
 {
@@ -187,8 +186,9 @@ class B extends A
 }
 ```
 
-You can prevent a class from being inherited by preceding its declaration with final. Declaring a
-class as final implicitly declares all of its methods as final, too. 
+### Preventing class inheritance
+
+Declaring a class as final implicitly declares all of its methods as final, too. 
 
 ```java
 final class A {
@@ -201,22 +201,23 @@ class B extends A { // ERROR! Can't subclass A
 }
 ```
 
-As you might expect, it is illegal to declare a class as both abstract and final since an abstract class is incomplete by itself and relies upon its subclasses to provide complete implementations.
+>[!important]
+>It is illegal to declare a class as both `abstract` and `final` since an abstract class is incomplete by itself and relies upon its subclass to provide complete implementations.
 
 Beginning with JDK 17, the ability to seal a class was added to Java. Sealing offers fine-grained control over inheritance.
 
 ____
 
-Using final with Data members
+### final with Data members
 
-final can also be applied to member variables to create
-what amounts to named constants. If you precede an instance variable’s name with final, its value
-cannot be changed throughout the lifetime of your program.
+final can also be applied to member variables to create what amounts to named constants. If you precede an instance variable’s name with final, its value cannot be changed throughout the lifetime of your program.
 
-Making a final member variable static lets you refer to the
-constant through its class name rather than through an object.
+>[!note]
+>Making a final member variable static lets you refer to the constant through its class name rather than through an object.
 
 Declaring a parameter final prevents it from being changed within the method. 
 
 Declaring a local variable final prevents it from being assigned a value more than once.
+
+___
 

@@ -1,39 +1,37 @@
 
+# static & vargs
 
-#### Understanding static
 
-When a member is declared static, it can be accessed before any objects of its class are created, and without reference to any object. You can declare both methods and variables to be static.
+## static
 
-The most common example of a static member is main( ). 
+Both methods and variables can be declared to be static. static member, can be accessed before any objects of its class are created, and without reference to any object. 
 
-main( ) is declared as static because it must be called by the JVM when your program begins. Outside the class, to use a static member, you need only specify the name of its class followed by the dot operator. 
+`main()` is the most common example of a static member. It must be called by the JVM when program begins. 
 
-No object needs to be created. 
+>[!note]
+>To use a static member outside the class, you need only specify the name of its class followed by the dot operator. No object needs to be created. 
 
 if you want to assign the value 10 to a static variable called
-count that is part of the Timer class, use this line:
-`Timer.count = 10;`
+count that is part of the Timer class : `Timer.count = 10;`
 
-This format is similar to that used to access normal instance variables through an object, except that the class name is used. A static method can be called in the same way—by use of the dot operator on the name of the class.
+This format is similar to that used to access normal  instance variables through an object, except that the class name is used. 
 
+>[!important]
+>Variables declared as static are, essentially, global variables. When an object is declared, no copy of a static variable is made. Instead, all instances of the class share the same static variable.
 
-Variables declared as static are, essentially, global variables. When an object is declared, no copy of a static variable is made. Instead, all instances of the class share the same static variable.
-
-The difference between a static method and a normal method is that the static method is
-called through its class name, without any object of that class being created.
+A static method can be called by using dot operator on the name of the class. The difference between a static and normal method is that the static method is called through its class name, without any object of that class being created.
 
 Methods declared as static have several restrictions:
-●They can directly call only other static methods in their class.
-●They can directly access only static variables in their class.
-●They do not have a this reference.
+* They can directly call only other static methods in their class.
+* They can directly access only static variables in their class.
+* They do not have a `this` reference.
 
-___
 
-#### Static Blocks
+## static Blocks
 
-Sometimes a class will require some type of initialization before it is ready to create objects. 
+A static block is executed when the class is first loaded. Thus, it is executed before the class can be used for any other purpose.
 
-For example, it might need to establish a connection to a remote site. It also might need to initialize certain static variables before any of the class’ static methods are used. To handle these types of situations, Java allows you to declare a static block. A static block is executed when the class is first loaded. Thus, it is executed before the class can be used for any other purpose.
+Useful when a class will require some type of initialization before it is ready to create objects. For example, it might need to establish a connection to a remote site. It also might need to initialize certain static variables before any of the class’ static methods are used. 
 
 ```java
 // Use a static block
@@ -42,7 +40,7 @@ class StaticBlock
 {
 	static double rootOf2;
 	static double rootOf3;
-
+	
 	static { // Executed when class loads
 		System.out.println("Inside static block");
 		rootOf2 = Math.sqrt(2.0);
@@ -61,8 +59,11 @@ class SDemo3
 	{
 		StaticBlock ob = new StaticBlock("Inside Constructor");
 		
-		System.out.println("Sqrt of 2 is: " + StaticBlock.rootOf2);
-		System.out.println("Sqrt of 3 is: " + StaticBlock.rootOf3);
+		System.out.println("Sqrt of 2 is: " 
+			+ StaticBlock.rootOf2);
+		
+		System.out.println("Sqrt of 3 is: " 
+			+ StaticBlock.rootOf3);
 	} 
 }
 ```
@@ -74,16 +75,15 @@ Sqrt of 2 is 1.4142135623730951
 Sqrt of 3 is 1.7320508075688772
 ```
 
-the static block is executed before any objects are constructed.
+The static block is executed before any objects are constructed.
 
 ___
 
+### Quick Sort
 
-#### Quick Sort
+The Quicksort is built on the idea of partitions. The general procedure is to select a value, called the comparand, and then to partition the array into two sections. 
 
-The Quicksort is built on the idea of partitions. The general procedure is to select a value,
-called the comparand, and then to partition the array into two sections. All elements greater
-than or equal to the partition value are put on one side, and those less than the value are put
+All elements greater than or equal to the partition value are put on one side, and those less than the value are put
 on the other. This process is then repeated for each remaining section until the array is sorted.
 
 ```java
@@ -142,90 +142,91 @@ class QSDemo
 }
 ```
 
-___
 
-#### Nested and Inner Classes
+## Nested and Inner Classes
 
-nested class that is declared directly within its
-enclosing class scope is a member of its enclosing class. It is also possible to declare a nested
-class that is local to a block.
+Nested class that is declared directly within its enclosing class scope is a member of its enclosing class. It is also possible to declare a nested class that is local to a block.
 
-non-static
-variety. This type of nested class is also called an inner class. It has access to all of the variables
-and methods of its outer class and may refer to them directly in the same way that other non-
-static members of the outer class do.
+This type of nested class is also called an inner class. It has access to all of the variables and methods of its outer class and may refer to them directly in the same way that other non-static members of the outer class do.
 
 
-#### Varargs : Variable length arguments
+## Varargs
 
-varargs, which is short for
-variable-length arguments. A method that takes a variable number of arguments is called a
-variable-arity method, or simply a varargs method. The parameter list for a varargs method
-is not fixed, but rather variable in length. Thus, a varargs method can take a variable number
-of arguments.
+varargs, is short for variable-length arguments specified by three periods `(...)` 
 
-A variable-length argument is specified by three periods (...).
+A method that takes a variable number of arguments is called a varargs method. 
 
+The parameter list for a varargs method is not fixed, but rather variable in length and can take a variable number of arguments.
 
 ```java
 static void vaTest(int ... v) 
 {
-	System.out.println("Number of args: " + v.length);
-	System.out.println("Contents: ");
+	System.out.println("Number of args: " 
+		+ v.length);
 	
-		for(int i=0; i < v.length; i++)
-			System.out.println(" arg " + i + ": " + v[i]);
+	System.out.println("Contents: ");
+
+	for(int i=0; i < v.length; i++)
+		System.out.println(" arg " 
+			+ i + ": " + v[i]);
+	
 	System.out.println();
 }
 ```
 
-`int ... v` This syntax tells the compiler that `vaTest( )` can be called with zero or more arguments. Furthermore, it causes v to be implicitly declared as an array of type `int[ ]`.
+`(int ... v)` This syntax tells the compiler that `vaTest( )` can be called with zero or more arguments. Furthermore, it causes v to be implicitly declared as an array of type `int[ ]`.
 
 
-A method can have “normal” parameters along with a variable-length parameter. However,
-the variable-length parameter must be the last parameter declared by the method. 
+A method can have “normal” parameters along with a variable-length parameter. However, the variable-length parameter must be the last parameter declared by the method and there must be only one varargs parameter.
 
-`int doIt(int a, int b, double c, int ... vals) {`
-
-there must be only one varargs parameter
+```java
+int doIt(int a, int b, double c, int ... vals) 
+{
+```
 
 ___
 
-#### Overloading Vargs Methods
+### Overloading Vargs Methods
 
 Changing the type of the input parameter to make different version of the methods.
 
-vaTest(int ...) and vaTest(boolean ...).
-Remember, the ... causes the parameter to be treated as an array of the specified type. Therefore,
-just as you can overload methods by using different types of array parameters, you can overload
-varargs methods by using different types of varargs.
+`vaTest(int ...)` and `vaTest(boolean ...)`.
+
+>[!note]
+>`...` causes the parameter to be treated as an array of the specified type. Therefore varargs methods can be overloaded by using different types of varargs.
 
 The second way to overload a varargs method is to add one or more normal parameters.
-This is what was done with vaTest(String, int ...). In this case, Java uses both the number of
-arguments and the type of the arguments to determine which method to call.
+`vaTest(String, int ...)`. 
 
-#### varargs and ambiguity
+Java uses both the number of arguments and the type of the arguments to determine which method to call.
+
+___
+
+### varargs and ambiguity
+
+`vararg` parameter can be empty, this call could be translated into a call to `vaTest(int ...)` or to `vaTest(boolean ...)`, both are equally valid. Thus, the call is inherently ambiguous so will not compile.
 
 ```java
-static void vaTest(int ... v) {
+static void vaTest(int ... v) 
+{ //
 
-static void vaTest(boolean ... v) {
+static void vaTest(boolean ... v) 
+{ //
 
 vaTest(); // causes error
 ```
 
-vararg parameter can be empty, this call could be translated into a call to vaTest(int ...)
-or to vaTest(boolean ...). Both are equally valid. Thus, the call is inherently ambiguous so will not compile.
-
 ```java
-static void vaTest(int ... v) { // ...
+static void vaTest(int ... v) 
+{ // ...
 
-static void vaTest(int n, int ... v) { // ...
+static void vaTest(int n, int ... v) 
+{ // ...
 
-vaTest(1);
+vaTest(1); // error
 ```
-Although the parameter lists of vaTest( ) differ, there is no way for the compiler to resolve the call:
 
+Although the parameter lists of `vaTest( )` differ, there is no way for the compiler to resolve the call and assign the argument.
 
 ___
 

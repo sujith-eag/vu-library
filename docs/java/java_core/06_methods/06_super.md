@@ -1,15 +1,20 @@
 
-#### Using super to call Superclass Constructor
+# super()
 
-When both the superclass and the subclass define constructors, the process is a bit more
-complicated because both the superclass and subclass constructors must be executed. In this
-case, you must use another of Java’s keywords, super, which has two general forms. The
-first calls a superclass constructor. The second is used to access a member of the superclass
-that has been hidden by a member of a subclass.
+Using super to call Superclass Constructor
 
+When both the superclass and the subclass define constructors, the process is a bit more complicated for both the superclass and subclass constructors must be executed.
+
+`super()` keywords has two general forms. 
+* The first calls a superclass constructor. 
+* The second is used to access a member of the superclass that has been hidden by a member of a subclass.
+
+## super() to call superclass constructor
 
 `super(parameter-list);` 
-super( ) must always be the first statement executed inside a subclass constructor.
+
+>[!important]
+>`super( )` must always be the first statement executed inside a subclass constructor.
 
 ```java
 class TwoDShape
@@ -32,11 +37,12 @@ class TwoDShape
 
 	void showDim()
 	{
-		System.out.println("width and height are " + width + " and " + height);
+		System.out.println("width and height are " 
+			+ width + " and " + height);
 	}
 }
 
-class Triangle extends TwoDShape // inherits TwoDShape
+class Triangle extends TwoDShape
 {
 	private String style;
 	
@@ -80,13 +86,11 @@ class Shapes
 }
 ```
 
-Here, Triangle( ) calls super( ) with the parameters w and h. This causes the TwoDShape( )
-constructor to be called, which initializes width and height using these values. Triangle
-no longer initializes these values itself. It need only initialize the value unique to it: style.
+`Triangle( )` calls `super( )` with the parameters `w` and `h`. This causes the `TwoDShape( )` constructor to be called, which initializes width and height using these values.
 
-Any form of constructor defined by the superclass can be called by super( ). 
+Triangle no longer initializes these values itself. It need only initialize the value unique to it: style.
 
-This can be expanded by adding default constructors and constructors that take one argument (constructor overloading)
+Any form of constructor defined by the superclass can be called by `super( )`. This can be expanded by adding default constructors and constructors that take one argument (constructor overloading)
 
 ```java
 class TwoDShape
@@ -100,18 +104,18 @@ class TwoDShape
 		width = height = 0.0;
 	}
 	
-	// Parameterized constructor
-	TwoDShape(double w, double h)
-	{
-		width = w;
-		height = h;
-	}
-	
 	// Construct object with equal height and width
 	TwoDShape(double x)
 	{
 		width = height = x;
 	}
+	
+	// Parameterized constructor
+	TwoDShape(double w, double h)
+	{
+		width = w;
+		height = h;
+	}	
 	
 	// Accessor methods for private members
 	double getWidth() { return width;}
@@ -121,11 +125,12 @@ class TwoDShape
 
 	void showDim()
 	{
-		System.out.println("width and height are " + width + " and " + height);
+		System.out.println("width and height are " 
+			+ width + " and " + height);
 	}
 }
 
-class Triangle extends TwoDShape // inherits TwoDShape
+class Triangle extends TwoDShape
 {
 	private String style;
 	
@@ -214,18 +219,13 @@ width and height are 4.0 and 4.0
 Area is 8.0
 ```
 
-____
 
-#### Using super to Access Superclass Members
+## super to Access superclass Members
 
-
-There is a second form of super that acts somewhat like this, except that it always refers to the
-superclass of the subclass in which it is used. This usage has the following general form:
+A second form of super always refers to the superclass of the subclass in which it is used. 
 `super.member`
 
-Here, member can be either a method or an instance variable.
-This form of super is most applicable to situations in which member names of a subclass
-hide members by the same name in the superclass.
+Here, member can be either a method or an instance variable. This is most applicable to situations in which member names of a subclass hide members by the same name in the superclass.
 
 ```java
 // Using super to overcome name hiding.
@@ -239,8 +239,8 @@ class A
 class B extends A 
 {
 	int i; // this i hides the i in A
-	// Constructor
-	B(int a, int b) 
+	
+	B(int a, int b) // constructor
 	{
 		super.i = a; // refers to i in A
 		i = b; // i in B
@@ -248,8 +248,10 @@ class B extends A
 	
 	void show() 
 	{
-		System.out.println("i in superclass: " + super.i);
-		System.out.println("i in subclass: " + i);
+		System.out.println("i in superclass: " 
+			+ super.i);
+		System.out.println("i in subclass: " 
+			+ i);
 	}
 }
 
@@ -268,16 +270,16 @@ i in superclass: 1
 i in subclass: 2
 ```
 
-Although the instance variable i in B hides the i in A, super allows access to the i defined in the superclass. super can also be used to call methods that are hidden by a subclass.
+Although the instance variable `i` in B hides the `i` in A, super allows access to it. 
 
-____
+super can also be used to call methods that are hidden by a subclass.
 
-#### Creating multilevel hierarchy
 
-subclass Triangle is used as a superclass to create the subclass called ColorTriangle.
-ColorTriangle inherits all of the traits of Triangle and TwoDShape and adds a field called
-color, which holds the color of the triangle.
+## Creating multilevel hierarchy
 
+subclass Triangle is used as a superclass to create the subclass called `ColorTriangle`.
+
+`ColorTriangle` inherits all of the traits of Triangle and `TwoDShape` and adds a field called color, which holds the color of the triangle.
 
 ```java
 // A multilevel hierarchy
@@ -314,11 +316,11 @@ class TwoDShape
 
 	void showDim()
 	{
-		System.out.println("width and height are " + width + " and " + height);
+		System.out.println("width and height are " 
+			+ width + " and " + height);
 	}
 }
 
-// Extend TwoDShape
 class Triangle extends TwoDShape
 {
 	private String style;
@@ -418,19 +420,17 @@ Area is 2.0
 
 ____
 
-super( ) always refers to the constructor
-in the closest superclass. The super( ) in ColorTriangle calls the constructor in Triangle. The
-super( ) in Triangle calls the constructor in TwoDShape. In a class hierarchy, if a superclass
-constructor requires parameters, then all subclasses must pass those parameters “up the line.”
-This is true whether or not a subclass needs parameters of its own.
+>[!important]
+>`super()` always refers to the constructor in the closest superclass. The `super()` in `ColorTriangle` calls the constructor in Triangle. The `super()` in `Triangle` calls the constructor in `TwoDShape`. 
+
+
+In a class hierarchy, if a superclass constructor requires parameters, then all subclass's must pass those parameters “up the line.” This is true whether or not a subclass needs parameters of its own.
 
 ___
 
-since super( ) must be the first statement executed in a subclass’
-constructor, this order is the same whether or not super( ) is used. If super( ) is not used, then
-the default (parameterless) constructor of each superclass will be executed.
+super( ) must be the first statement executed in a subclass constructor, this order is the same whether or not super() is used or not. If super( ) is not used, then
+the default (parameter-less) constructor of each superclass will be executed.
 
 constructors complete their execution in order of derivation, from superclass to subclass.
-
 
 ___
