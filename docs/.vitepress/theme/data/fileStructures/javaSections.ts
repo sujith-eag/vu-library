@@ -25,11 +25,11 @@ export const javaControlStatements = [
   {
     title: 'Control Statements',
     items: [
-      { label: 'if_else Conditonals', link: '/java/java_core/03_Control_Statements/01_if_else' },
-      { label: 'switch Statements', link: '/java/java_core/03_Control_Statements/02_switch_statement' },
-      { label: 'for_while Loops', link: '/java/java_core/03_Control_Statements/03_for_while_loops' },
-      { label: 'break_continue Statements', link: '/java/java_core/03_Control_Statements/04_break_continue' },
-      { label: 'switch Expressions', link: '/java/java_core/03_Control_Statements/05_switch_expression' },
+      { label: 'if_else Conditonal', link: '/java/java_core/03_Control_Statements/01_if_else' },
+      { label: 'switch Statement', link: '/java/java_core/03_Control_Statements/02_switch_statement' },
+      { label: 'for & while Loop', link: '/java/java_core/03_Control_Statements/03_for_while_loops' },
+      { label: 'break & continue', link: '/java/java_core/03_Control_Statements/04_break_continue' },
+      { label: 'switch Expression', link: '/java/java_core/03_Control_Statements/05_switch_expression' },
     ]
   }
 ]
@@ -51,7 +51,7 @@ export const javaArray = [
     items: [
       { label: 'Array Basics', link: '/java/java_core/05_arrays/01_arrays' },
       { label: 'for_each Loop & String Class', link: '/java/java_core/05_arrays/02_for_each_strings' },
-      { label: 'Text Block & Ternary Operator', link: '/java/java_core/05_arrays/03_text_block_ternary_operator' },
+      { label: 'Text Block, var & Ternary Operator', link: '/java/java_core/05_arrays/03_text_block_ternary_operator' },
     ]
   }
 ]
@@ -79,8 +79,6 @@ export const javaPackInter = [
     items: [
       { label: 'Packages', link: '/java/java_core/07_packages_interface/01_packages' },
       { label: 'Interfaces', link: '/java/java_core/07_packages_interface/03_interfaces' },
-      // { label: 'static & vargs', link: '/python/1data-types/complex-types/7dictionary/' },
-      // { label: 'Inheritance', link: '/java/java_core/01_Basics/01_Java_Evolution' },
     ]
   }
 ]
@@ -89,7 +87,7 @@ export const javaException = [
   {
     title: 'Exception Handling',
     items: [
-      { label: 'Exceptions', link: 'java/java_core/08_exception_handling/01_exception' },
+      { label: 'Exception Fundamentals', link: 'java/java_core/08_exception_handling/01_exception' },
       { label: 'Throwing Exception', link: '/java/java_core/08_exception_handling/02_throwing' },
       { label: 'Additional Exceptions', link: '/java/java_core/08_exception_handling/03_Additional_features' },
     ]

@@ -1,127 +1,132 @@
 
-#### Additional Exception Features
+# Additional Exception Features
 
-In addition to the exception handling features already discussed, modern versions of Java include three more. 
+Modern versions of Java provide advanced exception-handling features to improve code clarity and reduce boilerplate.
 
-The first supports automatic resource management, which automates the process of releasing a resource, such as a file, when it is no longer needed. It is based on an expanded form of try, called the `try-with-resources` statement.
+### 1. Try-with-Resources
 
-The second feature is called multi-catch, 
+The **try-with-resources** statement simplifies automatic resource management (e.g., closing files or streams). When a resource is opened within the parentheses of a `try`, it is automatically closed when the block exits, whether normally or through an exception.
 
-Third is sometimes called final rethrow or more precise rethrow. 
+> You can use this with any object that implements the `AutoCloseable` interface.
 
+---
 
-Multi-catch allows two or more exceptions to be caught by the same catch clause. 
+### 2. Multi-Catch
 
-___
-
-Instead of having to catch each exception type individually, you can use a single catch clause to handle the exceptions without code duplication.
-
-To create a multi-catch, specify a list of exceptions within a single catch clause. You do this by separating each exception type in the list with the OR operator. Each multi-catch parameter is implicitly final. (You can explicitly specify final, if desired, but it is not necessary.) Because each multi-catch parameter is implicitly final, it can't be assigned a new value.
-
-```
-catch(ArithmeticException | ArrayIndexOutOfBoundsException e) {
-```
-
-___
-
-#### Built-in Exceptions
-
-Inside the standard package java.lang, Java defines several exception classes. A few have been used by the preceding examples. The most general of these exceptions are subclasses of the standard type RuntimeException. 
-
-Since java.lang is implicitly imported into all Java programs, many exceptions derived from RuntimeException are automatically available. they need not be included in any method’s throws list. In the language of Java, these are called unchecked exceptions because the compiler does not check to see if a method handles or throws these exceptions. The unchecked exceptions exceptions defined by java.lang that must be included in a method’s throws list if that method can generate one of these exceptions and does not handle it itself. These are called checked exceptions. In addition to the exceptions in java.lang, Java defines several other types of exceptions that relate to other packages, such as IOException mentioned earlier.
-
-
-Unchecked Exceptions
-
-Exception Meaning
-ArithmeticExceptionArithmetic error, such as integer divide-by-zero.
-ArrayIndexOutOfBoundsExceptionArray index is out-of-bounds.
-ArrayStoreExceptionAssignment to an array element of an incompatible type.
-ClassCastExceptionInvalid cast.
-EnumConstantNotPresentExceptionAn attempt is made to use an undefined enumeration value.
-IllegalArgumentExceptionIllegal argument used to invoke a method.
-IllegalCallerExceptionA method cannot be legally executed by the calling code.
-IllegalMonitorStateExceptionIllegal monitor operation, such as waiting on an unlocked thread.
-IllegalStateExceptionEnvironment or application is in incorrect state.
-IllegalThreadStateExceptionRequested operation not compatible with current thread state.
-IndexOutOfBoundsExceptionSome type of index is out-of-bounds.
-LayerInstantiationExceptionA module layer cannot be created.
-NegativeArraySizeExceptionArray created with a negative size.
-NullPointerExceptionInvalid use of a null reference.
-NumberFormatExceptionInvalid conversion of a string to a numeric format.
-SecurityExceptionAttempt to violate security.
-StringIndexOutOfBoundsExceptionAttempt to index outside the bounds of a string.
-TypeNotPresentExceptionType not found.
-UnsupportedOperationExceptionAn unsupported operation was encountered.
-
-___
-
-Checked Exceptions
-
-ClassNotFoundExceptionClass not found.
-CloneNotSupportedExceptionAttempt to clone an object that does not implement the
-Cloneable interface.
-IllegalAccessExceptionAccess to a class is denied.
-InstantiationExceptionAttempt to create an object of an abstract class or interface.
-InterruptedExceptionOne thread has been interrupted by another thread.
-NoSuchFieldExceptionA requested field does not exist.
-NoSuchMethodExceptionA requested method does not exist.
-ReflectiveOperationExceptionSuperclass of reflection-related exceptions.
-
-___
-
-#### Creating Exception Subclass
-
-you can manage errors that relate specifically to your application. Creating an
-exception class is easy. Just define a subclass of Exception (which is, of course, a subclass of
-Throwable). Your subclasses don’t need to actually implement anything—it is their existence in
-the type system that allows you to use them as exceptions.
+The **multi-catch** feature lets you catch multiple exception types in a single `catch` block, reducing code duplication.
 
 ```java
-/ Use a custom exception.
-// Create an exception.
-class NonIntResultException extends Exception {
-int n;
-int d;
-NonIntResultException(int i, int j) {
-n = i;
-d = j;
-}
-
-public String toString() {
-return "Result of " + n + " / " + d +
-" is non-integer.";
-}
-}
-class CustomExceptDemo {
-public static void main(String[] args) {
-// Here, numer contains some odd values.
-int[] numer = { 4, 8, 15, 32, 64, 127, 256, 512 };
-int[] denom = { 2, 0, 4, 4, 0, 8 };
-for(int i=0; i<numer.length; i++) {
-try {
-if((numer[i]%2) != 0)
-throw new
-NonIntResultException(numer[i], denom[i]);
-System.out.println(numer[i] + " / " +
-denom[i] + " is " +
-numer[i]/denom[i]);
-}
-catch (ArithmeticException exc) {
-// catch the exception
-System.out.println("Can't divide by Zero!");
-}
-catch (ArrayIndexOutOfBoundsException exc) {
-// catch the exception
-System.out.println("No matching element found.");
-}
-catch (NonIntResultException exc) {
-System.out.println(exc);
-}
-}
-}
+catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+	// Handle both exceptions
 }
 ```
+
+- Use the **`|`** operator to separate exception types.
+    
+- The exception variable `e` is implicitly `final`—you **cannot** assign a new value to it.
+    
+
+---
+
+### 3. Final Rethrow (More Precise Rethrow)
+
+The **final rethrow** feature allows the compiler to infer the most specific type of exception that can be thrown. If a catch block rethrows the exception, Java tracks which types are possible and enforces more precise type checking. This helps avoid overly broad exception declarations.
+
+
+## Built-in Exceptions
+
+Java provides a robust hierarchy of built-in exceptions. They fall into two broad categories:
+
+---
+
+###  Unchecked Exceptions
+
+Unchecked exceptions are subclasses of `RuntimeException`. These **do not need to be declared** in a method’s `throws` clause.
+
+|Exception|Description|
+|---|---|
+|`ArithmeticException`|Arithmetic error (e.g., divide-by-zero).|
+|`ArrayIndexOutOfBoundsException`|Accessing invalid array index.|
+|`ArrayStoreException`|Storing the wrong type in an array.|
+|`ClassCastException`|Invalid type casting.|
+|`EnumConstantNotPresentException`|Invalid enum constant access.|
+|`IllegalArgumentException`|Illegal method argument.|
+|`IllegalCallerException`|Illegal caller of a method.|
+|`IllegalMonitorStateException`|Illegal monitor state (e.g., waiting on an unlocked thread).|
+|`IllegalStateException`|Environment or application in an invalid state.|
+|`IllegalThreadStateException`|Incompatible thread operation.|
+|`IndexOutOfBoundsException`|Index is out of bounds.|
+|`LayerInstantiationException`|Cannot create a module layer.|
+|`NegativeArraySizeException`|Array size is negative.|
+|`NullPointerException`|Null reference used improperly.|
+|`NumberFormatException`|Invalid number format.|
+|`SecurityException`|Security violation.|
+|`StringIndexOutOfBoundsException`|String index out-of-bounds.|
+|`TypeNotPresentException`|Type not found.|
+|`UnsupportedOperationException`|Operation is unsupported.|
+
+---
+
+### Checked Exceptions
+
+Checked exceptions are **not subclasses of `RuntimeException`**, and **must be declared** in a method’s `throws` clause or handled explicitly.
+
+|Exception|Description|
+|---|---|
+|`ClassNotFoundException`|Class not found.|
+|`CloneNotSupportedException`|Attempt to clone an object that does not implement `Cloneable`.|
+|`IllegalAccessException`|Access to a class or field denied.|
+|`InstantiationException`|Attempt to instantiate an abstract class/interface.|
+|`InterruptedException`|Thread interrupted.|
+|`NoSuchFieldException`|Field not found.|
+|`NoSuchMethodException`|Method not found.|
+|`ReflectiveOperationException`|Superclass for reflection-related exceptions.|
+
+
+## Creating Custom Exception Subclasses
+
+You can define custom exceptions to handle application-specific errors. This is done by subclassing `Exception` (or `RuntimeException` if it should be unchecked).
+
+
+```java
+// Create a custom exception
+class NonIntResultException extends Exception {
+	int n, d;
+
+	NonIntResultException(int i, int j) {
+		n = i;
+		d = j;
+	}
+
+	public String toString() {
+		return "Result of " + n + " / " + d + " is non-integer.";
+	}
+}
+
+class CustomExceptDemo {
+	public static void main(String[] args) {
+		int[] numer = { 4, 8, 15, 32, 64, 127, 256, 512 };
+		int[] denom = { 2, 0, 4, 4, 0, 8 };
+
+		for (int i = 0; i < numer.length; i++) {
+			try {
+				if ((numer[i] % 2) != 0)
+					throw new NonIntResultException(numer[i], denom[i]);
+
+				System.out.println(numer[i] + " / " + denom[i] + " is " + numer[i] / denom[i]);
+			} catch (ArithmeticException exc) {
+				System.out.println("Can't divide by Zero!");
+			} catch (ArrayIndexOutOfBoundsException exc) {
+				System.out.println("No matching element found.");
+			} catch (NonIntResultException exc) {
+				System.out.println(exc);
+			}
+		}
+	}
+}
+```
+
+#### Output:
 
 ```
 4 / 2 is 2
@@ -134,12 +139,18 @@ No matching element found.
 No matching element found.
 ```
 
+---
 
-In general, errors can be reported in two ways: return values
-and exceptions. When is one approach better than the other? Simply put, in Java, exception
-handling should be the norm. Certainly, returning an error code is a valid alternative in some
-cases, but exceptions provide a more powerful, structured way to handle errors. They are the
-way professional Java programmers handle errors in their code.
+### Should You Use Return Values or Exceptions?
 
-___
+In Java, **exceptions are the preferred way** to handle errors. Although returning error codes is possible, exceptions:
+
+- Provide a **structured and consistent** approach.
+    
+- Separate **normal logic** from **error handling**.
+    
+- Are the **standard practice** for professional Java developers.
+    
+
+---
 
