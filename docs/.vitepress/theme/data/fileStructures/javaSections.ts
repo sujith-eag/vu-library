@@ -87,7 +87,7 @@ export const javaException = [
   {
     title: 'Exception Handling',
     items: [
-      { label: 'Exception Fundamentals', link: 'java/java_core/08_exception_handling/01_exception' },
+      { label: 'Exception Fundamentals', link: '/java/java_core/08_exception_handling/01_exception' },
       { label: 'Throwing Exception', link: '/java/java_core/08_exception_handling/02_throwing' },
       { label: 'Additional Exceptions', link: '/java/java_core/08_exception_handling/03_Additional_features' },
     ]

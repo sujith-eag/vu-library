@@ -8,22 +8,6 @@ hero:
   image:
     src: /logo/react.svg
     alt: React logo
-#   actions:
-#     - theme: brand # alt,  plain
-#       text: Java Core
-#       link: /java/java_intro
-#     - theme: brand
-#       text: Java Advance
-#       link: /java/java_next
-#     - theme: brand
-#       text: Spring Framework
-#       link: /java/java_next    
-# features:    
-#  - title: Java Basics
-#    details: Start learning Java from scratch.
-
-#  - title: Advanced Topics
-#    details: Dive deeper into Java’s powerful features.
 
 ---
 
@@ -42,10 +26,10 @@ import {
 
 </script>
 
-## Still under edit
+## React Concepts Still Under Edit
  
 <!-- <CollapsibleList :sections="reactSection" /> -->
-Check out the books on react which were really helpful
+
 ___
  
 <h3>Books Used to Learn React</h3>

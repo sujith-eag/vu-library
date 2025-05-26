@@ -295,7 +295,7 @@ html.dark .info-list a:hover {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .profile-container {
     padding: 1rem;
   }
@@ -313,6 +313,13 @@ html.dark .info-list a:hover {
 
   .info-list {
     justify-content: center;
+  }
+  .info-list img{
+    height: 18px;
+    width: 18px;
+  }
+  .profile-card {
+    font-size: 0.9rem;
   }
 }
 
