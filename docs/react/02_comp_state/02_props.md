@@ -11,7 +11,7 @@ Some components are **reusable** and therefore need props, while others are **un
     
 2. **Consuming props in a component**
 
-## Passing Props to Components
+### Passing Props to Components
 
 When working with HTML, you pass content and configuration either between element tags or via attributes. React components work similarly.
 
@@ -30,7 +30,7 @@ Props are passed:
 ```
 
 
-## Consuming Props in a Component
+### Consuming Props in a Component
 
 To **access prop values** inside a component, use the `props` parameter—passed automatically to every functional component.
 
@@ -161,7 +161,6 @@ function Link({ children, ...props }) {
 
 This makes components more flexible and reusable without predefining every prop.
 
----
 
 ## Prop Chains / Prop Drilling
 

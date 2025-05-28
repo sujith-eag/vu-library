@@ -18,10 +18,8 @@ This CSS gets injected into `index.html` during the build process, allowing glob
 
 You can apply inline styles via the `style` prop using a **JavaScript object**, not a string.
 
-
 >[!note]
->The Double Curly braces needed for Inline style is escaped to avoid error
-
+>The Double Curly braces needed for Inline style is escaped to avoid error in site compilation
 
 #### JSX vs. HTML Inline Styles
 
@@ -74,9 +72,9 @@ function ColoredText() {
 
 	return (
 		<>
-			<input type="text" onChange={handleTextColor} />
+		  <input type="text" onChange={handleTextColor} />
 			<p style={\{ color: enteredColor }\}>
-				This text is dynamically colored
+		      This text is dynamically colored
 			</p>
 		</>
 	);

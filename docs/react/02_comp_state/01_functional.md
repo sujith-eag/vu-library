@@ -28,7 +28,6 @@ Class-based components are still supported in React. You might encounter them in
 - Special use cases like **error boundaries**, which (as of now) can only be implemented using classes
     
 
----
 
 ## Writing Components: Class vs Functional
 
@@ -40,37 +39,37 @@ import "./App.css";
 
 class App extends Component {
 	render() {
-		return (
-			<main>
-				<Menu />
-			</main>
-		);
+	  return (
+		<main>
+		  <Menu />
+		</main>
+	  );
 	}
 }
 
 class Menu extends Component {
 	render() {
-		return (
-			<nav className="navbar">
-				<h1 className="title">TheMenuCompany</h1>
-				<ul className="menu">
-					<MenuItem label="Home" href="/" />
-					<MenuItem label="About" href="/about/" />
-					<MenuItem label="Blog" href="/blog/" />
-				</ul>
-			</nav>
-		);
+	  return (
+		<nav className="navbar">
+			<h1 className="title">TheMenuCompany</h1>
+			<ul className="menu">
+				<MenuItem label="Home" href="/" />
+				<MenuItem label="About" href="/about/" />
+				<MenuItem label="Blog" href="/blog/" />
+			</ul>
+		</nav>
+	  );
 	}
 }
 
 class MenuItem extends Component {
 	render() {
 		return (
-			<li className="menu-item">
-				<a className="menu-link" href={this.props.href}>
-					{this.props.label}
-				</a>
-			</li>
+		  <li className="menu-item">
+			<a className="menu-link" href={this.props.href}
+			  >{this.props.label}
+			</a>
+		  </li>
 		);
 	}
 }
@@ -88,7 +87,7 @@ import "./App.css";
 function App() {
 	return (
 		<main>
-			<Menu />
+		  <Menu />
 		</main>
 	);
 }
@@ -121,15 +120,13 @@ export default App;
 
 Functional components are just JavaScript functions that return JSX. They accept `props` as an argument and return a representation of the UI.
 
----
-
 ## Advanced Functional Patterns
 
 ### Destructuring Props
 
 Instead of accessing props via `props.property`, destructuring makes components more readable:
 
-```jsx
+```jsx{1}
 function MenuItem({ href, label }) {
 	return (
 		<li className="menu-item">
@@ -143,7 +140,7 @@ function MenuItem({ href, label }) {
 
 Alternatively, destructuring can be done inside the function:
 
-```jsx
+```jsx{2}
 function MenuItem(props) {
 	const { href, label } = props;
 	return (
@@ -208,7 +205,6 @@ Use like this:
 
 Now any extra props (`id`, `aria-label`, etc.) will be automatically passed to the `<a>` element.
 
----
 
 ## Using Arrow Functions and Expressions
 
@@ -217,7 +213,7 @@ You can define components using function expressions or arrow functions:
 ```jsx
 const Menu = () => {
 	return <nav />;
-};
+	};
 ```
 
 Or even inline:
@@ -235,20 +231,18 @@ const App = function () {
 
 Any function that returns JSX can be treated as a React component.
 
----
 
 ## Functional vs Class-Based: A Comparison
 
-|Feature|Class Component|Functional Component|
-|---|---|---|
-|Syntax|ES6 Classes|JavaScript functions|
-|State|`this.state` & `this.setState()`|`useState()` hook|
-|Lifecycle|Lifecycle methods (`componentDidMount`)|`useEffect()`|
-|Readability|More verbose|More concise|
-|Reusability|Difficult without mixins|Easy with custom hooks|
-|Error Boundaries|Supported|Not natively supported|
+| Feature          | Class Component                         | Functional Component   |
+| ---------------- | --------------------------------------- | ---------------------- |
+| Syntax           | ES6 Classes                             | JavaScript functions   |
+| State            | `this.state` & `this.setState()`        | `useState()` hook      |
+| Lifecycle        | Lifecycle methods (`componentDidMount`) | `useEffect()`          |
+| Readability      | More verbose                            | More concise           |
+| Reusability      | Difficult without mixins                | Easy with custom hooks |
+| Error Boundaries | Supported                               | Not natively supported |
 
----
 
 ## Benefits of Functional Components
 
@@ -261,9 +255,6 @@ Any function that returns JSX can be treated as a React component.
 - No need to bind methods or deal with `this`
     
 - Encourages **pure functions**
-    
-
----
 
 ## Disadvantages
 
@@ -272,9 +263,7 @@ There are **no inherent downsides** to using functional components. However:
 - Some legacy features like **error boundaries** still require class-based components.
     
 - Some developers might be more familiar or comfortable with class components, especially in older teams or projects.
-    
 
----
 
 ## Special Case: Error Boundaries
 
@@ -311,3 +300,5 @@ class ErrorBoundary extends React.Component {
 Functional components are now the **preferred approach** in modern React development due to their simplicity, flexibility, and the power of hooks.
 
 While class components still have their place—especially for legacy reasons or rare features—**functional components are the future of React**.
+
+____

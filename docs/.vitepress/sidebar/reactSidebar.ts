@@ -1,7 +1,7 @@
 import { reactSection } from "../theme/data/fileStructures/reactSections";
 import { transformToSidebar } from "../theme/utils/transformSectionsToSidebar";
 
-export function pythonSidebar() {
+export function reactSidebar() {
   return [
     {
       text : 'React',

@@ -47,7 +47,6 @@ const enteredValue = document.getElementById('email').value;
 
 This **direct DOM access** breaks React’s abstraction. React wouldn’t be aware of DOM changes, causing the UI and internal state to go out of sync.
 
----
 
 ## Using Refs
 
@@ -152,9 +151,8 @@ function EmailForm() {
 > [!important]
 > `emailRef.current.value = ''` is possible, but discouraged. Let React manage the DOM.
 
----
 
-## **Refs for Non-DOM Values**
+## Refs for Non-DOM Values
 
 Refs aren’t limited to DOM elements. They can store **any value** which can can persist across renders:
 
@@ -231,7 +229,8 @@ function Preferences(props){
 }
 ```
 
-Concise Version
+#### Concise Version
+
 ```jsx
 function Preferences(props) {
   const { ref } = props; // extracting ref prop
@@ -303,7 +302,6 @@ function Form() {
 
 By using Refs like this, a parent component (Form) is able to interact with some child component (Preferences) in an imperative way
 
----
 
 ## Controlled vs Uncontrolled Components
 

@@ -45,6 +45,15 @@ features:
       />Java Topics</a>
     details: <a href="/java/">Explore Java fundamentals, OOP, collections, and more.</a>
 
+# REACT
+  - title: <a 
+      href="/react/">
+      <img src="./logo/react.svg" 
+      alt="React Icon" 
+      style="width:60px;" 
+      />React Topics</a>
+    details: <a href="/react/">Learn React components, hooks, and state management.</a>
+
 # JAVASCRIPT
   - title: <a 
       href="/java-script/">
@@ -107,15 +116,6 @@ features:
       style="width:60px;" 
       />Databases</a>
     details: <a href="/dbms/">Learn SQL, relational models, and basic database design.</a>
-
-# REACT
-  - title: <a 
-      href="/react/">
-      <img src="./logo/react.svg" 
-      alt="React Icon" 
-      style="width:60px;" 
-      />React Topics</a>
-    details: <a href="/react/">Learn React components, hooks, and state management.</a>
 
 # VUE
   - title: <a 

@@ -1,6 +1,5 @@
 # React Stack
 
-
 ### Fitting React into a Website
 
 The React core library is a UI library first and foremost. On its own, it’s comparable to other UI libraries, but not directly to full-fledged web application frameworks such as Angular.

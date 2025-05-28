@@ -1,31 +1,32 @@
 export const reactIntro = [{
-    title: "Introduction to React",
+    title: "React Introduction",
     items: [
       { label: "React Overview", link: "/react/01_basic/01_react_intro" },
-      { label: "Why React", link: "/react/01_basic/02_react_stack" },
-      { label: "React Ecosystem", link: "/react/01_basic/03_react_app" },
-      { label: "React Ecosystem", link: "/react/01_basic/04_react_vite" }
+      { label: "React Stack", link: "/react/01_basic/02_react_stack" },
+      { label: "React App", link: "/react/01_basic/03_react_app" },
+      { label: "React Vite App", link: "/react/01_basic/04_react_vite" }
     ]
 }];
 
 export const reactJSX = [{
-    title: "Components Basics",
+    title: "Component & useState",
     items: [
-      { label: "JSX Basics", link: "/react/02_components/01_functional_component" },
-      { label: "Embedding Expressions", link: "/react/02_components/02_props_in_Component" },
-      { label: "JSX Branching & Loops", link: "/react/02_components/03_events_states" },
-      { label: "JSX Branching & Loops", link: "/react/02_components/04_states" }
+      { label: "JSX Basics", link: "/react/02_comp_state/00_jsx" },
+      { label: "Function Component", link: "/react/02_comp_state/01_functional" },
+      { label: "Component Props", link: "/react/02_comp_state/02_props" },
+      { label: "State Basics", link: "/react/02_comp_state/03_useState" },
+      { label: "Conditional Rendering", link: "/react/02_comp_state/04_branching" },
+      { label: "State Management", link: "/react/02_comp_state/05_state_management" }
     ]
 }];
 
 export const reactComponents = [{
-    title: "Components Handling",
+    title: "Styling, useRef & useEffect",
     items: [
-      { label: "Creating Function Components", link: "/react/03_comp_handling/01_condional_content" },
-      { label: "Props in Function Components", link: "/react/03_comp_handling/02_list_data_output" },
-      { label: "State with Hooks", link: "/react/03_comp_handling/03_styling_components" },
-      { label: "useEffect & Lifecycle", link: "/react/03_comp_handling/04_refs" },
-      { label: "useEffect & Lifecycle", link: "/react/03_comp_handling/05_useEffect" }
+      { label: "Outputting List", link: "/react/03_style_hooks/02_list_data" },
+      { label: "Styling Components", link: "/react/03_style_hooks/03_styling" },
+      { label: "useRef Hook", link: "/react/03_style_hooks/04_refs" },
+      { label: "useEffect Hook", link: "/react/03_style_hooks/05_useEffect" },
     ]
 },
 // {

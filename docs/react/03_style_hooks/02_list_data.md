@@ -190,31 +190,91 @@ hobbies.map(hobby => <li key={hobby}>{hobby}</li>);
 
 If list values are **unique and stable**, they can be used directly as keys.
 
+
+## Lists of JSX Elements
+
+Use `.map()` to render lists. Always provide a unique `key`.
+
+```jsx
+function Select({ items }) {
+  return (
+    <select>
+      {items.map((item) => (
+        <option key={item}>{item}</option>
+      ))}
+    </select>
+  );
+}
+
+function App() {
+  const items = ["apples", "pears", "playstations"];
+  return <Select items={items} />;
+}
+```
+
+> **Note:** `key` is a special React prop used for efficient rendering. It should be **unique within the list**, ideally an ID or unique value, not just an index.
+
+
+## Fragments in JSX
+
+Fragments let you group multiple elements without adding extra nodes to the DOM.
+
+### Long syntax:
+
+```jsx
+import { Fragment } from 'react';
+
+return (
+  <Fragment>
+    <h1>Hello</h1>
+    <a href="/blog">Blog</a>
+  </Fragment>
+);
+```
+
+### Short syntax:
+
+```jsx
+return (
+  <>
+    <h1>Hello</h1>
+    <a href="/blog">Blog</a>
+  </>
+);
+```
+
 ---
 
-## Summary & Key Takeaways
+### Example: List with Fragment and `key`
 
-- JSX elements can be dynamically set and rendered using **JavaScript logic**.
-    
-- Conditional rendering can use:
-    
-    - `if` statements
-        
-    - Ternary operators (`? :`)
-        
-    - Logical `&&`
-        
-- Arrays of JSX elements are rendered as sibling DOM elements.
-    
-- List data can be transformed to JSX using:
-    
-    - `for...of` loops
-        
-    - `.map()` (preferred)
-        
-- React requires **unique keys** for list items to optimize re-rendering.
-    
-- Use **immutability** (e.g., spread operator or `.concat()`) when updating state arrays.
-    
+Use `<Fragment>` with `key` when mapping JSX blocks:
+
+```jsx
+function Breeds({ list }) {
+  return (
+    <dl>
+      {list.map(({ breed, description }) => (
+        <Fragment key={breed}>
+          <dt>{breed}</dt>
+          <dd>{description}</dd>
+        </Fragment>
+      ))}
+    </dl>
+  );
+}
+
+function App() {
+  const list = [
+    { breed: "Chihuahua", description: "Small breed of dog." },
+    { breed: "Corgi", description: "Cute breed of dog." },
+    { breed: "Cumberland Sheepdog", description: "Extinct breed of dog." }
+  ];
+  return <Breeds list={list} />;
+}
+```
+
+
+>[!important]
+> Use `<Fragment>` when using `key` Short syntax (`<>...</>`) can’t accept props, so use `<Fragment key={...}>` for list rendering.
 
 ---
