@@ -22,13 +22,13 @@ import {
   resourcesUsed,
   resourcesPending } from '@theme/data/resources/reactResources.ts'
 
-// import { reactSection } from '@theme/data/fileStructures/reactSections.ts'
+import { reactSection } from '@theme/data/fileStructures/reactSections.ts'
 
 </script>
 
 ## React Concepts Still Under Edit
  
-<!-- <CollapsibleList :sections="reactSection" /> -->
+<CollapsibleList :sections="reactSection" />
 
 ___
  
