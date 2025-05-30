@@ -1,11 +1,15 @@
 
+# Research Problem
+
+
 **Defining the Research Problem:** What is research problem, Selecting the problem, Necessity of defining the problem, Technique involved in defining a problem, An illustration.
 
-## Research Problem
+___
 
-Definition, Characteristics, Components, Steps to formulate, Statement, Example
+>[!caution] Question
+>Define Research problem. How to Formulate a Research Problem
 
-A research problem is a question that a researcher wants to answer or a problem that a researcher wants to solve.
+A Research Problem is a question that a researcher wants to answer or a problem that a researcher wants to solve.
 
 Formulating a Research Problem:
 1. Selecting the problem
@@ -51,6 +55,9 @@ Defining a research problem properly and clearly is a crucial part of a research
 4. Developing the ideas through discussions
 5. Rephrasing the research problem into a working proposition
 
+>[!caution] Question
+>What do you mean by Pilot study. What are the different techniques to involved in research.
+
 #### 3.1. Statement of the problem in a general way
 * Keeping practical concern
 * The researcher must immerse himself thoroughly in the subject matter concerning.
@@ -84,7 +91,10 @@ Through rephrasing, the researcher puts the research problem in as specific term
 ## Points to be observed while defining a Research Problem
 
 * Technical terms and words or phrases, with special meanings used in the statement of the problem, should be clearly defined.
+
 * Basic assumptions or postulates (if any) relating to the research problem should be clearly stated.
+
 * A straight forward statement of the value of the investigation (i.e., the criteria for the selection of the problem) should be provided.• The suitability of the time-period and the sources of data available must also be considered by the researcher in defining the problem.
+
 * The scope of the investigation or the limits within which the problem is to be studied must be mentioned explicitly in defining a research problem.
 
