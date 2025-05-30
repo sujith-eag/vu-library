@@ -10,8 +10,9 @@ import { javascriptSidebar } from './sidebar/jsSidebar'
 import { linuxSidebar } from './sidebar/linuxSidebar'
 import { osSidebar } from './sidebar/osSidebar'
 import { pythonSidebar } from './sidebar/pythonSidebar'
-import { mcaSidebar } from './sidebar/mcaSidebar'
 import { reactSidebar } from './sidebar/reactSidebar'
+
+import { mcaSidebar } from './sidebar/mcaSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

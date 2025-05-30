@@ -1,48 +1,50 @@
 
 
+export const mcaRMSection = [
+  {
+    title: "Research Methodology",
+    items: [
+          { label: "Research Methodology", link: "/mca/rm/u1_1_rm" },
+          { label: "Research Process", link: "/mca/rm/u1_2_rp" },
+          { label: "Research Problem", link: "/mca/rm/u1_3_rpr" },
+          { label: "Research Design", link: "/mca/rm/u2_1_rd" },
+    ]
+  }
+];
 
 export const mcaDbmsSection = [
   {
     title: "Data Base Management",
     items: [
       {
-        title: "Unit-1 Relational Model",
-        items: [
-          // { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
-          // { label: "Unit 1 Ans1", link: "/python/col_extra/unit_1_ans1" },
-        ]
-      },
-      {
-        title: "Unit-2 SQL",
-        items: [
-          // { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
-          // { label: "Unit 2 Ans 1", link: "/python/col_extra/unit_2_ans_1" },
-          // { label: "Unit 2 Ans 2", link: "/python/col_extra/unit_2_ans_2" }
-        ]
-      },
-      {
-        title: "Unit-3 E-R Model",
-        items: [
-          // { label: "Unit 3 Q", link: "/python/col_extra/unit_3_q" },
-          // { label: "Unit 3 Ans 1", link: "/python/col_extra/unit_3_ans_1" },
-          // { label: "Unit 3 Ans 2", link: "/python/col_extra/unit_3_ans_2" }
-        ]
-      },
-      {
-        title: "Unit-4 Normalization",
-        items: [
-          // { label: "Unit 4 Q", link: "/python/col_extra/unit_4_q" },
-          // { label: "Unit 4 Ans 1", link: "/python/col_extra/unit_4_ans_1" },
-          // { label: "Unit 4 Ans 2", link: "/python/col_extra/unit_4_ans_2" }
-        ]
-      },
-      {
-        title: "Unit-5 MongoDB",
-        items: [
-          // { label: "Unit 5 Q", link: "/python/col_extra/unit_5_q" },
-          // { label: "Unit 5 Ans 1", link: "/python/col_extra/unit_5_ans_1" },
-          // { label: "Unit 5 Ans 2", link: "/python/col_extra/unit_5_ans_2" }
-        ]
+    //     title: "Unit-1 Relational Model",
+    //     items: [
+    //       // { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-2 SQL",
+    //     items: [
+    //       // { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-3 E-R Model",
+    //     items: [
+    //       // { label: "Unit 3 Q", link: "/python/col_extra/unit_3_q" },
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-4 Normalization",
+    //     items: [
+    //       // { label: "Unit 4 Q", link: "/python/col_extra/unit_4_q" },
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-5 MongoDB",
+    //     items: [
+    //       // { label: "Unit 5 Q", link: "/python/col_extra/unit_5_q" },
+    //     ]
       },
     ]
   }
@@ -53,40 +55,40 @@ export const mcaNetworkSection = [
     title: "Networking",
     items: [
       {
-        title: "Unit-1 Network & Internet",
-        items: [
-          // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
-          // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
-          // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
-        ]
-      },
-      {
-        title: "Unit-2 Application Layer",
-        items: [
-          // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
-          // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
-        ]
-      },
-      {
-        title: "Unit-3 Transport Layer",
-        items: [
-          // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
-          // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
-        ]
-      },
-      {
-        title: "Unit-4 Network Layer",
-        items: [
-          // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
-          // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
-        ]
-      },
-      {
-        title: "Unit-5 Link Layer & LAN",
-        items: [
-          // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
-          // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
-        ]
+    //     title: "Unit-1 Network & Internet",
+    //     items: [
+    //       // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
+    //       // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
+    //       // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-2 Application Layer",
+    //     items: [
+    //       // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
+    //       // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-3 Transport Layer",
+    //     items: [
+    //       // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
+    //       // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-4 Network Layer",
+    //     items: [
+    //       // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
+    //       // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-5 Link Layer & LAN",
+    //     items: [
+    //       // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
+    //       // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
+    //     ]
       }
     ]
   }
@@ -97,40 +99,40 @@ export const mcaJavaSection = [
     title: "OOP with Java",
     items: [
       {
-        title: "Unit-1 Class & Inheritance",
-        items: [
-          // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
-          // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
-          // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
-        ]
-      },
-      {
-        title: "Unit-2 Packages & Exceptions",
-        items: [
-          // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
-          // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
-        ]
-      },
-      {
-        title: "Unit-3 Multithreading & Genrics",
-        items: [
-          // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
-          // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
-        ]
-      },
-      {
-        title: "Unit-4 Collections Framework",
-        items: [
-          // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
-          // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
-        ]
-      },
-      {
-        title: "Unit-5 Event Handling",
-        items: [
-          // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
-          // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
-        ]
+    //     title: "Unit-1 Class & Inheritance",
+    //     items: [
+    //       // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
+    //       // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
+    //       // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-2 Packages & Exceptions",
+    //     items: [
+    //       // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
+    //       // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-3 Multithreading & Genrics",
+    //     items: [
+    //       // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
+    //       // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-4 Collections Framework",
+    //     items: [
+    //       // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
+    //       // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
+    //     ]
+    //   },
+    //   {
+    //     title: "Unit-5 Event Handling",
+    //     items: [
+    //       // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
+    //       // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
+    //     ]
       }
     ]
   }
@@ -140,6 +142,7 @@ export const mca2Section = [
   ...mcaDbmsSection,
   ...mcaNetworkSection,
   ...mcaJavaSection,
+  ...mcaRMSection
 ]
 
     export const mcaPythonSection = [
@@ -280,5 +283,5 @@ export const mca2Section = [
   
   export const mcaSection = [
     ...mca1Section,
-    // ...mca2Section
+    ...mca2Section
   ]
