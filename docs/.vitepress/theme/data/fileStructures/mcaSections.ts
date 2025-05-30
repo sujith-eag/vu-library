@@ -12,6 +12,14 @@ export const mcaRMSection = [
   }
 ];
 
+export const mcaDAASection = [
+  {
+    title: "Design & Analysis of Algorithms",
+    items: [
+          { label: "Algorithms Introduction", link: "/mca/daa/u1_1_intro" },
+    ]
+  }
+];
 export const mcaDbmsSection = [
   {
     title: "Data Base Management",
@@ -142,62 +150,63 @@ export const mca2Section = [
   ...mcaDbmsSection,
   ...mcaNetworkSection,
   ...mcaJavaSection,
-  ...mcaRMSection
+  ...mcaRMSection,
+  ...mcaDAASection
 ]
 
-    export const mcaPythonSection = [
-    {
-      title: "Python",
-      items: [
-        {
-          title: "Unit-1 Intro & Control Flow",
-          items: [
-            { label: "Previous Questions", link: "/mca/python/unit_1_q" },
-            { label: "Answered-1", link: "/mca/python/unit_1_ans1" },
-            { label: "Answered-2", link: "/mca/python/unit_1_ans2" }
-          ]
-        },
-        {
-          title: "Unit-2 Data Structures & Numpy",
-          items: [
-            { label: "Previous Questions", link: "/mca/python/unit_2_q" },
-            { label: "Answered-1", link: "/mca/python/unit_2_ans_1" },
-            { label: "Answered-2", link: "/mca/python/unit_2_ans_2" }
-          ]
-        },
-        {
-          title: "Unit-3 Functional Programming",
-          items: [
-            { label: "Previous Questions", link: "/mca/python/unit_3_q" },
-            { label: "Answered-1", link: "/mca/python/unit_3_ans_1" },
-            { label: "Answered-2", link: "/mca/python/unit_3_ans_2" }
-          ]
-        },
-        {
-          title: "Unit-4 Regex & OOP",
-          items: [
-            { label: "Previous Questions", link: "/mca/python/unit_4_q" },
-            { label: "Answered-1", link: "/mca/python/unit_4_ans_1" },
-            { label: "Answered-2", link: "/mca/python/unit_4_ans_2" }
-          ]
-        },
-        {
-          title: "Unit-5 Exceptions & File I/O",
-          items: [
-            { label: "Previous Questions", link: "/mca/python/unit_5_q" },
-            { label: "Answered-1", link: "/mca/python/unit_5_ans_1" },
-            { label: "Answered-2", link: "/mca/python/unit_5_ans_2" }
-          ]
-        },
-        {
-          title: "Lab Component",
-          items: [
-            { label: "Answered", link: "/mca/python/lab_component" }
-          ]
-        }
-      ]
-    }
-  ];
+  export const mcaPythonSection = [
+  {
+    title: "Python",
+    items: [
+      {
+        title: "Unit-1 Intro & Control Flow",
+        items: [
+          { label: "Previous Questions", link: "/mca/python/unit_1_q" },
+          { label: "Answered-1", link: "/mca/python/unit_1_ans1" },
+          { label: "Answered-2", link: "/mca/python/unit_1_ans2" }
+        ]
+      },
+      {
+        title: "Unit-2 Data Structures & Numpy",
+        items: [
+          { label: "Previous Questions", link: "/mca/python/unit_2_q" },
+          { label: "Answered-1", link: "/mca/python/unit_2_ans_1" },
+          { label: "Answered-2", link: "/mca/python/unit_2_ans_2" }
+        ]
+      },
+      {
+        title: "Unit-3 Functional Programming",
+        items: [
+          { label: "Previous Questions", link: "/mca/python/unit_3_q" },
+          { label: "Answered-1", link: "/mca/python/unit_3_ans_1" },
+          { label: "Answered-2", link: "/mca/python/unit_3_ans_2" }
+        ]
+      },
+      {
+        title: "Unit-4 Regex & OOP",
+        items: [
+          { label: "Previous Questions", link: "/mca/python/unit_4_q" },
+          { label: "Answered-1", link: "/mca/python/unit_4_ans_1" },
+          { label: "Answered-2", link: "/mca/python/unit_4_ans_2" }
+        ]
+      },
+      {
+        title: "Unit-5 Exceptions & File I/O",
+        items: [
+          { label: "Previous Questions", link: "/mca/python/unit_5_q" },
+          { label: "Answered-1", link: "/mca/python/unit_5_ans_1" },
+          { label: "Answered-2", link: "/mca/python/unit_5_ans_2" }
+        ]
+      },
+      {
+        title: "Lab Component",
+        items: [
+          { label: "Answered", link: "/mca/python/lab_component" }
+        ]
+      }
+    ]
+  }
+];
   
   export const mcaCSection = [
     {
