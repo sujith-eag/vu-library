@@ -13,6 +13,12 @@ export const booksUsed = [
   },
   {
     img: '/books/placeholder.png',
+    title: 'Getting the Most out of Node.js Frameworks',
+    author: 'Sufyan bin Uzayr',
+    year: '2022',
+  },
+  {
+    img: '/books/placeholder.png',
     title: 'Learning TypeScript',
     author: 'Josh Goldberg',
     year: '2022',
@@ -41,12 +47,6 @@ export const booksPending = [
     year: '2025',
   },
   
-  {
-    img: '/books/placeholder.png',
-    title: 'Getting the Most out of Node.js Frameworks',
-    author: 'Sufyan bin Uzayr',
-    year: '2022',
-  },
   {
     img: '/books/placeholder.png',
     title: 'Node.js for Beginners - A comprehensive guide',

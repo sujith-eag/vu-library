@@ -5,7 +5,7 @@ export const gitSection = [
 {
     title: 'Developer Tools',
     items: [
-        { label: 'Git & GitHub', link: '/tools/git-github' },
+        { label: 'Git & GitHub', link: '/tools/git' },
         { label: 'Chrome', link: '/tools/chrome' },
         { label: 'Obsedian', link: '/tools/obsidian' },
         { label: 'VS-Code ', link: '/tools/vscode' },
