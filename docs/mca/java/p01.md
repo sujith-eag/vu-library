@@ -1,0 +1,133 @@
+# Program 1:
+
+## Class Fundamentals, Object Creation, `this`, and `finalize()`
+
+A) Develop a Java program to demonstrate class fundamentals, including object creation, method implementation, and constructor usage. Utilize features like the `this` keyword and the `finalize()` method.
+
+
+```java
+// Demonstrate class fundamentals in Java
+class Box {
+    double width;
+    double height;
+    double depth;
+
+    // Constructor using 'this' keyword
+    Box(double width, double height, double depth) {
+        this.width = width;
+        this.height = height;
+        this.depth = depth;
+    }
+
+    // Method to calculate and return volume
+    double volume() {
+        return width * height * depth;
+    }
+
+    // Finalize method called before object is destroyed
+    @Override
+    protected void finalize() {
+        System.out.println("Box object is being destroyed.");
+    }
+}
+
+public class BoxDemo {
+    public static void main(String[] args) {
+        // Create objects of Box
+        Box myBox1 = new Box(10, 20, 15);
+        Box myBox2 = new Box(3, 6, 9);
+
+        // Get volume of first box
+        double vol = myBox1.volume();
+        System.out.println("Volume of myBox1 is: " + vol);
+
+        // Get volume of second box
+        vol = myBox2.volume();
+        System.out.println("Volume of myBox2 is: " + vol);
+
+        // Hint for garbage collector (not guaranteed)
+        myBox1 = null;
+        myBox2 = null;
+
+        // Request garbage collection
+        System.gc(); // finalize() may be called, but not immediately or reliably
+    }
+}
+```
+
+Output:
+```
+Volume of myBox1 is: 3000.0
+Volume of myBox2 is: 162.0
+Box object is being destroyed.
+Box object is being destroyed.
+```
+
+## Assign Values and Compute Volume in `main` Without Constructor
+
+B) Write a java program with a class called box and has three variables
+width, height and depth assign the value 100 to width, 200 to height,
+150 to depth. Compute the volume in the main class.
+
+```java
+class Box {
+    double height;
+    double width;
+    double depth;
+}
+
+class BoxDemo {
+    public static void main(String[] args) {
+        Box mybox1 = new Box();
+        mybox1.height = 100;
+        mybox1.width = 200;
+        mybox1.depth = 150;
+
+        double volume = mybox1.height * mybox1.width * mybox1.depth;
+        System.out.println("Volume is: " + volume);
+    }
+}
+```
+
+Output:
+```
+Volume is : 3000000.0
+```
+
+## Constructor-Based Initialization & Volume Calculation in Method
+
+C) Create a main class BoxDemo2 create a another class Box with three
+instance variables where the dimensions are automatically initialized
+when the object is constructed. The volume must be calculated in Box
+class and displayed in BoxDemo2 class.
+```java
+class Box {
+    double height;
+    double width;
+    double depth;
+
+    // Constructor initializes the dimensions
+    Box() {
+        height = 20;
+        width = 30;
+        depth = 25;
+    }
+
+    // Method to calculate volume
+    double vol() {
+        return height * width * depth;
+    }
+}
+
+class BoxDemo2 {
+    public static void main(String[] args) {
+        Box mybox = new Box();
+        System.out.println("Volume is: " + mybox.vol());
+    }
+}
+```
+
+Output:
+```
+Volume is :15000.0
+```

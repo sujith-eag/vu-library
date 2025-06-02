@@ -136,11 +136,15 @@ export const mcaJavaSection = [
     //     ]
     //   },
     //   {
-    //     title: "Unit-5 Event Handling",
-    //     items: [
-    //       // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
-    //       // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
-    //     ]
+        title: "Lab Programs",
+        items: [
+          { label: "Program-1", link: "/mca/java/p01" },
+          { label: "Program-2", link: "/mca/java/p02" },
+          { label: "Program-3", link: "/mca/java/p03" },
+          { label: "Program-4", link: "/mca/java/p04" },
+          { label: "Program-5", link: "/mca/java/p05" },
+          { label: "Program-6", link: "/mca/java/p06" },   
+        ]
       }
     ]
   }

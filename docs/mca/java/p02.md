@@ -1,0 +1,265 @@
+# Program 2 :
+
+Implement a Java program showcasing inheritance concepts, including creating a multilevel hierarchy, using the super keyword, method overriding, and dynamic method dispatch. Also, include the use of abstract classes and final with inheritance.
+
+Includes:
+- Abstract classes    
+- The `super` keyword
+- Method overriding
+- Final methods and classes
+- Multilevel inheritance
+- Dynamic method dispatch
+
+## Program: Inheritance Concepts in Java
+
+---
+
+### Part 1: Box, BoxWeight, Shipment Hierarchy
+
+```java
+// Abstract base class
+abstract class Box {
+    double width, height, depth;
+
+    // Constructor to clone object
+    Box(Box ob) {
+        width = ob.width;
+        height = ob.height;
+        depth = ob.depth;
+    }
+
+    // Constructor with dimensions
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+    }
+
+    // Default constructor
+    Box() {
+        width = height = depth = -1;
+    }
+
+    // Constructor for cube
+    Box(double len) {
+        width = height = depth = len;
+    }
+
+    // Abstract method for volume
+    abstract double volume();
+}
+```
+
+---
+
+```java
+// First level subclass
+class BoxWeight extends Box {
+    double weight;
+
+    // Clone constructor
+    BoxWeight(BoxWeight ob) {
+        super(ob);
+        weight = ob.weight;
+    }
+
+    // Constructor with all parameters
+    BoxWeight(double w, double h, double d, double m) {
+        super(w, h, d);
+        weight = m;
+    }
+
+    // Default constructor
+    BoxWeight() {
+        super();
+        weight = -1;
+    }
+
+    // Constructor for cube
+    BoxWeight(double len, double m) {
+        super(len);
+        weight = m;
+    }
+
+    // Overriding volume method
+    @Override
+    double volume() {
+        return width * height * depth;
+    }
+}
+```
+
+---
+
+```java
+// Final class to prevent further inheritance
+final class Shipment extends BoxWeight {
+    double cost;
+
+    // Clone constructor
+    Shipment(Shipment ob) {
+        super(ob);
+        cost = ob.cost;
+    }
+
+    // Constructor with all parameters
+    Shipment(double w, double h, double d, double m, double c) {
+        super(w, h, d, m);
+        cost = c;
+    }
+
+    // Default constructor
+    Shipment() {
+        super();
+        cost = -1;
+    }
+
+    // Constructor for cube
+    Shipment(double len, double m, double c) {
+        super(len, m);
+        cost = c;
+    }
+
+    // Overriding volume method
+    @Override
+    double volume() {
+        return width * height * depth;
+    }
+
+    // Final method - cannot be overridden
+    final void displayCost() {
+        System.out.println("Shipping cost: $" + cost);
+    }
+}
+```
+
+---
+
+```java
+// Demo class
+public class DemoShipment {
+    public static void main(String[] args) {
+        Shipment shipment1 = new Shipment(10, 20, 15, 10, 3.14);
+        double vol = shipment1.volume();
+
+        System.out.println("Volume is " + vol);
+        System.out.println("Weight of the Shipment: " + shipment1.weight);
+        shipment1.displayCost();
+
+        System.out.println();
+
+        Shipment shipment2 = new Shipment(2, 3, 4, 0.76, 1.28);
+        vol = shipment2.volume();
+
+        System.out.println("Volume is " + vol);
+        System.out.println("Weight of the Shipment: " + shipment2.weight);
+        shipment2.displayCost();
+    }
+}
+```
+
+---
+
+### Output
+
+```
+Volume is 3000.0
+Weight of the Shipment: 10.0
+Shipping cost: $3.14
+
+Volume is 24.0
+Weight of the Shipment: 0.76
+Shipping cost: $1.28
+```
+
+---
+
+### Part 2: Animal → Mammal → Dog Hierarchy (Multilevel Inheritance with Dynamic Dispatch)
+
+```java
+// Abstract base class
+abstract class Animal {
+    String name;
+
+    Animal(String name) {
+        this.name = name;
+    }
+
+    // Abstract method
+    abstract void sound();
+
+    // Final method - cannot be overridden
+    final void sleep() {
+        System.out.println(name + " is sleeping...");
+    }
+}
+```
+
+---
+
+```java
+// First level subclass
+class Mammal extends Animal {
+    Mammal(String name) {
+        super(name);
+    }
+
+    @Override
+    void sound() {
+        System.out.println(name + " makes a mammal sound.");
+    }
+}
+```
+
+---
+
+```java
+// Second level subclass (Multilevel Inheritance)
+class Dog extends Mammal {
+    Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    void sound() {
+        System.out.println(name + " barks.");
+    }
+
+    void display() {
+        super.sound(); // Call Mammal's version
+        sound();       // Call Dog's version
+    }
+}
+```
+
+---
+
+```java
+// Main class demonstrating dynamic dispatch
+public class InheritanceDemo {
+    public static void main(String[] args) {
+        Animal ref;
+
+        // Dynamic method dispatch
+        ref = new Dog("Buddy");
+        ref.sound();   // Dog's implementation
+        ref.sleep();   // Final method from Animal
+
+        // Type casting to Dog
+        if (ref instanceof Dog) {
+            ((Dog) ref).display();
+        }
+    }
+}
+```
+
+---
+
+### Output
+
+```
+Buddy barks.
+Buddy is sleeping...
+Buddy makes a mammal sound.
+Buddy barks.
+```

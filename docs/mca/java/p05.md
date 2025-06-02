@@ -1,0 +1,86 @@
+
+# Program 5: 
+
+Handle various exceptions using try, catch, throw, throws, and finally. Include nested try blocks and a custom exception subclass
+
+```java
+// Custom exception subclass
+class MyException extends Exception {
+    private int detail;
+
+    MyException(int a) {
+        detail = a;
+    }
+
+    public String toString() {
+        return "MyException[" + detail + "]";
+    }
+}
+
+public class ExceptionHandlingDemo {
+
+    // Method that throws a custom exception
+    static void compute(int a) throws MyException {
+        System.out.println("Called compute(" + a + ")");
+        if (a > 10)
+            throw new MyException(a);
+        System.out.println("Normal exit");
+    }
+
+    public static void main(String[] args) {
+        try {
+            // Nested try block
+            try {
+                int a = args.length;
+                System.out.println("a = " + a);
+                int b = 42 / a; // May cause ArithmeticException
+
+                int[] c = {1};
+                c[42] = 99;     // May cause ArrayIndexOutOfBoundsException
+
+            } catch (ArithmeticException e) {
+                System.out.println("Divide by 0: " + e);
+            }
+
+            compute(1);   // No exception
+            compute(20);  // Will throw MyException
+
+        } catch (MyException e) {
+            System.out.println("Caught: " + e);
+        } finally {
+            System.out.println("Inside finally block");
+        }
+    }
+}
+
+```
+
+## Updates
+
+```java
+try {
+    int a = args.length;
+    System.out.println("a = " + a);
+
+    try {
+        int b = 42 / a;
+    } catch (ArithmeticException e) {
+        System.out.println("Divide by 0: " + e);
+    }
+
+    try {
+        int[] c = {1};
+        c[42] = 99;
+    } catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Array index error: " + e);
+    }
+
+    compute(1);
+    compute(20);
+
+} catch (MyException e) {
+    System.out.println("Caught: " + e);
+} finally {
+    System.out.println("Inside finally block");
+}
+```
