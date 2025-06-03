@@ -1,16 +1,15 @@
 # Research Design
 
-**Research Design:** Meaning of research design, need for research design, features of a good design, Importance concepts relating to research design, Different research designs, Basic principles of experimental design.
+>[!note] **Syllabus** 
+>**Research Design:** Meaning of research design, need for research design, features of a good design, Importance concepts relating to research design, Different research designs, Basic principles of experimental design.
 
-___
+
+>[!caution] Question
+>Define / What is research design and explain different parts of Research design
 
 A research design is the set of methods and procedures used in collecting and analyzing measures of the variables specified in the problem research.
 
 A research design is a conceptual structure within which a research is conducted; it constitutes the blueprint for the collection, measurement and analysis of data.
-
-
->[!caution] Question
->Define / what is research design and explain different parts of Research design
 
 ## Parts of Research Design
 
@@ -22,25 +21,30 @@ A research design is a conceptual structure within which a research is conducted
 
 4. **Operational design** which deals with the techniques by which the procedures specified in the sampling, statistical and observational designs can be carried out.
 
-
 ### Need for a research design
 
-* It facilitates the smooth sailing of the various research operations.
-* Makes research efficient by yielding maximal information.
-* Minimizes expenditure of time, effort and money.
-* Helps in advance planning of the methods to be adopted for collecting the relevant data and the techniques to be used in their analysis.
+* It facilitates the smooth sailing of the various research operations
+
+* Makes research efficient by yielding maximal information
+
+* Minimizes expenditure of time, effort and money
+
+* Helps in advance planning of the methods to be adopted for collecting the relevant data and the techniques to be used in their analysis
 
 ### Features of a good Research Design
 
-* The nature of the problem to be studied
-* The objectives of the problem to be studied
-* The availability of time and money for the research work
-* The means of obtaining information
-* The availability and skills of the researcher and his staff
-
-
 >[!caution] Question
 >Define / Explain features of good research design
+
+* The nature of the problem to be studied
+
+* The objectives of the problem to be studied
+
+* The availability of time and money for the research work
+
+* The means of obtaining information
+
+* The availability and skills of the researcher and his staff
 
 ## Important Research Design Concepts
 
@@ -87,6 +91,7 @@ A study must always be so designed that the effect upon the dependent variable i
 extraneous variable or variables.
 
 ### 3. Control
+
 One important characteristic of a good research design is to minimise the influence or effect of extraneous variable(s). The technical term 'control' is used when we design the study minimising the effects of extraneous independent variables
 
 ### 4. Confounded relationship
@@ -101,7 +106,6 @@ When a prediction or a hypothesised relationship is to be tested by scientific m
 
 Usually a research hypothesis must contain, at least, one independent and one dependent variable.
 
-
 ### 6. Experimental and non-experimental hypothesis-testing research
 
 When the purpose of the research is to test a research hypothesis, it is termed as hypothesis-testing research.
@@ -111,18 +115,14 @@ It can be both of experimental design type or non- experimental design type.
 Research in which the independent variable(s) are manipulated is termed as 'experimental hypothesis-testing research' and a research in which they are not
 manipulated is called 'non-experimental hypothesis-testing research'.
 
-
-
 ### 7. Experimental and control groups
 
 In an experimental hypothesis-testing research when a group is exposed to usual conditions, it is termed as 'control group', but when a group is exposed to some
 novel or special condition, it is termed as 'experimental group'.
 
-
 ### 8. Treatments
 
 The different conditions under which experimental and control groups are put are usually referred to as 'treatments'.
-
 
 ### 9. Experiment
 
@@ -134,24 +134,21 @@ Experiments can be of two types viz., absolute experiment and comparative experi
 * ***Absolute experiment** – Determining the impact of a fertilizer on the yield of a crop.
 * ***Comparative experiment** – Determining the impact of one fertilizer as compared to the impact of some other fertilizer.
 
-
 ### 10. Experimental unit(s)
 
 The pre-determined plots or blocks, where different treatments are used, are known as experimental units. Such units must be selected (defined) very carefully.
 
 
-
 ## Different Research Design
-
-1. Research design in case of Exploratory Research
-2. Research design in case of Descriptive and Diagnostic research
-3. Research design in case of Hypothesis -Testing Research studies
-
 
 >[!caution] Question
 >Define different types of research Design
 
+1. Research design in case of Exploratory Research
 
+2. Research design in case of Descriptive and Diagnostic research
+
+3. Research design in case of Hypothesis -Testing Research studies
 
 ### Research design in case of exploratory research studies
 
@@ -167,9 +164,8 @@ Generally, the following three methods in the context of research design for suc
 * The experience survey and
 * The analysis of 'insight-stimulating' examples.
 
-
 ### Descriptive and diagnostic research
 
 in case of descriptive research study –one of those studied which are concerned with describing the characteristics of a particular Individual, or a group. 
 
-Diagnostic research study determine the frequency which some thing occur
+Diagnostic research study determine the frequency which some thing occur.

@@ -2,9 +2,9 @@
 # Research Problem
 
 
-**Defining the Research Problem:** What is research problem, Selecting the problem, Necessity of defining the problem, Technique involved in defining a problem, An illustration.
+>[!note] **Syllabus**
+>**Defining the Research Problem:** What is research problem, Selecting the problem, Necessity of defining the problem, Technique involved in defining a problem, An illustration.
 
-___
 
 >[!caution] Question
 >Define Research problem. How to Formulate a Research Problem
@@ -26,13 +26,17 @@ Formulating a Research Problem:
 * Cost and time are the major factors
 * Follow Preliminary study
 
+Characteristics of Good Topic:
 
-Characteristics of Good Topic
-1. Interesting – keeps the researcher interested in it throughout the research process.
-2. Researchable – can be investigated through the collection and analysis of data.
-3. Significant – contributes to the improvement and understanding of educational theory and practice.
-4. Manageable – fits the level of researcher’s level of research skills, needed resources, and time restrictions.
-5. Ethical – does not embarrass or harm participants.
+1. **Interesting** – keeps the researcher interested in it throughout the research process.
+
+2. **Re-searchable** – can be investigated through the collection and analysis of data.
+
+3. **Significant** – contributes to the improvement and understanding of educational theory and practice.
+
+4. **Manageable** – fits the level of researcher’s level of research skills, needed resources, and time restrictions.
+
+5. **Ethical** – does not embarrass or harm participants.
 
 ### 2. Necessity of Defining a Problem
 
@@ -59,6 +63,7 @@ Defining a research problem properly and clearly is a crucial part of a research
 >What do you mean by Pilot study. What are the different techniques to involved in research.
 
 #### 3.1. Statement of the problem in a general way
+
 * Keeping practical concern
 * The researcher must immerse himself thoroughly in the subject matter concerning.
 * In case of social research, the researcher has to do some field observation. He may undertake some sort of preliminary survey or known as pilot survey.
@@ -66,12 +71,14 @@ Defining a research problem properly and clearly is a crucial part of a research
 Pilot study - test, trial, experiment, trial run, dry run, experimental study, experimental investigation.
 
 #### 3.2. Understanding the nature of the problem
+
 For a better understanding of the nature of the problem involved, the researcher should
 * Know its origin and nature clearly.
 * Discuss with those who have a good knowledge of the problem concerned or similar other problems.
 * Know about the environment within which the problem is to be studied and understood.
 
 #### 3.3. Surveying the available literature
+
 * The researcher must be surveyed the all available literature concerning the problem.
 * Studies on related problems are useful for indicating the type of difficulties that may be encountered in the present study as also the possible analytical shortcomings.
 
@@ -83,8 +90,7 @@ For a better understanding of the nature of the problem involved, the researcher
 
 Finally, the researcher must sit to rephrase the research problem into a working proposition.
 
-Once the nature of the problem has been clearly understood, the environment has been defined, discussions over the problem have taken place and the available literature has been surveyed
-and examined, rephrasing the problem into analytical or operational terms is not a difficult task.
+Once the nature of the problem has been clearly understood, the environment has been defined, discussions over the problem have taken place and the available literature has been surveyed and examined, rephrasing the problem into analytical or operational terms is not a difficult task.
 
 Through rephrasing, the researcher puts the research problem in as specific terms as possible so that it may become operationally viable and may help in the development of working hypotheses
 
