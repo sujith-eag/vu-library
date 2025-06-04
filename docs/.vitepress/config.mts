@@ -44,11 +44,11 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Java', link: '/java/' },
       { text: 'Python', link: '/python/' },
-      { text: 'C', link: '/c/' },
+      // { text: 'C', link: '/c/' },
       { text: 'JS', link: '/java-script/' },
       { text: 'React', link: '/react/'},
+      { text: 'MCA', link: '/mca/' },
       { text: 'Linux', link: '/linux/' },
-      { text: 'OS', link: '/os/' }
     ],
 
     sidebar: {

@@ -20,6 +20,8 @@ export const mcaDAASection = [
     ]
   }
 ];
+
+
 export const mcaDbmsSection = [
   {
     title: "Data Base Management",
@@ -150,12 +152,37 @@ export const mcaJavaSection = [
   }
 ];
 
+export const mcaFSSection = [
+  {
+    title: "Full Stack Development",
+    items: [
+
+//   {
+//     title: "Unit-2 SQL",
+//     items: [
+//       // { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
+//     ]
+//   },
+      {
+        title: "React Excercise-3",
+        items: [
+          { label: "Question-1", link: "/mca/fs/e31" },
+          { label: "Question-2", link: "/mca/fs/e32" },
+          { label: "Question-3", link: "/mca/fs/e33" },
+        ]
+      },
+
+    ]
+  },
+];
+
 export const mca2Section = [
   ...mcaDbmsSection,
   ...mcaNetworkSection,
   ...mcaJavaSection,
   ...mcaRMSection,
-  ...mcaDAASection
+  ...mcaDAASection,
+  ...mcaFSSection
 ]
 
   export const mcaPythonSection = [
