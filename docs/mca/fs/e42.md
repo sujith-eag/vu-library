@@ -1,0 +1,162 @@
+# Question 2
+
+Design and develop a functional component called `ExpenseTrackerInput`. 
+* Include inputs for expense name and amount. 
+* Use `useState` for form control. Validate that the amount is a positive number. 
+* On form submission, show a success message or an error message using conditional rendering. 
+* Use inline CSS to highlight the amount field in red if validation fails.
+
+
+## `ExpenseTrackerInput.jsx`
+
+```jsx
+import React, { useState } from 'react';
+import './ExpenseTrackerInput.css';
+
+function ExpenseTrackerInput() {
+	const [expenseName, setExpenseName] = useState('');
+	const [amount, setAmount] = useState('');
+	const [submitted, setSubmitted] = useState(false);
+	const [error, setError] = useState(false);
+	
+	function handleNameChange(e) {
+      setExpenseName(e.target.value);
+  }
+
+	function handleAmountChange(e) {
+      setAmount(e.target.value);
+      setError(false); // Clear error on input change
+  }
+
+	function handleSubmit(e) {
+      e.preventDefault();
+      const numericAmount = parseFloat(amount);
+
+	  if (isNaN(numericAmount) || numericAmount <= 0) {
+        setError(true);
+        setSubmitted(false);
+        return;
+	  }
+      setSubmitted(true);
+      setError(false);
+  }
+
+	if (submitted && !error) {
+    return (
+      <div className="expense-success">
+        Expense added: 
+        <strong>{expenseName}</strong> 
+        — ${parseFloat(amount).toFixed(2)}
+      </div>
+    );
+  }
+
+  return (
+    <form 
+		className="expense-form" 
+		onSubmit={handleSubmit}>
+      <h2>Track a New Expense</h2>
+      
+      <label>
+        Expense Name:
+        <input
+          type="text"
+          value={expenseName}
+          onChange={handleNameChange}
+          required
+        />
+      </label>
+
+      <label>
+        Amount ($):
+        <input
+          type="number"
+          value={amount}
+          onChange={handleAmountChange}
+          style={error ? { border: '2px solid red' } : {}}
+          required
+        />
+      </label>
+
+      <button type="submit">Add Expense</button>
+
+      {error && <div className="error-message">
+	      Please enter a valid positive number for amount.
+	      </div>}
+    </form>
+  );
+}
+
+export default ExpenseTrackerInput;
+```
+
+## `ExpenseTrackerInput.css`
+
+```css
+.expense-form {
+  border: 2px solid #ddd;
+  padding: 20px;
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #fefefe;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.expense-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.expense-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.expense-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.expense-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expense-form button:hover {
+  background-color: #218838;
+}
+
+.expense-success {
+  text-align: center;
+  font-size: 18px;
+  color: #155724;
+  background-color: #d4edda;
+  padding: 15px;
+  border: 2px solid #c3e6cb;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.error-message {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+```
+

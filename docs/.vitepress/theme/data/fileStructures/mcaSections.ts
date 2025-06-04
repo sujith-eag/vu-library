@@ -156,22 +156,46 @@ export const mcaFSSection = [
   {
     title: "Full Stack Development",
     items: [
-
-//   {
-//     title: "Unit-2 SQL",
-//     items: [
-//       // { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
-//     ]
-//   },
+      // {
+      //   title: "React Exercise-1",
+      //   items: [
+      //     { label: "Question-1", link: "/mca/fs/e11" },
+      //     { label: "Question-2", link: "/mca/fs/e12" },
+      //     { label: "Question-3", link: "/mca/fs/e13" },          
+      //   ]
+      // },
+      // {
+      //   title: "React Exercise-2",
+      //   items: [
+      //     { label: "Question-1", link: "/mca/fs/e21" },
+      //     { label: "Question-2", link: "/mca/fs/e22" },
+      //     { label: "Question-3", link: "/mca/fs/e23" },          
+      //   ]
+      // },
       {
-        title: "React Excercise-3",
+        title: "React-3",
         items: [
-          { label: "Question-1", link: "/mca/fs/e31" },
-          { label: "Question-2", link: "/mca/fs/e32" },
-          { label: "Question-3", link: "/mca/fs/e33" },
+          { label: "Q-1 NewsLetterSignup", link: "/mca/fs/e31" },
+          { label: "Q-2 UserStatusSwitcher", link: "/mca/fs/e32" },
+          { label: "Q-3 TechBugReportForm", link: "/mca/fs/e33" },
         ]
       },
-
+      {
+        title: "React-4",
+        items: [
+          { label: "Q-1 FeedbackPoll", link: "/mca/fs/e41" },
+          { label: "Q-2 ExpenseTracker", link: "/mca/fs/e42" },
+          { label: "Q-3 ThemeSelector", link: "/mca/fs/e43" },
+        ]
+      },
+      {
+        title: "React-5",
+        items: [
+          { label: "Q-1 TextInputTracker", link: "/mca/fs/e51" },
+          { label: "Q-2 ColorChanger", link: "/mca/fs/e52" },
+          { label: "Q-3 Counter", link: "/mca/fs/e53" },
+        ]
+      },
     ]
   },
 ];

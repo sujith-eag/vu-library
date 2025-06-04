@@ -1,0 +1,86 @@
+
+# Question 2
+
+Design and develop a functional component named `ColorChanger`
+* A button that cycles through a list of colors (`["red", "green", "blue"]`) each time it’s clicked.  
+* Use `useState` to manage the current color. 
+* Display a div with a fixed height and width, and apply the current color as its background using inline CSS. 
+* Include a label above the div showing the current color name.
+
+## `ColorChanger.jsx`
+
+```jsx
+import React, { useState } from 'react';
+import './ColorChanger.css';
+
+function ColorChanger() {
+	const colors = ['red', 'green', 'blue'];
+	const [currentIndex, setCurrentIndex] = useState(0);
+	
+	function handleChangeColor() {
+		setCurrentIndex( 
+			(prevIndex) => (prevIndex + 1) % colors.length);
+	}
+
+	const currentColor = colors[currentIndex];
+
+	return (
+	    <div className="color-changer">
+			<h2>Current Color: {currentColor}</h2>
+			
+			<div
+	        className="color-box"
+	        style={`{ backgroundColor: currentColor }`}
+	        ></div>
+	        
+			<button 
+				onClick={handleChangeColor}
+				>Change Color
+			</button>
+	    </div>
+  );
+}
+
+export default ColorChanger;
+```
+
+## `ColorChanger.css`
+
+```css
+.color-changer {
+  max-width: 300px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.color-changer h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.color-changer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.color-changer button:hover {
+  background-color: #222;
+}
+```
+
+

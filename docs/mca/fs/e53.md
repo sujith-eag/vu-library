@@ -1,0 +1,85 @@
+
+# Question 3
+
+Design and develop a functional component named `Counter` that displays a number starting from 0. 
+* Add three buttons labeled "Increase", "Decrease", and "Reset". 
+* Clicking "Increase" should increment the number by 1 using `useState`. 
+* Clicking "Decrease" should decrement the number by 1. 
+* Clicking "Reset" should set the number back to 0. 
+* Use inline CSS to center the content on the page, apply padding, margin, and background color to the buttons, and make the displayed number bold with a slightly larger font size.
+
+## `Counter.jsx`
+
+```jsx
+import React, { useState } from 'react';
+import './Counter.css';
+
+function Counter() {
+	const [count, setCount] = useState(0);
+
+	function handleIncrease() {
+		setCount(prev => prev + 1);
+	}
+	function handleDecrease() {
+		setCount(prev => prev - 1);
+	}
+	function handleReset() {
+		setCount(0);
+	}
+
+	return (
+	    <div className="counter-container">
+	      <h2>Counter</h2>
+
+	      <div 
+		      style={`{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }`}>
+        Current Count: {count}
+      </div>
+
+      <div>
+        <button onClick={handleIncrease} style={buttonStyle}>Increase</button>
+        <button onClick={handleDecrease} style={buttonStyle}>Decrease</button>
+        <button onClick={handleReset} style={buttonStyle}>Reset</button>
+      </div>
+    </div>
+  );
+}
+
+const buttonStyle = {
+  margin: '0 10px',
+  padding: '10px 15px',
+  backgroundColor: '#1976d2',
+  color: '#fff',
+  border: 'none',
+  borderRadius: '6px',
+  cursor: 'pointer',
+  fontSize: '14px',
+};
+
+export default Counter;
+```
+
+
+## `Counter.css`
+
+```css
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.counter-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+```
+

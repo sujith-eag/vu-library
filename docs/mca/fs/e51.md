@@ -1,0 +1,103 @@
+
+# Question 1
+
+Design and develop a React functional component called `TextInputTracker` with a controlled text input. 
+* Display the current input text below the input as the user types, along with a character count. 
+* Use `useState` to track the input value. 
+* Restrict input to only letters and spaces—ignore any other characters. 
+* Include a clear button that resets the input and display. 
+* Keep the styling minimal: just some spacing and basic font styles to keep it clean and readable.
+
+## `TextInputTracker.jsx`
+
+```jsx
+import React, { useState } from 'react';
+import './TextInputTracker.css';
+
+function TextInputTracker() {
+	const [inputText, setInputText] = useState('');
+
+  // Allow only letters and spaces
+	function handleChange(e) {
+	  const value = e.target.value;
+	  const filtered = value.replace(/[^a-zA-Z\s]/g, '');
+	  setInputText(filtered);
+  }
+
+	function handleClear() {
+	  setInputText('');
+  }
+
+  return (
+    <div className="text-input-tracker">
+      <h2>Live Text Input Tracker</h2>
+
+      <input
+        type="text"
+        value={inputText}
+        onChange={handleChange}
+        placeholder="Type letters only"
+      />
+
+      <button onClick={handleClear}>Clear</button>
+
+      <div className="output">
+        <p><strong>Current Text:</strong> {inputText}</p>
+        <p><strong>Character Count:</strong> {inputText.length}</p>
+      </div>
+    </div>
+  );
+}
+
+export default TextInputTracker;
+```
+
+## `TextInputTracker.css`
+
+```css
+.text-input-tracker {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.text-input-tracker h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.text-input-tracker input {
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-input-tracker button {
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-left: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text-input-tracker button:hover {
+  background-color: #d32f2f;
+}
+
+.output {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #444;
+}
+```
+
