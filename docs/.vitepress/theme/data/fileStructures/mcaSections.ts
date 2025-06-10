@@ -21,6 +21,17 @@ export const mcaDAASection = [
   }
 ];
 
+export const mcaCSSection = [
+  {
+    title: "Cyber Security",
+    items: [
+          { label: "Cyber Crime", link: "/mca/cs/u1_1" },
+          { label: "Attack Planning", link: "/mca/cs/u1_2" },
+          // { label: "Cyber Crime", link: "/mca/cs/" },
+    ]
+  }
+];
+
 
 export const mcaDbmsSection = [
   {
@@ -202,11 +213,12 @@ export const mcaFSSection = [
 
 export const mca2Section = [
   ...mcaDbmsSection,
-  ...mcaNetworkSection,
+  ...mcaDAASection,  
   ...mcaJavaSection,
+  ...mcaNetworkSection,
   ...mcaRMSection,
-  ...mcaDAASection,
-  ...mcaFSSection
+  ...mcaCSSection,
+  ...mcaFSSection,
 ]
 
   export const mcaPythonSection = [
