@@ -4,8 +4,6 @@
 >Introduction, proliferation of mobile and wireless devises, trends in mobility, credit card frauds in mobile and wireless devices.
 >
 >Security challenges posed by mobile devices, registry settings for mobile devices, Authentication service security, attacks on mobile/cellphones
-Here is a **clearly formatted, corrected, and updated** version of your notes on **Mobile and Wireless Devices**, including trends, challenges, and mobility types:
-
 
 With the increasing reliance on electronic gadgets such as **mobile phones** and **hand-held devices**, these tools have become integral to both personal life and business operations. They provide constant **Internet connectivity** even outside traditional office environments, but they also present **significant cybersecurity challenges**.
 
@@ -13,13 +11,13 @@ With the increasing reliance on electronic gadgets such as **mobile phones** and
 
 The evolution of mobile technology has led to increasingly **powerful**, **compact**, and **connected** devices capable of running complex applications, supporting multimedia, and enabling real-time communication.
 
-|**Decade**|**Technology Base**|**Key Features**|**Mobility Impact**|
-|---|---|---|---|
-|1980s|Portable Computers|Early adoption in business|Limited portability|
-|1990s|Laptops, PDAs|Basic mobile apps, IR sync|Increased mobility for professionals|
-|2000s|Smartphones, Wi-Fi|Mobile internet, email, continuous connectivity|Always-on access to services|
-|2010s|4G, Cloud, Tablets|App ecosystems, cloud sync, full-featured mobile computing|Ubiquitous connectivity|
-|2020s|5G, AI, IoT, Wearables|Edge computing, real-time AI, context-aware experiences|Smart, seamless, and personalized mobility|
+| **Decade** | **Technology Base**    | **Key Features**                                           | **Mobility Impact**                        |
+| ---------- | ---------------------- | ---------------------------------------------------------- | ------------------------------------------ |
+| 1980s      | Portable Computers     | Early adoption in business                                 | Limited portability                        |
+| 1990s      | Laptops, PDAs          | Basic mobile apps, IR sync                                 | Increased mobility for professionals       |
+| 2000s      | Smartphones, Wi-Fi     | Mobile internet, email, continuous connectivity            | Always-on access to services               |
+| 2010s      | 4G, Cloud, Tablets     | App ecosystems, cloud sync, full-featured mobile computing | Ubiquitous connectivity                    |
+| 2020s      | 5G, AI, IoT, Wearables | Edge computing, real-time AI, context-aware experiences    | Smart, seamless, and personalized mobility |
 
 ## Types of Mobility and Their Implications
 
