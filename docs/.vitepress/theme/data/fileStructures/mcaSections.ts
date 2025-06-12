@@ -4,10 +4,10 @@ export const mcaRMSection = [
   {
     title: "Research Methodology",
     items: [
-          { label: "Research Methodology", link: "/mca/rm/u1_1_rm" },
-          { label: "Research Process", link: "/mca/rm/u1_2_rp" },
-          { label: "Research Problem", link: "/mca/rm/u1_3_rpr" },
-          { label: "Research Design", link: "/mca/rm/u2_1_rd" },
+          { label: "Research Methodology", link: "/mca/rm/u11" },
+          { label: "Research Process", link: "/mca/rm/u12" },
+          { label: "Research Problem", link: "/mca/rm/u13" },
+          { label: "Research Design", link: "/mca/rm/u21" },
     ]
   }
 ];
@@ -16,7 +16,7 @@ export const mcaDAASection = [
   {
     title: "Design & Analysis of Algorithms",
     items: [
-          { label: "Algorithms Introduction", link: "/mca/daa/u1_1_intro" },
+          { label: "Algorithms Introduction", link: "/mca/daa/u11" },
     ]
   }
 ];
@@ -78,48 +78,49 @@ export const mcaNetworkSection = [
     title: "Networking",
     items: [
       {
-    //     title: "Unit-1 Network & Internet",
-    //     items: [
-    //       // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
-    //       // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
-    //       // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
-    //     ]
-    //   },
-    //   {
-    //     title: "Unit-2 Application Layer",
-    //     items: [
-    //       // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
-    //       // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
-    //     ]
-    //   },
+        title: "Network & Internet",
+        items: [
+         { label: "MAC & IP", link: "/mca/cn/u11" },
+         { label: "Networking Devices", link: "/mca/cn/u12" },
+         { label: "Packet & Circuit Switching", link: "/mca/cn/u13" },
+         { label: "Layerd Architecture", link: "/mca/cn/u14" },
+         
+        ]
+      },
+      {
+        title: "Application Layer",
+        items: [
+          { label: "FTP", link: "/mca/cn/u21" },
+          // { label: "Unit 2 - Answers", link: "/mca/cn/2_q_answered" }
+        ]
+      },
     //   {
     //     title: "Unit-3 Transport Layer",
     //     items: [
-    //       // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
-    //       // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
+    //       // { label: "Unit 3 - Questions", link: "/mca/cn/3_q" },
+    //       // { label: "Unit 3 - Answers", link: "/mca/cn/3_q_answered" }
     //     ]
     //   },
     //   {
     //     title: "Unit-4 Network Layer",
     //     items: [
-    //       // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
-    //       // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
+    //       // { label: "Unit 4 - Questions", link: "/mca/cn/4_q" },
+    //       // { label: "Unit 4 - Answers", link: "/mca/cn/4_q_answered copy" }
     //     ]
     //   },
     //   {
     //     title: "Unit-5 Link Layer & LAN",
     //     items: [
-    //       // { label: "Unit 5 - Questions", link: "/c/ds_qp/unit_5_q" },
-    //       // { label: "Unit 5 - Answers", link: "/c/ds_qp/unit_5_q_answered" }
+    //       // { label: "Unit 5 - Questions", link: "/mca/cn/5_q" },
+    //       // { label: "Unit 5 - Answers", link: "/mca/cn/5_q_answered" }
     //     ]
-      }
     ]
   }
-];
+]
 
 export const mcaJavaSection = [
   {
-    title: "OOP with Java",
+    title: "Java Lab",
     items: [
       {
     //     title: "Unit-1 Class & Inheritance",
@@ -169,44 +170,45 @@ export const mcaFSSection = [
   {
     title: "Full Stack Development",
     items: [
-      // {
-      //   title: "React Exercise-1",
-      //   items: [
-      //     { label: "Question-1", link: "/mca/fs/e11" },
-      //     { label: "Question-2", link: "/mca/fs/e12" },
-      //     { label: "Question-3", link: "/mca/fs/e13" },          
-      //   ]
-      // },
-      // {
-      //   title: "React Exercise-2",
-      //   items: [
-      //     { label: "Question-1", link: "/mca/fs/e21" },
-      //     { label: "Question-2", link: "/mca/fs/e22" },
-      //     { label: "Question-3", link: "/mca/fs/e23" },          
-      //   ]
-      // },
       {
-        title: "React-3",
+        title: "React Exercise-1",
         items: [
-          { label: "Q-1 NewsLetterSignup", link: "/mca/fs/e31" },
-          { label: "Q-2 UserStatusSwitcher", link: "/mca/fs/e32" },
-          { label: "Q-3 TechBugReportForm", link: "/mca/fs/e33" },
+          { label: "CountryList", link: "/mca/fs/react/e11" },
+          { label: "RestaurantList", link: "/mca/fs/react/e12" },
+          { label: "VehicleCard", link: "/mca/fs/react/e13" },          
         ]
       },
       {
-        title: "React-4",
+        title: "React Exercise-2",
         items: [
-          { label: "Q-1 FeedbackPoll", link: "/mca/fs/e41" },
-          { label: "Q-2 ExpenseTracker", link: "/mca/fs/e42" },
-          { label: "Q-3 ThemeSelector", link: "/mca/fs/e43" },
+          { label: "CourseCard", link: "/mca/fs/react/e21" },
+          { label: "CompanyDetails", link: "/mca/fs/react/e22" },
+          { label: "PropTypes", link: "/mca/fs/react/e23" },
+          { label: "LandmarkGrid", link: "/mca/fs/react/e24" },        
         ]
       },
       {
-        title: "React-5",
+        title: "React Exercise-3",
         items: [
-          { label: "Q-1 TextInputTracker", link: "/mca/fs/e51" },
-          { label: "Q-2 ColorChanger", link: "/mca/fs/e52" },
-          { label: "Q-3 Counter", link: "/mca/fs/e53" },
+          { label: "NewsLetterSignup", link: "/mca/fs/react/e31" },
+          { label: "UserStatusSwitcher", link: "/mca/fs/react/e32" },
+          { label: "TechBugReportForm", link: "/mca/fs/react/e33" },
+        ]
+      },
+      {
+        title: "React Exercise-4",
+        items: [
+          { label: "FeedbackPoll", link: "/mca/fs/react/e41" },
+          { label: "ExpenseTracker", link: "/mca/fs/react/e42" },
+          { label: "ThemeSelector", link: "/mca/fs/react/e43" },
+        ]
+      },
+      {
+        title: "React Exercise-5",
+        items: [
+          { label: "TextInputTracker", link: "/mca/fs/react/e51" },
+          { label: "ColorChanger", link: "/mca/fs/react/e52" },
+          { label: "Counter", link: "/mca/fs/react/e53" },
         ]
       },
     ]
@@ -214,13 +216,13 @@ export const mcaFSSection = [
 ];
 
 export const mca2Section = [
-  ...mcaDbmsSection,
-  ...mcaDAASection,  
+  ...mcaFSSection,
   ...mcaJavaSection,
   ...mcaNetworkSection,
-  ...mcaRMSection,
+  ...mcaDbmsSection,
+  ...mcaDAASection,  
   ...mcaCSSection,
-  ...mcaFSSection,
+  ...mcaRMSection,
 ]
 
   export const mcaPythonSection = [

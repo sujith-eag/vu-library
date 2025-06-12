@@ -1,0 +1,80 @@
+
+# Question 4
+
+Build a functional component in React that 
+* Renders a grid of famous landmarks (name, location, country). 
+* Use external CSS to apply styles like borders, spacing, and hover effects to each item.
+
+## `LandmarkGrid.jsx`
+
+```jsx
+import React from "react";
+import "./LandmarkGrid.css";
+
+function LandmarkGrid() {
+  const landmarks = [
+    { name: "Eiffel Tower", location: "Paris", country: "France" },
+    { name: "Great Wall", location: "Beijing", country: "China" },
+    { name: "Statue of Liberty", location: "New York", country: "USA" },
+    { name: "Taj Mahal", location: "Agra", country: "India" },
+    { name: "Colosseum", location: "Rome", country: "Italy" },
+    { name: "Christ the Redeemer", location: "Rio de Janeiro", country: "Brazil" },
+  ];
+
+  return (
+    <div className="landmark-grid-container">
+      <h2>Famous Landmarks</h2>
+      <div className="landmark-grid">
+        {landmarks.map((landmark, index) => (
+          <div className="landmark-card" key={index}>
+            <h3>{landmark.name}</h3>
+            <p><strong>Location:</strong> {landmark.location}</p>
+            <p><strong>Country:</strong> {landmark.country}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default LandmarkGrid;
+```
+
+
+## `LandmarkGrid.css`
+
+```css
+.landmark-grid-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.landmark-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.landmark-card {
+  width: 220px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landmark-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.landmark-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+```
+

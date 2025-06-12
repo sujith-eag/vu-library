@@ -16,7 +16,7 @@ function FeedbackPoll() {
   const [submitted, setSubmitted] = useState(false);
 
   // Event handler for button clicks
-	function handleFeedback(choice) {
+  function handleFeedback(choice) {
       setFeedback(choice);
       setSubmitted(true);
 	}

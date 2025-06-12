@@ -1,0 +1,59 @@
+
+# Question 2
+
+Design a React-JS application where a Parent Component passes company data (company name, industry, and number of employees) as props to a Child Functional Component. 
+* Use prop-types in the child component to validate all the props.
+
+## `CompanyDetails.jsx`
+
+```jsx
+import React from "react";
+import PropTypes from "prop-types";
+
+function CompanyDetails({ name, industry, employees }) {
+  return (
+    <div className="company-details">
+      <h2>{name}</h2>
+      <p><strong>Industry:</strong> {industry}</p>
+      <p><strong>Number of Employees:</strong> {employees}</p>
+    </div>
+  );
+}
+
+// PropTypes validation
+CompanyDetails.propTypes = {
+  name: PropTypes.string.isRequired,
+  industry: PropTypes.string.isRequired,
+  employees: PropTypes.number.isRequired,
+};
+
+export default CompanyDetails;
+```
+
+## `App.jsx`
+
+```jsx
+import React from "react";
+import CompanyDetails from "./Company";
+
+function App() {
+  const companyData = {
+    name: "TechCorp",
+    industry: "Software Development",
+    employees: 12,
+  };
+
+  return (
+    <div>
+      <h1>Company Information</h1>
+      <CompanyDetails
+        name={companyData.name}
+        industry={companyData.industry}
+        employees={companyData.employees}
+      />
+    </div>
+  );
+}
+
+export default App;
+```

@@ -1,0 +1,90 @@
+# Question 1
+
+Design a class-based React component called `CourseCard` that 
+* Receives props such as course title (string), duration in weeks (number), and instructor name (string). 
+* Use prop-types to validate that all props are required and of the correct type.
+
+## `CourseCard.jsx`
+
+```jsx
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+
+class CourseCard extends Component {
+  render() {
+    const { title, duration, instructor } = this.props;
+	// Immediate destructuring to avoid using this.props
+	
+    return (
+      <div className="course-card">
+        <h2>{title}</h2>
+        <p><strong>Duration:</strong> {duration} weeks</p>
+        <p><strong>Instructor:</strong> {instructor}</p>
+      </div>
+    );
+  }
+}
+
+// PropTypes validation
+CourseCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  duration: PropTypes.number.isRequired,
+  instructor: PropTypes.string.isRequired,
+};
+
+export default CourseCard;
+```
+
+# Functional Component
+
+## `CourseCard.jsx`
+
+```jsx
+import React from "react";
+import PropTypes from "prop-types";
+
+function CourseCard({ title, duration, instructor }) {
+  return (
+    <div className="course-card">
+      <h2>{title}</h2>
+      <p><strong>Duration:</strong> {duration} weeks</p>
+      <p><strong>Instructor:</strong> {instructor}</p>
+    </div>
+  );
+}
+
+CourseCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  duration: PropTypes.number.isRequired,
+  instructor: PropTypes.string.isRequired,
+};
+
+export default CourseCard;
+```
+
+## `App.jsx`
+
+```jsx
+import React from "react";
+import CourseCard from "./CourseCard";
+
+function App() {
+  return (
+    <div>
+      <CourseCard
+        title="React for Beginners"
+        duration={6}
+        instructor="John Doe"
+      />
+      <CourseCard
+        title="Advanced JavaScript"
+        duration={8}
+        instructor="Jane Smith"
+      />
+    </div>
+  );
+}
+
+export default App;
+```
+

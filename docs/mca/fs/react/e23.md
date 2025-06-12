@@ -1,0 +1,149 @@
+
+# Question 3
+
+Design a React class component with prop validation using `PropTypes` to ensure correct data types for props?
+
+```
+type       value          valid
+Array       1,2,3,4,5      true
+Boolean     False          true
+String       GFG           true
+Number        100          true
+```
+
+```
+type        value          valid
+Array      Not an array   false
+Boolean        1          false
+String       1234          false
+Number     Not a number    false
+```
+
+## `App.jsx`
+
+```jsx
+import React from "react";
+import PropTypes from "prop-types";
+
+class App extends React.Component {
+  render() {
+    const { propArray, propBool, propNumber, propString } = this.props;
+
+    return (
+      <div>
+        <h2>Simple ReactJS Props validation example</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Type</th>
+              <th>Value</th>
+              <th>Valid</th>
+            </tr>
+            <tr>
+              <td>Array</td>
+              <td>{String(propArray)}</td>
+              <td>{Array.isArray(propArray) ? "true" : "false"}</td>
+            </tr>
+            <tr>
+              <td>Boolean</td>
+              <td>{String(propBool)}</td>
+              <td>{typeof propBool === "boolean" ? "true" : "false"}</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>{propString}</td>
+              <td>{typeof propString === "string" ? "true" : "false"}</td>
+            </tr>
+            <tr>
+              <td>Number</td>
+              <td>{propNumber}</td>
+              <td>{typeof propNumber === "number" ? "true" : "false"}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+}
+
+// PropTypes for type validation
+App.propTypes = {
+  propArray: PropTypes.array.isRequired,
+  propBool: PropTypes.bool.isRequired,
+  propNumber: PropTypes.number,
+  propString: PropTypes.string,
+};
+
+// Default props for valid demonstration
+App.defaultProps = {
+  propArray: [1, 2, 3, 4, 5],
+  propBool: false,
+  propNumber: 100,
+  propString: "GFG",
+};
+
+export default App;
+```
+
+# Functional Component
+## `App.jsx`
+
+```jsx
+import React from "react";
+import PropTypes from "prop-types";
+
+function App({ propArray, propBool, propNumber, propString }) {
+  return (
+    <div>
+      <h2>Simple ReactJS Props validation example</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Type</th>
+            <th>Value</th>
+            <th>Valid</th>
+          </tr>
+          <tr>
+            <td>Array</td>
+            <td>{String(propArray)}</td>
+            <td>{Array.isArray(propArray) ? "true" : "false"}</td>
+          </tr>
+          <tr>
+            <td>Boolean</td>
+            <td>{String(propBool)}</td>
+            <td>{typeof propBool === "boolean" ? "true" : "false"}</td>
+          </tr>
+          <tr>
+            <td>String</td>
+            <td>{propString}</td>
+            <td>{typeof propString === "string" ? "true" : "false"}</td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td>{propNumber}</td>
+            <td>{typeof propNumber === "number" ? "true" : "false"}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+// PropTypes for validation
+App.propTypes = {
+  propArray: PropTypes.array.isRequired,
+  propBool: PropTypes.bool.isRequired,
+  propNumber: PropTypes.number,
+  propString: PropTypes.string,
+};
+
+// Default props (valid examples)
+App.defaultProps = {
+  propArray: [1, 2, 3, 4, 5],
+  propBool: false,
+  propNumber: 100,
+  propString: "GFG",
+};
+
+export default App;
+```

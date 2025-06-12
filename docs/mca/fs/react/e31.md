@@ -15,7 +15,7 @@ import './NewsletterSignup.css';
 
 function NewsletterSignup(){
 	// States
-	const [name, setName] = useState('');
+	const [fullName, setFullName] = useState('');
 	const [email, setEmail] = useState('');
 	const [submitted, setSubmitted] = useState(false);
 
@@ -125,11 +125,11 @@ export default NewsletterSignup;
 }
 ```
 
-## Advanced Form Component with Validation
+# Advanced Form Component with Validation
+
+## `NewsletterSignup.jsx`
 
 ```jsx
-// NewsletterSignup.jsx
-
 import React, { useState } from 'react';
 import './NewsletterSignup.css';
 
@@ -240,16 +240,6 @@ function NewsletterSignup() {
 export default NewsletterSignup;
 ```
 
-**`NewsletterSignup.js`**:
-
-`useState` Hooks:
-*   `fullName`, `setFullName`: Manages the state of the full name input.
-*   `email`, `setEmail`: Manages the state of the email input.
-*   `isSubmitted`, `setIsSubmitted`: A boolean flag that controls whether to show the form or the thank-you message.
-*   `error`, `setError`: Stores and displays validation error messages.
-
-`handleFullNameChange`, `handleEmailChange`: These functions update the respective state variables whenever the input values change. They also clear any existing error message.
-
 `validateEmail`: A simple helper function for basic email format validation.
 
 `handleSubmit`:
@@ -262,52 +252,12 @@ Conditional Rendering:
 *   `if (isSubmitted)`: If `true`, the component renders the "Thank You" message, personalizing it with the `fullName` and `email`.
 *   Otherwise (if `isSubmitted` is `false`), it renders the form.
 
-
-Form Elements:
-*   The `<form>` has an `onSubmit` prop pointing to `handleSubmit`.
-*   `noValidate` attribute on the form disables default HTML5 browser validation bubbles, allowing our custom JS validation to take precedence for a more consistent user experience.
-*   Each `<input>` has:
-	*   `id`: For linking with the `<label htmlFor="...">`.
-	*   `value`: Bound to the corresponding state variable (e.g., `value={fullName}`). This makes it a "controlled component."
-	*   `onChange`: Bound to the handler function that updates the state (e.g., `onChange={handleFullNameChange}`).
-	*   `required`: Provides basic HTML5 validation as a fallback or for users with JavaScript disabled, though our `handleSubmit` handles it more explicitly.
-
 *   Error Display: `{error && <p className="error-message">{error}</p>}` conditionally renders the error message if the `error` state is not an empty string.
 
-*   Import CSS: `import './NewsletterSignup.css';` ensures the styles are applied to this component.
 
-
-```javascript
-// App.js
-
-import React from 'react';
-import NewsletterSignup1 from './NewsletterSignup1';
-
-function App() {
-  return (
-    <div>
-      <header>
-        <h1>React Excersices</h1>
-      </header>
-      <main>
-        
-        <NewsletterSignup1 />
-      
-      </main>
-      <footer>
-        <p>&copy; 2023 My App</p>
-      </footer>
-    </div>
-  );
-}
-
-export default App;
-```
-
+## `NewsletterSignup.css`
 
 ```css
-/* NewsletterSignup.css */
-
 .newsletter-form-container {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
