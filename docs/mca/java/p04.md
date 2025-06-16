@@ -17,6 +17,7 @@ Create a Java program that :
     Protection.java
     Derived.java
     SamePackage.java
+    MyInterface.java
     Demo.java
 
 /p2
@@ -81,13 +82,40 @@ class SamePackage {
 }
 ```
 
+## `p1/MyInterface.java`
+
+```java
+package p1;
+
+public interface MyInterface {
+	void display(); // abstract method
+
+	default void show() 
+	{ 
+		System.out.println("Default method in MyInterface");
+	}
+}
+```
+
 ## `p1/Demo.java`
 
 ```java
 package p1;
 
-public class Demo {
-    public static void main(String[] args) {
+public class Demo implements MyInterface 
+{
+	public void display() 
+	{
+		System.out.println("Implementation of abstract method from MyInterface");
+	}
+
+	public static void main(String[] args) 
+	{
+		Demo d = new Demo();
+		d.display();
+		d.show();
+		
+		System.out.println("\n--- Access Protection Demonstration ---");
         Protection ob1 = new Protection();
         Derived ob2 = new Derived();
         SamePackage ob3 = new SamePackage();
@@ -110,8 +138,6 @@ class Protection2 extends p1.Protection {
     }
 }
 ```
-
-
 
 ## `p2/OtherPackage.java`
 
@@ -152,41 +178,4 @@ class Demo {
 |_default_|✅|✅|❌|❌|
 |`protected`|✅|✅|✅ (via inheritance)|❌|
 |`public`|✅|✅|✅|✅|
-
-## Interface with Default Methods
-
-To meet the interface requirement:
-
-### `MyInterface.java`
-
-```java
-package p1;
-
-public interface MyInterface {
-    void abstractMethod();
-
-    default void defaultMethod() {
-        System.out.println("Inside default method of interface.");
-    }
-}
-```
-
-### Modified `Derived.java` (to implement interface)
-
-```java
-package p1;
-
-class Derived extends Protection implements MyInterface {
-    Derived() {
-        System.out.println("Inside Derived Constructor");
-        System.out.println("Value of n: " + n);
-        System.out.println("Value of n_pro: " + n_pro);
-        System.out.println("Value of n_pub: " + n_pub);
-    }
-
-    public void abstractMethod() {
-        System.out.println("Abstract method implemented in Derived.");
-    }
-}
-```
 

@@ -101,19 +101,13 @@ export const mcaNetworkSection = [
     //       // { label: "Unit 3 - Answers", link: "/mca/cn/3_q_answered" }
     //     ]
     //   },
-    //   {
-    //     title: "Unit-4 Network Layer",
-    //     items: [
-    //       // { label: "Unit 4 - Questions", link: "/mca/cn/4_q" },
-    //       // { label: "Unit 4 - Answers", link: "/mca/cn/4_q_answered copy" }
-    //     ]
-    //   },
-    //   {
-    //     title: "Unit-5 Link Layer & LAN",
-    //     items: [
-    //       // { label: "Unit 5 - Questions", link: "/mca/cn/5_q" },
-    //       // { label: "Unit 5 - Answers", link: "/mca/cn/5_q_answered" }
-    //     ]
+      {
+        title: "Lab Manual",
+        items: [
+          { label: "IP Addressing", link: "/mca/cn/lab1" },
+          { label: "Static Routing", link: "/mca/cn/lab2" }
+        ]
+      },
     ]
   }
 ]
@@ -123,35 +117,6 @@ export const mcaJavaSection = [
     title: "Java Lab",
     items: [
       {
-    //     title: "Unit-1 Class & Inheritance",
-    //     items: [
-    //       // { label: "Unit 1 - Questions", link: "/c/ds_qp/unit_1_q" },
-    //       // { label: "Unit 1 - Answers (A1)", link: "/c/ds_qp/unit_1_q_a1" },
-    //       // { label: "Unit 1 - Answers (A2)", link: "/c/ds_qp/unit_1_q_a2" }
-    //     ]
-    //   },
-    //   {
-    //     title: "Unit-2 Packages & Exceptions",
-    //     items: [
-    //       // { label: "Unit 2 - Questions", link: "/c/ds_qp/unit_2_q" },
-    //       // { label: "Unit 2 - Answers", link: "/c/ds_qp/unit_2_q_answered" }
-    //     ]
-    //   },
-    //   {
-    //     title: "Unit-3 Multithreading & Genrics",
-    //     items: [
-    //       // { label: "Unit 3 - Questions", link: "/c/ds_qp/unit_3_q" },
-    //       // { label: "Unit 3 - Answers", link: "/c/ds_qp/unit_3_q_answered" }
-    //     ]
-    //   },
-    //   {
-    //     title: "Unit-4 Collections Framework",
-    //     items: [
-    //       // { label: "Unit 4 - Questions", link: "/c/ds_qp/unit_4_q" },
-    //       // { label: "Unit 4 - Answers", link: "/c/ds_qp/unit_4_q_answered copy" }
-    //     ]
-    //   },
-    //   {
         title: "Lab Programs",
         items: [
           { label: "Program-1", link: "/mca/java/p01" },
@@ -161,7 +126,18 @@ export const mcaJavaSection = [
           { label: "Program-5", link: "/mca/java/p05" },
           { label: "Program-6", link: "/mca/java/p06" },   
         ]
-      }
+      },
+      
+      {
+        title: "Java Assignment",
+        items: [
+          { label: "Question-1", link: "/mca/java/a01" },
+          { label: "Question-2", link: "/mca/java/a02" },
+          { label: "Question-3", link: "/mca/java/a03" },
+          { label: "Question-4", link: "/mca/java/a04" },
+          { label: "Question-5", link: "/mca/java/a05" },
+        ]
+      },
     ]
   }
 ];
