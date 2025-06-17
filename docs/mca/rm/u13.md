@@ -2,8 +2,11 @@
 # Research Problem
 
 
->[!note] **Syllabus**
->**Defining the Research Problem:** What is research problem, Selecting the problem, Necessity of defining the problem, Technique involved in defining a problem, An illustration.
+>[!note] Syllabus
+>Defining the Research Problem: What is research problem, 
+>Selecting the problem, 
+>Necessity of defining the problem, 
+>Technique involved in defining a problem, An illustration.
 
 
 >[!caution] Question

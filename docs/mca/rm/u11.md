@@ -1,25 +1,28 @@
 
 # Research Methodology
 
->[!note] **Syllabus :**
->**Research Methodology:** Introduction, meaning of research, Objectives of research, Types of research, Research approaches, Significance of research, Research methods versus methodology, Research and scientific method, Research process, Criteria of good research, Problems encountered by researchers in India.
+>[!note] Syllabus :
+>Meaning of research, 
+>Objectives of research, 
+>Types of research, 
+>Research approaches, 
+>Significance of research, 
+>Research methods versus methodology, 
+>Research and scientific method, 
+>Research process, 
+>Criteria of good research, 
+>Problems encountered by researchers in India.
 
 ## Meaning of Research
 
 >[!caution] Question
 >Define Research / Research Methodology with Suitable Examples
 
-Research refers to a methodical process that involves stating a problem, forming a hypothesis, gathering relevant information, analyzing data, and drawing conclusions that either solve the problem or provide theoretical insights.
+**Research** refers to a methodical process that involves stating a problem, forming a hypothesis, gathering relevant information, analyzing data, and drawing conclusions that either solve the problem or provide theoretical insights.
 
-Research methodology refers to the systematic, theoretical analysis of the methods applied to a field of study. It includes the concepts, principles, and procedures that guide a research project.
+**Research** is a careful investigation or inquiry, especially through a systematic search for new facts in a specific topic to find solutions to problems.
 
-**Definitions:**
-
-- A scientific and systematic search for relevant information on a specific topic.
-    
-- A careful investigation or inquiry, especially through a systematic search for new facts.
-    
-- A quest for knowledge through objective and systematic methods to find solutions to problems.
+**Research methodology** refers to the systematic, theoretical analysis of the methods applied to a field of study. It includes the concepts, principles, and procedures that guide a research project.
 
 ## Objectives of Research
 
@@ -47,14 +50,14 @@ Research objectives are precise statements that define the goals of a research s
 3. **Descriptive Objectives**: Describe characteristics or phenomena without investigating cause-effect relationships.  
     _Example_: 
     * To describe the demographics of rural clinic patients.
-    
-4. **Exploratory Objectives**: Investigate poorly understood phenomena. Often used in preliminary or Qualitative research  
-    _Example_: 
-    * To explore challenges in online education for teachers.
-    
-5. **Explanatory Objectives**: Identify cause-effect relationships.  
+
+4. **Explanatory Objectives**: Identify cause-effect relationships.  
     _Example_: 
     * To determine how income level affects purchasing behavior.
+
+5. **Exploratory Objectives**: Investigate poorly understood phenomena. Often used in preliminary or Qualitative research  
+    _Example_: 
+    * To explore challenges in online education for teachers.
     
 6. **Evaluative Objectives**: Assess effectiveness or outcome of a program or policy. 
     _Example_: 
@@ -83,7 +86,7 @@ Research objectives are precise statements that define the goals of a research s
 
 #### Analytical Research :
 
-Researcher has to use facts or information already available, and analyze these to make critical evaluation of the material.
+* Researcher has to use facts or information already available, and analyze these to make critical evaluation of the material.
 
 - Involves using existing data for critical evaluation.
 	_Example_: 

@@ -1,6 +1,12 @@
 
 # Research Process
 
+>[!note] Syllabus :
+>Research process, 
+>Criteria of good research, 
+>Problems encountered by researchers in India.
+
+
 >[!caution] Question
 >Explain different steps of Research Process
 
@@ -30,8 +36,6 @@ Various steps of research process are :
     
 11. Preparing the Report or Presenting Results
     
-
-
 ## 1. Formulating the Research Problem (Identifying the Problem)
 
 The first and most critical step is identifying a problem or developing a research question. A researcher must decide the general area of interest or aspect of a subject-matter to study.

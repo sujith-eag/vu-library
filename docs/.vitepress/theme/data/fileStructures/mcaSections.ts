@@ -7,6 +7,7 @@ export const mcaRMSection = [
           { label: "Research Methodology", link: "/mca/rm/u11" },
           { label: "Research Process", link: "/mca/rm/u12" },
           { label: "Research Problem", link: "/mca/rm/u13" },
+          { label: "Literature Review", link: "/mca/rm/u22" },
           { label: "Research Design", link: "/mca/rm/u21" },
     ]
   }

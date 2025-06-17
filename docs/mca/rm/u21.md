@@ -1,7 +1,12 @@
 # Research Design
 
->[!note] **Syllabus** 
->**Research Design:** Meaning of research design, need for research design, features of a good design, Importance concepts relating to research design, Different research designs, Basic principles of experimental design.
+>[!note] Syllabus 
+>Meaning of research design, 
+>need for research design, 
+>features of a good design, 
+>Importance concepts relating to research design, 
+>Different research designs, 
+>Basic principles of experimental design.
 
 
 >[!caution] Question
@@ -87,8 +92,7 @@ Independent variables that are not related to the purpose of the study, but may 
 
 Whatever effect is noticed on dependent variable as a result of extraneous variable(s) is technically described as 'experimental error'.
 
-A study must always be so designed that the effect upon the dependent variable is attributed entirely to the independent variable(s), and not to some
-extraneous variable or variables.
+A study must always be so designed that the effect upon the dependent variable is attributed entirely to the independent variable(s), and not to some extraneous variable or variables.
 
 ### 3. Control
 
@@ -98,7 +102,6 @@ One important characteristic of a good research design is to minimise the influe
 
 When the dependent variable is not free from the influence of extraneous
 variable(s), the relationship between the dependent and independent variables is said to be confounded by an extraneous variable(s).
-
 
 #### 5. Research hypothesis
 
@@ -112,8 +115,7 @@ When the purpose of the research is to test a research hypothesis, it is termed 
 
 It can be both of experimental design type or non- experimental design type.
 
-Research in which the independent variable(s) are manipulated is termed as 'experimental hypothesis-testing research' and a research in which they are not
-manipulated is called 'non-experimental hypothesis-testing research'.
+Research in which the independent variable(s) are manipulated is termed as 'experimental hypothesis-testing research' and a research in which they are not manipulated is called 'non-experimental hypothesis-testing research'.
 
 ### 7. Experimental and control groups
 
