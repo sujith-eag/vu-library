@@ -40,17 +40,27 @@ export const mcaDbmsSection = [
   {
     title: "Data Base Management",
     items: [
-      // {
-    //     title: "Unit-1 Relational Model",
-    //     items: [
-    //       // { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
-    //     ]
-    //   },
-      //   title: "Unit-1 SQL",
-      //   items: [
-      //     { label: "Some", link: "/mca/dbs/u1/" },
-      //   ]
-      // },
+      {
+        title: "DBMS & Relational Model",
+        items: [
+          { label: "DBMS", link: "/mca/dbs/u1/u11" },
+          { label: "DBMS Characteristics", link: "/mca/dbs/u1/u12" },
+          { label: "Data Models & Schemas", link: "/mca/dbs/u1/u13" },
+          { label: "Three Schema Architecture", link: "/mca/dbs/u1/u14" },
+          { label: "Component Module", link: "/mca/dbs/u1/u15" },
+          { label: "Relational Model & Constraints", link: "/mca/dbs/u1/u16" },          
+        ]
+      },
+      {
+        title: "SQL",
+        items: [
+          { label: "SQL Introduction", link: "/mca/dbs/u2/u11" },
+          { label: "SQL Basic Practice", link: "/mca/dbs/u2/u12" },
+          { label: "Complex Queries", link: "/mca/dbs/u2/u13" },
+          { label: "PL/SQL Introduction", link: "/mca/dbs/u2/u14" },
+          { label: "Procedure, Function, Trigger", link: "/mca/dbs/u2/u15" },
+        ]
+      },
     //   {
     //     title: "Unit-3 E-R Model",
     //     items: [
@@ -70,7 +80,7 @@ export const mcaDbmsSection = [
     //     ]
       // },
       {
-        title: "Practice",
+        title: "Lab Related",
         items: [
           { label: "Assignment", link: "/mca/dbs/assignment" },
         ]
