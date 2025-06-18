@@ -40,18 +40,17 @@ export const mcaDbmsSection = [
   {
     title: "Data Base Management",
     items: [
-      {
+      // {
     //     title: "Unit-1 Relational Model",
     //     items: [
     //       // { label: "Unit 1 Q", link: "/python/col_extra/unit_1_q" },
     //     ]
     //   },
-    //   {
-    //     title: "Unit-2 SQL",
-    //     items: [
-    //       // { label: "Unit 2 Q", link: "/python/col_extra/unit_2_q" },
-    //     ]
-    //   },
+      //   title: "Unit-1 SQL",
+      //   items: [
+      //     { label: "Some", link: "/mca/dbs/u1/" },
+      //   ]
+      // },
     //   {
     //     title: "Unit-3 E-R Model",
     //     items: [
@@ -69,6 +68,12 @@ export const mcaDbmsSection = [
     //     items: [
     //       // { label: "Unit 5 Q", link: "/python/col_extra/unit_5_q" },
     //     ]
+      // },
+      {
+        title: "Practice",
+        items: [
+          { label: "Assignment", link: "/mca/dbs/assignment" },
+        ]
       },
     ]
   }

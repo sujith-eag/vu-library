@@ -1,6 +1,6 @@
 const sqlSection = [
     {
-      title: 'SQL',
+      title: 'SQL from CS50',
       items: [
         { label: 'Querying', link: '/dbms/sql/0_query' },
         { label: 'Relating Data', link: '/dbms/sql/1_relating' },
@@ -11,8 +11,8 @@ const sqlSection = [
         { label: 'Scaling & Performance', link: '/dbms/sql/6_scaling' }
       ]
     }
-  ];
-  
+  ]; 
+
   const mongoSection = [
     {
       title: 'MongoDB',
