@@ -96,18 +96,18 @@ export const mcaNetworkSection = [
       {
         title: "Network & Internet",
         items: [
-         { label: "MAC & IP", link: "/mca/cn/u11" },
-         { label: "Networking Devices", link: "/mca/cn/u12" },
-         { label: "Packet & Circuit Switching", link: "/mca/cn/u13" },
-         { label: "Layerd Architecture", link: "/mca/cn/u14" },
+         { label: "MAC & IP", link: "/mca/cn/u1/u11" },
+         { label: "Networking Devices", link: "/mca/cn/u1/u12" },
+         { label: "Packet & Circuit Switching", link: "/mca/cn/u1/u13" },
+         { label: "Layerd Architecture", link: "/mca/cn/u1/u14" },
          
         ]
       },
       {
         title: "Application Layer",
         items: [
-          { label: "FTP", link: "/mca/cn/u21" },
-          // { label: "Unit 2 - Answers", link: "/mca/cn/2_q_answered" }
+          { label: "FTP", link: "/mca/cn/u2/u21" },
+          // { label: "Un", link: "/mca/cn/2_q_answered" }
         ]
       },
     //   {
@@ -120,8 +120,10 @@ export const mcaNetworkSection = [
       {
         title: "Lab Manual",
         items: [
-          { label: "IP Addressing", link: "/mca/cn/lab1" },
-          { label: "Static Routing", link: "/mca/cn/lab2" }
+          { label: "VirtualBox Setup", link: "/mca/cn/lab/virtual" },
+          { label: "Apache Server", link: "/mca/cn/lab/apache" },          
+          { label: "IP Addressing", link: "/mca/cn/lab/lab1" },
+          { label: "Static Routing", link: "/mca/cn/lab/lab2" }
         ]
       },
     ]

@@ -1,5 +1,4 @@
 
-
 # IP Addressing
 
 ## Classful Addressing (Class A: 10.0.0.0/8)
@@ -57,9 +56,9 @@ Set up a basic LAN in GNS3 using a hub and four VPCS nodes. Use Class A private 
     
     - After pinging, check the ARP table on a VPCS:
         
-        ```
-        show arp
-        ```
+	```
+	show arp
+	```
         
     - You should see IP-to-MAC mappings of other PCs.
         
