@@ -20,65 +20,90 @@ Samskruthi, i was thinking would it not be nice if the faculties who taught our 
 ```
 komala
 
-Ha, Good morning students, how are you all doing, 
-hope all are doing well only..
+Ha, Good morning everyone, how are you all doing 
+today, hope all are doing well only..
 
-Why so low energy even before the event started?
-no josh at all, did everyone have breakfast?
-Noo!  
+I hope everyone is in farewell mood only,
+No one is in weekend mood,
+some are already planning for the weekends? 
+where to go after the farewell? 
+ok ok, many already went ah? 
+let them go, you guys enjoy the farewell.
+___
 
-You should take care of your health first right,
-Your juniors have prepared so much activities for you guys 
-and it will be late by for lunch, 
-how can you sit and participate in everything in empty stomach.. . 
+Hey, common ya, Why so low energy, early morning
+no josh at all, the events didn't even start yet?
 
-Make sure you have your breakfast ok, 
-We don't even know if your juniors will provide food or not, 
+are you all sleepy?
+did everyone have breakfast?
+Noo!
+
+What is this, yes i understand event is important, 
+but you should take care of your health first right,
+
+Your juniors have prepared so much activities for 
+you guys and it will be late for lunch, 
+how can you sit and participate in everything 
+in empty stomach...
+
+Make sure you always have your breakfast ok, 
+I don't even know if your juniors are providing
+food for you or not, i'll find out and 
+get back to you on that..  
+
 >>>>>>>>>
-Oh they are saying they have arranged, 
-ok that will be after the events.
+Haaa OK OK they are saying they have arranged,
+but that will be after the events ok, 
+first we'll finish the events.
 
 ___
 
-
-I hope everyone is in farewell mood only or 
-some are already planning for the weekends where to go? 
-many already went ah? 
-ok ok let them go, you guys enjoy the farewell.
-
-Samskrithi, i had give you something to find out right? 
+Samskrithi, i had asked you to find out 
+about something right? 
 did you find out?
+
 >>>>>>>
-Why are you becoming so lazy, no interest or what, 
-hardly two minutes it would have taken.
+No, How can you so simply say no,
+I don't understand why you people are 
+becoming so lazy nowadayas, hardly it would take 
+two minutes to find out.
 
 I never forget what i had asked you to do,
-Ask your seniors did i ever forget what work i had given, 
-i never forget the work i have given, 
-even though it was last year i still remember what i had asked,
-right guys.. 
+Ask your seniors did i ever forget what 
+work i had given, Noo right...
 
-ok 
+i never forget, and i will keep on asking 
+till you find out and tell me.
 
-ok lets, not worry about that today,
+even though it was last year i still 
+remember what i had asked to find out
+for your seniors also because they never 
+gave any answer.
 
-you guys know what is murphys law, 
+___
+
+Ok Ok lets, not worry about that today,
+
+does everyone know what is murphys law, 
 "You are fine and i am fine then everything is fine"
 
 So, all of you are here to enjoy and 
-we have your juniours ready to entertain you
-with a wonderful performance,
+i know you are all waiting for that only,
 
-So please enjoy
+We have your juniours ready to entertain you
+with a wonderful dance performance,
+
+So have fun, please enjoy
 ```
 
 ## After the dance (Before the games)
 
-Sujith: That was a  fun filled and energetic performance, a round of applause for all the students who danced for their seniors.
+Sujith: That was a  fun filled and energetic performance, a round of applause for all the students who danced for their seniors. Including myself.
 
 > Samskrithi: 
 > Ya .........................
-> So who is the teacher that will announce the next event, can we have Deepali mam to present the next event
+> So sujith, who is the teacher that will announce the next event, 
+> can we have the young and energetic Deepali mam to present the next event.
 
 ```
 Deepali
@@ -89,40 +114,46 @@ must be something special no,
 do you guys know what is special today??
 
 Don't know?
-
-I told you so so many time in the last three days, 
+I told you so so many time, 
 still you guys don't remember?
 
 I know you people know everything,
-You are all future developers, java progrmmers, hackers also..
-Still you don't want to speak up,
-come on tell me what is the event today..
+You are all the future developers, 
+java progrmmers, hackers..
 
+Still you don't want to speak up and answer,
+
+Ok, come on tell me what is the event today..
 No one wants to tell!!
 
-Ok i'll only ask, Vippin.. 
-no no i'll ask samskruthi who i'm seeing after so long,
-attendence shortange right?  
-you have to meet HoD mam later OK...
+Ok i'll only ask, Vippin..
+no no i'll ask samskruthi who i'm seeing after
+so long, attendence shortange right?  
+you should meet HoD mam later OK...
 
-OK, tell me samskruthi what is the event today?
+OK now, tell me samskruthi what is the event today?
 >>>>>>>>
 OK, correct, what does this event contain?
 >>>>>>>>
-OK correct it contains seniors, juniors and faculty,
 
+it contains MCA seniors, juniors and faculty,
 It is very easy right, easy easy..
- 
-Oh you know the answer, Ok, i'll ask someone else...
 
-where is vallabh? vallabh...
+___
+
+Ok, Oh you know the answer, 
+So, i'll ask someone else who is sleeping 
+or talikng in the back...
+
+Where is vallabh? vallabh...
 See, Today also you made me call your name,
 Sumne irokke baralla nimge, yenadru mathadhane irthira,
 Hesru karskothane irthira chik makla thara.
 Evathu nodi last bench alli vineeth jothe idira...
 
 Ok, anyways,
-Samskruthi correclty told what is the main event, 
+Samskruthi correclty told what is the main event,
+it is farewell for seniors,
 vallabh can you tell we what is the 
 next sub event in this main event,
 
@@ -137,9 +168,8 @@ i know, you don't know.
 Anyways i'll only tell, for that only i came know.
 Listen properly.
 
-Next we have some fun games planned for you guys, 
+Next we have some fun games planned for all the seniors,
 it will be conducted by (Adithyashree)(ganesh)(karthik)
-
 
 enjoy everyone.
 ```
@@ -147,7 +177,8 @@ enjoy everyone.
 ## After the Games (Before Dance)
 
 > **Samskruthi :** 
-> Next................
+> ............
+> Next we have our Dr. Manjunath Sir to present the next event 
 
 ```
 Manjunath
@@ -158,8 +189,8 @@ Mhh hmmm bartha illa energy
 
 (hey correct correct, i learnt something from you today, its, 12pm)
 
-Good afternoon,
-ahh eega banthu... this is what i want, maintain madi
+Good afternoon, ahh eega banthu... 
+this is what i want, idanne event full maintain madi
 
 ___
 
@@ -168,6 +199,11 @@ munde banro alli hinde irovru,
 
 illa andre perform madoke mood iralla, 
 banro bega time waste madbedi...
+
+Yavdamma adu laptop, windows??
+>>>>>>
+No No No, when will you people become real programmers,
+Linux use madbeko aitha...
 
 OK Now, Excuse me, Excuse me, 
 hey kelskolramma illi aamel mathaduvranthe,
@@ -180,19 +216,30 @@ ___
 ok, Look at here
 
 Ayyo PPT ilvalla, nan favorite projectru illa, 
+Ok no problem, 
 irli aadru we will do, look at here...
 
-I want your 100% attention now, everyone 100% attention now.
+Everyone I want your 100% attention now, 
+everyone 100% attention now.
+
 ___
 
+Idu already nimge helidini, 
+let me see who will tell me the answer,
+
+How many categories of students are there, 
+>>>>>
+Ahh, this was the answer i was looking for,
+Yelli jorag helo,
+Ahh super kano neenu...
+
+So we have 3 categories of students, 
+you already know this, i won't repeat,
+
 I want to tell you people something,
-
-According to me there are three categories of students, 
-that i've already told you, mathe repeat madalla...
-
 Today here also there are 3 categories of students,
 
-Category one, students who are not even present here,
+Category one, students who are not even attending the event,
 Yak bandilla kelbedi nangu gothilla.
 
 Category two, 
@@ -200,10 +247,11 @@ All of you who are here to atttend and enjoy this event
 
 Then we have the Category three,
 These are the entreprenaurs, 
-these are the studets are going to do something 
-wonderful today,
+They are very different students man,
+they are going to do something wonderful today,
 
-These are the students who are coming to entertain everyone today...
+These are the students who are coming to 
+entertain everyone today...
 
 These students are going to come like this, 
 perform something like this, 
@@ -212,6 +260,7 @@ and go something like this...
 eegle heltha idini... Full Encourage madbeku, 
 
 Hey barro barro, song hakrappa
+Noodok kaitha idini avaginda...
 ```
 
 ## After Dance (Before Ramp Walk)
@@ -233,10 +282,13 @@ Yella hegidira, how is everyone doing,
 
 are you all enjoying the program so far?
 
-Yella chennag madthru, dance abba sakathagithalla,
-everyone played very well also,
+Yella chennag madthru alva, 
+dance abba sakathagithalla,
+
+from seniors everyone played very well also,
 oh Nam karthik shetty nadskotiddu alva, yen chenag 
 definition helthidrappa nan class maduvaga.
+Maryok agutha adanna.
 
 ___
 
@@ -244,16 +296,20 @@ Ok, It's soo nice no what all your juniors have planned
 for their seniors farewell,
 
 This is reminding me of my college days, 
-how much fun we used to have and how many memories of 
-those college days.  
+how much fun we used to have and how many 
+memories of those college days.  
+Eeglu hange bandu dance madbidona ansuthe,
+amele yelru otge dance madona ok...
 
-Neevu hage, Yavaglu happiyag irbeku, college bandaglu happy, 
+Yavaglu happiyag irbeku, college bandaglu happy, 
 college inda hoguvaga innu happy, alva. .
 Egladru swalpa response kotrall, nice.
 
+yaradru hosa face, no no, i remember everyone now
+
 ___
 
-hmmm, evaga nan yen helok bande...
+hmmm, evaga nan yen helok bandnalla...
 haaahhh.. adee yes next event anounce madbeku alva,
 
 Ok, Today All the seniors have come dressed up so nicely,
@@ -281,11 +337,14 @@ Bandnamma bande, ille idde, yel hogthini..
 
 yenro devru, yella hegidirappa,
 
-banro banro..
-oh bandbitidira alva already, irli bidi yen thondre ill,
-evath yav login illa, lab exam illa, error screen illa 
+banro banro.. oh bandbitidivei anthira, 
+aithu banro, irli yen thondre ill, 
+bandidiralla ade santhosha
+evath yaav login illa, lab exam illa, 
+Neev error screen nodkond kuthkolodu bekilla 
 
-Nimde dina kanro, nimde sendoff idu, maja madro, enjoy.
+Nim farewell kanro evathu,
+Nimde dina kanro, maja madro, enjoy.
 
 Ahhh,
 Amma paromitha hinge yerd nimsha,
@@ -298,21 +357,22 @@ Ayoo, No raju sir, you can't go now,
 yakamma paromitha, evath beda andbitte,
 
 Paromitha:
-raju sir, Evaga seniors dance perform madthidare marthodra,
-Neev avr performance nodalva
+raju sir, Evaga seniors dance perform madthidare 
+marthodra, Neev avr performance nodalva
 
 Raju:
-Oh havdalva, Marthe bitidde nodu, thanks amma nenpsidakke.
-Avrdu nodbeku performance,
+Oh havdalva, Marthe bitidde nodu, thanks amma 
+nenpsidakke. Avrdu nodbeku performance,
 
-bega barro bega devru, tea aroguthe ilandre
+Mathe, bega barro bega devru, 
+tea aroguthe ilandre
 
 Paromitha:
 Ayoo raju sir, bidi,
 
 Please welcome the seniors for their performance,
 First we have a song by maruthesh and then
-A dance performance by the girls()()()
+A dance performance by senior girls()()()
 ```
 
 ## After Seniors Dance (Before Games)
@@ -330,20 +390,21 @@ Is everyone, ready for more fun, great,
 you guys get it right what we are doing,
 great,
 
-Then next, we have some more events planned for you guys,
-it is very maticulously planned by your juniors,
+Then next, we have some more events planned 
+for you guys, it is very maticulously planned
+by your juniors,
 
 I can't tell you what all games will be,
 but i assure you it will be a lot of fun
 
-We again have the team who will be conducting the 
-activity.
+We again have the team who will be conducting 
+the activity.
 
 Samskruthi please can you read out the names of the 
 seniors who will be participating in these events, 
 so they can all come on stage to participate.
 
-No one can say no, ok,
+No one can say no, OK,
 It will be alright, no one will be harmed, 
 its just fun games.
 ```
@@ -359,13 +420,18 @@ Banbratha Paul
 
 Is this Secction A?, Section B? 
 >>>>>>>
-It is Both the Section??
+It is Both Section A and B?? 
+
 Oh Seniors Section A and B also Present
+Also MCA Faculty..
+
+Oh MCA Union Set.
 
 Why? No class today? 
-everyone enjoy only, ok, have fun..
+everyone want to just enjoy only, 
+ok, ok, have fun, i also have fun..
 
-Why you sir late for event also, 
+Why you sir late for fun event also, 
 >>>>>>>
 Traffic? ok ok you go back to traffic
 
@@ -375,9 +441,11 @@ i fully accept you like this (hugging)
 i have no problem, go go
 
 Where is the girl CR, don't know...?
-girl CR always missing. . .
+girl CR always last bench. . .
 
-you, madam, do you know, ha you only madam, 
+You, Madam, 
+do you know, 
+ha you only madam, 
 do you know what is the next event.
 ```
 
@@ -392,20 +460,28 @@ HoD Ajitha
 It is wonderful seeing you all studets, 
 full bright and having fun in your farewell day.
 
-Was it fun, your juniors have bunked too many classes 
-to prepare this event for you people only today.
+Was it fun, your juniors have bunked 
+soo many classes to prepare this event
+for you people only today.
 
-As HoD of the department it is my responsibility to make sure 
-all happens well, 
+Your juniors did well no, give them round of applause,
 
-I have already told you many times it is important for your 
-placement how many Hackathons, ideathons you attend and win..
+From 1997 soo many farewells i have seen,
+As HoD of the department it is my responsibility 
+to make sure all happens well, 
 
-As we are are the very end of todays events, on this special
-day also, i want to tell you some  parting words, 
+I have already told you many times it is important 
+for you people for placement how many Hackathons you attend, 
+ideathons you attend and also told you soo many times
+to attend classes regularly or you will be NE 
+Not Eligible..
 
-it would be best if the real HoD Ajitha mam comes on the stage to
-give some parting words to the seniour batch
+But today As we are are the very end of todays events, 
+on this special day also, 
+i want to tell you some parting words, 
+
+it would be best if the real HoD Ajitha mam comes 
+on the stage to give some parting words to the seniour batch
 ```
 
 > **Samskruthi :** Inviting HoD onto Stage
