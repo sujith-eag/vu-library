@@ -1,4 +1,11 @@
+---
+aside: false
+sidebar: false
+prev: false
+next: false
+# navbar: false
 
+---
 # After Intro (Before Dance)
 
 **Sujith**: I heartly Welcome all our MCA faulty, classmates and mainly our seniors, for whom we have planned all these. I walcome you all to today's events.
