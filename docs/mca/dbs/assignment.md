@@ -90,7 +90,7 @@ Leave
 
 ```sql
 -- Leave Table
-CREATE TABLE Leave (
+CREATE TABLE Leave1 (
     LeaveID INT PRIMARY KEY,
     EmployeeID INT,
     StartDate DATE,
@@ -160,7 +160,7 @@ CHANGE Amount SalaryAmount DECIMAL(15, 2);
 
 ```sql
 -- Rename Leave table to EmployeeLeave
-RENAME TABLE Leave TO EmployeeLeave;
+RENAME TABLE Leave1 TO EmployeeLeave;
 ```
 
 * Ensure HoursWorked in Assignment is never negative:

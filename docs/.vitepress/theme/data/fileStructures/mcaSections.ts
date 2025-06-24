@@ -142,7 +142,8 @@ export const mcaJavaSection = [
           { label: "Program-3", link: "/mca/java/p03" },
           { label: "Program-4", link: "/mca/java/p04" },
           { label: "Program-5", link: "/mca/java/p05" },
-          { label: "Program-6", link: "/mca/java/p06" },   
+          { label: "Program-6", link: "/mca/java/p06" },
+          { label: "Program-7", link: "/mca/java/p07" },
         ]
       },
       
