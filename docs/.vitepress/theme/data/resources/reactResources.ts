@@ -17,6 +17,12 @@ export const booksUsed = [
       author: 'Morten Barklund',
       year: '2024',
     },
+    {
+      img: '/books/placeholder.png',
+      title: 'Full-Stack Web Development with MERN',
+      author: 'Nabendu Biswas',
+      year: '2023',
+    },
   ]
   
 export const booksPending = [    

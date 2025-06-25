@@ -20,6 +20,13 @@ export const booksPending = [
   },
   {
     img: '/books/placeholder.svg',
+    title: 'MongoDB The Definitive Guide',
+    author: 'Shannon Bradshaw',
+    year: '2020',
+  },
+  
+  {
+    img: '/books/placeholder.svg',
     title: 'Database Systems: Design, Implementation, and Management, 13th Edition',
     author: 'Carlos Coronel',
     year: '2019',
