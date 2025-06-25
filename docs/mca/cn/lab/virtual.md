@@ -1,6 +1,5 @@
 
-# VirtualBox VM Setup
-
+# VirtualBox VM Setup Guide
 
 ### Add Oracle’s GPG key and repository:
 

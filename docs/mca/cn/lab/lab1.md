@@ -93,7 +93,7 @@ Set up a basic LAN in GNS3 using a hub and four VPCS nodes. Use Class A private 
 
 ---
 
-### Final Notes:
+### Outcome
 
 - All PCs must be on the **same subnet** for direct communication.
     
