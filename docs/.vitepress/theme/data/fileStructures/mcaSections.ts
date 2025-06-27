@@ -26,11 +26,28 @@ export const mcaCSSection = [
   {
     title: "Cyber Security",
     items: [
-          { label: "Cyber Crime", link: "/mca/cs/u1_1" },
-          { label: "Attack Planning", link: "/mca/cs/u1_2" },
-          { label: "Botnet & DDoS", link: "/mca/cs/u1_3" },
-          { label: "Mobile Devices", link: "/mca/cs/u2_1" },
-          { label: "Mobile Security", link: "/mca/cs/u2_2" },
+      { 
+      title: "Notes",
+      items: [     
+        { label: "Cyber Crime", link: "/mca/cs/u1_1" },
+        { label: "Attack Planning", link: "/mca/cs/u1_2" },
+        { label: "Botnet & DDoS", link: "/mca/cs/u1_3" },
+        { label: "Mobile Devices", link: "/mca/cs/u2_1" },
+        { label: "Mobile Security", link: "/mca/cs/u2_2" },
+        ]
+      },
+      { 
+      title: "Lab Manual",
+      items: [
+        { label: "Network Interface", link: "/mca/cs/lab/l01" },
+        { label: "Managing Interface", link: "/mca/cs/lab/l02" },
+        { label: "nmap", link: "/mca/cs/lab/l03" },
+        { label: "SSH Basics", link: "/mca/cs/lab/l04" },
+        { label: "IP Tables", link: "/mca/cs/lab/l05" },
+        { label: "WireShark Basics", link: "/mca/cs/lab/l06" },
+        { label: "KeyLogger", link: "/mca/cs/lab/l07" },
+        ]
+      },
     ]
   }
 ];
