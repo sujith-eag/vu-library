@@ -8,7 +8,7 @@
       <p class="entry">Welcome to my project showcase!</p>
       <p>
         This is a collection of projects I've implemented as part of my learning journey.
-        Each project reflects a growing skill set in HTML, CSS, JavaScript, and modern frameworks and Backend Technologies.
+        Each project reflects a growing skill set in HTML, CSS, JavaScript, and modern frameworks like React, Vue and Backend Technologies Express, MongoDB.
       </p>
     </div>
 
@@ -26,6 +26,13 @@
   
   <script setup>
   const projects = [
+    {
+      title: "State managed Task App",
+      link: "https://tasj.sujith-eag.in/",
+      description:
+      "MERN Stack application built using React.js, Express.js, Redux loolkit, Node.js. Data Storage in MongoDB server, Hosted on Netlify with Backend Operations in Render.
+     Authentication"
+    },
     {
       title: "Library and Portfolio Site",
       link: "https://www.sujith-eag.in/",
