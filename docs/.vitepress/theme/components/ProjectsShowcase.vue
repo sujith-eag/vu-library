@@ -28,10 +28,9 @@
   const projects = [
     {
       title: "State managed Task App",
-      link: "https://tasj.sujith-eag.in/",
-      description:
-      "MERN Stack application built using React.js, Express.js, Redux loolkit, Node.js. Data Storage in MongoDB server, Hosted on Netlify with Backend Operations in Render.
-     Authentication"
+      link: "https://task.sujith-eag.in/",
+      description: 
+      "MERN Stack application that handles Authentication and User State using Redux loolkit. Data Storage in MongoDB server, Hosted on Netlify with Backend Operations in Render"
     },
     {
       title: "Library and Portfolio Site",
