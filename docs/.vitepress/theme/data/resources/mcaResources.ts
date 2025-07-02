@@ -34,20 +34,15 @@ export const booksUsed = [
   
   export const resourcesUsed = [
     {
-      title: 'Java Documentation',
-      description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
-      link: 'https://docs.oracle.com/en/java/'
+      title: 'Previous Collection',
+      description: 'Drive Folder with Previous Question Papers and Notes on all Subjects',
+      link: 'https://drive.google.com/drive/folders/1SstJgG0CqhcvV8MLuJ6r-l0igKTvg8y9?usp=sharing'
     },
     {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
+      title: 'DSA Visualisation',
+      description: 'Site for Visualizing major Algorithms and Data Structures',
+      link: 'https://www.cs.usfca.edu/~galles/visualization/Algorithms.html'
     },
-    {
-      title: 'GeeksforGeeks Java',
-      description: 'Java tutorials and articles on a wide range of topics.',
-      link: 'https://www.geeksforgeeks.org/java/'
-    }
   ]
   
   export const resourcesPending = [
@@ -55,11 +50,6 @@ export const booksUsed = [
       title: 'Java Documentation',
       description: 'Official Java documentation provided by Oracle, covering all versions of the Java platform.',
       link: 'https://docs.oracle.com/en/java/'
-    },
-    {
-      title: 'Baeldung Java Guides',
-      description: 'Comprehensive collection of Java tutorials and guides.',
-      link: 'https://www.baeldung.com/'
     },
     {
       title: 'GeeksforGeeks Java',

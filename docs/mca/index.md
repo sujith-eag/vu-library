@@ -31,22 +31,19 @@ import { mca1Section, mca2Section } from '@theme/data/fileStructures/mcaSections
 <CollapsibleList :sections="mca2Section" />
 
 
-<!-- <h3>Text Books Recommended</h3> -->
-
-<!-- <div class="book-container">
-
-  <template v-for="(book, index) in booksUsed" :key="index">
-    <BookCard v-bind="book" />
-  </template>
-
-</div> -->
-
-
 ## First Semester
  
 <CollapsibleList :sections="mca1Section" />
 
 ___
+
+<div class="book-container">
+  <ResourceCard
+    v-for="(resource, index) in resourcesUsed"
+    :key="index"
+    v-bind="resource"
+  />
+</div>
 
 <!-- <h3>Text Books Recommended</h3> -->
 

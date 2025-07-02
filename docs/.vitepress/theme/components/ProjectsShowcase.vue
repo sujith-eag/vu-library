@@ -27,7 +27,7 @@
   <script setup>
   const projects = [
     {
-      title: "State managed Task App",
+      title: "State Managed Task App",
       link: "https://task.sujith-eag.in/",
       description: 
       "MERN Stack application that handles Authentication and User State using Redux loolkit. Data Storage in MongoDB server, Hosted on Netlify with Backend Operations in Render"
