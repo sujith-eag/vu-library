@@ -23,7 +23,6 @@ A **router** is a networking device that connects multiple computer networks and
     
 - Manages traffic between different IP networks like  **LANs** (Local Area Networks) and the **WAN** (Wide Area Network).
     
-
 ### Cisco Router Configuration Modes:
 
 |Mode|Prompt|Description|
@@ -78,7 +77,6 @@ Cisco routers operate through a hierarchical command-line interface with differe
     
 - **Exit:** Use `disable` to return to User EXEC Mode.
     
-
 #### Common Commands:
 
 - `show running-config` – Display current configuration.
@@ -142,7 +140,6 @@ Cisco routers operate through a hierarchical command-line interface with differe
     
 - **Exit:** Use `exit` to return to Global Configuration Mode.
     
-
 #### Common Commands:
 
 - `ip address 192.168.1.1 255.255.255.0` – Assign IP address.
@@ -175,7 +172,7 @@ Cisco routers operate through a hierarchical command-line interface with differe
 
 Configure static routing between **R1** and **R2** using FastEthernet interfaces.
 
-### Network Diagram Details
+### Network Details
 
 | Router | Interface       | IP Address | Network    |
 | ------ | --------------- | ---------- | ---------- |
@@ -204,16 +201,23 @@ R1(config)# interface fastethernet0/0
 R1(config-if)# ip address 10.0.0.1 255.0.0.0
 R1(config-if)# no shutdown
 R1(config-if)# exit
+```
 
+```bash
 R1(config)# interface fastethernet0/1
 R1(config-if)# ip address 20.0.0.1 255.0.0.0
 R1(config-if)# no shutdown
-R1(config-if)# no shutdown
 R1(config-if)# exit
+```
 
+Telling R1: "To reach the `30.0.0.0` network, send traffic to `20.0.0.2` (R2)."
+```bash
 R1(config)# ip route 30.0.0.0 255.0.0.0 20.0.0.2
+```
 
-R1(config)# show ip route
+Checking Configuration
+```bash
+R1# show ip route
 R1# show ip interface brief
 ```
 
@@ -225,15 +229,22 @@ R2(config)# interface fastethernet0/0
 R2(config-if)# ip address 20.0.0.2 255.0.0.0
 R2(config-if)# no shutdown
 R2(config-if)# exit
+```
 
+```bash
 R2(config)# interface fastethernet0/1
 R2(config-if)# ip address 30.0.0.1 255.0.0.0
 R2(config-if)# no shutdown
 R2(config-if)# exit
+```
 
+Tells R2: "To reach the `10.0.0.0` network, send traffic to `20.0.0.1` (R1)."
+```bash
 R2(config)# ip route 10.0.0.0 255.0.0.0 20.0.0.1
+```
 
-R2(config)# show ip route
+```bash
+R2# show ip route
 R2# show ip interface brief
 ```
 
@@ -251,3 +262,4 @@ R2# show ip interface brief
     
 - `show ip interface brief` should confirm correct IP assignments and interface status.
     
+

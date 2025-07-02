@@ -12,10 +12,8 @@ Set up a basic LAN in GNS3 using a hub and four VPCS nodes. Use Class A private 
 
 ### Steps:
 
-1. **Create New GNS3 Project**
-    
-    - Open GNS3 → create a new project (e.g., `LAN_Hub_Test`).
-        
+1. Open GNS3 → create a new project (e.g., `LAN_Hub_Test`).
+	
 2. **Add Devices**
     
     - Search for and add a **Hub** to the workspace.
@@ -31,36 +29,34 @@ Set up a basic LAN in GNS3 using a hub and four VPCS nodes. Use Class A private 
 4. **Assign IP Addresses (Class A: 10.0.0.0/8)**  
     Open each VPCS console and enter:
     
-    ```
-    ip 10.0.0.1 255.0.0.0    → VPCS1
-    ip 10.0.0.2 255.0.0.0    → VPCS2
-    ip 10.0.0.3 255.0.0.0    → VPCS3
-    ip 10.0.0.4 255.0.0.0    → VPCS4
-    save                     → On each VPCS after assigning IP
-    ```
+```
+ip 10.0.0.1 255.0.0.0    → VPCS1
+
+ip 10.0.0.2 255.0.0.0    → VPCS2
+
+ip 10.0.0.3 255.0.0.0    → VPCS3
+
+ip 10.0.0.4 255.0.0.0    → VPCS4
+
+save       → On each VPCS after assigning IP
+```
     
 5. **Test Network Connectivity**  
     From **VPCS1**, run:
     
-    ```
-    ping 10.0.0.2
-    ping 10.0.0.3
-    ping 10.0.0.4
-    ```
+```
+ping 10.0.0.2
+ping 10.0.0.3
+ping 10.0.0.4
+```
     
-    - Each ping should return replies → means successful communication.
-        
-    - Run pings from other PCs too if needed.
-        
-6. **Check ARP Table (optional)**
-    
-    - After pinging, check the ARP table on a VPCS:
-        
-	```
-	show arp
-	```
-        
-    - You should see IP-to-MAC mappings of other PCs.
+- Each ping should return replies → means successful communication.
+      
+6. **Check ARP Table on VPCs  (optional)**
+    - You should see IP-to-MAC mappings of other PCs.        
+```
+show arp
+```
         
 7. **Understand What’s Happening Behind the Scenes**
     
@@ -91,9 +87,8 @@ Set up a basic LAN in GNS3 using a hub and four VPCS nodes. Use Class A private 
     - Notice differences in IP range and subnet masks.
         
 
----
 
-### Outcome
+## Outcome
 
 - All PCs must be on the **same subnet** for direct communication.
     

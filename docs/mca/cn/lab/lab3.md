@@ -3,52 +3,56 @@
 
 Set up an FTP server on **PC1** using **ProFTPD**, allowing clients to upload and download files via FTP.
 
-## Step-by-Step Procedure
+## Install and Configure FTP Server
 
-#### 1. Update Package Repository and Install ProFTPD
+
+### 1. Update Package Repository and Install ProFTPD
 
 ```bash
 sudo apt-get update
+
 sudo apt-get install proftpd
 ```
 
 - During installation, select **"standalone"** mode using the arrow keys and press **Enter**.
     
-#### **2. Configure ProFTPD Settings**
+### 2. Configure ProFTPD Settings
 
-Edit the main configuration file:
+Edit the main configuration file by opening in nano:
 
 ```bash
 sudo nano /etc/proftpd/proftpd.conf
 ```
 
-Make the following changes:
+Make the following changes and save the file:
 
-- Disable IPv6:
+1. Disable IPv6:
 
 ```apache
 UseIPv6 off
 ```
 
-- Set a custom server name:
+2. Set a custom server name:
 
 ```apache
 ServerName "CNLAB.com"
 ```
 
-- Uncomment to restrict FTP users to their home directories:
+3. Restrict FTP users to a specific directory (absolute path):
+
+Replace `/absolute/path/to/ftp-folder` with the actual path you want users to be locked into.
 
 ```apache
-DefaultRoot ~
+DefaultRoot /absolute/path/to/ftp-folder
 ```
 
-- Enter the absolute path for the folder to be set for serving:
+4. Only allow users with valid shells to log in:
 
 ```apache
 RequireValidShell on
 ```
 
-- Uncomment authentication module line:
+5. Uncomment authentication module line to use Standard Unix authentication :
 
 ```apache
 AuthOrder mod_auth_unix.c
@@ -59,7 +63,7 @@ Press `Ctrl + O` → `Enter` → `Ctrl + X`
 
 ---
 
-#### 3. Add `/bin/false` to Valid Shells
+### 3. Add `/bin/false` to Valid Shells
 
 This step ensures that users with `/bin/false` as their shell can still authenticate for FTP.
 
@@ -67,28 +71,41 @@ This step ensures that users with `/bin/false` as their shell can still authenti
 sudo nano /etc/shells
 ```
 
-**Add this line at the end:**
+Add this line at the end:
 
 ```
 /bin/false
 ```
 
+Or in a single command: 
+```bash
+echo "/bin/false" | sudo tee -a /etc/shells
+```
+
+> [!note]
+> ProFTPD checks if a user has a valid shell (if `RequireValidShell on` is enabled). Since `/bin/false` is not considered a "login shell," we must add it to `/etc/shells`.
+
 ---
 
-#### 4. Create FTP User
+### 4. Create FTP User
 
 Create a user with restricted shell access and assign a home directory:
 
 ```bash
 sudo useradd -d /var/www/ -s /bin/false ftpuser
+
 sudo passwd ftpuser
 ```
 
 > When prompted, enter and confirm a password (e.g., `myftp123`).
 
+- `-d /var/www/` sets the FTP home directory.
+    
+- `-s /bin/false` prevents shell login (good for FTP-only users).
+
 ---
 
-#### 5. Create FTP Directory and Set Ownership
+### 5. Create FTP Directory and Set Ownership
 
 Ensure the user's home directory exists and has correct permissions:
 
@@ -102,7 +119,7 @@ sudo chmod 755 /var/www/
 
 ---
 
-#### 6. Allow FTP Through the Firewall (If UFW Is Enabled)
+### 6. Allow FTP Through the Firewall (If UFW Is Enabled)
 
 If the firewall is active, allow FTP traffic:
 
@@ -113,7 +130,7 @@ sudo ufw reload
 
 ---
 
-#### 7. Restart ProFTPD Service
+### 7. Restart ProFTPD Service
 
 Apply the configuration changes:
 
@@ -123,7 +140,7 @@ sudo systemctl restart proftpd
 
 ---
 
-#### 8. Test FTP Connection from Client PC (PC2 or PC3)
+### 8. Test FTP Connection from Client PC (PC2 or PC3)
 
 On another PC in the same network:
 
