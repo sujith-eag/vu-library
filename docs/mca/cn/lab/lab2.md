@@ -36,7 +36,6 @@ A **router** is a networking device that connects multiple computer networks and
 
 Cisco routers operate through a hierarchical command-line interface with different modes, each serving specific purposes in configuration and monitoring. The four primary configuration modes are:
 
-
 ### 1. User EXEC Mode
 
 - **Prompt:** `Router>`
@@ -49,7 +48,6 @@ Cisco routers operate through a hierarchical command-line interface with differe
     
 - **Exit:** Type `logout` or `exit`.
     
-
 #### Common Commands:
 
 - `ping 8.8.8.8` – Test connectivity to a remote host.

@@ -30,7 +30,7 @@ You should see `active (running)`. If not, start it:
 sudo systemctl start apache2
 ```
 
-### 4. Allow HTTP Through Firewall (Optional but Recommended)
+### 4. Allow HTTP Through Firewall (Optional)
 
 If you're using UFW (Uncomplicated Firewall):
 
@@ -47,6 +47,12 @@ sudo ufw status
 
 ### 5. Check Apache Default Page in Browser
 
+To find your server’s IP address:
+
+```bash
+ip a
+```
+
 Open a browser on the same machine or from another PC on the same network:
 
 ```
@@ -55,15 +61,11 @@ http://<server-ip>
 
 > You should see the **"Apache2 Ubuntu Default Page."**
 
-To find your server’s IP address:
 
-```bash
-ip a
-```
 
----
+## Serving files from Directory
 
-#### Option 1: Open Nautilus with Root Permissions
+### 1: Open Nautilus with Root Permissions
 
 1. Open Terminal.
     
@@ -80,7 +82,7 @@ sudo nautilus /var/www/
 
 ---
 
-#### Option 2: Use a Custom Directory (Safer)
+### 2: Use a Custom Directory (Safer)
 
 If you want to avoid using root access frequently, it’s safer to:
 

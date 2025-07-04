@@ -1,10 +1,9 @@
 
 # FTP Server using ProFTPD
 
-Set up an FTP server on **PC1** using **ProFTPD**, allowing clients to upload and download files via FTP.
+Set up an FTP server on Virtual Machine **PC1** using **ProFTPD**, allowing clients to upload and download files via FTP.
 
 ## Install and Configure FTP Server
-
 
 ### 1. Update Package Repository and Install ProFTPD
 
@@ -40,7 +39,7 @@ ServerName "CNLAB.com"
 
 3. Restrict FTP users to a specific directory (absolute path):
 
-Replace `/absolute/path/to/ftp-folder` with the actual path you want users to be locked into.
+Replace `/absolute/path/to/ftp-folder` with the actual path of the folder the users should be locked into.
 
 ```apache
 DefaultRoot /absolute/path/to/ftp-folder
@@ -138,6 +137,11 @@ Apply the configuration changes:
 sudo systemctl restart proftpd
 ```
 
+Check the status:
+```bash
+systemctl status proftpd
+```
+
 ---
 
 ### 8. Test FTP Connection from Client PC (PC2 or PC3)
@@ -150,11 +154,8 @@ ftp 172.20.10.X
 
 > Replace `X` with PC1’s actual IP address.  
 > Log in using:
-> 
 > - **Username:** `ftpuser`
->     
 > - **Password:** `myftp123` (or your chosen password)
->     
 
 ---
 

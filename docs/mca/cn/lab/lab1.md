@@ -38,7 +38,7 @@ ip 10.0.0.3 255.0.0.0    → VPCS3
 
 ip 10.0.0.4 255.0.0.0    → VPCS4
 
-save       → On each VPCS after assigning IP
+save     → On each VPCS after assigning IP
 ```
     
 5. **Test Network Connectivity**  
@@ -57,35 +57,37 @@ ping 10.0.0.4
 ```
 show arp
 ```
-        
-7. **Understand What’s Happening Behind the Scenes**
+
+
+### Understanding What’s Happening
     
-    - When pinging a device for the first time: An **ARP Request** is sent to find the destination MAC. The target replies with an **ARP Reply**. This MAC address is stored in the ARP table.
-        
-    - **ICMP Echo Request** and **Echo Reply** are what you see during a ping.
-        
-    - **TTL (Time To Live)** field in the IP header indicates the number of routes (hops) a packet has taken. If TTL expires before reaching the destination then packet is dropped. This helps avoid endless loops:
-        
-        - Windows: 128, Linux: 64, Routers: 255
+- When pinging a device for the first time: An **ARP Request** is sent to find the destination MAC. The target replies with an **ARP Reply**. This MAC address is stored in the ARP table.
+	
+- **ICMP Echo Request** and **Echo Reply** are what you see during a ping.
+	
+- **TTL (Time To Live)** field in the IP header indicates the number of routes (hops) a packet has taken. If TTL expires before reaching the destination then packet is dropped. This helps avoid endless loops:
+	
+	- Windows: 128, Linux: 64, Routers: 255
             
-8. **Optional – Capture Traffic with Wireshark**
+
+### Optional – Capture Traffic with Wireshark
     
-    - Right-click a link → Start capture with Wireshark.
+- Right-click a link → Start capture with Wireshark.
+	
+- You’ll see ARP and ICMP packets when you ping.
         
-    - You’ll see ARP and ICMP packets when you ping.
-        
-9. **Extra Practice (Optional Enhancements)**
+### Extra Practice
     
-    - Replace **Hub** with a **Switch** → compare behavior.
-        
-    - Try same setup with:
-        
-        - Class B: `172.16.0.0/16`
-            
-        - Class C: `192.168.1.0/24`
-            
-    - Notice differences in IP range and subnet masks.
-        
+- Replace **Hub** with a **Switch** → compare behavior.
+	
+- Try same setup with:
+	
+	- Class B: `172.16.0.0/16`
+		
+	- Class C: `192.168.1.0/24`
+		
+- Notice differences in IP range and subnet masks.
+	
 
 
 ## Outcome

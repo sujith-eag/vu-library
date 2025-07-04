@@ -1,7 +1,8 @@
 
 # VirtualBox VM Setup Guide
 
-### Add Oracle’s GPG key and repository:
+
+## Add Oracle’s GPG key and repository:
 
 ```bash
 sudo apt update
@@ -13,7 +14,7 @@ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-
 echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 ```
 
-### Install VirtualBox:
+## Install VirtualBox:
 
 ```bash
 sudo apt update
@@ -27,7 +28,7 @@ Download Lubuntu 16.04 ISO. Official archived ISO :
     [https://cdimage.ubuntu.com/lubuntu/releases/16.04/release/](https://cdimage.ubuntu.com/lubuntu/releases/16.04/release/)
 
 
-### Create a Virtual Machine in VirtualBox
+## Create a Virtual Machine in VirtualBox
 
 Launch VirtualBox, Click **"New"** and configure :
 
@@ -54,14 +55,11 @@ Two main options depending on your use case.
     
 - Host-only: Useful for isolated lab setups without internet
     
-
-Add a second adapter for dual-networking
+**c. Add a second adapter for dual-networking**
 
 - Adapter 2: Enable and attach to **Host-only Adapter** or **Internal Network** as needed for GNS3 or Program Design
     
-___
-
-### Post-Installation Linux Setup
+## Post-Installation Linux Setup
 
 After first login:
 
@@ -121,4 +119,6 @@ Test SSH Access from Another PC:
 ```bash
 ssh yourusername@<ip-of-vm>
 ```
+
+> ProFTPD Setup is covered in the next programs.
 
