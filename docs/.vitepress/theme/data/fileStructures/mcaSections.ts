@@ -60,12 +60,13 @@ export const mcaDbmsSection = [
       {
         title: "DBMS & Relational Model",
         items: [
-          { label: "DBMS", link: "/mca/dbs/u1/u11" },
-          { label: "DBMS Characteristics", link: "/mca/dbs/u1/u12" },
-          { label: "Data Models & Schemas", link: "/mca/dbs/u1/u13" },
+          { label: "Introduction", link: "/mca/dbs/u1/u11" },
+          { label: "Characteristics of DBMS", link: "/mca/dbs/u1/u12" },
+          { label: "Data Models & Schema", link: "/mca/dbs/u1/u13" },
           { label: "Three Schema Architecture", link: "/mca/dbs/u1/u14" },
           { label: "Component Module", link: "/mca/dbs/u1/u15" },
-          { label: "Relational Model & Constraints", link: "/mca/dbs/u1/u16" },          
+          { label: "Relational Model Concepts", link: "/mca/dbs/u1/u16" },
+          { label: "Relational Constraints & Schema", link: "/mca/dbs/u1/u17" },
         ]
       },
       {

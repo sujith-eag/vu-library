@@ -68,7 +68,7 @@ After first login:
 ```bash
 su
 
-apt-get install sudo -g
+apt-get install sudo
 
 usermod -aG sudo vboxuser
 
